@@ -3,7 +3,7 @@
         <div class="user-profile media innerAll">
             <a href="" class="pull-left"><img src="../assets/images/people/50/8.jpg" alt="" class="img-circle"><span class="badge badge-primary">2</span></a>
             <div class="media-body">
-                <a href="" class="strong">Adrian Demian</a>
+                <a href="" class="strong">{{ 'lastname' }} &nbsp; {{ 'firstname' }}</a>
                 <p class="text-success"><i class="fa fa-fw fa-circle"></i> Online</p>
             </div>
             <ul>
@@ -13,21 +13,17 @@
             </ul>
         </div>
         <div class="sidebarMenuWrapper">
-            <ul class="list-unstyled">
-                <li class="active"><a href="index.html?lang=en"><i class=" icon-projector-screen-line"></i><span>Dashboard</span></a></li>
+            <ul class="list-unstyled navParent">
+                <li><a href="#"><i class=" icon-projector-screen-line"></i><span>Dashboard</span></a></li>
+                <li><a href="#"><i class="icon-user-1"></i><span>{{ 'Profile' }}</span></a></li>
                 <li class="hasSubmenu">
-                    <a href="#" data-target="#menu-style" data-toggle="collapse"><i class="icon-compose"></i><span>Menu &amp; Navbar</span></a>
+                    <a href="#" data-target="#menu-style" data-toggle="collapse"><i class="icon-compose"></i><span>{{ 'Gestion des Catégories' }}</span></a>
                     <ul class="collapse" id="menu-style">
-                        <li><a href="index.html?lang=en&amp;	sidebar_style=inverse"><span class="pull-right badge badge-primary"><i class="fa fa-check"></i></span>Sidebar Menu Dark</a></li>
-                        <li><a href="index.html?lang=en&amp;sidebar_style=default">Sidebar Menu Light</a></li>
-                        <li><a href="index.html?lang=en&amp;top_style=inverse">Top Menu Dark</a></li>
-                        <li><a href="index.html?lang=en&amp;top_style=default">Top Menu Light</a></li>
-                        <li><a href="index.html?lang=en&amp;top_style=primary"><span class="pull-right badge badge-primary"><i class="fa fa-check"></i></span>Top Menu Primary</a></li>
+                        <li><a href=""><span class="pull-right badge badge-primary"><i class="fa fa-check"></i></span>{{ 'Par Mariages' }}</a></li>
+                        <li><a href="{{ path('category_index') }}"><span class="pull-right badge badge-primary"><i class="fa fa-check"></i></span>{{ 'Par Evenements' }}</a></li>
                     </ul>
                 </li>
-
-                <li><a href="profile_resume.html?lang=en"><i class="icon-user-1"></i><span>Profile / Resume</span></a></li>
-                <li class="hasSubmenu">
+                <!--<li class="hasSubmenu">
                     <a href="#" data-target="#support" data-toggle="collapse"><i class="icon-compose"></i><span>Support</span></a>
                     <ul class="collapse " id="support">
                         <li><a href="support_tickets.html?lang=en"><i class="icon-ticket"></i><span>Support Tickets</span></a></li>
@@ -120,8 +116,7 @@
                         <li><a href="ratings.html?lang=en"><i class="icon-tv-star"></i><span>Ratings</span></a></li>
                         <li> <a href="error.html?lang=en"> <span>Error</span></a></li>
                     </ul>
-                </li>
-
+                </li> -->
             </ul>
         </div>
     </div>

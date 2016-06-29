@@ -1,3 +1,8 @@
+labs_back:
+    resource: "@LabsBackBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 labs_template:
     resource: "@LabsTemplateBundle/Controller/"
     type:     annotation
