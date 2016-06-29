@@ -1,0 +1,3 @@
+labs_template:
+    resource: "@LabsTemplateBundle/Controller/"
+    type:     annotation
