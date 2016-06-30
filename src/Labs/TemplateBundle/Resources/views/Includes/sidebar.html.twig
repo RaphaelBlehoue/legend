@@ -19,10 +19,11 @@
                 <li class="hasSubmenu">
                     <a href="#" data-target="#menu-style" data-toggle="collapse"><i class="icon-compose"></i><span>{{ 'Gestion des Catégories' }}</span></a>
                     <ul class="collapse" id="menu-style">
-                        <li><a href=""><span class="pull-right badge badge-primary"><i class="fa fa-check"></i></span>{{ 'Par Mariages' }}</a></li>
+                        <li><a href="{{ path('type_index') }}"><span class="pull-right badge badge-primary"><i class="fa fa-check"></i></span>{{ 'Par Mariages' }}</a></li>
                         <li><a href="{{ path('category_index') }}"><span class="pull-right badge badge-primary"><i class="fa fa-check"></i></span>{{ 'Par Evenements' }}</a></li>
                     </ul>
                 </li>
+                <li><a href="{{ path('packs_index') }}"><i class="  icon-dollar"></i><span>{{ 'Gestion des Packs' }}</span></a></li>
                 <!--<li class="hasSubmenu">
                     <a href="#" data-target="#support" data-toggle="collapse"><i class="icon-compose"></i><span>Support</span></a>
                     <ul class="collapse " id="support">

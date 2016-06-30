@@ -5,6 +5,15 @@
     <link rel="stylesheet" href="{{ asset('bundles/labstemplate/assets/css/admin/module.admin.page.tables.min.css') }}" />
 {% endblock %}
 {% block body %}
+
+    {% if app.session.flashBag.has('success') %}
+        <div class="alert alert-success" role="alert">
+            {% for msg in app.session.flashBag.get('success') %}
+                <strong> Succès </strong>{{ msg }}.
+            {% endfor %}
+        </div>
+    {% endif %}
+
     <h1 class="bg-white content-heading border-bottom">Dashboard</h1>
     <div class="bg-white innerAll border-bottom">
         <ul class="menubar">
@@ -32,7 +41,6 @@
                             <th>{{ 'ID' }}</th>
                             <th>{{ 'Nom' }}</th>
                             <th>{{ 'Niveau' }}</th>
-                            <th>{{ 'Action' }}</th>
                             <th>{{ 'Edit' }}</th>
                             <th>{{ 'Delete' }}</th>
                         </tr>
@@ -42,14 +50,15 @@
                     <!-- Table body -->
                     <tbody>
                         <!-- Table row -->
-                        <tr class="gradeX">
-                            <td>Trident</td>
-                            <td>Trident</td>
-                            <td>Trident</td>
-                            <td>Trident</td>
-                            <td>Trident</td>
-                            <td>Internet Explorer 4.0</td>
-                        </tr>
+                        {% for category in categories %}
+                            <tr class="gradeX">
+                                <td>{{ category.id }}</td>
+                                <td>{{ category.name }}</td>
+                                <td><span class="label label-{{ (category.top == 1) ? 'success' : 'primary' }}">{{ (category.top == 1) ? 'Top' : 'normal' }}</span></td>
+                                <td><a href="{{ path('category_edit', {'id' : category.id}) }}"><i class="fa fa-pencil-square-o"></i></a></td>
+                                <td><a href="{{ path('category_delete', {'id' : category.id}) }}"><i class="fa fa-trash-o"></i></a></td>
+                            </tr>
+                        {% endfor %}
                         <!-- // Table row END -->
                     </tbody>
                     <!-- // Table body END -->

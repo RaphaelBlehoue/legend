@@ -1,21 +1,35 @@
 {% extends 'LabsTemplateBundle::layout.html.twig' %}
-{% block Title %}{{ 'Evenements - catégories | Legend Photography' }}{% endblock %}
+{% block Title %}{{ 'Wedding - catégories | Legend Photography' }}{% endblock %}
 {% block stylesheets %}
     {{ parent() }}
     <link rel="stylesheet" href="{{ asset('bundles/labstemplate/assets/css/admin/module.admin.page.tables.min.css') }}" />
 {% endblock %}
 {% block body %}
+
+    {% if app.session.flashBag.has('success') %}
+        <div class="alert alert-success" role="alert">
+            {% for msg in app.session.flashBag.get('success') %}
+                <strong> Succès </strong>{{ msg }}.
+            {% endfor %}
+        </div>
+    {% endif %}
+
     <h1 class="bg-white content-heading border-bottom">Dashboard</h1>
     <div class="bg-white innerAll border-bottom">
         <ul class="menubar">
-            <li class="active"><a href="{{ path('home') }}">Dashboard</a></li>
+            <li class="active"><a href="index.html?lang=en">Dashboard</a></li>
+            <li><a href="#">{{ 'Categories' }}</a></li>
+            <li><a href="#">{{ 'Wedding' }}</a></li>
         </ul>
     </div>
     <div class="innerAll spacing-x2">
         <!-- Widget -->
         <div class="widget widget-inverse">
             <div class="widget-head">
-                <h4 class="heading">{{ 'Liste des catégories d\'evenements' }}</h4>
+                <a href="{{ path('type_create') }}" class="btn btn-xs btn-success pull-right">
+                    <i class="fa fa-plus fa-fw"></i> {{ 'Créer un type' }}
+                </a>
+                <h4 class="heading">{{ 'Liste des type de mariage' }}</h4>
             </div>
             <div class="widget-body padding-bottom-none">
                 <!-- Table -->
@@ -27,7 +41,6 @@
                             <th>{{ 'ID' }}</th>
                             <th>{{ 'Nom' }}</th>
                             <th>{{ 'Niveau' }}</th>
-                            <th>{{ 'Action' }}</th>
                             <th>{{ 'Edit' }}</th>
                             <th>{{ 'Delete' }}</th>
                         </tr>
@@ -37,14 +50,15 @@
                     <!-- Table body -->
                     <tbody>
                         <!-- Table row -->
-                        <tr class="gradeX">
-                            <td>Trident</td>
-                            <td>Trident</td>
-                            <td>Trident</td>
-                            <td>Trident</td>
-                            <td>Trident</td>
-                            <td>Internet Explorer 4.0</td>
-                        </tr>
+                        {% for type in types %}
+                            <tr class="gradeX">
+                                <td>{{ type.id }}</td>
+                                <td>{{ type.name }}</td>
+                                <td><span class="label label-{{ (type.top == 1) ? 'success' : 'primary' }}">{{ (type.top == 1) ? 'Top' : 'normal' }}</span></td>
+                                <td><a href="{{ path('type_edit', {'id' : type.id}) }}"><i class="fa fa-pencil-square-o"></i></a></td>
+                                <td><a href="{{ path('type_delete', {'id' : type.id}) }}"><i class="fa fa-trash-o"></i></a></td>
+                            </tr>
+                        {% endfor %}
                         <!-- // Table row END -->
                     </tbody>
                     <!-- // Table body END -->

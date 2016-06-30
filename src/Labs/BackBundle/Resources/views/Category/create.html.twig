@@ -10,13 +10,12 @@
         <ul class="menubar">
             <li class="active"><a href="index.html?lang=en">Dashboard</a></li>
             <li><a href="#">{{ 'Categories' }}</a></li>
-            <li><a href="#">{{ 'Evenements' }}</a></li>
+            <li><a href="{{ path('category_index') }}">{{ 'Evenements' }}</a></li>
             <li><a href="#">{{ 'Creation' }}</a></li>
         </ul>
     </div>
     <div class="innerAll spacing-x2">
         {{ form_start(form) }}
-            {{ form_errors(form) }}
             <!-- Row -->
             <div class="row">
                 <!-- Column -->
@@ -50,7 +49,7 @@
                                 <div class="row">
                                     <div class="form-group">
                                         <div class="col-sm-offset-2 col-sm-10">
-                                            <button type="submit" class="btn btn-success">{{ 'Créer la catégorie' }}</button>
+                                            <button type="submit" class="btn btn-success" formnovalidate>{{ 'Créer la catégorie' }}</button>
                                         </div>
                                     </div>
                                 </div>

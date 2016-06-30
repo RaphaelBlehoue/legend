@@ -1,5 +1,5 @@
 {% extends 'LabsTemplateBundle::layout.html.twig' %}
-{% block Title %}{{ 'Evenements - catégories | Legend Photography' }}{% endblock %}
+{% block Title %}{{ 'Packs - Prestation | Legend Photography' }}{% endblock %}
 {% block stylesheets %}
     {{ parent() }}
     <link rel="stylesheet" href="{{ asset('bundles/labstemplate/assets/css/admin/module.admin.page.form_elements.min.css') }}" />
@@ -9,63 +9,65 @@
     <div class="bg-white innerAll border-bottom">
         <ul class="menubar">
             <li class="active"><a href="index.html?lang=en">Dashboard</a></li>
-            <li><a href="#">{{ 'Categories' }}</a></li>
-            <li><a href="{{ path('category_index') }}">{{ 'Evenements' }}</a></li>
-            <li><a href="#">{{ 'Edition' }}</a></li>
+            <li><a href="{{ path('packs_index') }}">{{ 'Packs' }}</a></li>
+            <li><a href="#">{{ 'Creation' }}</a></li>
         </ul>
     </div>
     <div class="innerAll spacing-x2">
         {{ form_start(form) }}
-        <!-- Row -->
-        <div class="row">
-            <!-- Column -->
-            <div class="col-md-10 col-md-offset-1">
-                <!-- Widget -->
-                <div class="widget widget-inverse" >
-                    <!-- Widget heading -->
-                    <div class="widget-head">
-                        <a href="{{ path('category_index') }}" class="btn btn-xs btn-info pull-right">
-                            <i class="fa fa-plus fa-fw"></i> {{ 'Liste des catégories' }}
-                        </a>
-
-                        <a href="{{ path('category_create') }}" class="btn btn-xs btn-success pull-right">
-                            <i class="fa fa-plus fa-fw"></i> {{ 'Créer une nouvelle catégorie' }}
-                        </a>
-
-                        <h4 class="heading">{{ 'Modifier la Catégorie d\'evenement'|upper }}</h4>
-                    </div>
-                    <!-- // Widget heading END -->
-                    <div class="widget-body">
-                        <div class="innerB">
-                            <div class="row">
-                                <div class="col-xs-8 col-xs-offset-2 form-group">
-                                    <label class="control-label" for="name">{{ 'Nom de la Catégorie' }}</label>
-                                    {{ form_row(form.name) }}
-                                    {{ form_errors(form.name) }}
+            <!-- Row -->
+            <div class="row">
+                <!-- Column -->
+                <div class="col-md-10 col-md-offset-1">
+                    <!-- Widget -->
+                    <div class="widget widget-inverse" >
+                        <!-- Widget heading -->
+                        <div class="widget-head">
+                            <a href="{{ path('packs_index') }}" class="btn btn-xs btn-info pull-right">
+                                <i class="fa fa-plus fa-fw"></i> {{ 'Liste des packs' }}
+                            </a>
+                            <h4 class="heading">{{ 'Créer un packs'|upper }}</h4>
+                        </div>
+                        <!-- // Widget heading END -->
+                        <div class="widget-body">
+                            <div class="innerB">
+                                <div class="row">
+                                    <div class="col-xs-8 col-xs-offset-2 form-group">
+                                        <label class="control-label" for="name">{{ 'Nom du pack' }}</label>
+                                        {{ form_row(form.name) }}
+                                        {{ form_errors(form.name) }}
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-8 col-xs-offset-2 form-group">
-                                    <label class="control-label" for="name">{{ 'Mettre en Top' }}</label>
-                                    {{ form_row(form.top) }}
-                                    {{ form_errors(form.top) }}
+                                <div class="row">
+                                    <div class="col-xs-8 col-xs-offset-2 form-group">
+                                        <label class="control-label" for="name">{{ 'contenu du pack' }}</label>
+                                        {{ form_row(form.content) }}
+                                        {{ form_errors(form.content) }}
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-group">
-                                    <div class="col-sm-offset-2 col-sm-10">
-                                        <button type="submit" class="btn btn-primary" formnovalidate>{{ 'Modifier la catégorie' }}</button>
+
+                                <div class="row">
+                                    <div class="col-xs-8 col-xs-offset-2 form-group">
+                                        <label class="control-label" for="name">{{ 'Mettre en Top' }}</label>
+                                            {{ form_row(form.online) }}
+                                            {{ form_errors(form.online) }}
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <button type="submit" class="btn btn-success" formnovalidate>{{ 'Créer le packs' }}</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- // Widget END -->
                 </div>
-                <!-- // Widget END -->
+                <!-- // Column END -->
             </div>
-            <!-- // Column END -->
-        </div>
-        <!-- // Row END -->
+            <!-- // Row END -->
         {{ form_end(form) }}
     </div>
 {% endblock %}
