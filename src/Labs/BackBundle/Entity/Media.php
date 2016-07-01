@@ -45,7 +45,7 @@ class Media
     /**
      * @var
      * @ORM\ManyToOne(targetEntity="Labs\BackBundle\Entity\Dossier", inversedBy="medias")
-     * @ORM\JoinColumn(referencedColumnName="dossier_id", nullable=false)
+     * @ORM\JoinColumn(referencedColumnName="id", nullable=false)
      */
     protected $dossier;
 

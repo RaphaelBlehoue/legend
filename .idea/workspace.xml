@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f66c0dc-4822-4176-a5fc-7f7d3a160cba" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/.gitkeep" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Controller/BookingController.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Controller/BookingController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Repository/BookingRepository.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Repository/BookingRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Form/BookingType.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Form/BookingType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Type.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Type.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Booking/create.html.twig" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Booking/create.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Booking/edit.html.twig" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Booking/edit.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Booking/index.html.twig" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Booking/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Category/index.html.twig" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Category/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/TemplateBundle/Resources/views/Includes/sidebar.html.twig" afterPath="$PROJECT_DIR$/src/Labs/TemplateBundle/Resources/views/Includes/sidebar.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Best.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Best.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Media.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Media.php" />
     </list>
     <ignored path="legend.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,23 +25,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Dossier.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Entity/Dossier.php">
+      <file leaf-file-name="Best.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Entity/Best.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-237.6923">
-              <caret line="328" column="0" selection-start-line="328" selection-start-column="0" selection-end-line="328" selection-end-column="0" />
-              <folding>
-                <element signature="e#42#74#0#PHP" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.5493171">
+              <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Best.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Entity/Best.php">
+      <file leaf-file-name="Media.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Entity/Media.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4491654">
-              <caret line="131" column="28" selection-start-line="131" selection-start-column="28" selection-end-line="131" selection-end-column="28" />
+            <state vertical-scroll-proportion="-30.26923">
+              <caret line="47" column="47" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -112,9 +101,9 @@
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Booking/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Booking/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Type.php" />
-        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Media.php" />
-        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Best.php" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Dossier.php" />
+        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Best.php" />
+        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Media.php" />
       </list>
     </option>
   </component>
@@ -836,7 +825,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Entity/Type.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.8461537">
+        <state vertical-scroll-proportion="0.98634297">
           <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
           <folding />
         </state>
@@ -844,15 +833,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Entity/Media.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6342944">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        <state vertical-scroll-proportion="-30.26923">
+          <caret line="47" column="47" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Entity/Dossier.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-237.6923">
+        <state vertical-scroll-proportion="4.6889224">
           <caret line="328" column="0" selection-start-line="328" selection-start-column="0" selection-end-line="328" selection-end-column="0" />
           <folding>
             <element signature="e#42#74#0#PHP" expanded="true" />
@@ -862,8 +851,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Entity/Best.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4491654">
-          <caret line="131" column="28" selection-start-line="131" selection-start-column="28" selection-end-line="131" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.5493171">
+          <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
           <folding />
         </state>
       </provider>

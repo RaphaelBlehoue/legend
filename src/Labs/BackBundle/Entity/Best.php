@@ -45,7 +45,7 @@ class Best
     /**
      * @var
      * @ORM\ManyToOne(targetEntity="Labs\BackBundle\Entity\Dossier", inversedBy="bests")
-     * @ORM\JoinColumn(referencedColumnName="dossier_id", nullable=false)
+     * @ORM\JoinColumn(referencedColumnName="id", nullable=false)
      */
     protected $dossier;
 
