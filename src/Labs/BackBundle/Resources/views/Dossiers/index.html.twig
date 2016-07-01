@@ -38,10 +38,10 @@
                     <thead>
                     <tr>
                         <th>{{ 'Nom' }}</th>
-                        <th>{{ 'Packs '}}</th>
-                        <th>{{ 'Email' }}</th>
+                        <th>{{ 'Packs' }}</th>
+                        <th>{{ 'Date de ceremonie '}}</th>
+                        <th>{{ 'Creation' }}</th>
                         <th>{{ 'Status' }}</th>
-                        <th>{{ 'Date '}}</th>
                         <th>{{ 'Action' }}</th>
                     </tr>
                     </thead>
@@ -50,9 +50,9 @@
                     <!-- Table body -->
                     <tbody>
                         <!-- Table row -->
-                        {% for booking in bookings %}
+                        {% for dossier in dossiers %}
                             <tr class="gradeX">
-                                <td>{{ booking.name }}</td>
+                                <td>{{ dossier.name }}</td>
                                 <td>{% if booking.pack|length > 0 %} <span class="label label-success label-stroke">{{ booking.pack.name }}</span>  {% endif %}</td>
                                 <td>{{ booking.email }}</td>
                                 <td><span class="label label-{{ (booking.status == 1) ? 'success' : 'primary' }}">{{ (booking.status == 1) ? 'Valider' : 'En attente' }}</span></td>

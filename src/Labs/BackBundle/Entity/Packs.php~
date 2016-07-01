@@ -46,9 +46,16 @@ class Packs
     /**
      * @var
      *
-     * @ORM\OneToMany(targetEntity="Labs\BackBundle\Entity\booking", mappedBy="pack", cascade={"remove"})
+     * @ORM\OneToMany(targetEntity="Labs\BackBundle\Entity\Booking", mappedBy="pack", cascade={"remove"})
      */
     protected $booking;
+
+    /**
+     * @var
+     *
+     * @ORM\OneToMany(targetEntity="Labs\BackBundle\Entity\Dossier", mappedBy="pack")
+     */
+    protected $dossier;
 
 
     public function __construct()
@@ -139,4 +146,38 @@ class Packs
         return $this->online;
     }
 
+
+    /**
+     * Add Booking
+     *
+     * @param \Labs\BackBundle\Entity\Booking $booking
+     *
+     * @return Packs
+     */
+    public function addBooking(\Labs\BackBundle\Entity\Booking $booking)
+    {
+        $this->booking[] = $booking;
+
+        return $this;
+    }
+
+    /**
+     * Remove Booking
+     *
+     * @param \Labs\BackBundle\Entity\Booking $booking
+     */
+    public function removeBooking(\Labs\BackBundle\Entity\Booking $booking)
+    {
+        $this->booking->removeElement($booking);
+    }
+
+    /**
+     * Get Booking
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getBooking()
+    {
+        return $this->booking;
+    }
 }

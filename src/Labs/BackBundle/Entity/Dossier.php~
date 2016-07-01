@@ -68,20 +68,42 @@ class Dossier
 
     /**
      * @var
-     * @ORM\OneToMany(targetEntity="Labs\BackBundle\Entity\Media", mappedBy="dossier")
+     *
+     * @ORM\Column(name="online", type="boolean")
+     */
+    protected $online;
+
+    /**
+     * @var
+     *
+     * @ORM\Column(name="created", type="datetime")
+     */
+    protected $created;
+
+    /**
+     * @var
+     * @ORM\OneToMany(targetEntity="Labs\BackBundle\Entity\Media", mappedBy="dossier", cascade={"remove"})
      */
     protected $medias;
 
     /**
      * @var
-     * @ORM\OneToMany(targetEntity="Labs\BackBundle\Entity\Best", mappedBy="dossier")
+     * @ORM\OneToMany(targetEntity="Labs\BackBundle\Entity\Best", mappedBy="dossier", cascade={"remove"})
      */
     protected $bests;
+
+    /**
+     * @var
+     * @ORM\ManyToOne(targetEntity="Labs\BackBundle\Entity\Packs", inversedBy="dossier")
+     * @ORM\JoinColumn(referencedColumnName="id", nullable=false)
+     */
+    protected $pack;
     
 
     public function __construct()
     {
         $this->colors = '#fff';
+        $this->created = new \DateTime('now');
     }
 
 
@@ -305,4 +327,40 @@ class Dossier
     {
         return $this->bests;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getOnline()
+    {
+        return $this->online;
+    }
+
+    /**
+     * @param mixed $online
+     */
+    public function setOnline($online)
+    {
+        $this->online = $online;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCreated()
+    {
+        return $this->created;
+    }
+
+    /**
+     * @param mixed $created
+     */
+    public function setCreated($created)
+    {
+        $this->created = $created;
+    }
+
+
+
+
 }

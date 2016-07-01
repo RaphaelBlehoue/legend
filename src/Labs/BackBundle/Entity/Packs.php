@@ -50,6 +50,13 @@ class Packs
      */
     protected $booking;
 
+    /**
+     * @var
+     *
+     * @ORM\OneToMany(targetEntity="Labs\BackBundle\Entity\Dossier", mappedBy="pack")
+     */
+    protected $dossier;
+
 
     public function __construct()
     {
@@ -172,5 +179,39 @@ class Packs
     public function getBooking()
     {
         return $this->booking;
+    }
+
+    /**
+     * Add dossier
+     *
+     * @param \Labs\BackBundle\Entity\Dossier $dossier
+     *
+     * @return Packs
+     */
+    public function addDossier(\Labs\BackBundle\Entity\Dossier $dossier)
+    {
+        $this->dossier[] = $dossier;
+
+        return $this;
+    }
+
+    /**
+     * Remove dossier
+     *
+     * @param \Labs\BackBundle\Entity\Dossier $dossier
+     */
+    public function removeDossier(\Labs\BackBundle\Entity\Dossier $dossier)
+    {
+        $this->dossier->removeElement($dossier);
+    }
+
+    /**
+     * Get dossier
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getDossier()
+    {
+        return $this->dossier;
     }
 }

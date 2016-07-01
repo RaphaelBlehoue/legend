@@ -91,6 +91,13 @@ class Dossier
      * @ORM\OneToMany(targetEntity="Labs\BackBundle\Entity\Best", mappedBy="dossier", cascade={"remove"})
      */
     protected $bests;
+
+    /**
+     * @var
+     * @ORM\ManyToOne(targetEntity="Labs\BackBundle\Entity\Packs", inversedBy="dossier")
+     * @ORM\JoinColumn(referencedColumnName="id", nullable=false)
+     */
+    protected $pack;
     
 
     public function __construct()
@@ -356,4 +363,28 @@ class Dossier
 
 
 
+
+    /**
+     * Set pack
+     *
+     * @param \Labs\BackBundle\Entity\Packs $pack
+     *
+     * @return Dossier
+     */
+    public function setPack(\Labs\BackBundle\Entity\Packs $pack)
+    {
+        $this->pack = $pack;
+
+        return $this;
+    }
+
+    /**
+     * Get pack
+     *
+     * @return \Labs\BackBundle\Entity\Packs
+     */
+    public function getPack()
+    {
+        return $this->pack;
+    }
 }
