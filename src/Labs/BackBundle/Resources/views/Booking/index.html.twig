@@ -1,5 +1,5 @@
 {% extends 'LabsTemplateBundle::layout.html.twig' %}
-{% block Title %}{{ 'Packs - Prestation | Legend Photography' }}{% endblock %}
+{% block Title %}{{ 'reservation | Legend Photography' }}{% endblock %}
 {% block stylesheets %}
     {{ parent() }}
     <link rel="stylesheet" href="{{ asset('bundles/labstemplate/assets/css/admin/module.admin.page.tables.min.css') }}" />
@@ -17,18 +17,18 @@
     <h1 class="bg-white content-heading border-bottom">Dashboard</h1>
     <div class="bg-white innerAll border-bottom">
         <ul class="menubar">
-            <li class="active"><a href="{{ path('home') }}">Dashboard</a></li>
-            <li><a href="#">{{ 'Packs' }}</a></li>
+            <li class="active"><a href="">Dashboard</a></li>
+            <li><a href="#">{{ 'Reservation' }}</a></li>
         </ul>
     </div>
     <div class="innerAll spacing-x2">
         <!-- Widget -->
         <div class="widget widget-inverse">
             <div class="widget-head">
-                <a href="{{ path('packs_create') }}" class="btn btn-xs btn-success pull-right">
-                    <i class="fa fa-plus fa-fw"></i> {{ 'Créer un packs' }}
+                <a href="{{ path('booking_create') }}" class="btn btn-xs btn-success pull-right">
+                    <i class="fa fa-plus fa-fw"></i> {{ 'Créer une reservation' }}
                 </a>
-                <h4 class="heading">{{ 'Liste des packs' }}</h4>
+                <h4 class="heading">{{ 'Liste des reservations' }}</h4>
             </div>
             <div class="widget-body padding-bottom-none">
                 <!-- Table -->
@@ -36,26 +36,31 @@
 
                     <!-- Table heading -->
                     <thead>
-                        <tr>
-                            <th>{{ 'ID' }}</th>
-                            <th>{{ 'Nom du pack' }}</th>
-                            <th>{{ 'Niveau' }}</th>
-                            <th>{{ 'Edit' }}</th>
-                            <th>{{ 'Delete' }}</th>
-                        </tr>
+                    <tr>
+                        <th>{{ 'Reservant' }}</th>
+                        <th>{{ 'Packs '}}</th>
+                        <th>{{ 'Email' }}</th>
+                        <th>{{ 'Status' }}</th>
+                        <th>{{ 'Date '}}</th>
+                        <th>{{ 'Action' }}</th>
+                    </tr>
                     </thead>
                     <!-- // Table heading END -->
 
                     <!-- Table body -->
                     <tbody>
                         <!-- Table row -->
-                        {% for pack in packs %}
+                        {% for booking in bookings %}
                             <tr class="gradeX">
-                                <td>{{ pack.id }}</td>
-                                <td>{{ pack.name }}</td>
-                                <td><span class="label label-{{ (pack.online == 1) ? 'success' : 'primary' }}">{{ (pack.online == 1) ? 'Top' : 'normal' }}</span></td>
-                                <td><a href="{{ path('packs_edit', {'id' : pack.id}) }}"><i class="fa fa-pencil-square-o"></i></a></td>
-                                <td><a href="{{ path('packs_delete', {'id' : pack.id}) }}"><i class="fa fa-trash-o"></i></a></td>
+                                <td>{{ booking.name }}</td>
+                                <td>{% if booking.pack|length > 0 %} <span class="label label-success label-stroke">{{ booking.pack.name }}</span>  {% endif %}</td>
+                                <td>{{ booking.email }}</td>
+                                <td><span class="label label-{{ (booking.status == 1) ? 'success' : 'primary' }}">{{ (booking.status == 1) ? 'Valider' : 'En attente' }}</span></td>
+                                <td>{{ booking.dateRes|date('d-M-Y') }}</td>
+                                <td>
+                                    <a href="{{ path('booking_edit', {'id' : booking.id}) }}"><i class="fa fa-pencil-square-o"></i></a>
+                                    <a href="{{ path('booking_delete', {'id' : booking.id}) }}"><i class="fa fa-trash-o"></i></a>
+                                </td>
                             </tr>
                         {% endfor %}
                         <!-- // Table row END -->

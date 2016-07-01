@@ -24,7 +24,7 @@ class BookingController extends Controller
     public function indexAction()
     {
         $em = $this->getDoctrine()->getManager();
-        $bookings = $em->getRepository('LabsBackBundle:booking')->findAll();
+        $bookings = $em->getRepository('LabsBackBundle:Booking')->findAll();
         return $this->render('LabsBackBundle:Booking:index.html.twig', array(
             'bookings' => $bookings
         ));
@@ -73,7 +73,7 @@ class BookingController extends Controller
 
         if($form->isValid()){
             $em->flush();
-            $this->addFlash('success', 'La modification a été fait avec succès');
+            $this->addFlash('success', 'La modification a été effectué');
             return $this->redirectToRoute('booking_index', array(), 302);
         }
         return $this->render('LabsBackBundle:Booking:edit.html.twig',array(

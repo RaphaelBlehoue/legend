@@ -1,7 +1,7 @@
 <div id="menu" class="hidden-print hidden-xs">
     <div class="sidebar sidebar-inverse">
         <div class="user-profile media innerAll">
-            <a href="" class="pull-left"><img src="../assets/images/people/50/8.jpg" alt="" class="img-circle"><span class="badge badge-primary">2</span></a>
+            <a href="" class="pull-left"><img src="{{ asset('assets/images/people/50/8.jpg') }}" alt="" class="img-circle"><span class="badge badge-primary">2</span></a>
             <div class="media-body">
                 <a href="" class="strong">{{ 'lastname' }} &nbsp; {{ 'firstname' }}</a>
                 <p class="text-success"><i class="fa fa-fw fa-circle"></i> Online</p>
@@ -14,7 +14,7 @@
         </div>
         <div class="sidebarMenuWrapper">
             <ul class="list-unstyled navParent">
-                <li><a href="#"><i class=" icon-projector-screen-line"></i><span>Dashboard</span></a></li>
+                <li><a href="#"><i class="icon-projector-screen-line"></i><span>Dashboard</span></a></li>
                 <li><a href="#"><i class="icon-user-1"></i><span>{{ 'Profile' }}</span></a></li>
                 <li class="hasSubmenu">
                     <a href="#" data-target="#menu-style" data-toggle="collapse"><i class="icon-compose"></i><span>{{ 'Gestion des Catégories' }}</span></a>
@@ -23,7 +23,8 @@
                         <li><a href="{{ path('category_index') }}"><span class="pull-right badge badge-primary"><i class="fa fa-check"></i></span>{{ 'Par Evenements' }}</a></li>
                     </ul>
                 </li>
-                <li><a href="{{ path('packs_index') }}"><i class="  icon-dollar"></i><span>{{ 'Gestion des Packs' }}</span></a></li>
+                <li><a href="{{ path('packs_index') }}"><i class="icon-dollar"></i><span>{{ 'Gestion des Packs' }}</span></a></li>
+                <li><a href="{{ path('booking_index') }}"><i class=" icon-shopping-bag-add"></i><span>{{ 'Gestion des reservations' }}</span></a></li>
                 <!--<li class="hasSubmenu">
                     <a href="#" data-target="#support" data-toggle="collapse"><i class="icon-compose"></i><span>Support</span></a>
                     <ul class="collapse " id="support">

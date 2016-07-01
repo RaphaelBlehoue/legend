@@ -12,8 +12,8 @@ class BookingRepository extends \Doctrine\ORM\EntityRepository
 {
     public function getOne($id)
     {
-        $qb = $this->createQueryBuilder('t');
-        $qb->where($qb->expr()->eq('t.id', ':id'));
+        $qb = $this->createQueryBuilder('b');
+        $qb->where($qb->expr()->eq('b.id', ':id'));
         $qb->setParameter(':id', $id);
         return $qb->getQuery()->getOneOrNullResult();
     }

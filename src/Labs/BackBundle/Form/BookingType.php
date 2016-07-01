@@ -4,6 +4,7 @@ namespace Labs\BackBundle\Form;
 
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
@@ -44,9 +45,17 @@ class BookingType extends AbstractType
                 'format' => 'dd-MMMM-yyyy',
                 'years'  => range(date('Y'), date('Y') - 30, -1)
             ))
-            ->add('pack', EntityType::class, array(
-                'class' => 'Labs\BackBundle\Entity\Packs',
+            ->add('pack',EntityType::class, array(
+                'label' => false,
+                'class' => 'LabsBackBundle:Packs',
                 'choice_label' => 'name'
+            ))
+            ->add('status', ChoiceType::class, array(
+                'label' => false,
+                'choices' => array(
+                    'OUI' => true,
+                    'NON' => false,
+                )
             ))
         ;
     }

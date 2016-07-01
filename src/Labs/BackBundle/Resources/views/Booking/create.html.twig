@@ -1,5 +1,5 @@
 {% extends 'LabsTemplateBundle::layout.html.twig' %}
-{% block Title %}{{ 'Packs - Prestation | Legend Photography' }}{% endblock %}
+{% block Title %}{{ 'Reservation | Legend Photography' }}{% endblock %}
 {% block stylesheets %}
     {{ parent() }}
     <link rel="stylesheet" href="{{ asset('bundles/labstemplate/assets/css/admin/module.admin.page.form_elements.min.css') }}" />
@@ -8,8 +8,8 @@
     <h1 class="bg-white content-heading border-bottom">Dashboard</h1>
     <div class="bg-white innerAll border-bottom">
         <ul class="menubar">
-            <li class="active"><a href="index.html?lang=en">Dashboard</a></li>
-            <li><a href="{{ path('packs_index') }}">{{ 'Packs' }}</a></li>
+            <li class="active"><a href="">Dashboard</a></li>
+            <li><a href="{{ path('booking_index') }}">{{ 'Reservation' }}</a></li>
             <li><a href="#">{{ 'Creation' }}</a></li>
         </ul>
     </div>
@@ -23,10 +23,10 @@
                     <div class="widget widget-inverse" >
                         <!-- Widget heading -->
                         <div class="widget-head">
-                            <a href="{{ path('packs_index') }}" class="btn btn-xs btn-info pull-right">
-                                <i class="fa fa-plus fa-fw"></i> {{ 'Liste des packs' }}
+                            <a href="{{ path('booking_index') }}" class="btn btn-xs btn-info pull-right">
+                                <i class="fa fa-plus fa-fw"></i> {{ 'Liste des reservations' }}
                             </a>
-                            <h4 class="heading">{{ 'Créer un packs'|upper }}</h4>
+                            <h4 class="heading">{{ 'Créer une reservation'|upper }}</h4>
                         </div>
                         <!-- // Widget heading END -->
                         <div class="widget-body">
@@ -50,7 +50,7 @@
 
                                 <div class="row">
                                     <div class="col-xs-8 col-xs-offset-2 form-group">
-                                        <label class="control-label" for="name">{{ 'contenu du pack' }}</label>
+                                        <label class="control-label" for="name">{{ 'email du reservant' }}</label>
                                         {{ form_row(form.email) }}
                                         {{ form_errors(form.email) }}
                                     </div>
@@ -58,23 +58,32 @@
 
                                 <div class="row">
                                     <div class="col-xs-8 col-xs-offset-2 form-group">
-                                        <label class="control-label" for="name">{{ 'contenu du pack' }}</label>
-                                        {{ form_row(form.date) }}
-                                        {{ form_errors(form.email) }}
+                                        <label class="control-label" for="name">{{ 'date de reservation' }}</label>
+                                        {{ form_row(form.date_res) }}
+                                        {{ form_errors(form.date_res) }}
                                     </div>
                                 </div>
 
                                 <div class="row">
                                     <div class="col-xs-8 col-xs-offset-2 form-group">
-                                        <label class="control-label" for="name">{{ 'Mettre en Top' }}</label>
-                                            {{ form_row(form.online) }}
-                                            {{ form_errors(form.online) }}
+                                        <label class="control-label" for="name">{{ 'Choix du pack' }}</label>
+                                        {{ form_row(form.pack) }}
+                                        {{ form_errors(form.pack) }}
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-xs-8 col-xs-offset-2 form-group">
+                                        <label class="control-label" for="name">{{ 'Validé la reservation' }}</label>
+                                        {{ form_row(form.status) }}
+                                        {{ form_errors(form.status) }}
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-group">
                                         <div class="col-sm-offset-2 col-sm-10">
-                                            <button type="submit" class="btn btn-success" formnovalidate>{{ 'Créer le packs' }}</button>
+                                            <button type="submit" class="btn btn-success" formnovalidate>{{ 'Créer la reservation' }}</button>
                                         </div>
                                     </div>
                                 </div>
