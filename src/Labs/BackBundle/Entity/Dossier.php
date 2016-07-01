@@ -68,13 +68,6 @@ class Dossier
 
     /**
      * @var
-     * @ORM\ManyToMany(targetEntity="Labs\BackBundle\Entity\Type", inversedBy="dossiers")
-     * @ORM\JoinColumn(nullable=false)
-     */
-    protected $types;
-
-    /**
-     * @var
      * @ORM\OneToMany(targetEntity="Labs\BackBundle\Entity\Media", mappedBy="dossier")
      */
     protected $medias;
@@ -243,41 +236,7 @@ class Dossier
     {
         $this->video = $video;
     }
-    
 
-    /**
-     * Add type
-     *
-     * @param \Labs\BackBundle\Entity\Type $type
-     *
-     * @return Dossier
-     */
-    public function addType(\Labs\BackBundle\Entity\Type $type)
-    {
-        $this->types[] = $type;
-
-        return $this;
-    }
-
-    /**
-     * Remove type
-     *
-     * @param \Labs\BackBundle\Entity\Type $type
-     */
-    public function removeType(\Labs\BackBundle\Entity\Type $type)
-    {
-        $this->types->removeElement($type);
-    }
-
-    /**
-     * Get types
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getTypes()
-    {
-        return $this->types;
-    }
 
     /**
      * Add media

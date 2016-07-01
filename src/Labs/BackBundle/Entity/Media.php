@@ -49,6 +49,12 @@ class Media
      */
     protected $dossier;
 
+    /**
+     * @var
+     * @ORM\ManyToOne(targetEntity="Labs\BackBundle\Entity\Type", inversedBy="medias")
+     * @ORM\JoinColumn(referencedColumnName="id", nullable=false)
+     */
+    protected $type;
 
     /**
      * Get id

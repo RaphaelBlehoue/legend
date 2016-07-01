@@ -38,11 +38,9 @@ class Type
 
     /**
      * @var
-     *
-     * @ORM\ManyToMany(targetEntity="Labs\BackBundle\Entity\Dossier", mappedBy="types")
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\OneToMany(targetEntity="Labs\BackBundle\Entity\Media", mappedBy="type")
      */
-    protected $dossiers;
+    protected $medias;
 
 
     public function __construct()
@@ -109,37 +107,4 @@ class Type
         return $this->top;
     }
 
-    /**
-     * Add dossier
-     *
-     * @param \Labs\BackBundle\Entity\Dossier $dossier
-     *
-     * @return Type
-     */
-    public function addDossier(\Labs\BackBundle\Entity\Dossier $dossier)
-    {
-        $this->dossiers[] = $dossier;
-
-        return $this;
-    }
-
-    /**
-     * Remove dossier
-     *
-     * @param \Labs\BackBundle\Entity\Dossier $dossier
-     */
-    public function removeDossier(\Labs\BackBundle\Entity\Dossier $dossier)
-    {
-        $this->dossiers->removeElement($dossier);
-    }
-
-    /**
-     * Get dossiers
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getDossiers()
-    {
-        return $this->dossiers;
-    }
 }
