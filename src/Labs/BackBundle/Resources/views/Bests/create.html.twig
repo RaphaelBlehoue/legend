@@ -1,16 +1,24 @@
 {% extends 'LabsTemplateBundle::layout.html.twig' %}
-{% block Title %}{{ 'Dossier weddding | Legend Photography' }}{% endblock %}
+{% block Title %}{{ 'Best Man-Women weddding | Legend Photography' }}{% endblock %}
 {% block stylesheets %}
     {{ parent() }}
     <link rel="stylesheet" href="{{ asset('bundles/labstemplate/assets/css/admin/module.admin.page.form_elements.min.css') }}" />
 {% endblock %}
 {% block body %}
+    {% if app.session.flashBag.has('success') %}
+        <div class="alert alert-success" role="alert">
+            {% for msg in app.session.flashBag.get('success') %}
+                <strong> Succès </strong>{{ msg }}.
+            {% endfor %}
+        </div>
+    {% endif %}
+
     <h1 class="bg-white content-heading border-bottom">Dashboard</h1>
     <div class="bg-white innerAll border-bottom">
         <ul class="menubar">
             <li class="active"><a href="">Dashboard</a></li>
             <li><a href="{{ path('dossier_index') }}">{{ 'Dossier Weddings' }}</a></li>
-            <li><a href="#">{{ 'Creation' }}</a></li>
+            <li><a href="#">{{ 'Best Man-Woment wedddin - Creation' }}</a></li>
         </ul>
     </div>
     <div class="innerAll spacing-x2">
@@ -23,25 +31,22 @@
                     <div class="widget widget-inverse" >
                         <!-- Widget heading -->
                         <div class="widget-head">
-                            <a href="{{ path('dossier_index') }}" class="btn btn-xs btn-info pull-right">
-                                <i class="fa fa-plus fa-fw"></i> {{ 'Liste des dossier mariages'|upper }}
-                            </a>
-                            <h4 class="heading">{{ 'Créer un dossier de mariage'|upper }}</h4>
+                            <h4 class="heading">{{ 'Ajouter des bests Man & Women'|upper }}</h4>
                         </div>
                         <!-- // Widget heading END -->
                         <div class="widget-body">
                             <div class="innerB">
                                 <div class="row">
                                     <div class="col-xs-8 col-xs-offset-2 form-group">
-                                        <label class="control-label" for="name">{{ 'Pack du dossier de mariage' }}</label>
-                                        {{ form_row(form.pack) }}
-                                        {{ form_errors(form.pack) }}
+                                        <label class="control-label" for="name">{{ 'Best Man ou Women en Chef ?' }}</label>
+                                        {{ form_row(form.top) }}
+                                        {{ form_errors(form.top) }}
                                     </div>
                                 </div>
 
                                 <div class="row">
                                     <div class="col-xs-8 col-xs-offset-2 form-group">
-                                        <label class="control-label" for="name">{{ 'Nom du dossier' }}</label>
+                                        <label class="control-label" for="name">{{ 'Nom du Best Man ou Women' }}</label>
                                         {{ form_row(form.name) }}
                                         {{ form_errors(form.name) }}
                                     </div>
@@ -49,56 +54,16 @@
 
                                 <div class="row">
                                     <div class="col-xs-8 col-xs-offset-2 form-group">
-                                        <label class="control-label" for="weddingMen">{{ 'Nom du marié' }}</label>
-                                        {{ form_row(form.weddingMen) }}
-                                        {{ form_errors(form.weddingMen) }}
+                                        <label class="control-label" for="name">{{ 'Photo du Best Man ou Women' }}</label>
+                                        {{ form_row(form.imageFile) }}
+                                        {{ form_errors(form.imageFile) }}
                                     </div>
                                 </div>
 
-                                <div class="row">
-                                    <div class="col-xs-8 col-xs-offset-2 form-group">
-                                        <label class="control-label" for="weddingWomen">{{ 'Nom de la mariée' }}</label>
-                                        {{ form_row(form.weddingWomen) }}
-                                        {{ form_errors(form.weddingWomen) }}
-                                    </div>
-                                </div>
 
                                 <div class="row">
                                     <div class="col-xs-8 col-xs-offset-2 form-group">
-                                        <label class="control-label" for="name">{{ 'date de ceremonie' }}</label>
-                                        {{ form_row(form.ceremonyDate) }}
-                                        {{ form_errors(form.ceremonyDate) }}
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-xs-8 col-xs-offset-2 form-group">
-                                        <label class="control-label" for="name">{{ 'couleur de la cérémonie' }}</label>
-                                        <input type="text" id="colorpickerColor" class="form-control" value="#5a6a87" name="_color"/>
-                                        <div class="separator bottom"></div>
-                                        <div id="colorpicker"></div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-xs-8 col-xs-offset-2 form-group">
-                                        <label class="control-label" for="name">{{ 'video wedding' }}</label>
-                                        {{ form_row(form.video) }}
-                                        {{ form_errors(form.video) }}
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-xs-8 col-xs-offset-2 form-group">
-                                        <label class="control-label" for="name">{{ 'video pre-wedding' }}</label>
-                                        {{ form_row(form.video_prewedding) }}
-                                        {{ form_errors(form.video_prewedding) }}
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-xs-8 col-xs-offset-2 form-group">
-                                        <label class="control-label" for="name">{{ 'Description du couple' }}</label>
+                                        <label class="control-label" for="name">{{ 'Description du Best Man ou Women' }}</label>
                                         {{ form_row(form.content) }}
                                         {{ form_errors(form.content) }}
                                     </div>
@@ -106,16 +71,17 @@
 
                                 <div class="row">
                                     <div class="col-xs-8 col-xs-offset-2 form-group">
-                                        <label class="control-label" for="name">{{ 'Mettre en ligne' }}</label>
-                                        {{ form_row(form.online) }}
-                                        {{ form_errors(form.online) }}
+                                        <label class="control-label" for="name">{{ 'Genre du Best Man ou Women' }}</label>
+                                        {{ form_row(form.genre) }}
+                                        {{ form_errors(form.genre) }}
                                     </div>
                                 </div>
 
                                 <div class="row">
                                     <div class="form-group">
                                         <div class="col-sm-offset-2 col-sm-10">
-                                            <button type="submit" class="btn btn-success" formnovalidate>{{ 'Créer le dossier & Continer '|upper }}</button>
+                                            <button type="submit" class="btn btn-success" formnovalidate>{{ 'Sauvegarder & Créer un nouveau '|upper }}</button>
+                                            <a href="{{ path('media_create', { 'id' : dossier.id }) }}" class="btn btn-info">{{ 'Etape suivante' }}</a>
                                         </div>
                                     </div>
                                 </div>

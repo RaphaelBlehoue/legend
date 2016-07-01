@@ -1,5 +1,5 @@
 {% extends 'LabsTemplateBundle::layout.html.twig' %}
-{% block Title %}{{ 'Dossier weddding | Legend Photography' }}{% endblock %}
+{% block Title %}{{ 'Reservation | Legend Photography' }}{% endblock %}
 {% block stylesheets %}
     {{ parent() }}
     <link rel="stylesheet" href="{{ asset('bundles/labstemplate/assets/css/admin/module.admin.page.form_elements.min.css') }}" />
@@ -9,124 +9,89 @@
     <div class="bg-white innerAll border-bottom">
         <ul class="menubar">
             <li class="active"><a href="">Dashboard</a></li>
-            <li><a href="{{ path('dossier_index') }}">{{ 'Dossier Weddings' }}</a></li>
-            <li><a href="#">{{ 'Creation' }}</a></li>
+            <li><a href="{{ path('booking_index') }}">{{ 'Reservation' }}</a></li>
+            <li><a href="#">{{ 'Edition' }}</a></li>
         </ul>
     </div>
     <div class="innerAll spacing-x2">
         {{ form_start(form) }}
-            <!-- Row -->
-            <div class="row">
-                <!-- Column -->
-                <div class="col-md-10 col-md-offset-1">
-                    <!-- Widget -->
-                    <div class="widget widget-inverse" >
-                        <!-- Widget heading -->
-                        <div class="widget-head">
-                            <a href="{{ path('dossier_index') }}" class="btn btn-xs btn-info pull-right">
-                                <i class="fa fa-plus fa-fw"></i> {{ 'Liste des dossier mariages'|upper }}
-                            </a>
-                            <h4 class="heading">{{ 'Créer un dossier de mariage'|upper }}</h4>
-                        </div>
-                        <!-- // Widget heading END -->
-                        <div class="widget-body">
-                            <div class="innerB">
-                                <div class="row">
-                                    <div class="col-xs-8 col-xs-offset-2 form-group">
-                                        <label class="control-label" for="name">{{ 'Pack du dossier de mariage' }}</label>
-                                        {{ form_row(form.pack) }}
-                                        {{ form_errors(form.pack) }}
-                                    </div>
+        <!-- Row -->
+        <div class="row">
+            <!-- Column -->
+            <div class="col-md-10 col-md-offset-1">
+                <!-- Widget -->
+                <div class="widget widget-inverse" >
+                    <!-- Widget heading -->
+                    <div class="widget-head">
+                        <a href="{{ path('booking_index') }}" class="btn btn-xs btn-info pull-right">
+                            <i class="fa fa-plus fa-fw"></i> {{ 'Liste des reservations' }}
+                        </a>
+                        <h4 class="heading">{{ 'Modifier la reservation'|upper }}</h4>
+                    </div>
+                    <!-- // Widget heading END -->
+                    <div class="widget-body">
+                        <div class="innerB">
+                            <div class="row">
+                                <div class="col-xs-8 col-xs-offset-2 form-group">
+                                    <label class="control-label" for="name">{{ 'Nom du reservant' }}</label>
+                                    {{ form_row(form.name) }}
+                                    {{ form_errors(form.name) }}
                                 </div>
+                            </div>
 
-                                <div class="row">
-                                    <div class="col-xs-8 col-xs-offset-2 form-group">
-                                        <label class="control-label" for="name">{{ 'Nom du dossier' }}</label>
-                                        {{ form_row(form.name) }}
-                                        {{ form_errors(form.name) }}
-                                    </div>
+                            <div class="row">
+                                <div class="col-xs-8 col-xs-offset-2 form-group">
+                                    <label class="control-label" for="name">{{ 'Lieu de l\'evenement' }}</label>
+                                    {{ form_row(form.lieu) }}
+                                    {{ form_errors(form.lieu) }}
                                 </div>
+                            </div>
 
-                                <div class="row">
-                                    <div class="col-xs-8 col-xs-offset-2 form-group">
-                                        <label class="control-label" for="weddingMen">{{ 'Nom du marié' }}</label>
-                                        {{ form_row(form.weddingMen) }}
-                                        {{ form_errors(form.weddingMen) }}
-                                    </div>
+                            <div class="row">
+                                <div class="col-xs-8 col-xs-offset-2 form-group">
+                                    <label class="control-label" for="name">{{ 'email du reservant' }}</label>
+                                    {{ form_row(form.email) }}
+                                    {{ form_errors(form.email) }}
                                 </div>
+                            </div>
 
-                                <div class="row">
-                                    <div class="col-xs-8 col-xs-offset-2 form-group">
-                                        <label class="control-label" for="weddingWomen">{{ 'Nom de la mariée' }}</label>
-                                        {{ form_row(form.weddingWomen) }}
-                                        {{ form_errors(form.weddingWomen) }}
-                                    </div>
+                            <div class="row">
+                                <div class="col-xs-8 col-xs-offset-2 form-group">
+                                    <label class="control-label" for="name">{{ 'date de reservation' }}</label>
+                                    {{ form_row(form.date_res) }}
+                                    {{ form_errors(form.date_res) }}
                                 </div>
-
-                                <div class="row">
-                                    <div class="col-xs-8 col-xs-offset-2 form-group">
-                                        <label class="control-label" for="name">{{ 'date de ceremonie' }}</label>
-                                        {{ form_row(form.ceremonyDate) }}
-                                        {{ form_errors(form.ceremonyDate) }}
-                                    </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-8 col-xs-offset-2 form-group">
+                                    <label class="control-label" for="name">{{ 'Choix du pack' }}</label>
+                                    {{ form_row(form.pack) }}
+                                    {{ form_errors(form.pack) }}
                                 </div>
+                            </div>
 
-                                <div class="row">
-                                    <div class="col-xs-8 col-xs-offset-2 form-group">
-                                        <label class="control-label" for="name">{{ 'couleur de la cérémonie' }}</label>
-                                        <input type="text" id="colorpickerColor" class="form-control" value="#5a6a87" name="_color"/>
-                                        <div class="separator bottom"></div>
-                                        <div id="colorpicker"></div>
-                                    </div>
+                            <div class="row">
+                                <div class="col-xs-8 col-xs-offset-2 form-group">
+                                    <label class="control-label" for="name">{{ 'Validé la reservation' }}</label>
+                                    {{ form_row(form.status) }}
+                                    {{ form_errors(form.status) }}
                                 </div>
-
-                                <div class="row">
-                                    <div class="col-xs-8 col-xs-offset-2 form-group">
-                                        <label class="control-label" for="name">{{ 'video wedding' }}</label>
-                                        {{ form_row(form.video) }}
-                                        {{ form_errors(form.video) }}
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-xs-8 col-xs-offset-2 form-group">
-                                        <label class="control-label" for="name">{{ 'video pre-wedding' }}</label>
-                                        {{ form_row(form.video_prewedding) }}
-                                        {{ form_errors(form.video_prewedding) }}
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-xs-8 col-xs-offset-2 form-group">
-                                        <label class="control-label" for="name">{{ 'Description du couple' }}</label>
-                                        {{ form_row(form.content) }}
-                                        {{ form_errors(form.content) }}
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-xs-8 col-xs-offset-2 form-group">
-                                        <label class="control-label" for="name">{{ 'Mettre en ligne' }}</label>
-                                        {{ form_row(form.online) }}
-                                        {{ form_errors(form.online) }}
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="form-group">
-                                        <div class="col-sm-offset-2 col-sm-10">
-                                            <button type="submit" class="btn btn-success" formnovalidate>{{ 'Créer le dossier & Continer '|upper }}</button>
-                                        </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button type="submit" class="btn btn-primary" formnovalidate>{{ 'Modifier la reservation' }}</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- // Widget END -->
                 </div>
-                <!-- // Column END -->
+                <!-- // Widget END -->
             </div>
-            <!-- // Row END -->
+            <!-- // Column END -->
+        </div>
+        <!-- // Row END -->
         {{ form_end(form) }}
     </div>
 {% endblock %}

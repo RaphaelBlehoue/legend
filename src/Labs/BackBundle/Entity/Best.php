@@ -3,12 +3,18 @@
 namespace Labs\BackBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
+use Symfony\Component\Validator\Constraints as Assert;
+
 
 /**
  * Best
  *
  * @ORM\Table(name="best")
  * @ORM\Entity(repositoryClass="Labs\BackBundle\Repository\BestRepository")
+ * @ORM\HasLifecycleCallbacks()
+ * @Vich\Uploadable
  */
 class Best
 {
@@ -20,6 +26,25 @@ class Best
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $id;
+
+    /**
+     * @Assert\File(
+     *     maxSize="3M",
+     *     mimeTypes={"image/png", "image/jpeg", "image/jpg"}
+     * )
+     *
+     * @Vich\UploadableField(mapping="team_image", fileNameProperty="imageName")
+     *
+     * @var File $imageFile
+     */
+    protected $imageFile;
+
+    /**
+     * @var string $imageName
+     *
+     * @ORM\Column(type="string", length=255)
+     */
+    protected $imageName;
 
     /**
      * @var string
@@ -36,11 +61,26 @@ class Best
     protected $content;
 
     /**
-     * @var string
+     * @var boolean
      *
-     * @ORM\Column(name="media", type="string", length=255)
+     * @ORM\Column(name="top", type="boolean")
      */
-    protected $media;
+    protected $top;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="genre", type="boolean")
+     */
+    protected $genre;
+
+
+    /**
+     * @var
+     *
+     * @ORM\Column(name="created", type="datetime")
+     */
+    protected $created;
 
     /**
      * @var
@@ -48,6 +88,30 @@ class Best
      * @ORM\JoinColumn(referencedColumnName="id", nullable=false)
      */
     protected $dossier;
+
+
+    public function __construct()
+    {
+        $this->created = new \DateTime('now');
+    }
+
+
+    /**
+     * @return string
+     */
+    public function getGenre()
+    {
+        return $this->genre;
+    }
+
+    /**
+     * @param string $genre
+     */
+    public function setGenre($genre)
+    {
+        $this->genre = $genre;
+    }
+
 
 
     /**
@@ -109,28 +173,22 @@ class Best
     }
 
     /**
-     * Set media
-     *
-     * @param string $media
-     *
-     * @return Best
+     * @return string
      */
-    public function setMedia($media)
+    public function getTop()
     {
-        $this->media = $media;
-
-        return $this;
+        return $this->top;
     }
 
     /**
-     * Get media
-     *
-     * @return string
+     * @param string $top
      */
-    public function getMedia()
+    public function setTop($top)
     {
-        return $this->media;
+        $this->top = $top;
     }
+
+
 
     /**
      * Set dossier
@@ -155,4 +213,89 @@ class Best
     {
         return $this->dossier;
     }
+
+
+    public function getUploadDir()
+    {
+        // On retourne le chemin relatif vers l'image pour un navigateur
+        return 'uploads/bestman';
+    }
+
+
+    protected function getUploadRootDir()
+    {
+        // On retourne le chemin relatif vers l'image pour notre code PHP
+        return __DIR__.'/../../../../web/'.$this->getUploadDir();
+    }
+
+
+    /**
+     * @return string
+     */
+    public function getAssertPath()
+    {
+        return $this->getUploadDir().'/'.$this->imageName;
+    }
+
+    /**
+     *
+     * @param File|\Symfony\Component\HttpFoundation\File\UploadedFile $image
+     *
+     * @return Banner
+     */
+    public function setImageFile(File $image = null)
+    {
+        $this->imageFile = $image;
+        if ($image) {
+            // It is required that at least one field changes if you are using doctrine
+            // otherwise the event listeners won't be called and the file is lost
+            $this->created = new \DateTime('now');
+        }
+        return $this;
+    }
+
+    /**
+     * @return File
+     */
+    public function getImageFile()
+    {
+        return $this->imageFile;
+    }
+
+    /**
+     * @param string $imageName
+     *
+     * @return Banner
+     */
+    public function setImageName($imageName)
+    {
+        $this->imageName = $imageName;
+
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getImageName()
+    {
+        return $this->imageName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCreated()
+    {
+        return $this->created;
+    }
+
+    /**
+     * @param mixed $created
+     */
+    public function setCreated($created)
+    {
+        $this->created = $created;
+    }
+
 }

@@ -2,10 +2,11 @@
 
 namespace Labs\BackBundle\Form;
 
+use Ivory\CKEditorBundle\Form\Type\CKEditorType;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
-use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -19,6 +20,10 @@ class DossierType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
+            ->add('name', TextType::class, array(
+                'label' => false,
+                'attr' => array('class' => 'form-control')
+            ))
             ->add('weddingMen', TextType::class, array(
                 'label' => false,
                 'attr' => array('class' => 'form-control')
@@ -27,11 +32,8 @@ class DossierType extends AbstractType
                 'label' => false,
                 'attr' => array('class' => 'form-control')
             ))
-            ->add('content', TextareaType::class, array(
-                'label' => false,
-                'attr'  => array(
-                    'class' => 'form-control'
-                )
+            ->add('content', CKEditorType::class, array(
+                'label' => false
             ))
             ->add('ceremonyDate',DateType::class, array(
                 'label'  => false,
@@ -40,13 +42,13 @@ class DossierType extends AbstractType
                 'format' => 'dd-MMMM-yyyy',
                 'years'  => range(date('Y') + 10, date('Y') - 30, -1)
             ))
-            ->add('colors',  TextareaType::class, array(
+            ->add('video',TextType::class, array(
                 'label' => false,
                 'attr'  => array(
                     'class' => 'form-control'
                 )
             ))
-            ->add('video',  TextareaType::class, array(
+            ->add('video_prewedding',TextType::class, array(
                 'label' => false,
                 'attr'  => array(
                     'class' => 'form-control'
@@ -59,6 +61,11 @@ class DossierType extends AbstractType
                     'NON' => false,
                 ))
             )
+            ->add('pack',EntityType::class, array(
+                'label' => false,
+                'class' => 'LabsBackBundle:Packs',
+                'choice_label' => 'name'
+            ))
         ;
     }
     

@@ -6,3 +6,6 @@ labs_back:
 labs_template:
     resource: "@LabsTemplateBundle/Controller/"
     type:     annotation
+
+_liip_imagine:
+    resource: "@LiipImagineBundle/Resources/config/routing.xml"

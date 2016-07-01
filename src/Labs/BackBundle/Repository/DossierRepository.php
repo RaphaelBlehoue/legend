@@ -10,4 +10,11 @@ namespace Labs\BackBundle\Repository;
  */
 class DossierRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function getOne($id)
+    {
+        $qb = $this->createQueryBuilder('d');
+        $qb->where($qb->expr()->eq('d.id', ':id'));
+        $qb->setParameter(':id', $id);
+        return $qb->getQuery()->getOneOrNullResult();
+    }
 }

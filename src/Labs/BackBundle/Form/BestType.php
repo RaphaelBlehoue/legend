@@ -3,8 +3,12 @@
 namespace Labs\BackBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Vich\UploaderBundle\Form\Type\VichImageType;
 
 class BestType extends AbstractType
 {
@@ -15,9 +19,33 @@ class BestType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('name')
-            ->add('content')
-            ->add('media')
+            ->add('name', TextType::class, array(
+                'label' => false,
+                'attr' => array('class' => 'form-control')
+            ))
+            ->add('content', TextareaType::class, array(
+                'label' => false,
+                'attr' => array('class' => 'form-control')
+            ))
+            ->add('imageFile', VichImageType::class,array(
+                'label' => false,
+                'required' => false,
+                'allow_delete' => true
+            ))
+            ->add('top', ChoiceType::class, array(
+                    'label' => false,
+                    'choices' => array(
+                        'OUI' => true,
+                        'NON' => false,
+                    ))
+            )
+            ->add('genre', ChoiceType::class, array(
+                    'label' => false,
+                    'choices' => array(
+                        'BEST MAN' => true,
+                        'BEST WOMEN' => false,
+                    ))
+            )
         ;
     }
     

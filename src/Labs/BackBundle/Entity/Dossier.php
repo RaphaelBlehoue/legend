@@ -74,6 +74,13 @@ class Dossier
     protected $video;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="video_prewedding", type="string", length=255, nullable=true)
+     */
+    protected $video_prewedding;
+
+    /**
      * @var
      *
      * @ORM\Column(name="online", type="boolean")
@@ -101,6 +108,7 @@ class Dossier
 
     /**
      * @var
+     * @Assert\NotBlank(message="Faite le choix d'un pack avant de continuer")
      * @ORM\ManyToOne(targetEntity="Labs\BackBundle\Entity\Packs", inversedBy="dossier")
      * @ORM\JoinColumn(referencedColumnName="id", nullable=false)
      */
@@ -128,7 +136,6 @@ class Dossier
     {
         $this->name = $name;
     }
-
 
 
     /**
@@ -283,6 +290,22 @@ class Dossier
         $this->video = $video;
     }
 
+    /**
+     * @return string
+     */
+    public function getVideoPrewedding()
+    {
+        return $this->video_prewedding;
+    }
+
+    /**
+     * @param string $video_prewedding
+     */
+    public function setVideoPrewedding($video_prewedding)
+    {
+        $this->video_prewedding = $video_prewedding;
+    }
+
 
     /**
      * Add media
@@ -383,8 +406,6 @@ class Dossier
     {
         $this->created = $created;
     }
-
-
 
 
 

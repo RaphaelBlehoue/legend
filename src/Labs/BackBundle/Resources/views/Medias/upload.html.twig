@@ -1,0 +1,71 @@
+{% extends 'LabsTemplateBundle::layout.html.twig' %}
+{% block Title %}{{ 'Galerie upload - weddding | Legend Photography' }}{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('bundles/labstemplate/assets/css/admin/module.admin.page.file_managers.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/dropzone.css') }}" />
+{% endblock %}
+{% block body %}
+    {% if app.session.flashBag.has('success') %}
+        <div class="alert alert-success" role="alert">
+            {% for msg in app.session.flashBag.get('success') %}
+                <strong> Succès </strong>{{ msg }}.
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <h1 class="bg-white content-heading border-bottom">Dashboard</h1>
+    <div class="bg-white innerAll border-bottom">
+        <ul class="menubar">
+            <li class="active"><a href="">Dashboard</a></li>
+            <li><a href="{{ path('dossier_index') }}">{{ 'Dossier Weddings' }}</a></li>
+            <li><a href="#">{{ 'Galerie Wedding - Upload Photos' }}</a></li>
+        </ul>
+    </div>
+    <div class="innerAll spacing-x2">
+        <!-- Row -->
+        <div class="row">
+            <!-- Widget -->
+            <div class="widget widget-inverse">
+
+                <!-- Widget heading -->
+                <div class="widget-head">
+                    <h4 class="heading glyphicons file_import"><i></i>Dropzone File Upload</h4>
+                </div>
+                <!-- // Widget heading END -->
+
+                <div class="widget-body">
+                    <!-- Dropzone -->
+                    <div id="dropzone">
+                        <form action="/upload" class="dropzone needsclick dz-clickable" id="demo-upload">
+                            <div class="dz-message needsclick">
+                                Drop files here or click to upload.<br>
+                                <span class="note needsclick">(This is just a demo dropzone. Selected files are <strong>not</strong> actually uploaded.)</span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="separator bottom"></div>
+                    <!-- // Dropzone END -->
+                </div>
+            </div>
+            <!-- // Widget END -->
+        </div>
+        <!-- // Row END -->
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('bundles/labstemplate/assets/components/library/bootstrap/js/bootstrap.min.js?v=v1.2.3') }}"></script>
+    <script src="{{ asset('bundles/labstemplate/assets/components/plugins/nicescroll/jquery.nicescroll.min.js?v=v1.2.3') }}"></script>
+    <script src="{{ asset('bundles/labstemplate/assets/components/plugins/breakpoints/breakpoints.js?v=v1.2.3') }}"></script>
+    <script src="{{ asset('bundles/labstemplate/assets/components/core/js/animations.init.js?v=v1.2.3') }}"></script>
+    <script src="{{ asset('bundles/labstemplate/assets/components/plugins/slimscroll/jquery.slimscroll.js?v=v1.2.3') }}"></script>
+    <script src="{{ asset('js/dropzone.js') }}"></script>
+    <script src="{{ asset('bundles/labstemplate/assets/components/plugins/holder/holder.js?v=v1.2.3') }}"></script>
+    <script src="{{ asset('bundles/labstemplate/assets/components/core/js/sidebar.main.init.js?v=v1.2.3') }}"></script>
+    <script src="{{ asset('bundles/labstemplate/assets/components/core/js/sidebar.collapse.init.js?v=v1.2.3') }}"></script>
+    <script src="{{ asset('bundles/labstemplate/assets/components/helpers/themer/assets/plugins/cookie/jquery.cookie.js?v=v1.2.3') }}"></script>
+    <script src="{{ asset('bundles/labstemplate/assets/components/core/js/core.init.js?v=v1.2.3') }}"></script>
+
+{% endblock %}

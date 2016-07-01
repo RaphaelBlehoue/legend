@@ -43,10 +43,12 @@ class DossierController extends Controller
         $form->handleRequest($request);
 
             if($form->isValid()){
+                $color = $request->request->get('_color');
+                $dossier->setColors($color);
                 $em->persist($dossier);
                 $em->flush();
                 $this->addFlash('success', 'L\'enregistrement  a été fait avec succès');
-                return $this->redirectToRoute('dossier_index', array(), 302);
+                return $this->redirectToRoute('best_create',['id' => $dossier->getId()], 302);
             }
         return $this->render('LabsBackBundle:Dossiers:create.html.twig',array(
             'form' => $form->createView()
@@ -84,7 +86,7 @@ class DossierController extends Controller
     /**
      * @param Dossier $dossier
      * @return \Symfony\Component\HttpFoundation\RedirectResponse
-     * @Route("/{id}/delete", name="dosssier_delete")
+     * @Route("/{id}/delete", name="dossier_delete")
      * @Method("GET")
      */
     public function deleteAction(Dossier $dossier)
