@@ -12,7 +12,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 /**
- * Class CategoryController
+ * Class DossierController
  * @package Labs\BackBundle\Controller
  * @Route("/wedding/folder")
  */
@@ -33,70 +33,70 @@ class DossierController extends Controller
     /**
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
-     * @Route("/create", name="booking_create")
+     * @Route("/create", name="dossier_create")
      */
-   /* public function CreateAction(Request $request)
+    public function CreateAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
-        $booking = new Booking();
-        $form = $this->createForm(BookingType::class, $booking);
+        $dossier = new Dossier();
+        $form = $this->createForm(DossierType::class, $dossier);
         $form->handleRequest($request);
 
             if($form->isValid()){
-                $em->persist($booking);
+                $em->persist($dossier);
                 $em->flush();
                 $this->addFlash('success', 'L\'enregistrement  a été fait avec succès');
-                return $this->redirectToRoute('booking_index', array(), 302);
+                return $this->redirectToRoute('dossier_index', array(), 302);
             }
-        return $this->render('LabsBackBundle:Booking:create.html.twig',array(
+        return $this->render('LabsBackBundle:Dossiers:create.html.twig',array(
             'form' => $form->createView()
         ));
-    } */
+    }
 
     /**
-     * @param Booking $booking
+     * @param Dossier $dossier
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
-     * @Route("/{id}/edit", name="booking_edit")
+     * @Route("/{id}/edit", name="dossier_edit")
      * @Method({"GET", "POST"})
      */
-   /* public function editAction(Booking $booking, Request $request)
+    public function editAction(Dossier $dossier, Request $request)
     {
         $em = $this->getDoctrine()->getManager();
-        $bookings = $em->getRepository('LabsBackBundle:Booking')->getOne($booking);
-        if(null === $bookings)
+        $dossiers = $em->getRepository('LabsBackBundle:Dossier')->find($dossier);
+        if(null === $dossiers)
         {
             throw new NotFoundHttpException('Page Introuvable',null, 404);
         }
-        $form = $this->createForm(BookingEditType::class, $bookings);
+        $form = $this->createForm(DossierEditType::class, $dossiers);
         $form->handleRequest($request);
 
         if($form->isValid()){
             $em->flush();
             $this->addFlash('success', 'La modification a été effectué');
-            return $this->redirectToRoute('booking_index', array(), 302);
+            return $this->redirectToRoute('dossier_index', array(), 302);
         }
-        return $this->render('LabsBackBundle:Booking:edit.html.twig',array(
+        return $this->render('LabsBackBundle:Dossiers:edit.html.twig',array(
             'form' => $form->createView()
         ));
-    } */
+    }
 
     /**
-     * @param Booking $booking
+     * @param Dossier $dossier
      * @return \Symfony\Component\HttpFoundation\RedirectResponse
-     * @Route("/{id}/delete", name="booking_delete")
+     * @Route("/{id}/delete", name="dosssier_delete")
      * @Method("GET")
      */
-    /*public function deleteAction(Booking $booking)
+    public function deleteAction(Dossier $dossier)
     {
         $em = $this->getDoctrine()->getManager();
-        $bookings = $em->getRepository('LabsBackBundle:Booking')->find($booking);
-        if(null === $bookings)
+        $dossiers = $em->getRepository('LabsBackBundle:Dossier')->find($dossier);
+        if(null === $dossiers)
             throw new NotFoundHttpException('Page Introuvable',null, 404);
         else
-            $em->remove($bookings);
+            $em->remove($dossiers);
             $em->flush();
             $this->addFlash('success', 'La suppression a été fait avec succès');
-            return $this->redirectToRoute('booking_index', array(), 302);
-    } */
+            return $this->redirectToRoute('dossier_index', array(), 302);
+    }
 }

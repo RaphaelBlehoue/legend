@@ -25,6 +25,13 @@ class Dossier
 
     /**
      * @var string
+     * @Assert\NotNull(message="Entrez le nom du dossier")
+     * @ORM\Column(name="name", type="string", length=255)
+     */
+    protected $name;
+
+    /**
+     * @var string
      * @Assert\NotNull(message="Entrez le nom du marié avant de continuer")
      * @ORM\Column(name="wedding_men", type="string", length=255)
      */
@@ -105,6 +112,23 @@ class Dossier
         $this->colors = '#fff';
         $this->created = new \DateTime('now');
     }
+
+    /**
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param string $name
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+
 
 
     /**

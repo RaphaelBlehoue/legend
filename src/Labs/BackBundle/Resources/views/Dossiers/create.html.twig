@@ -1,5 +1,5 @@
 {% extends 'LabsTemplateBundle::layout.html.twig' %}
-{% block Title %}{{ 'Reservation | Legend Photography' }}{% endblock %}
+{% block Title %}{{ 'Dossier weddding | Legend Photography' }}{% endblock %}
 {% block stylesheets %}
     {{ parent() }}
     <link rel="stylesheet" href="{{ asset('bundles/labstemplate/assets/css/admin/module.admin.page.form_elements.min.css') }}" />
@@ -9,7 +9,7 @@
     <div class="bg-white innerAll border-bottom">
         <ul class="menubar">
             <li class="active"><a href="">Dashboard</a></li>
-            <li><a href="{{ path('booking_index') }}">{{ 'Reservation' }}</a></li>
+            <li><a href="{{ path('dossier_index') }}">{{ 'Dossier Weddings' }}</a></li>
             <li><a href="#">{{ 'Creation' }}</a></li>
         </ul>
     </div>
@@ -23,10 +23,10 @@
                     <div class="widget widget-inverse" >
                         <!-- Widget heading -->
                         <div class="widget-head">
-                            <a href="{{ path('booking_index') }}" class="btn btn-xs btn-info pull-right">
-                                <i class="fa fa-plus fa-fw"></i> {{ 'Liste des reservations' }}
+                            <a href="{{ path('dossier_index') }}" class="btn btn-xs btn-info pull-right">
+                                <i class="fa fa-plus fa-fw"></i> {{ 'Liste des dossier mariages'|upper }}
                             </a>
-                            <h4 class="heading">{{ 'Créer une reservation'|upper }}</h4>
+                            <h4 class="heading">{{ 'Créer un dossier'|upper }}</h4>
                         </div>
                         <!-- // Widget heading END -->
                         <div class="widget-body">

@@ -1,5 +1,5 @@
 {% extends 'LabsTemplateBundle::layout.html.twig' %}
-{% block Title %}{{ 'reservation | Legend Photography' }}{% endblock %}
+{% block Title %}{{ 'Dossier - Wedding | Legend Photography' }}{% endblock %}
 {% block stylesheets %}
     {{ parent() }}
     <link rel="stylesheet" href="{{ asset('bundles/labstemplate/assets/css/admin/module.admin.page.tables.min.css') }}" />
@@ -18,17 +18,17 @@
     <div class="bg-white innerAll border-bottom">
         <ul class="menubar">
             <li class="active"><a href="">Dashboard</a></li>
-            <li><a href="#">{{ 'Reservation' }}</a></li>
+            <li><a href="#">{{ 'Dossiers Wedding' }}</a></li>
         </ul>
     </div>
     <div class="innerAll spacing-x2">
         <!-- Widget -->
         <div class="widget widget-inverse">
             <div class="widget-head">
-                <a href="{{ path('booking_create') }}" class="btn btn-xs btn-success pull-right">
-                    <i class="fa fa-plus fa-fw"></i> {{ 'Créer une reservation' }}
+                <a href="{{ path('dossier_create') }}" class="btn btn-xs btn-success pull-right">
+                    <i class="icon-add-symbol"></i> {{ 'Créer un dossier de mariage'|upper }}
                 </a>
-                <h4 class="heading">{{ 'Liste des reservations' }}</h4>
+                <h4 class="heading">{{ 'Liste des dossiers de mariages'|upper }}</h4>
             </div>
             <div class="widget-body padding-bottom-none">
                 <!-- Table -->
@@ -40,8 +40,8 @@
                         <th>{{ 'Nom' }}</th>
                         <th>{{ 'Packs' }}</th>
                         <th>{{ 'Date de ceremonie '}}</th>
-                        <th>{{ 'Creation' }}</th>
                         <th>{{ 'Status' }}</th>
+                        <th>{{ 'Creation' }}</th>
                         <th>{{ 'Action' }}</th>
                     </tr>
                     </thead>
@@ -53,13 +53,13 @@
                         {% for dossier in dossiers %}
                             <tr class="gradeX">
                                 <td>{{ dossier.name }}</td>
-                                <td>{% if booking.pack|length > 0 %} <span class="label label-success label-stroke">{{ booking.pack.name }}</span>  {% endif %}</td>
-                                <td>{{ booking.email }}</td>
-                                <td><span class="label label-{{ (booking.status == 1) ? 'success' : 'primary' }}">{{ (booking.status == 1) ? 'Valider' : 'En attente' }}</span></td>
+                                <td>{% if dossier.pack|length > 0 %} <span class="label label-success label-stroke">{{ dossier.pack.name }}</span>  {% endif %}</td>
+                                <td>{{ dossier.ceremonyDate|date('d-M-Y') }}</td>
+                                <td><span class="label label-{{ (dossier.online == 1) ? 'success' : 'primary' }}">{{ (dossier.online == 1) ? 'En ligne' : 'Hors ligne' }}</span></td>
                                 <td>{{ booking.dateRes|date('d-M-Y') }}</td>
                                 <td>
-                                    <a href="{{ path('booking_edit', {'id' : booking.id}) }}"><i class="fa fa-pencil-square-o"></i></a>
-                                    <a href="{{ path('booking_delete', {'id' : booking.id}) }}"><i class="fa fa-trash-o"></i></a>
+                                    <a href="{{ path('dossier_edit', {'id' : dossier.id}) }}"><i class="fa fa-pencil-square-o"></i></a>
+                                    <a href="{{ path('dossier_delete', {'id' : dossier.id}) }}"><i class="fa fa-trash-o"></i></a>
                                 </td>
                             </tr>
                         {% endfor %}
