@@ -20,6 +20,8 @@ class DossierType extends AbstractType
             ->add('content')
             ->add('ceremonyDate', 'date')
             ->add('colors')
+            ->add('video')
+            ->add('online')
         ;
     }
     

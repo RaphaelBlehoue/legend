@@ -68,13 +68,6 @@ class Dossier
 
     /**
      * @var
-     * @ORM\ManyToMany(targetEntity="Labs\BackBundle\Entity\Type", inversedBy="dossiers")
-     * @ORM\JoinColumn(nullable=false)
-     */
-    protected $types;
-
-    /**
-     * @var
      * @ORM\OneToMany(targetEntity="Labs\BackBundle\Entity\Media", mappedBy="dossier")
      */
     protected $medias;
@@ -243,39 +236,73 @@ class Dossier
     {
         $this->video = $video;
     }
-    
+
 
     /**
-     * Add type
+     * Add media
      *
-     * @param \Labs\BackBundle\Entity\Type $type
+     * @param \Labs\BackBundle\Entity\Media $media
      *
      * @return Dossier
      */
-    public function addType(\Labs\BackBundle\Entity\Type $type)
+    public function addMedia(\Labs\BackBundle\Entity\Media $media)
     {
-        $this->types[] = $type;
+        $this->medias[] = $media;
 
         return $this;
     }
 
     /**
-     * Remove type
+     * Remove media
      *
-     * @param \Labs\BackBundle\Entity\Type $type
+     * @param \Labs\BackBundle\Entity\Media $media
      */
-    public function removeType(\Labs\BackBundle\Entity\Type $type)
+    public function removeMedia(\Labs\BackBundle\Entity\Media $media)
     {
-        $this->types->removeElement($type);
+        $this->medias->removeElement($media);
     }
 
     /**
-     * Get types
+     * Get medias
      *
      * @return \Doctrine\Common\Collections\Collection
      */
-    public function getTypes()
+    public function getMedias()
     {
-        return $this->types;
+        return $this->medias;
+    }
+
+    /**
+     * Add best
+     *
+     * @param \Labs\BackBundle\Entity\Best $best
+     *
+     * @return Dossier
+     */
+    public function addBest(\Labs\BackBundle\Entity\Best $best)
+    {
+        $this->bests[] = $best;
+
+        return $this;
+    }
+
+    /**
+     * Remove best
+     *
+     * @param \Labs\BackBundle\Entity\Best $best
+     */
+    public function removeBest(\Labs\BackBundle\Entity\Best $best)
+    {
+        $this->bests->removeElement($best);
+    }
+
+    /**
+     * Get bests
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getBests()
+    {
+        return $this->bests;
     }
 }

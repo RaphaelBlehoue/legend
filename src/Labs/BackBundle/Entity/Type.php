@@ -107,4 +107,38 @@ class Type
         return $this->top;
     }
 
+
+    /**
+     * Add media
+     *
+     * @param \Labs\BackBundle\Entity\Media $media
+     *
+     * @return Type
+     */
+    public function addMedia(\Labs\BackBundle\Entity\Media $media)
+    {
+        $this->medias[] = $media;
+
+        return $this;
+    }
+
+    /**
+     * Remove media
+     *
+     * @param \Labs\BackBundle\Entity\Media $media
+     */
+    public function removeMedia(\Labs\BackBundle\Entity\Media $media)
+    {
+        $this->medias->removeElement($media);
+    }
+
+    /**
+     * Get medias
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getMedias()
+    {
+        return $this->medias;
+    }
 }

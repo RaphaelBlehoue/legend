@@ -161,4 +161,28 @@ class Media
     {
         return $this->dossier;
     }
+
+    /**
+     * Set type
+     *
+     * @param \Labs\BackBundle\Entity\Type $type
+     *
+     * @return Media
+     */
+    public function setType(\Labs\BackBundle\Entity\Type $type)
+    {
+        $this->type = $type;
+
+        return $this;
+    }
+
+    /**
+     * Get type
+     *
+     * @return \Labs\BackBundle\Entity\Type
+     */
+    public function getType()
+    {
+        return $this->type;
+    }
 }

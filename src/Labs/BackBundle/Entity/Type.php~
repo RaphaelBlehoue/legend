@@ -38,11 +38,9 @@ class Type
 
     /**
      * @var
-     *
-     * @ORM\ManyToMany(targetEntity="Labs\BackBundle\Entity\Dossier", mappedBy="types")
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\OneToMany(targetEntity="Labs\BackBundle\Entity\Media", mappedBy="type")
      */
-    protected $dossiers;
+    protected $medias;
 
 
     public function __construct()
@@ -108,4 +106,5 @@ class Type
     {
         return $this->top;
     }
+
 }

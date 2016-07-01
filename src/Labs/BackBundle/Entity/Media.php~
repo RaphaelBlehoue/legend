@@ -45,10 +45,16 @@ class Media
     /**
      * @var
      * @ORM\ManyToOne(targetEntity="Labs\BackBundle\Entity\Dossier", inversedBy="medias")
-     * @ORM\JoinColumn(referencedColumnName="dossier_id", nullable=false)
+     * @ORM\JoinColumn(referencedColumnName="id", nullable=false)
      */
     protected $dossier;
 
+    /**
+     * @var
+     * @ORM\ManyToOne(targetEntity="Labs\BackBundle\Entity\Type", inversedBy="medias")
+     * @ORM\JoinColumn(referencedColumnName="id", nullable=false)
+     */
+    protected $type;
 
     /**
      * Get id
@@ -131,5 +137,28 @@ class Media
     {
         return $this->actived;
     }
-}
 
+    /**
+     * Set dossier
+     *
+     * @param \Labs\BackBundle\Entity\Dossier $dossier
+     *
+     * @return Media
+     */
+    public function setDossier(\Labs\BackBundle\Entity\Dossier $dossier)
+    {
+        $this->dossier = $dossier;
+
+        return $this;
+    }
+
+    /**
+     * Get dossier
+     *
+     * @return \Labs\BackBundle\Entity\Dossier
+     */
+    public function getDossier()
+    {
+        return $this->dossier;
+    }
+}
