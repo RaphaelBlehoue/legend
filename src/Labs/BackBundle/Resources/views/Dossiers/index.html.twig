@@ -51,17 +51,18 @@
                     <tbody>
                         <!-- Table row -->
                         {% for dossier in dossiers %}
-                            <tr class="gradeX">
-                                <td>{{ dossier.name }}</td>
-                                <td>{% if dossier.pack|length > 0 %} <span class="label label-success label-stroke">{{ dossier.pack.name }}</span>  {% endif %}</td>
-                                <td>{{ dossier.ceremonyDate|date('d-M-Y') }}</td>
-                                <td><span class="label label-{{ (dossier.online == 1) ? 'success' : 'primary' }}">{{ (dossier.online == 1) ? 'En ligne' : 'Hors ligne' }}</span></td>
-                                <td>{{ dossier.created|date('d-M-Y') }}</td>
-                                <td>
-                                    <a href="{{ path('dossier_edit', {'id' : dossier.id}) }}"><i class="fa fa-pencil-square-o"></i></a>
-                                    <a href="{{ path('dossier_delete', {'id' : dossier.id}) }}"><i class="fa fa-trash-o"></i></a>
-                                </td>
-                            </tr>
+                                    <tr class="gradeX">
+                                        <td>{{ dossier.name }}</td>
+                                        <td>{% if dossier.pack|length > 0 %} <span class="label label-success label-stroke">{{ dossier.pack.name }}</span>  {% endif %}</td>
+                                        <td>{{ dossier.ceremonyDate|date('d-M-Y') }}</td>
+                                        <td><span class="label label-{{ (dossier.online == 1) ? 'success' : 'primary' }}">{{ (dossier.online == 1) ? 'En ligne' : 'Hors ligne' }}</span></td>
+                                        <td>{{ dossier.created|date('d-M-Y') }}</td>
+                                        <td>
+                                            <a href="{{ path('dossier_view', {'id' : dossier.id}) }}"><i class="fa  fa-eye"></i></a>
+                                            <a href="{{ path('dossier_edit', {'id' : dossier.id}) }}"><i class="fa fa-pencil-square-o"></i></a>
+                                            <a href="{{ path('dossier_delete', {'id' : dossier.id}) }}"><i class="fa fa-trash-o"></i></a>
+                                        </td>
+                                    </tr>
                         {% endfor %}
                         <!-- // Table row END -->
                     </tbody>

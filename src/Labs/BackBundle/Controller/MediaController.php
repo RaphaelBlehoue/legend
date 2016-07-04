@@ -2,6 +2,7 @@
 
 namespace Labs\BackBundle\Controller;
 
+use Labs\BackBundle\Entity\Booking;
 use Labs\BackBundle\Entity\Media;
 use Labs\BackBundle\Entity\Dossier;
 use Labs\BackBundle\Entity\Type;
@@ -10,8 +11,10 @@ use Labs\BackBundle\Form\MediaEditType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 /**
  * Class MediaController
@@ -66,8 +69,35 @@ class MediaController extends Controller
     {
 
         $em = $this->getDoctrine()->getManager();
-        return $this->render('LabsBackBundle:Medias:upload.html.twig');
+        $media = new Media();
+        $type = $em->getRepository('LabsBackBundle:Type')->getOne($type);
+        $dossier = $em->getRepository('LabsBackBundle:Dossier')->getOne($dossier);
+
+        if($request->isXmlHttpRequest()){
+            /** @var Symfony\Component\HttpFoundation\File\UploadedFile $file */
+            $file = $request->files->get('file');
+            $fileName = md5(uniqid()).'.'.$file->guessExtension();
+            $file->move(
+                $this->container->getParameter('gallery_directory'),
+                $fileName
+            );
+            $media->setUrl($fileName);
+            $media->setStatus(true);
+            $media->setActived(true);
+            $media->setType($type);
+            $media->setDossier($dossier);
+            $em->persist($media);
+            $em->flush($media);
+            $response = ['success' => 'true'];
+            return new JsonResponse($response);
+        }
+
+        return $this->render('LabsBackBundle:Medias:upload.html.twig', array(
+            'type' => $type,
+            'dossier' => $dossier
+        ));
     }
+
 
     /**
      * @param Booking $booking

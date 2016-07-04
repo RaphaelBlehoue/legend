@@ -185,4 +185,26 @@ class Media
     {
         return $this->type;
     }
+
+    public function getUploadDir()
+    {
+        // On retourne le chemin relatif vers l'image pour un navigateur
+        return 'uploads/gallery';
+    }
+
+
+    protected function getUploadRootDir()
+    {
+        // On retourne le chemin relatif vers l'image pour notre code PHP
+        return __DIR__.'/../../../../web/'.$this->getUploadDir();
+    }
+
+
+    /**
+     * @return string
+     */
+    public function getAssertPath()
+    {
+        return $this->getUploadDir().'/'.$this->url;
+    }
 }

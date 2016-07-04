@@ -31,6 +31,33 @@ class DossierController extends Controller
     }
 
     /**
+     * @param Dossier $dossier
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route("/{id}/view", name="dossier_view")
+     * @Method({"GET", "POST"})
+     */
+    public function DossierViewAction( Dossier $dossier)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $dossiers = $em->getRepository('LabsBackBundle:Dossier')->getOneAndAssociation($dossier);
+        $bestman = $em->getRepository('LabsBackBundle:Best')->findBy(array('dossier' => $dossier,'genre'=> 1),array('top' => 'asc'));
+        $bestwomen = $em->getRepository('LabsBackBundle:Best')->findBy(array('dossier' => $dossier,'genre'=> 0),array('top' => 'asc'));
+        $prewedding = $em->getRepository('LabsBackBundle:Media')->findBy(array('dossier' => $dossier,'type'=> 1),array('id' => 'desc'), 31, 0);
+        $wedding = $em->getRepository('LabsBackBundle:Media')->findBy(array('dossier' => $dossier,'type'=> 2), array('id' => 'desc'), 31, 0);
+        if(null === $dossiers)
+        {
+            throw new NotFoundHttpException('Page Introuvable',null, 404);
+        }
+        return $this->render('LabsBackBundle:Dossiers:dossier_view.html.twig',array(
+            'dossier'       => $dossiers,
+            'prewedding'    => $prewedding,
+            'wedding'       => $wedding,
+            'bestMan'       => $bestman,
+            'bestwomen'     => $bestwomen
+        ));
+    }
+
+    /**
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
      * @Route("/create", name="dossier_create")

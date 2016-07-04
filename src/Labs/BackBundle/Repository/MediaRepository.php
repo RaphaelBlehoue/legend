@@ -10,4 +10,5 @@ namespace Labs\BackBundle\Repository;
  */
 class MediaRepository extends \Doctrine\ORM\EntityRepository
 {
+
 }

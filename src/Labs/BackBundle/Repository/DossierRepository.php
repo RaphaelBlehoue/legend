@@ -17,4 +17,14 @@ class DossierRepository extends \Doctrine\ORM\EntityRepository
         $qb->setParameter(':id', $id);
         return $qb->getQuery()->getOneOrNullResult();
     }
+
+    public function getOneAndAssociation($id)
+    {
+        $qb = $this->createQueryBuilder('d');
+        $qb->leftJoin('d.bests','b');
+        $qb->addSelect('b');
+        $qb->where($qb->expr()->eq('d.id', ':id'));
+        $qb->setParameter(':id', $id);
+        return $qb->getQuery()->getOneOrNullResult();
+    }
 }
