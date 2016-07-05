@@ -2,928 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f66c0dc-4822-4176-a5fc-7f7d3a160cba" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/dress/1-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/pants/1-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/shoes/1-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/sunglasses/1-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/tshirts/1-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/watches/1-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/shoes/1-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/sunglasses/1-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/about/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/author/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/full/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/grid/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/small/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/standard/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/events/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/events/parallax/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/events/thumbs/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/carousel/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/small/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/thumb/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/others/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/parallax/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/parallax/home/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/1/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/1/full/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/2/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/3/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/mixed/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/extended/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/extended/thumbs/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/full/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/2/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/3/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/4/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/parallax/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/full/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/full-thumbs/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/fullwidth/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/slider-thumbs/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/slider/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/slider/thumb/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/services/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/banners/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/dress/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/pants/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/shoes/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/slider/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/small/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/sunglasses/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/tshirts/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/watches/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/full/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/full/thumbs/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/swiper/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/swiper/sized/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/swiper/thumbs/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/thumbs/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/team/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/testimonials/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/logo/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/full/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/grid/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/masonry/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/small/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/standard/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/events/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/small/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/thumb/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/parallax/home/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/mixed/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/full/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/4/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/parallax/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/full/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/full-thumbs/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/fullwidth/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/slider-thumbs/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/thumb/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/thumb/gallery/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/banners/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/category/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/small/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/swiper/thumbs/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/thumbs/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/logo/10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/swiper/thumbs/11-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/carousel/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/small/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/thumb/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/parallax/home/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/mixed/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/full/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/4/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/thumb/gallery/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/banners/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/small/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/swiper/thumbs/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/thumbs/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/wedding/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/wedding/thumb/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/logo/11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/full/12-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/masonry/12-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/small/12-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/12-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/mixed/12-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/full/12-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/4/12-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/full-thumbs/12-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/swiper/thumbs/12-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/full/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/grid/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/small/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/small/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/thumb/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/mixed/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/full/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/4/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/full-thumbs/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/thumb/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/thumb/gallery/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/banners/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/small/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/swiper/thumbs/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/thumbs/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/wedding/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/logo/12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/swiper/thumbs/13-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/full/13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/grid/13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/small/13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/carousel/13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/small/13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/thumb/13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/full-thumbs/13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/thumb/gallery/13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/swiper/thumbs/13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/thumbs/13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/wedding/13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/13.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/logo/13.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/carousel/14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/small/14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/thumb/14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/full-thumbs/14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/category/14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/swiper/thumbs/14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/thumbs/14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/14.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/logo/14.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/swiper/thumbs/15-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/small/15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/thumb/15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/thumb/15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/category/15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/swiper/thumbs/15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/thumbs/15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/wedding/15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/wedding/thumb/15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/15.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/logo/15.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/16.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/small/16.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/thumb/16.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/thumb/16.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/swiper/thumbs/16.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/thumbs/16.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/wedding/16.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/logo/16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/full/17.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/grid/17.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/small/17.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/standard/17.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/17.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/category/17.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/swiper/thumbs/17.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/thumbs/17.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/wedding/17.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/logo/17.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/full/18.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/grid/18.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/small/18.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/18.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/18.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/swiper/thumbs/18.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/thumbs/18.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/wedding/18.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/logo/18.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/full/19.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/grid/19.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/small/19.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/19.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/category/19.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/thumbs/19.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/wedding/19.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/wedding/thumb/19.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/logo/19.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/dress/2-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/shoes/2-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/sunglasses/2-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/dress/2-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/shoes/2-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/sunglasses/2-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/about/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/full/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/grid/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/small/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/events/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/events/parallax/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/events/thumbs/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/small/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/small/movie/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/thumb/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/parallax/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/parallax/home/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/1/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/1/full/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/2/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/3/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/mixed/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/extended/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/extended/thumbs/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/full/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/2/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/3/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/4/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/parallax/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/full-thumbs/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/slider/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/slider/thumb/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/services/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/banners/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/dress/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/shoes/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/slider/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/small/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/sunglasses/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/boxed/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/boxed/thumbs/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/full/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/full/thumbs/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/swiper/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/swiper/sized/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/swiper/thumbs/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/thumbs/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/team/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/testimonials/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/logo/2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/full/20.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/grid/20.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/masonry/20.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/small/20.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/standard/20.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/thumbs/20.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/wedding/thumb/20.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/20.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/extras/200x200.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/full/21.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/grid/21.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/masonry/21.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/small/21.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/standard/21.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/category/21.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/wedding/21.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/wedding/thumb/21.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/21.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/full/22.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/grid/22.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/masonry/22.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/small/22.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/standard/22.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/wedding/22.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/wedding/thumb/22.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/category/23.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/wedding/23.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/wedding/thumb/23.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/wedding/24.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/wedding/thumb/24.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/wedding/25.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/wedding/thumb/25.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/wedding/26.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/wedding/thumb/26.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/wedding/27.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/wedding/thumb/27.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/wedding/28.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/wedding/thumb/28.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/dress/3-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/thumbs/dress/3-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/dress/3-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/thumbs/dress/3-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/about/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/full/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/grid/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/small/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/events/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/events/thumbs/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/small/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/small/movie/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/thumb/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/parallax/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/parallax/home/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/1/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/1/full/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/2/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/3/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/mixed/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/extended/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/extended/thumbs/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/full/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/2/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/3/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/4/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/parallax/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/full-thumbs/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/slider/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/slider/thumb/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/thumb/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/thumb/gallery/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/services/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/banners/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/dress/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/slider/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/small/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/thumbs/dress/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/boxed/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/boxed/thumbs/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/full/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/full/thumbs/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/swiper/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/swiper/sized/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/swiper/thumbs/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/thumbs/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/team/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/testimonials/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/logo/3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/1/4-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/1/full/4-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/2/4-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/3/4-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/4-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/mixed/4-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/full/4-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/2/4-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/3/4-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/4/4-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/tshirts/4-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/3/4-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/2/4-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/3/4-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/4/4-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/about/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/events/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/events/parallax/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/events/thumbs/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/carousel/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/small/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/small/movie/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/thumb/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/parallax/home/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/1/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/1/full/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/2/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/3/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/mixed/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/extended/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/extended/thumbs/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/full/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/3/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/4/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/parallax/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/modal/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/thumb/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/services/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/banners/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/slider/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/small/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/tshirts/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/boxed/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/boxed/thumbs/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/full/thumbs/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/swiper/thumbs/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/thumbs/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/team/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/testimonials/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/logo/4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/pants/5-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/about/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/events/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/events/thumbs/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/small/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/small/movie/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/thumb/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/parallax/home/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/1/full/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/2/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/3/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/mixed/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/extended/thumbs/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/full/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/2/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/3/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/4/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/parallax/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/thumb/gallery/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/banners/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/pants/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/small/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/boxed/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/boxed/thumbs/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/swiper/thumbs/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/thumbs/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/team/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/testimonials/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/logo/5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/full/6-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/masonry/6-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/small/6-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/1/6-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/1/full/6-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/2/6-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/3/6-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/6-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/mixed/6-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/full/6-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/2/6-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/3/6-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/4/6-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/full-thumbs/6-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/full/6-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/masonry/6-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/blog/small/6-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/1/6-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/1/full/6-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/2/6-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/3/6-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/6-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/mixed/6-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/full/6-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/2/6-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/3/6-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/4/6-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/full-thumbs/6-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/1/6-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/1/full/6-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/2/6-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/3/6-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/6-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/mixed/6-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/full/6-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/2/6-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/3/6-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/4/6-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/full-thumbs/6-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/modal/6-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/about/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/events/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/events/thumbs/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/carousel/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/small/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/small/movie/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/thumb/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/parallax/home/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/1/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/1/full/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/2/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/3/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/mixed/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/extended/thumbs/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/full/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/2/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/3/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/4/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/parallax/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/full-thumbs/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/thumb/gallery/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/banners/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/category/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/small/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/swiper/thumbs/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/thumbs/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/team/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/testimonials/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/logo/6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/swiper/thumbs/7-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/about/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/events/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/events/parallax/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/events/thumbs/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/small/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/small/movie/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/thumb/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/parallax/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/parallax/home/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/1/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/1/full/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/2/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/3/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/mixed/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/extended/thumbs/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/full/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/2/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/3/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/4/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/parallax/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/full/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/full-thumbs/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/fullwidth/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/slider-thumbs/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/thumb/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/thumb/gallery/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/banners/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/small/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/full/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/swiper/thumbs/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/thumbs/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/team/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/testimonials/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/logo/7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/events/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/events/thumbs/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/small/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/small/movie/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/thumb/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/parallax/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/parallax/home/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/1/full/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/2/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/3/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/mixed/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/full/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/2/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/3/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/4/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/parallax/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/modal/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/restaurant/thumb/gallery/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/banners/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/small/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/swiper/thumbs/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/thumbs/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/team/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/testimonials/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/logo/8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/3/9-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/9-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/mixed/9-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/full/9-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/3/9-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/4/9-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/3/9-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/9-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/mixed/9-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/full/9-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/3/9-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/4/9-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/full-thumbs/9-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/events/parallax/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/small/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/thumb/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/parallax/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/parallax/home/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/3/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/4/mixed/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/full/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/3/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/masonry/4/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/parallax/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/single/full-thumbs/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/banners/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/small/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/swiper/thumbs/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/thumbs/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/clients/logo/9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/fonts/Simple-Line-Icons.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/fonts/Simple-Line-Icons.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/fonts/Simple-Line-Icons.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/team/about-me.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/ad.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/magazine/ad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/wedding/events/afterwedding.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/avatar.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/rev/shop/bag.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/rev/shop/bag3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/rev/bg1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/rev/bg2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/parallax/bgpattern.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/portfolio/extended/thumbs/big.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/parallax/blur1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/parallax/blur2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/landing/bootstrap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/brand.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/brand2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/services/browser.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/parallax/calendar.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/camera_skins.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/services/chrome.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/wedding/events/cocktail.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/restaurant/cup-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/restaurant/cup.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/landing/device1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/landing/device2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/landing/device3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/dotted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/thumbs/small/dress-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/videos/explore-thumb.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/videos/explore.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/videos/explore.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/videos/explore.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/services/fbrowser.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/services/fbrowser2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/features/flag.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/services/fmobile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/fonts/font-icons.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/fonts/font-icons.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/fonts/font-icons.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/footer-bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/footer-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/footer-logo@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/footer-widget-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/footer-widget-logo@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/restaurant/fork-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/restaurant/fork.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/flags/french.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/flags/german.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/rev/shop/girl1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/restaurant/glass-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/restaurant/glass.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/grid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/services/home-testi-bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/events/parallax/home.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/services/imac.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/services/imac2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/image.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/appshowcase/ipad-section.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/services/ipad3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/appshowcase/iphone-solid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/services/iphone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/services/iphone2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/services/iphone3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/services/iphone6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/services/iphone7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/flags/italian.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/rev/ken-1-thumb.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/rev/ken-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/rev/ken-2-thumb.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/rev/ken-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/landing/landing1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/landing/landing2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/fonts/lined-icons.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/fonts/lined-icons.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/fonts/lined-icons.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/logo-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/logo-dark@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/logo-resto-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/logo-resto-dark@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/logo-resto.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/logo-resto@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/logo-side-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/logo-side-dark@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/logo-side.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/logo-side@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/logo@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/others/mac-phone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/mac.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/macbook.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/services/macbook.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/services/main-bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/services/main-fbrowser.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/services/main-fmobile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/mainsubmenu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/mainsubmenuh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/map-icon-red.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/map-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/features/map.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/about/me-parallax.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/menu-divider.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/menu-dividerd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/modals/modal1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/about/parallax.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/testimonials/parallax.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/testimonials/parallax2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/pattern.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/pattern2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/features/performance.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/play.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/preloader-dark.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/preloader-dark@2x.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/preloader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/preloader@2x.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/features/responsive.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/landing/responsive.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/features/retina.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/rev/main/s1-thumb.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/appshowcase/s1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/rev/main/s2-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/rev/main/s2-2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/rev/main/s2-3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/rev/main/s2-4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/rev/main/s2-5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/rev/main/s2-6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/rev/main/s2-7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/rev/main/s2-8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/rev/main/s2-bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/rev/main/s2-thumb.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/rev/main/s3-thumb.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/rev/main/s3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/appshowcase/s4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/appshowcase/s5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/features/seo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/shop/thumbs/small/shoes-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/appshowcase/slider-iphone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/landing/static.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/submenu-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/submenu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/features/support.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/slider/rev/shop/tag.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/restaurant/tea-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/restaurant/tea.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/features/tick.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/features/tools.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/video-play.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/services/video.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/wedding/events/wedding.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/widget-comment-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/widget-comment-dark@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/widget-comment.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/widget-comment@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/widget-link-dark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/widget-link-dark@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/widget-link.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/widget-link@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/world-map.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Form/BannerEditType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Form/BannerType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/fonts/Simple-Line-Icons.dev.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/fonts/Simple-Line-Icons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/shortcodes/alerts.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/animate.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/blog.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/shortcodes/buttons.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/calendar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/camera.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/canvas.slider.fade.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/shortcodes/carousel.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/shortcodes/clients.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/colors.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/colors.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/content.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/shortcodes/countdown.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/shortcodes/counter-skills.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Banner/create.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/shortcodes/dividers.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Banner/edit.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/elastic.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/events-data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/events.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/extras.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/shortcodes/faqs.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/shortcodes/feature-box.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/font-icons.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/fonts/font-icons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/fonts.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/footer.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/functions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/header.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/shortcodes/headings.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/helpers.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/icons/iconalt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Banner/index.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/plugins/jquery.bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery.calendario.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery.camera.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/plugins/jquery.chart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/plugins/jquery.color.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/plugins/jquery.cookie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/plugins/jquery.countdown.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/plugins/jquery.countto.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/plugins/jquery.dribbble.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery.elastic.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/plugins/jquery.fitvids.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/plugins/jquery.flexslider.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/plugins/jquery.flickrfeed.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/plugins/jquery.form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery.gmap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/plugins/jquery.important.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/plugins/jquery.infinitescroll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/plugins/jquery.instagram.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/plugins/jquery.isotope.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/plugins/jquery.magnific.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery.mousewheel.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery.nivo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/plugins/jquery.owlcarousel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/plugins/jquery.pagetransition.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/plugins/jquery.paginate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/plugins/jquery.parallax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/plugins/jquery.piechart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/plugins/jquery.superfish.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/plugins/jquery.swiper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/plugins/jquery.tabs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/plugins/jquery.textrotator.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/plugins/jquery.toastr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/plugins/jquery.twitterfeed.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/plugins/jquery.validation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/vmap/continents/jquery.vmap.africa.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/vmap/jquery.vmap.algeria.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/vmap/continents/jquery.vmap.asia.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/vmap/continents/jquery.vmap.australia.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/vmap/jquery.vmap.brazil.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/vmap/jquery.vmap.europe.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/vmap/continents/jquery.vmap.europe.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/vmap/jquery.vmap.france.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/vmap/jquery.vmap.germany.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery.vmap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/vmap/continents/jquery.vmap.north-america.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/vmap/jquery.vmap.russia.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/vmap/jquery.vmap.sampledata.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/vmap/continents/jquery.vmap.south-america.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/vmap/jquery.vmap.usa.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/vmap/jquery.vmap.world.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/plugins/jquery.youtube.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/layouts.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/fonts/lined-icons.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/magnific-popup.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/shortcodes/misc.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/nivo-slider.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/shortcodes/overlay.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/pagetitle.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/plugins.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/portfolio.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/shortcodes/pricing.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/shortcodes/process-steps.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/shortcodes/promo.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/responsive.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/shop.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/shortcodes.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/sliders.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/shortcodes/social-icons.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/style-import.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/shortcodes/styled-icons.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/shortcodes/tabs.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/shortcodes/team.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/shortcodes/testimonials.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/shortcodes/toggles-accordions.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/topbar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/typography.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/vmap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/widgets.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/imports/shortcodes/youtubebg.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Controller/DossierController.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Controller/DossierController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Repository/DossierRepository.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Repository/DossierRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Media.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Media.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Controller/MediaController.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Controller/MediaController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Repository/MediaRepository.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Repository/MediaRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Menus/create.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Menus/edit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Menus/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/logo-dark.png" afterPath="$PROJECT_DIR$/web/images/logo-dark.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/logo-dark@2x.png" afterPath="$PROJECT_DIR$/web/images/logo-dark@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/FrontBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/Labs/FrontBundle/Controller/DefaultController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/dropzone.css" afterPath="$PROJECT_DIR$/web/css/dropzone.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Dossiers/index.html.twig" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Dossiers/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/dark.css" afterPath="$PROJECT_DIR$/web/css/dark.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/footer.html.twig" afterPath="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/footer.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/functions.js" afterPath="$PROJECT_DIR$/web/js/functions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/header.html.twig" afterPath="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/header.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/index.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/TemplateBundle/Resources/views/Includes/sidebar.html.twig" afterPath="$PROJECT_DIR$/src/Labs/TemplateBundle/Resources/views/Includes/sidebar.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Medias/upload.html.twig" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Medias/upload.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/slide.html.twig" afterPath="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/slide.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/style.css" afterPath="$PROJECT_DIR$/web/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="legend.iws" />
@@ -948,52 +41,31 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="BannerType.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Form/BannerType.php">
+          <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Controller/DefaultController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.0">
-                  <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+                <state vertical-scroll-proportion="0.8330804">
+                  <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
+                  <folding>
+                    <element signature="e#47#104#0#PHP" expanded="true" />
+                    <element signature="e#335#376#1#PHP" expanded="true" />
+                    <element signature="e#579#617#1#PHP" expanded="true" />
+                    <element signature="e#836#879#1#PHP" expanded="true" />
+                    <element signature="e#1023#1047#1#PHP" expanded="true" />
+                    <element signature="e#1134#1176#0#PHP" expanded="true" />
+                    <element signature="e#1378#1402#1#PHP" expanded="true" />
+                    <element signature="e#1489#1538#0#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Dossier.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Entity/Dossier.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-32.923077">
+                  <caret line="89" column="7" selection-start-line="89" selection-start-column="7" selection-end-line="89" selection-end-column="7" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-92.23077">
-                  <caret line="125" column="13" selection-start-line="125" selection-start-column="13" selection-end-line="125" selection-end-column="13" />
-                  <folding>
-                    <element signature="e#1631#1671#0#Twig" expanded="true" />
-                    <element signature="e#1697#1736#0#Twig" expanded="true" />
-                    <element signature="e#1962#2002#0#Twig" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/index.html.twig">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.15022762">
-                  <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
-                  <folding>
-                    <element signature="e#12#28#0#Twig" expanded="true" />
-                    <element signature="n#div#0;n#div#0;n#section#0;n#!!top" expanded="false" />
-                    <element signature="n#div#3;n#div#1;n#div#0;n#section#0;n#!!top" expanded="false" />
-                    <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#section#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#section#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#3;n#div#0;n#section#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#div#3;n#div#0;n#section#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#h3#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#3;n#div#0;n#section#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#p#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#3;n#div#0;n#section#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#div#3;n#div#0;n#section#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#h3#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#3;n#div#0;n#section#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#p#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#3;n#div#0;n#section#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#5;n#div#0;n#div#0;n#div#3;n#div#0;n#section#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#h3#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#3;n#div#0;n#section#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#p#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#3;n#div#0;n#section#0;n#!!top" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -1001,31 +73,11 @@
           <file leaf-file-name="header.html.twig" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/header.html.twig">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-12.692307">
-                  <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="slide.html.twig" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/slide.html.twig">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-27.076923">
-                  <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+                <state vertical-scroll-proportion="-17.76923">
+                  <caret line="21" column="32" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="32" />
                   <folding>
-                    <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+                    <element signature="n#li#0;n#ul#0;n#li#1;n#ul#0;n#nav#0;n#div#0;n#div#0;n#header#0;n#!!top" expanded="false" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/css/style.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="2760" column="0" selection-start-line="2760" selection-start-column="0" selection-end-line="2760" selection-end-column="0" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -1034,39 +86,12 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="index-corporate.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../canvas v311/HTML/index-corporate.html">
+          <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/index.html.twig">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-2.7358491">
-                  <caret line="1568" column="16" selection-start-line="1578" selection-start-column="16" selection-end-line="1609" selection-end-column="22" />
-                  <folding>
-                    <element signature="n#div#10;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index-corporate-2.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/../canvas v311/HTML/index-corporate-2.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-1.4716982">
-                  <caret line="676" column="8" selection-start-line="692" selection-start-column="104" selection-end-line="692" selection-end-column="108" />
+                <state vertical-scroll-proportion="0.050075874">
+                  <caret line="3" column="18" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index-corporate-3.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/../canvas v311/HTML/index-corporate-3.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.21611154">
-                  <caret line="891" column="0" selection-start-line="891" selection-start-column="0" selection-end-line="893" selection-end-column="0" />
-                  <folding>
-                    <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#div#1;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="n#div#7;n#div#1;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -1081,22 +106,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Packs.php" />
-        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Booking/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Category/create.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Category/edit.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Category/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Packs/create.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Packs/edit.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Packs/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Types/create.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Types/edit.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Types/index.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Form/BestEditType.php" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Dossier.php" />
-        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Dossiers/create.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Form/DossierType.php" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Best.php" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Form/BestType.php" />
@@ -1120,18 +129,34 @@
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Repository/BannerRepository.php" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Banner.php" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Form/BannerEditType.php" />
-        <option value="$PROJECT_DIR$/src/Labs/TemplateBundle/Resources/views/Includes/sidebar.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Banner/create.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Banner/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Controller/BannerController.php" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Banner/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Form/BannerType.php" />
-        <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/footer.html.twig" />
+        <option value="$PROJECT_DIR$/web/css/dark.css" />
         <option value="$PROJECT_DIR$/web/css/style.css" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/header.html.twig" />
+        <option value="$PROJECT_DIR$/web/js/Portfolio.js" />
+        <option value="$PROJECT_DIR$/web/js/jquery.Swiper_custom.js" />
         <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/slide.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/footer.html.twig" />
+        <option value="$PROJECT_DIR$/web/js/ajaxsubmit.js" />
+        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Menu.php" />
+        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Form/MenuType.php" />
+        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Form/MenuEditType.php" />
+        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Controller/MenuController.php" />
+        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Menus/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Menus/create.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Menus/edit.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/TemplateBundle/Resources/views/Includes/sidebar.html.twig" />
+        <option value="$PROJECT_DIR$/web/js/functions.js" />
+        <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/header-global.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Blog/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Contact/contact.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/header.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Controller/DefaultController.php" />
       </list>
     </option>
   </component>
@@ -1173,7 +198,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -1221,29 +245,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="legend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="legend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landing" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1319,19 +321,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="FrontBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Include" />
+              <option name="myItemId" value="BackBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1353,49 +343,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="FrontBundle" />
+              <option name="myItemId" value="BackBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="legend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="legend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Labs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FrontBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="Entity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1455,6 +407,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1467,11 +420,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/images/landing" />
-      <recent name="$PROJECT_DIR$/web" />
-      <recent name="$PROJECT_DIR$/web/css" />
-      <recent name="$PROJECT_DIR$/web/js" />
+      <recent name="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include" />
+      <recent name="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views" />
       <recent name="$PROJECT_DIR$/src/Labs/BackBundle/Form" />
+      <recent name="$PROJECT_DIR$/src/Labs/BackBundle/Controller" />
+      <recent name="$PROJECT_DIR$/web/images/landing" />
     </key>
   </component>
   <component name="RunManager">
@@ -1530,22 +483,22 @@
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.4972332" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.4972332" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12192216" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12271644" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.5027668" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.4972332" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.5027668" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.4972332" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1566,189 +519,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../pentecote/pentecote/src/Labs/MembersBundle/Entity/Banner.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19878604">
-          <caret line="242" column="40" selection-start-line="242" selection-start-column="40" selection-end-line="242" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16691957">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="29" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/TemplateBundle/Resources/public/assets/css/admin/module.admin.page.file_managers.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.90178573">
-          <caret line="0" column="74628" selection-start-line="0" selection-start-column="74628" selection-end-line="0" selection-end-column="74628" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/dropzone.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="389" column="29" selection-start-line="389" selection-start-column="29" selection-end-line="389" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Medias/upload.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.84615386">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Category/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.015174507">
-          <caret line="42" column="51" selection-start-line="0" selection-start-column="0" selection-end-line="95" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/raphael/blehoue/doc/Projets/New Entreprise/Toudeal/Template Admin/flatplus_v123/default/admin/profile_resume.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5015175">
-          <caret line="374" column="0" selection-start-line="374" selection-start-column="0" selection-end-line="605" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Controller/MediaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2003035">
-          <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../sylladistricom/sylladistricom/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.04910714">
-          <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="210" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/raphael/blehoue/doc/Projets/New Entreprise/Toudeal/Template Admin/flatplus_v123/default/admin/gallery.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.6433992">
-          <caret line="721" column="0" selection-start-line="721" selection-start-column="0" selection-end-line="725" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Repository/DossierRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.846154">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="17" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Repository/MediaRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2003035">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Entity/Dossier.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13505311">
-          <caret line="388" column="38" selection-start-line="388" selection-start-column="38" selection-end-line="388" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../sylladistricom/sylladistricom/src/Labs/AdminBundle/Entity/Post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.538462">
-          <caret line="193" column="0" selection-start-line="193" selection-start-column="0" selection-end-line="213" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/raphael/blehoue/doc/Projets/New Entreprise/Toudeal/Template Admin/flatplus_v123/default/admin/contacts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26403642">
-          <caret line="380" column="22" selection-start-line="380" selection-start-column="0" selection-end-line="413" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Dossiers/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3915023">
-          <caret line="57" column="177" selection-start-line="57" selection-start-column="122" selection-end-line="57" selection-end-column="177" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Controller/DossierController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48406675">
-          <caret line="55" column="41" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Dossiers/dossier_view.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8505311">
-          <caret line="133" column="32" selection-start-line="133" selection-start-column="32" selection-end-line="133" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Entity/Media.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.84615386">
-          <caret line="154" column="7" selection-start-line="154" selection-start-column="7" selection-end-line="154" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../sylladistricom/sylladistricom/src/Labs/AppBundle/Entity/Banner.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15022762">
-          <caret line="9" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="282" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Entity/Best.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18361153">
-          <caret line="14" column="47" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../sylladistricom/sylladistricom/src/Labs/AdminBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26555386">
-          <caret line="16" column="37" selection-start-line="0" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Controller/BestController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-47.307693">
-          <caret line="56" column="11" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Repository/BannerRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.461538">
           <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/TemplateBundle/Resources/views/Includes/sidebar.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3171472">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1764,7 +538,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6235119">
           <caret line="107" column="21" selection-start-line="107" selection-start-column="8" selection-end-line="107" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1798,10 +571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6342944">
           <caret line="43" column="42" selection-start-line="0" selection-start-column="0" selection-end-line="139" selection-end-column="14" />
-          <folding>
-            <element signature="e#12#48#0#Twig" expanded="false" />
-            <element signature="e#855#866#0#Twig" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1809,10 +578,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.3687406">
           <caret line="82" column="125" selection-start-line="82" selection-start-column="125" selection-end-line="82" selection-end-column="125" />
-          <folding>
-            <element signature="e#12#48#0#Twig" expanded="false" />
-            <element signature="e#855#866#0#Twig" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1820,12 +585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="52" />
-          <folding>
-            <element signature="e#12#48#0#Twig" expanded="false" />
-            <element signature="e#1078#1088#0#Twig" expanded="false" />
-            <element signature="e#2527#2538#0#Twig" expanded="false" />
-            <element signature="e#2661#2674#0#Twig" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1833,7 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13095239">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1841,28 +599,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2336874">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          <folding>
-            <element signature="e#47#104#0#PHP" expanded="false" />
-            <element signature="e#315#356#1#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/footer.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="240" column="29" selection-start-line="240" selection-start-column="29" selection-end-line="240" selection-end-column="29" />
-          <folding>
-            <element signature="n#footer#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1870,28 +606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Form/BannerType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../canvas v311/HTML/index-corporate-4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.84615386">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding>
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1905,57 +619,16 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/header.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.692307">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2760" column="0" selection-start-line="2760" selection-start-column="0" selection-end-line="2760" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/slide.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.076923">
-          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../canvas v311/HTML/index-portfolio.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.207547">
           <caret line="812" column="16" selection-start-line="812" selection-start-column="16" selection-end-line="851" selection-end-column="22" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-92.23077">
-          <caret line="125" column="13" selection-start-line="125" selection-start-column="13" selection-end-line="125" selection-end-column="13" />
-          <folding>
-            <element signature="e#1631#1671#0#Twig" expanded="true" />
-            <element signature="e#1697#1736#0#Twig" expanded="true" />
-            <element signature="e#1962#2002#0#Twig" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../canvas v311/HTML/index-corporate.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.7358491">
+        <state vertical-scroll-proportion="0.0">
           <caret line="1568" column="16" selection-start-line="1578" selection-start-column="16" selection-end-line="1609" selection-end-column="22" />
           <folding>
             <element signature="n#div#10;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1963,47 +636,349 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../canvas v311/HTML/index-corporate-4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.84615386">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Form/BannerType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../canvas v311/HTML/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/dark.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63839287">
+          <caret line="1025" column="1" selection-start-line="1025" selection-start-column="1" selection-end-line="1025" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-25.697916">
+          <caret line="11609" column="1" selection-start-line="11609" selection-start-column="1" selection-end-line="11609" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jquery.Swiper_custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0967262">
+          <caret line="67" column="3" selection-start-line="67" selection-start-column="3" selection-end-line="67" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/Portfolio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/slide.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2003035">
+          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/ajaxsubmit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24553572">
+          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/footer.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34901366">
+          <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../canvas v311/HTML/index-corporate-2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4716982">
-          <caret line="676" column="8" selection-start-line="692" selection-start-column="104" selection-end-line="692" selection-end-column="108" />
+        <state vertical-scroll-proportion="0.53989154">
+          <caret line="1045" column="22" selection-start-line="998" selection-start-column="16" selection-end-line="1045" selection-end-column="22" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Form/BestType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4673748">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="40" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Form/Extension/Core/Type/RangeType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06676783">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Form/RequestHandlerInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3171472">
+          <caret line="26" column="47" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Form/Extension/Core/CoreExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06676783">
+          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Form/MenuType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48406675">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+          <folding>
+            <element signature="e#40#96#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Form/DossierEditType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15022762">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="33" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Form/MenuEditType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4673748">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="e#40#80#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Controller/MenuController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0682852">
+          <caret line="64" column="56" selection-start-line="64" selection-start-column="56" selection-end-line="64" selection-end-column="56" />
+          <folding>
+            <element signature="e#46#78#0#PHP" expanded="true" />
+            <element signature="e#1098#1109#1#PHP" expanded="true" />
+            <element signature="e#1152#1191#0#PHP" expanded="true" />
+            <element signature="e#1436#1457#1#PHP" expanded="true" />
+            <element signature="e#1500#1538#0#PHP" expanded="true" />
+            <element signature="e#2083#2104#1#PHP" expanded="true" />
+            <element signature="e#2457#2468#1#PHP" expanded="true" />
+            <element signature="e#2510#2547#0#PHP" expanded="true" />
+            <element signature="e#2980#3001#1#PHP" expanded="true" />
+            <element signature="e#3233#3244#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Menus/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45068285">
+          <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+          <folding>
+            <element signature="e#12#48#0#Twig" expanded="false" />
+            <element signature="e#1059#1067#0#Twig" expanded="false" />
+            <element signature="e#2492#2501#0#Twig" expanded="false" />
+            <element signature="e#2627#2638#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Menus/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5842185">
+          <caret line="55" column="26" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
+          <folding>
+            <element signature="e#12#48#0#Twig" expanded="false" />
+            <element signature="e#585#594#0#Twig" expanded="false" />
+            <element signature="e#1114#1123#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Menus/create.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6176024">
+          <caret line="37" column="68" selection-start-line="37" selection-start-column="68" selection-end-line="37" selection-end-column="68" />
+          <folding>
+            <element signature="e#12#48#0#Twig" expanded="false" />
+            <element signature="e#585#594#0#Twig" expanded="false" />
+            <element signature="e#1151#1160#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/TemplateBundle/Resources/views/Includes/nav.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/TemplateBundle/Resources/views/Includes/sidebar.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30045524">
+          <caret line="18" column="108" selection-start-line="18" selection-start-column="108" selection-end-line="18" selection-end-column="108" />
+          <folding>
+            <element signature="e#1158#1167#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Entity/Menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-26.23077">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../canvas v311/HTML/index-corporate-3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21611154">
-          <caret line="891" column="0" selection-start-line="891" selection-start-column="0" selection-end-line="893" selection-end-column="0" />
+        <state vertical-scroll-proportion="-577.9231">
+          <caret line="683" column="0" selection-start-line="683" selection-start-column="0" selection-end-line="683" selection-end-column="0" />
           <folding>
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#7;n#div#1;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/header-global.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.033383913">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8854167">
+          <caret line="2672" column="0" selection-start-line="2672" selection-start-column="0" selection-end-line="2672" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15022762">
-          <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.050075874">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3657056">
+          <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
           <folding>
-            <element signature="e#12#28#0#Twig" expanded="true" />
-            <element signature="n#div#0;n#div#0;n#section#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#1;n#div#0;n#section#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#3;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#div#0;n#div#3;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#3;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#3;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#div#0;n#div#0;n#div#3;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#3;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#4;n#div#0;n#div#0;n#div#3;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#div#0;n#div#0;n#div#3;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#3;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#5;n#div#0;n#div#0;n#div#3;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="e#1912#1952#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Contact/contact.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10015175">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Blog/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.033383913">
+          <caret line="2" column="56" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/header.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.76923">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="32" />
+          <folding>
+            <element signature="n#li#0;n#ul#0;n#li#1;n#ul#0;n#nav#0;n#div#0;n#div#0;n#header#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Entity/Dossier.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-32.923077">
+          <caret line="89" column="7" selection-start-line="89" selection-start-column="7" selection-end-line="89" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8330804">
+          <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
+          <folding>
+            <element signature="e#47#104#0#PHP" expanded="true" />
+            <element signature="e#335#376#1#PHP" expanded="true" />
+            <element signature="e#579#617#1#PHP" expanded="true" />
+            <element signature="e#836#879#1#PHP" expanded="true" />
+            <element signature="e#1023#1047#1#PHP" expanded="true" />
+            <element signature="e#1134#1176#0#PHP" expanded="true" />
+            <element signature="e#1378#1402#1#PHP" expanded="true" />
+            <element signature="e#1489#1538#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

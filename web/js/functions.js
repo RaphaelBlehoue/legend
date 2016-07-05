@@ -2666,4 +2666,9 @@ var SEMICOLON = SEMICOLON || {};
 	$window.load( SEMICOLON.documentOnLoad.init );
 	$window.on( 'resize', SEMICOLON.documentOnResize.init );
 
+	$('li.menu').click(function(){
+		$('li.menu').removeClass("current");
+		$(this).addClass("current");
+	});
+
 })(jQuery);

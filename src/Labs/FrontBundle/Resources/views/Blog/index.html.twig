@@ -1,0 +1,12 @@
+{% extends '::base.html.twig' %}
+{% block menu %}
+    {{ render(controller('LabsFrontBundle:Default:getMenuGlobal')) }}
+{% endblock %}
+
+{% block body %}
+<section id="content">
+    <div class="content-wrap">
+        <h2>{{ 'Page blog' }}</h2>
+    </div>
+</section>
+{% endblock %}
