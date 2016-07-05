@@ -68,13 +68,6 @@ class Banner
     protected $sub_title;
 
     /**
-     * @var text
-     *
-     * @ORM\Column(name="content", type="text",  nullable=true)
-     */
-    protected $content;
-
-    /**
      * @var dateTime
      *
      * @ORM\Column(name="created", type="datetime")
@@ -87,6 +80,28 @@ class Banner
      *
      * @return Banner
      */
+
+    /**
+     * @var
+     * @ORM\Column(name="text_color", type="string", nullable=true)
+     */
+    protected $textColor;
+
+
+    /**
+     * @var
+     *
+     * @ORM\Column(name="online", type="boolean")
+     */
+    protected $online;
+
+
+    public function __construct()
+    {
+        $this->created = new \DateTime('now');
+        $this->online = true;
+    }
+
     public function setImageFile(File $image = null)
     {
         $this->imageFile = $image;
@@ -208,30 +223,7 @@ class Banner
     {
         return $this->sub_title;
     }
-
-    /**
-     * Set content
-     *
-     * @param string $content
-     *
-     * @return Banner
-     */
-    public function setContent($content)
-    {
-        $this->content = $content;
-
-        return $this;
-    }
-
-    /**
-     * Get content
-     *
-     * @return string
-     */
-    public function getContent()
-    {
-        return $this->content;
-    }
+    
 
     /**
      * Set created
@@ -279,4 +271,39 @@ class Banner
     {
         return $this->getUploadDir().'/'.$this->imageName;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getTextColor()
+    {
+        return $this->textColor;
+    }
+
+    /**
+     * @param mixed $textColor
+     */
+    public function setTextColor($textColor)
+    {
+        $this->textColor = $textColor;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getOnline()
+    {
+        return $this->online;
+    }
+
+
+    /**
+     * @param mixed $online
+     */
+    public function setOnline($online)
+    {
+        $this->online = $online;
+    }
+
+
 }

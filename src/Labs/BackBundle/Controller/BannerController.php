@@ -26,6 +26,8 @@ class BannerController extends Controller
         $form->handleRequest($request);
         if($form->isValid())
         {
+            $color = $request->request->get('_color');
+            $banner->setTextColor($color);
             $em->persist($banner);
             $em->flush();
             return $this->redirect($this->generateUrl('banner_list'));
@@ -65,6 +67,8 @@ class BannerController extends Controller
         $form->handleRequest($request);
         if($form->isValid())
         {
+            $color = $request->request->get('_color');
+            $banner->setTextColor($color);
             $em->flush();
             return $this->redirectToRoute('banner_list');
         }

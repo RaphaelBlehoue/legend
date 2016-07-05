@@ -25,6 +25,7 @@ class Dossier
 
     /**
      * @var string
+     *
      * @Assert\NotNull(message="Entrez le nom du dossier")
      * @ORM\Column(name="name", type="string", length=255)
      */

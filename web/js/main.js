@@ -7,6 +7,7 @@ $(document).ready(function(){
     var myDropzone = new Dropzone("#dropzone-upload", {
         url: _actionToDropZone,
         filesizeBase : 5000,
+        maxFilesize: 3,
         maxFiles : 30,
         acceptedFiles : "image/jpeg,image/png,image/gif",
         init : function(){

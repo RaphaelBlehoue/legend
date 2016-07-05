@@ -54,7 +54,7 @@
                                 <td>{{ banner.title }}</td>
                                 <td>{{ banner.subTitle }}</td>
                                 <td>{{ banner.name }}</td>
-                                <td>{{ banner.assertPath|imagine_filter('my_thumb_best') }}</td>
+                                <td><img src="{{ banner.assertPath|imagine_filter('my_thumb_best') }}" alt=""></td>
                                 <td>
                                     <a href="{{ path('banner_edit', {'id' : banner.id}) }}"><i class="fa fa-pencil-square-o"></i></a>
                                     <a href="{{ path('banner_delete', {'id' : banner.id}) }}"><i class="fa fa-trash-o"></i></a>

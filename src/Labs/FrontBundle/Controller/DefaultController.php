@@ -34,25 +34,59 @@ class DefaultController extends Controller
     }
 
 
-    public function getDossierAction()
+    public function getSlideAction()
     {
         $em = $this->getDoctrine()->getManager();
-        $dossier = $em->getRepository('LabsBackBundle:Dossier')->findBy(array(
+        $slide = $em->getRepository('LabsBackBundle:Banner')->findBy(array(
             'online' => true
         ));
-        return $this->render('LabsFrontBundle:Include:header.html.twig', array(
-            'dossiers' => $dossier
+        return $this->render('LabsFrontBundle:Include:slide.html.twig', array(
+            'slides' => $slide
         ));
     }
 
-    public function getDossierGlobalAction()
+
+    public function getMenuAction()
     {
         $em = $this->getDoctrine()->getManager();
-        $dossier = $em->getRepository('LabsBackBundle:Dossier')->findBy(array(
+        $type = $em->getRepository('LabsBackBundle:Type')->findBy(array(
+            'top' => true
+        ));
+
+        $event = $em->getRepository('LabsBackBundle:Category')->findBy(array(
+            'top' => true
+        ));
+
+        $pack = $em->getRepository('LabsBackBundle:Packs')->findBy(array(
             'online' => true
         ));
+
+        return $this->render('LabsFrontBundle:Include:header.html.twig', array(
+            'types' => $type,
+            'events' => $event,
+            'packs' => $pack
+        ));
+    }
+
+    public function getMenuGlobalAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $type = $em->getRepository('LabsBackBundle:Type')->findBy(array(
+            'top' => true
+        ));
+
+        $event = $em->getRepository('LabsBackBundle:Category')->findBy(array(
+            'top' => true
+        ));
+
+        $pack = $em->getRepository('LabsBackBundle:Packs')->findBy(array(
+            'online' => true
+        ));
+
         return $this->render('LabsFrontBundle:Include:header-global.html.twig', array(
-            'dossiers' => $dossier
+            'types' => $type,
+            'events' => $event,
+            'packs' => $pack
         ));
     }
 }

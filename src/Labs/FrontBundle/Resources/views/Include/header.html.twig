@@ -19,106 +19,39 @@
 
                 <ul>
                     <li class="current menu"><a href="{{ path('homepage') }}"><div>{{ 'legend photography' }}</div></a></li>
-                    {%  for menu in menus %}
-                        <li><a href="#"><div>{{ menu.name }}</div></a>
-                            <ul>
-                                <li><a href="#"><div><i class="icon-stack"></i>Sliders</div></a>
-                                    <ul>
-                                        <li><a href="slider-revolution.html"><div>Revolution Slider</div></a>
-                                            <ul>
-                                                <li><a href="rs-demo-premium-concept.html"><div>Premium Templates</div></a></li>
-                                                <li><a href="slider-revolution.html"><div>Full Screen</div></a></li>
-                                                <li><a href="slider-revolution-fullwidth.html"><div>Full Width</div></a></li>
-                                                <li><a href="slider-revolution-kenburns.html"><div>Kenburns Effect</div></a></li>
-                                                <li><a href="slider-revolution-html5-videos.html"><div>HTML5 Video</div></a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="slider-canvas.html"><div>Canvas Slider</div></a>
-                                            <ul>
-                                                <li><a href="slider-canvas.html"><div>Full Width</div></a></li>
-                                                <li><a href="slider-canvas-fade.html"><div>Fade Transition</div></a></li>
-                                                <li><a href="slider-canvas-autoplay.html"><div>Autoplay Feature</div></a></li>
-                                                <li><a href="slider-canvas-video-event.html"><div>Custom Video Event</div></a></li>
-                                                <li><a href="slider-canvas-pagination.html"><div>Pagination Navigation</div></a></li>
-                                                <li><a href="slider-canvas-3.html"><div>3 Columns</div></a></li>
-                                                <li><a href="slider-canvas-4.html"><div>4 Columns</div></a></li>
-                                                <li><a href="slider-canvas-5.html"><div>5 Columns</div></a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="slider-flex.html"><div>Flex Slider</div></a>
-                                            <ul>
-                                                <li><a href="slider-flex.html"><div>Default Layout</div></a></li>
-                                                <li><a href="slider-flex-thumbs.html"><div>with Thumbs</div></a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="slider-owl.html"><div>Owl Slider</div></a>
-                                            <ul>
-                                                <li><a href="slider-owl-full.html"><div>Full Width</div></a></li>
-                                                <li><a href="slider-owl.html"><div>Boxed Width</div></a></li>
-                                                <li><a href="slider-owl-videos.html"><div>Video Slider</div></a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="static-parallax.html"><div>Static Media</div></a>
-                                            <ul>
-                                                <li><a href="static-parallax.html"><div>Static - Parallax</div></a></li>
-                                                <li><a href="static-image.html"><div>Static - Image</div></a></li>
-                                                <li><a href="static-thumbs-grid.html"><div>Static - Thumb Gallery</div></a></li>
-                                                <li><a href="static-html5-video.html"><div>Static - HTML5 Video</div></a></li>
-                                                <li><a href="static-embed-video.html"><div>Static - Embedded Video</div></a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="slider-camera.html"><div>Camera Slider</div></a></li>
-                                        <li><a href="slider-elastic.html"><div>Elastic Slider</div></a></li>
-                                        <li><a href="slider-nivo.html"><div>Nivo Slider</div></a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                    {% endfor %}
+                    <li class="menu"><a href="{{ path('blog_page') }}"><div>{{ 'Packages' }}</div></a>
+                        <ul>
+                            {%  for pack in packs %}
+                                <li><a href="#"><div><i class="icon-stack"></i>{{ pack.name }}</div></a></li>
+                            {% endfor %}
+                        </ul>
+
+                    </li>
+                    <li><a href="#"><div>{{ 'Mariages' }}</div></a>
+                        <ul>
+                            {%  for type in types %}
+                                <li><a href="#"><div><i class="icon-stack"></i>{{ type.name }}</div></a></li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    <li class="menu"><a href="{{ path('blog_page') }}"><div>{{ 'Events' }}</div></a>
+                        <ul>
+                            {%  for event in events %}
+                                <li><a href="#"><div><i class="icon-stack"></i>{{ event.name }}</div></a></li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    <li class="menu"><a href="{{ path('blog_page') }}"><div>{{ 'Demande en mariage' }}</div></a></li>
                     <li class="menu"><a href="{{ path('blog_page') }}"><div>{{ 'Blog' }}</div></a></li>
-                    <li class="menu"><a href="{{ path('contact_page') }}"><div>{{ 'Nos Contacts' }}</div></a></li>
+                    <li class="menu"><a href="{{ path('contact_page') }}"><div>{{ 'Reservation' }}</div></a></li>
                 </ul>
 
                 <!-- Top Cart
                 ============================================= -->
-                <div id="top-cart">
-                    <a href="#" id="top-cart-trigger"><i class="icon-shopping-cart"></i><span>5</span></a>
-                    <div class="top-cart-content">
-                        <div class="top-cart-title">
-                            <h4>Shopping Cart</h4>
-                        </div>
-                        <div class="top-cart-items">
-                            <div class="top-cart-item clearfix">
-                                <div class="top-cart-item-image">
-                                    <a href="#"><img src="images/shop/small/1.jpg" alt="Blue Round-Neck Tshirt" /></a>
-                                </div>
-                                <div class="top-cart-item-desc">
-                                    <a href="#">Blue Round-Neck Tshirt</a>
-                                    <span class="top-cart-item-price">$19.99</span>
-                                    <span class="top-cart-item-quantity">x 2</span>
-                                </div>
-                            </div>
-                            <div class="top-cart-item clearfix">
-                                <div class="top-cart-item-image">
-                                    <a href="#"><img src="images/shop/small/6.jpg" alt="Light Blue Denim Dress" /></a>
-                                </div>
-                                <div class="top-cart-item-desc">
-                                    <a href="#">Light Blue Denim Dress</a>
-                                    <span class="top-cart-item-price">$24.99</span>
-                                    <span class="top-cart-item-quantity">x 3</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="top-cart-action clearfix">
-                            <span class="fleft top-checkout-price">$114.95</span>
-                            <button class="button button-3d button-small nomargin fright">View Cart</button>
-                        </div>
-                    </div>
-                </div><!-- #top-cart end -->
 
                 <!-- Top Search
                 ============================================= -->
-                <div id="top-search">
+                <!--<div id="top-search">
                     <a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
                     <form action="search.html" method="get">
                         <input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter..">

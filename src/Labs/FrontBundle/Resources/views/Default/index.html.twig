@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block slide  %}
-  {%  include 'LabsFrontBundle:Include:slide.html.twig' %}
+  {{ render(controller('LabsFrontBundle:Default:getSlide')) }}
 {% endblock  %}
 
 {% block body %}

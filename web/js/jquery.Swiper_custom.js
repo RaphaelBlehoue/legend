@@ -1,8 +1,11 @@
 jQuery(document).ready(function($){
     var swiperSlider = new Swiper('.swiper-parent',{
-        paginationClickable: false,
+        paginationClickable: true,
         slidesPerView: 1,
         grabCursor: true,
+        autoplay: 7000,
+        speed: 650,
+        loop: true,
         onSwiperCreated: function(swiper){
             $('[data-caption-animate]').each(function(){
                 var $toAnimateElement = $(this);
