@@ -483,11 +483,13 @@ span.middot {
 .col_one_fourth { width: 22%; }
 .col_three_fourth { width: 74%; }
 .col_one_fifth { width: 16.8%; }
-.col_two_fifth { width: 37.6%; }
-.col_three_fifth { width: 58.4%; }
+.col_two_fifth { width: 50.6%; }
+.col_three_fifth { width: 41.4%; }
 .col_four_fifth { width: 79.2%; }
 .col_one_sixth { width: 13.33%; }
 .col_five_sixth { width: 82.67%; }
+
+
 body.stretched .container-fullwidth {
 	position: relative;
 	padding: 0 60px;

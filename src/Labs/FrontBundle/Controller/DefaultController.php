@@ -12,7 +12,10 @@ class DefaultController extends Controller
      */
     public function HomepageAction()
     {
-        return $this->render('LabsFrontBundle:Default:index.html.twig');
+        $about = $this->getAboutContent();
+        return $this->render('LabsFrontBundle:Default:index.html.twig',[
+            'about' => $about
+        ]);
     }
 
     /**
@@ -88,5 +91,16 @@ class DefaultController extends Controller
             'events' => $event,
             'packs' => $pack
         ));
+    }
+
+    /**
+     * @return mixed
+     * Retour les contentes de la page About
+     */
+    private function getAboutContent()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $about = $em->getRepository('LabsBackBundle:About')->findOnePage();
+        return $about;
     }
 }

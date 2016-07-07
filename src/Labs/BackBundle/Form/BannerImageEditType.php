@@ -3,25 +3,28 @@
 namespace Labs\BackBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Vich\UploaderBundle\Form\Type\VichImageType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 
-class BannerEditType extends AbstractType
+
+class BannerImageEditType extends AbstractType
 {
 
-    
     /**
      * @param OptionsResolver $resolver
      */
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'Labs\BackBundle\Entity\Banner'
+            'data_class' => 'Labs\BackBundle\Entity\BannerImage'
         ));
     }
 
     public function getParent()
     {
-        return BannerType::class;
+        return BannerImageType::class;
     }
 
     public function getName()
@@ -31,7 +34,6 @@ class BannerEditType extends AbstractType
 
     public function getBlockPrefix()
     {
-        return 'banner_edit';
+        return 'banner_image_edit';
     }
-
 }

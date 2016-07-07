@@ -8,14 +8,14 @@ use Vich\UploaderBundle\Mapping\Annotation as Vich;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * Banner
+ * BannerImage
  *
- * @ORM\Table(name="banners")
- * @ORM\Entity(repositoryClass="Labs\BackBundle\Repository\BannerRepository")
+ * @ORM\Table(name="banner_image")
+ * @ORM\Entity(repositoryClass="Labs\BackBundle\Repository\BannerImageRepository")
  * @ORM\HasLifecycleCallbacks()
  * @Vich\Uploadable
  */
-class Banner
+class BannerImage
 {
     /**
      * @var integer
@@ -49,23 +49,18 @@ class Banner
     /**
      * @var string
      *
-     * @ORM\Column(name="name", type="string", length=255, nullable=true)
-     */
-    protected $name;
-
-    /**
-     * @var string
-     *
      * @ORM\Column(name="title", type="string", length=225, nullable=true)
      */
     protected $title;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="sub_title", type="string", length=225, nullable=true)
+     * @Assert\NotBlank(message="Entrez le nom de la bannière avant de continuer")
+     * @ORM\Column(name="name", type="string", length=225, nullable=true)
      */
-    protected $sub_title;
+    protected $name;
+
+
 
     /**
      * @var dateTime
@@ -77,17 +72,18 @@ class Banner
 
     /**
      * @var
-     * @ORM\Column(name="text_color", type="string", nullable=true)
-     */
-    protected $textColor;
-
-
-    /**
-     * @var
      *
      * @ORM\Column(name="online", type="boolean")
      */
     protected $online;
+
+
+    /**
+     * @var
+     * @ORM\OneToMany(targetEntity="Labs\BackBundle\Entity\About", mappedBy="bannerImage")
+     * @ORM\JoinColumn(referencedColumnName="id", nullable=true)
+     */
+    protected $about;
 
 
     public function __construct()
@@ -146,29 +142,6 @@ class Banner
     }
 
 
-    /**
-     * Set name
-     *
-     * @param string $name
-     *
-     * @return Banner
-     */
-    public function setName($name)
-    {
-        $this->name = $name;
-
-        return $this;
-    }
-
-    /**
-     * Get name
-     *
-     * @return string
-     */
-    public function getName()
-    {
-        return $this->name;
-    }
 
     /**
      * Set title
@@ -194,29 +167,6 @@ class Banner
         return $this->title;
     }
 
-    /**
-     * Set subTitle
-     *
-     * @param string $subTitle
-     *
-     * @return Banner
-     */
-    public function setSubTitle($subTitle)
-    {
-        $this->sub_title = $subTitle;
-
-        return $this;
-    }
-
-    /**
-     * Get subTitle
-     *
-     * @return string
-     */
-    public function getSubTitle()
-    {
-        return $this->sub_title;
-    }
 
 
     /**
@@ -259,30 +209,6 @@ class Banner
 
 
     /**
-     * @return string
-     */
-    public function getAssertPath()
-    {
-        return $this->getUploadDir().'/'.$this->imageName;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getTextColor()
-    {
-        return $this->textColor;
-    }
-
-    /**
-     * @param mixed $textColor
-     */
-    public function setTextColor($textColor)
-    {
-        $this->textColor = $textColor;
-    }
-
-    /**
      * @return mixed
      */
     public function getOnline()
@@ -297,6 +223,23 @@ class Banner
     public function setOnline($online)
     {
         $this->online = $online;
+    }
+
+
+    /**
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param string $name
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
     }
 
 

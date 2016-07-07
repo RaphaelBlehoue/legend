@@ -43,6 +43,8 @@ class PacksController extends Controller
         $form->handleRequest($request);
 
             if($form->isValid()){
+                $color = $request->request->get('_color');
+                $packs->setColor($color);
                 $em->persist($packs);
                 $em->flush();
                 $this->addFlash('success', 'L\'enregistrement  a été fait avec succès');
@@ -72,6 +74,8 @@ class PacksController extends Controller
         $form->handleRequest($request);
 
         if($form->isValid()){
+            $color = $request->request->get('_color');
+            $packs->setColor($color);
             $em->flush();
             $this->addFlash('success', 'La modification a été fait avec succès');
             return $this->redirectToRoute('packs_index', array(), 302);

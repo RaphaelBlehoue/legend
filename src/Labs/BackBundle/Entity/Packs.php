@@ -31,6 +31,13 @@ class Packs
 
     /**
      * @var string
+     * @Assert\NotBlank(message="Entrez la couleur du packages")
+     * @ORM\Column(name="color", type="string", length=225)
+     */
+    protected $color;
+
+    /**
+     * @var string
      * @Assert\NotNull(message="Entrez un contenu avant de continuer")
      * @ORM\Column(name="content", type="text")
      */
@@ -214,4 +221,22 @@ class Packs
     {
         return $this->dossier;
     }
+
+    /**
+     * @return string
+     */
+    public function getColor()
+    {
+        return $this->color;
+    }
+
+    /**
+     * @param string $color
+     */
+    public function setColor($color)
+    {
+        $this->color = $color;
+    }
+
+
 }

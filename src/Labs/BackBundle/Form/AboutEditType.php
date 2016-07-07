@@ -5,23 +5,22 @@ namespace Labs\BackBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class BannerEditType extends AbstractType
+class AboutEditType extends AbstractType
 {
 
-    
     /**
      * @param OptionsResolver $resolver
      */
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'Labs\BackBundle\Entity\Banner'
+            'data_class' => 'Labs\BackBundle\Entity\About'
         ));
     }
 
     public function getParent()
     {
-        return BannerType::class;
+        return AboutType::class;
     }
 
     public function getName()
@@ -31,7 +30,7 @@ class BannerEditType extends AbstractType
 
     public function getBlockPrefix()
     {
-        return 'banner_edit';
+        return 'about_edit';
     }
 
 }

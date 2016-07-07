@@ -96,6 +96,14 @@ vich_uploader:
             delete_on_update:   true
             delete_on_remove:   true
             namer:              vich_uploader.namer_uniqid
+
+        banner_image_page:
+            uri_prefix:         /uploads/pages
+            upload_destination: %kernel.root_dir%/../web/uploads/pages
+            inject_on_load:     false
+            delete_on_update:   true
+            delete_on_remove:   true
+            namer:              vich_uploader.namer_uniqid
 #liip_imagine upload crop image
 
 liip_imagine:
@@ -114,6 +122,11 @@ liip_imagine:
             quality: 60
             filters:
                 thumbnail: { size: [218, 145], mode: outbound }
+
+        photo_dg:
+            quality: 100
+            filters:
+                thumbnail: { size: [430, 300], mode: outbound }
 
         slide:
             quality: 100
