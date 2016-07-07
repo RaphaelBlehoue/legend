@@ -31,8 +31,8 @@ class Packs
 
     /**
      * @var string
-     * @Assert\NotBlank(message="Entrez la couleur du packages")
-     * @ORM\Column(name="color", type="string", length=225)
+     *
+     * @ORM\Column(name="color", type="string", length=225, nullable=true)
      */
     protected $color;
 
@@ -64,10 +64,18 @@ class Packs
      */
     protected $dossier;
 
+    /**
+     * @var
+     *
+     * @ORM\OneToMany(targetEntity="Labs\BackBundle\Entity\Packages", mappedBy="pack", cascade={"remove"})
+     */
+    protected $packages;
+
 
     public function __construct()
     {
         $this->online = true;
+        $this->colors = '#fff';
     }
 
 
@@ -239,4 +247,38 @@ class Packs
     }
 
 
+
+    /**
+     * Add package
+     *
+     * @param \Labs\BackBundle\Entity\Packages $package
+     *
+     * @return Packs
+     */
+    public function addPackage(\Labs\BackBundle\Entity\Packages $package)
+    {
+        $this->packages[] = $package;
+
+        return $this;
+    }
+
+    /**
+     * Remove package
+     *
+     * @param \Labs\BackBundle\Entity\Packages $package
+     */
+    public function removePackage(\Labs\BackBundle\Entity\Packages $package)
+    {
+        $this->packages->removeElement($package);
+    }
+
+    /**
+     * Get packages
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getPackages()
+    {
+        return $this->packages;
+    }
 }

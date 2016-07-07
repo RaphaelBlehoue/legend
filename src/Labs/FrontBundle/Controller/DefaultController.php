@@ -13,8 +13,10 @@ class DefaultController extends Controller
     public function HomepageAction()
     {
         $about = $this->getAboutContent();
+        $packs = $this->getPacksList();
         return $this->render('LabsFrontBundle:Default:index.html.twig',[
-            'about' => $about
+            'about' => $about,
+            'packs' => $packs
         ]);
     }
 
@@ -102,5 +104,15 @@ class DefaultController extends Controller
         $em = $this->getDoctrine()->getManager();
         $about = $em->getRepository('LabsBackBundle:About')->findOnePage();
         return $about;
+    }
+
+    /**
+     * @return array|\Labs\BackBundle\Entity\Packs[]
+     */
+    private function getPacksList()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $data = $em->getRepository('LabsBackBundle:Packs')->findAll();
+        return $data;
     }
 }

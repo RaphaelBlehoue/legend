@@ -132,28 +132,5 @@ class Packages
     {
         return $this->color;
     }
-
-    /**
-     * Set pack
-     *
-     * @param \Labs\BackBundle\Entity\Packs $pack
-     *
-     * @return Packages
-     */
-    public function setPack(\Labs\BackBundle\Entity\Packs $pack = null)
-    {
-        $this->pack = $pack;
-
-        return $this;
-    }
-
-    /**
-     * Get pack
-     *
-     * @return \Labs\BackBundle\Entity\Packs
-     */
-    public function getPack()
-    {
-        return $this->pack;
-    }
 }
+

@@ -31,6 +31,13 @@ class Packs
 
     /**
      * @var string
+     * @Assert\NotBlank(message="Entrez la couleur du packages")
+     * @ORM\Column(name="color", type="string", length=225)
+     */
+    protected $color;
+
+    /**
+     * @var string
      * @Assert\NotNull(message="Entrez un contenu avant de continuer")
      * @ORM\Column(name="content", type="text")
      */
@@ -56,6 +63,13 @@ class Packs
      * @ORM\OneToMany(targetEntity="Labs\BackBundle\Entity\Dossier", mappedBy="pack")
      */
     protected $dossier;
+
+    /**
+     * @var
+     *
+     * @ORM\OneToMany(targetEntity="Labs\BackBundle\Entity\Packages", mappedBy="pack", cascade={"remove"})
+     */
+    protected $packages;
 
 
     public function __construct()
@@ -180,4 +194,56 @@ class Packs
     {
         return $this->booking;
     }
+
+    /**
+     * Add dossier
+     *
+     * @param \Labs\BackBundle\Entity\Dossier $dossier
+     *
+     * @return Packs
+     */
+    public function addDossier(\Labs\BackBundle\Entity\Dossier $dossier)
+    {
+        $this->dossier[] = $dossier;
+
+        return $this;
+    }
+
+    /**
+     * Remove dossier
+     *
+     * @param \Labs\BackBundle\Entity\Dossier $dossier
+     */
+    public function removeDossier(\Labs\BackBundle\Entity\Dossier $dossier)
+    {
+        $this->dossier->removeElement($dossier);
+    }
+
+    /**
+     * Get dossier
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getDossier()
+    {
+        return $this->dossier;
+    }
+
+    /**
+     * @return string
+     */
+    public function getColor()
+    {
+        return $this->color;
+    }
+
+    /**
+     * @param string $color
+     */
+    public function setColor($color)
+    {
+        $this->color = $color;
+    }
+
+
 }
