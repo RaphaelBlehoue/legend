@@ -2,6 +2,8 @@
 
 namespace Labs\BackBundle\Repository;
 
+use Doctrine\ORM\Query\Expr;
+
 /**
  * DossierRepository
  *
@@ -26,5 +28,13 @@ class DossierRepository extends \Doctrine\ORM\EntityRepository
         $qb->where($qb->expr()->eq('d.id', ':id'));
         $qb->setParameter(':id', $id);
         return $qb->getQuery()->getOneOrNullResult();
+    }
+
+    public function findDossierLimit()
+    {
+        $qb = $this->createQueryBuilder('d');
+        $qb->orderBy('d.created', 'DESC');
+        $qb->setMaxResults(6);
+        return $qb->getQuery()->getResult();
     }
 }

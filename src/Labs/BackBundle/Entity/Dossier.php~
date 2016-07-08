@@ -25,6 +25,14 @@ class Dossier
 
     /**
      * @var string
+     *
+     * @Assert\NotNull(message="Entrez le nom du dossier")
+     * @ORM\Column(name="name", type="string", length=255)
+     */
+    protected $name;
+
+    /**
+     * @var string
      * @Assert\NotNull(message="Entrez le nom du marié avant de continuer")
      * @ORM\Column(name="wedding_men", type="string", length=255)
      */
@@ -67,6 +75,13 @@ class Dossier
     protected $video;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="video_prewedding", type="string", length=255, nullable=true)
+     */
+    protected $video_prewedding;
+
+    /**
      * @var
      *
      * @ORM\Column(name="online", type="boolean")
@@ -94,16 +109,34 @@ class Dossier
 
     /**
      * @var
-     * @ORM\ManyToOne(targetEntity="Labs\BackBundle\Entity\Packs", inversedBy="dossier")
+     * @Assert\NotBlank(message="Faite le choix d'un pack avant de continuer")
+     * @ORM\ManyToOne(targetEntity="Labs\BackBundle\Entity\Packages", inversedBy="dossier")
      * @ORM\JoinColumn(referencedColumnName="id", nullable=false)
      */
-    protected $pack;
+    protected $package;
     
 
     public function __construct()
     {
         $this->colors = '#fff';
         $this->created = new \DateTime('now');
+        $this->online = false;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param string $name
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
     }
 
 
@@ -259,6 +292,22 @@ class Dossier
         $this->video = $video;
     }
 
+    /**
+     * @return string
+     */
+    public function getVideoPrewedding()
+    {
+        return $this->video_prewedding;
+    }
+
+    /**
+     * @param string $video_prewedding
+     */
+    public function setVideoPrewedding($video_prewedding)
+    {
+        $this->video_prewedding = $video_prewedding;
+    }
+
 
     /**
      * Add media
@@ -359,8 +408,5 @@ class Dossier
     {
         $this->created = $created;
     }
-
-
-
-
+    
 }

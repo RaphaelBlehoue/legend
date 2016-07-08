@@ -54,16 +54,9 @@ class DossierType extends AbstractType
                     'class' => 'form-control'
                 )
             ))
-            ->add('online', ChoiceType::class, array(
+            ->add('package',EntityType::class, array(
                 'label' => false,
-                'choices' => array(
-                    'OUI' => true,
-                    'NON' => false,
-                ))
-            )
-            ->add('pack',EntityType::class, array(
-                'label' => false,
-                'class' => 'LabsBackBundle:Packs',
+                'class' => 'LabsBackBundle:Packages',
                 'choice_label' => 'name'
             ))
         ;

@@ -10,5 +10,74 @@ namespace Labs\BackBundle\Repository;
  */
 class MediaRepository extends \Doctrine\ORM\EntityRepository
 {
+   public function UpdateAllFalse($type = null, $dossier)
+   {
+       $qb = $this->createQueryBuilder('m');
+       $qb->leftJoin('m.dossier', 'd')
+           ->leftJoin('m.type', 't');
+       $qb->where(
+           $qb->expr()->eq('m.dossier', ':dossier'),
+           $qb->expr()->eq('m.type', ':type')
+       );
+       $qb->setParameter(':dossier', $dossier);
+       $qb->setParameter(':type', $type);
+       return $qb->getQuery()->getResult();
+   }
 
+    public function UpdateTrue($media, $type = null, $dossier)
+    {
+        $qb = $this->createQueryBuilder('m');
+        $qb->leftJoin('m.dossier', 'd')
+            ->leftJoin('m.type', 't');
+        $qb->where(
+            $qb->expr()->eq('m.id', ':media'),
+            $qb->expr()->eq('m.dossier', ':dossier'),
+            $qb->expr()->eq('m.type', ':type')
+        );
+        $qb->setParameter(':media', $media);
+        $qb->setParameter(':dossier', $dossier);
+        $qb->setParameter(':type', $type);
+        return $qb->getQuery()->getSingleResult();
+    }
+
+    public function UpdateStatusAllFalse($dossier)
+    {
+        $qb = $this->createQueryBuilder('m');
+        $qb->leftJoin('m.dossier', 'd');
+        $qb->where(
+            $qb->expr()->eq('m.dossier', ':dossier')
+        );
+        $qb->setParameter(':dossier', $dossier);
+        return $qb->getQuery()->getResult();
+    }
+
+    public function UpdateStatusTrue($media, $dossier)
+    {
+        $qb = $this->createQueryBuilder('m');
+        $qb->leftJoin('m.dossier', 'd');
+        $qb->where(
+            $qb->expr()->eq('m.id', ':media'),
+            $qb->expr()->eq('m.dossier', ':dossier')
+        );
+        $qb->setParameter(':media', $media);
+        $qb->setParameter(':dossier', $dossier);
+        return $qb->getQuery()->getSingleResult();
+    }
+
+    public function findLastMedia($dossier)
+    {
+        $qb = $this->createQueryBuilder('m');
+        $qb->leftJoin('m.dossier', 'd')
+            ->addSelect('d')
+            ->leftJoin('m.type', 't')
+            ->addSelect('t');
+
+        $qb->where(
+            $qb->expr()->eq('m.status', 1),
+            $qb->expr()->in('d.id', ':dossier')
+        );
+        $qb->groupBy('d.id');
+        $qb->setParameter(':dossier', $dossier);
+        return $qb->getQuery()->getResult();
+    }
 }

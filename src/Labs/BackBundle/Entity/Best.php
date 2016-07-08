@@ -93,6 +93,7 @@ class Best
     public function __construct()
     {
         $this->created = new \DateTime('now');
+        $this->top = false;
     }
 
 

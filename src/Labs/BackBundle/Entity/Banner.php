@@ -298,6 +298,4 @@ class Banner
     {
         $this->online = $online;
     }
-
-
 }

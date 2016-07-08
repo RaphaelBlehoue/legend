@@ -14,9 +14,12 @@ class DefaultController extends Controller
     {
         $about = $this->getAboutContent();
         $packs = $this->getPacksList();
+        $dossiers = $this->getMediaTop();
+        //dump($dossiers);
         return $this->render('LabsFrontBundle:Default:index.html.twig',[
             'about' => $about,
-            'packs' => $packs
+            'packs' => $packs,
+            'dossiers' => $dossiers
         ]);
     }
 
@@ -38,7 +41,9 @@ class DefaultController extends Controller
         return $this->render('LabsFrontBundle:Contact:contact.html.twig');
     }
 
-
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     public function getSlideAction()
     {
         $em = $this->getDoctrine()->getManager();
@@ -50,7 +55,9 @@ class DefaultController extends Controller
         ));
     }
 
-
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     public function getMenuAction()
     {
         $em = $this->getDoctrine()->getManager();
@@ -73,6 +80,9 @@ class DefaultController extends Controller
         ));
     }
 
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     public function getMenuGlobalAction()
     {
         $em = $this->getDoctrine()->getManager();
@@ -115,4 +125,19 @@ class DefaultController extends Controller
         $data = $em->getRepository('LabsBackBundle:Packs')->findAll();
         return $data;
     }
+
+
+    private function getMediaTop()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $dossiers = [];
+        $dossier = $em->getRepository('LabsBackBundle:Dossier')->findDossierLimit(6);
+        foreach ($dossier as $d ) {
+            $dossiers[] = $d->getId();
+        }
+        $data = $em->getRepository('LabsBackBundle:Media')->findLastMedia($dossiers);
+        return $data;
+    }
+
+
 }

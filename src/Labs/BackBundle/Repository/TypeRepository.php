@@ -18,4 +18,24 @@ class TypeRepository extends \Doctrine\ORM\EntityRepository
         $qb->setParameter(':id', $id);
         return $qb->getQuery()->getOneOrNullResult();
     }
+
+    public function getOneArgument($type_id)
+    {
+        $qb = $this->createQueryBuilder('t');
+        $qb->where($qb->expr()->eq('t.id', ':id'));
+        $qb->setParameter(':id', $type_id);
+        return $qb->getQuery()->getOneOrNullResult();
+    }
+
+    public function findMediaGroupBy($dossier)
+    {
+        $qb = $this->createQueryBuilder('t');
+        $qb->leftJoin('t.medias','m')
+            ->addSelect('m')
+            ->leftJoin('m.dossier', 'd')
+            ->addSelect('d');
+        $qb->where($qb->expr()->eq('m.dossier', ':dossier'))
+            ->setParameter(':dossier', $dossier);
+        return $qb->getQuery()->getResult();
+    }
 }

@@ -110,16 +110,17 @@ class Dossier
     /**
      * @var
      * @Assert\NotBlank(message="Faite le choix d'un pack avant de continuer")
-     * @ORM\ManyToOne(targetEntity="Labs\BackBundle\Entity\Packs", inversedBy="dossier")
+     * @ORM\ManyToOne(targetEntity="Labs\BackBundle\Entity\Packages", inversedBy="dossier")
      * @ORM\JoinColumn(referencedColumnName="id", nullable=false)
      */
-    protected $pack;
+    protected $package;
     
 
     public function __construct()
     {
         $this->colors = '#fff';
         $this->created = new \DateTime('now');
+        $this->online = false;
     }
 
     /**
@@ -407,30 +408,29 @@ class Dossier
     {
         $this->created = $created;
     }
-
-
+    
 
     /**
-     * Set pack
+     * Set package
      *
-     * @param \Labs\BackBundle\Entity\Packs $pack
+     * @param \Labs\BackBundle\Entity\Packages $package
      *
      * @return Dossier
      */
-    public function setPack(\Labs\BackBundle\Entity\Packs $pack)
+    public function setPackage(\Labs\BackBundle\Entity\Packages $package)
     {
-        $this->pack = $pack;
+        $this->package = $package;
 
         return $this;
     }
 
     /**
-     * Get pack
+     * Get package
      *
-     * @return \Labs\BackBundle\Entity\Packs
+     * @return \Labs\BackBundle\Entity\Packages
      */
-    public function getPack()
+    public function getPackage()
     {
-        return $this->pack;
+        return $this->package;
     }
 }

@@ -46,7 +46,7 @@
                     </div>
                     <div class="separator bottom"></div>
                     <div class="pull-right">
-                        <a href="" class="btn btn-primary photoView" id="photoView">{{ 'Voir Toutes les Photos du dossier  '~ dossier.name }}</a>
+                        <a href="{{ path('dossier_view', {'id' : dossier.id}) }}" class="btn btn-primary photoView" id="photoView">{{ 'Voir Toutes les Photos du dossier  '~ dossier.name }}</a>
                     </div>
                     <div class="clearfix"></div>
                     <!-- // Dropzone END -->

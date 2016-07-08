@@ -32,13 +32,6 @@ class BestType extends AbstractType
                 'required' => false,
                 'allow_delete' => true
             ))
-            ->add('top', ChoiceType::class, array(
-                    'label' => false,
-                    'choices' => array(
-                        'OUI' => true,
-                        'NON' => false,
-                    ))
-            )
             ->add('genre', ChoiceType::class, array(
                     'label' => false,
                     'choices' => array(

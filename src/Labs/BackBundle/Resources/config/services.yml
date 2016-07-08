@@ -1,4 +1,4 @@
 services:
-#    labs_back.example:
-#        class: Labs\BackBundle\Example
-#        arguments: ["@service_id", "plain_value", %parameter%]
+    update.status.service:
+        class: Labs\BackBundle\Service\UpdateStatusService
+        arguments: ['@doctrine.orm.entity_manager', '@request_stack']

@@ -61,16 +61,23 @@ class MediaController extends Controller
     /**
      * @param Request $request
      * @param Dossier $dossier
-     * @param Type $type
-     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
+     * @param Type|null $type
+     * @param null $type_id
+     * @return JsonResponse|\Symfony\Component\HttpFoundation\Response
      * @Route("/add/{dossier}/{type}", name="media_add")
      */
-    public function AddAction(Request $request, Dossier $dossier, Type $type)
+    public function AddAction(Request $request, Dossier $dossier, Type $type = null, $type_id = null)
     {
 
         $em = $this->getDoctrine()->getManager();
         $media = new Media();
-        $type = $em->getRepository('LabsBackBundle:Type')->getOne($type);
+        $type_instance = null;
+        if(!isset($type)){
+            $type_instance = $em->getRepository('LabsBackBundle:Type')->getOneArgument($type_id);
+        }else{
+            $type_instance = $em->getRepository('LabsBackBundle:Type')->getOne($type);
+        }
+        $types = $type_instance;
         $dossier = $em->getRepository('LabsBackBundle:Dossier')->getOne($dossier);
 
         if($request->isXmlHttpRequest()){
@@ -84,7 +91,7 @@ class MediaController extends Controller
             $media->setUrl($fileName);
             $media->setStatus(true);
             $media->setActived(true);
-            $media->setType($type);
+            $media->setType($types);
             $media->setDossier($dossier);
             $em->persist($media);
             $em->flush($media);
@@ -98,6 +105,42 @@ class MediaController extends Controller
         ));
     }
 
+    /**
+     * @param Request $request
+     * @param Media $media
+     * @param Type $type
+     * @param Dossier $dossier
+     * @return JsonResponse
+     * @Route("/update/status/{id}/{type}/{dossier}", name="update_media_status")
+     * @Method("GET")
+     */
+    public function addTopMediaAction(Request $request, Media $media, Type $type, Dossier $dossier)
+    {
+        if($request->isMethod('GET')){
+            $service = $this->container->get('update.status.service');
+            $response = $service->UpdateActived($media, $type, $dossier);
+            $this->addFlash($response['status'], $response['message']);
+            return $this->redirectToRoute('dossier_view', ['id' => $dossier->getId()]);
+        }
+    }
+
+    /**
+     * @param Request $request
+     * @param Media $media
+     * @param Dossier $dossier
+     * @return JsonResponse
+     * @Route("/update/status/{id}/{dossier}", name="update_media_status_global")
+     * @Method("GET")
+     */
+    public function addTopStatusMediaAction(Request $request, Media $media,  Dossier $dossier)
+    {
+        if($request->isMethod('GET')){
+            $service = $this->container->get('update.status.service');
+            $response = $service->UpdateStatus($media, $dossier);
+            $this->addFlash($response['status'], $response['message']);
+            return $this->redirectToRoute('dossier_view', ['id' => $dossier->getId()]);
+        }
+    }
 
     /**
      * @param Booking $booking

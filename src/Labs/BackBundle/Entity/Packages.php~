@@ -50,6 +50,21 @@ class Packages
      */
     protected $pack;
 
+    /**
+     * @var
+     *
+     * @ORM\OneToMany(targetEntity="Labs\BackBundle\Entity\Dossier", mappedBy="package")
+     */
+    protected $dossier;
+
+    /**
+     * @var
+     *
+     * @ORM\OneToMany(targetEntity="Labs\BackBundle\Entity\Booking", mappedBy="packages", cascade={"remove"})
+     */
+    protected $booking;
+
+
 
     /**
      * Get id
@@ -132,5 +147,69 @@ class Packages
     {
         return $this->color;
     }
-}
 
+    /**
+     * Set pack
+     *
+     * @param \Labs\BackBundle\Entity\Packs $pack
+     *
+     * @return Packages
+     */
+    public function setPack(\Labs\BackBundle\Entity\Packs $pack = null)
+    {
+        $this->pack = $pack;
+
+        return $this;
+    }
+
+    /**
+     * Get pack
+     *
+     * @return \Labs\BackBundle\Entity\Packs
+     */
+    public function getPack()
+    {
+        return $this->pack;
+    }
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->dossier = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Add dossier
+     *
+     * @param \Labs\BackBundle\Entity\Dossier $dossier
+     *
+     * @return Packages
+     */
+    public function addDossier(\Labs\BackBundle\Entity\Dossier $dossier)
+    {
+        $this->dossier[] = $dossier;
+
+        return $this;
+    }
+
+    /**
+     * Remove dossier
+     *
+     * @param \Labs\BackBundle\Entity\Dossier $dossier
+     */
+    public function removeDossier(\Labs\BackBundle\Entity\Dossier $dossier)
+    {
+        $this->dossier->removeElement($dossier);
+    }
+
+    /**
+     * Get dossier
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getDossier()
+    {
+        return $this->dossier;
+    }
+}

@@ -53,9 +53,9 @@ class Booking
     /**
      * @var
      *
-     * @ORM\ManyToOne(targetEntity="Labs\BackBundle\Entity\Packs", inversedBy="booking")
+     * @ORM\ManyToOne(targetEntity="Labs\BackBundle\Entity\Packages", inversedBy="booking")
      */
-    protected $pack;
+    protected $packages;
 
     /**
      * @var bool
@@ -192,30 +192,29 @@ class Booking
     {
         $this->date_res = $date_res;
     }
-    
 
 
     /**
-     * Set pack
+     * Set packages
      *
-     * @param \Labs\BackBundle\Entity\Packs $pack
+     * @param \Labs\BackBundle\Entity\Packages $packages
      *
-     * @return booking
+     * @return Booking
      */
-    public function setPack(\Labs\BackBundle\Entity\Packs $pack = null)
+    public function setPackages(\Labs\BackBundle\Entity\Packages $packages = null)
     {
-        $this->pack = $pack;
+        $this->packages = $packages;
 
         return $this;
     }
 
     /**
-     * Get pack
+     * Get packages
      *
-     * @return \Labs\BackBundle\Entity\Packs
+     * @return \Labs\BackBundle\Entity\Packages
      */
-    public function getPack()
+    public function getPackages()
     {
-        return $this->pack;
+        return $this->packages;
     }
 }

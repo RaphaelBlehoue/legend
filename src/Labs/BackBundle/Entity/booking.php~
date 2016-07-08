@@ -3,15 +3,14 @@
 namespace Labs\BackBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Validator\Constraints\Date;
 
 /**
- * booking
+ * Booking
  *
  * @ORM\Table(name="booking")
- * @ORM\Entity(repositoryClass="Labs\BackBundle\Repository\bookingRepository")
+ * @ORM\Entity(repositoryClass="Labs\BackBundle\Repository\BookingRepository")
  */
-class booking
+class Booking
 {
     /**
      * @var int
@@ -54,9 +53,9 @@ class booking
     /**
      * @var
      *
-     * @ORM\ManyToOne(targetEntity="Labs\BackBundle\Entity\Packs", inversedBy="booking")
+     * @ORM\ManyToOne(targetEntity="Labs\BackBundle\Entity\Packages", inversedBy="booking")
      */
-    protected $pack;
+    protected $packages;
 
     /**
      * @var bool
@@ -193,7 +192,5 @@ class booking
     {
         $this->date_res = $date_res;
     }
-    
 
 }
-

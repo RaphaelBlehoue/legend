@@ -53,7 +53,7 @@
                         {% for dossier in dossiers %}
                                     <tr class="gradeX">
                                         <td>{{ dossier.name }}</td>
-                                        <td>{% if dossier.pack|length > 0 %} <span class="label label-success label-stroke">{{ dossier.pack.name }}</span>  {% endif %}</td>
+                                        <td>{% if dossier.package|length > 0 %} <span class="label label-success label-stroke">{{ dossier.package.name }}</span>  {% endif %}</td>
                                         <td>{{ dossier.ceremonyDate|date('d-M-Y') }}</td>
                                         <td><span class="label label-{{ (dossier.online == 1) ? 'success' : 'primary' }}">{{ (dossier.online == 1) ? 'En ligne' : 'Hors ligne' }}</span></td>
                                         <td>{{ dossier.created|date('d-M-Y') }}</td>

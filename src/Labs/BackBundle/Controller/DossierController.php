@@ -42,18 +42,17 @@ class DossierController extends Controller
         $dossiers = $em->getRepository('LabsBackBundle:Dossier')->getOneAndAssociation($dossier);
         $bestman = $em->getRepository('LabsBackBundle:Best')->findBy(array('dossier' => $dossier,'genre'=> 1),array('top' => 'asc'));
         $bestwomen = $em->getRepository('LabsBackBundle:Best')->findBy(array('dossier' => $dossier,'genre'=> 0),array('top' => 'asc'));
-        $prewedding = $em->getRepository('LabsBackBundle:Media')->findBy(array('dossier' => $dossier,'type'=> 1),array('id' => 'desc'), 31, 0);
-        $wedding = $em->getRepository('LabsBackBundle:Media')->findBy(array('dossier' => $dossier,'type'=> 2), array('id' => 'desc'), 31, 0);
+        $galleries = $em->getRepository('LabsBackBundle:Type')->findMediaGroupBy($dossier);
+        dump($galleries);
         if(null === $dossiers)
         {
             throw new NotFoundHttpException('Page Introuvable',null, 404);
         }
         return $this->render('LabsBackBundle:Dossiers:dossier_view.html.twig',array(
             'dossier'       => $dossiers,
-            'prewedding'    => $prewedding,
-            'wedding'       => $wedding,
             'bestMan'       => $bestman,
-            'bestwomen'     => $bestwomen
+            'bestwomen'     => $bestwomen,
+            'galleries'     => $galleries
         ));
     }
 

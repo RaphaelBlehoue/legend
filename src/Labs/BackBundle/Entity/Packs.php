@@ -50,19 +50,6 @@ class Packs
      */
     protected $online;
 
-    /**
-     * @var
-     *
-     * @ORM\OneToMany(targetEntity="Labs\BackBundle\Entity\Booking", mappedBy="pack", cascade={"remove"})
-     */
-    protected $booking;
-
-    /**
-     * @var
-     *
-     * @ORM\OneToMany(targetEntity="Labs\BackBundle\Entity\Dossier", mappedBy="pack")
-     */
-    protected $dossier;
 
     /**
      * @var
@@ -163,74 +150,6 @@ class Packs
 
 
     /**
-     * Add Booking
-     *
-     * @param \Labs\BackBundle\Entity\Booking $booking
-     *
-     * @return Packs
-     */
-    public function addBooking(\Labs\BackBundle\Entity\Booking $booking)
-    {
-        $this->booking[] = $booking;
-
-        return $this;
-    }
-
-    /**
-     * Remove Booking
-     *
-     * @param \Labs\BackBundle\Entity\Booking $booking
-     */
-    public function removeBooking(\Labs\BackBundle\Entity\Booking $booking)
-    {
-        $this->booking->removeElement($booking);
-    }
-
-    /**
-     * Get Booking
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getBooking()
-    {
-        return $this->booking;
-    }
-
-    /**
-     * Add dossier
-     *
-     * @param \Labs\BackBundle\Entity\Dossier $dossier
-     *
-     * @return Packs
-     */
-    public function addDossier(\Labs\BackBundle\Entity\Dossier $dossier)
-    {
-        $this->dossier[] = $dossier;
-
-        return $this;
-    }
-
-    /**
-     * Remove dossier
-     *
-     * @param \Labs\BackBundle\Entity\Dossier $dossier
-     */
-    public function removeDossier(\Labs\BackBundle\Entity\Dossier $dossier)
-    {
-        $this->dossier->removeElement($dossier);
-    }
-
-    /**
-     * Get dossier
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getDossier()
-    {
-        return $this->dossier;
-    }
-
-    /**
      * @return string
      */
     public function getColor()
@@ -245,7 +164,6 @@ class Packs
     {
         $this->color = $color;
     }
-
 
 
     /**

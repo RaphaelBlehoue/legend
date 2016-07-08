@@ -38,14 +38,6 @@
                             <div class="innerB">
                                 <div class="row">
                                     <div class="col-xs-8 col-xs-offset-2 form-group">
-                                        <label class="control-label" for="name">{{ 'Best Man ou Women en Chef ?' }}</label>
-                                        {{ form_row(form.top) }}
-                                        {{ form_errors(form.top) }}
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-xs-8 col-xs-offset-2 form-group">
                                         <label class="control-label" for="name">{{ 'Nom du Best Man ou Women' }}</label>
                                         {{ form_row(form.name) }}
                                         {{ form_errors(form.name) }}
@@ -81,7 +73,7 @@
                                     <div class="form-group">
                                         <div class="col-sm-offset-2 col-sm-10">
                                             <button type="submit" class="btn btn-success" formnovalidate>{{ 'Sauvegarder & Créer un nouveau '|upper }}</button>
-                                            <a href="{{ path('media_create', { 'id' : dossier.id }) }}" class="btn btn-info">{{ 'Etape suivante' }}</a>
+                                            <a href="{{ path('media_create', { 'id' : dossier.id }) }}" class="btn btn-info">{{ 'Ajouter des photos' }}</a>
                                         </div>
                                     </div>
                                 </div>
