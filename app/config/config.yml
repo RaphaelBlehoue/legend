@@ -97,6 +97,14 @@ vich_uploader:
             delete_on_remove:   true
             namer:              vich_uploader.namer_uniqid
 
+        partner_image:
+            uri_prefix:         /uploads/partner
+            upload_destination: "%kernel.root_dir%/../web/uploads/partner"
+            inject_on_load:     false
+            delete_on_update:   true
+            delete_on_remove:   true
+            namer:              vich_uploader.namer_uniqid
+
         banner_image_page:
             uri_prefix:         /uploads/pages
             upload_destination: "%kernel.root_dir%/../web/uploads/pages"
@@ -154,6 +162,12 @@ liip_imagine:
                     image: Resources/data/logo-dark.png
                     size: 0.2
                     position: bottomright
+
+        logo_partenaire:
+            quality: 100
+            filters:
+                thumbnail: { size: [142, 107], mode: outbound }
+
 
         slide:
             quality: 100

@@ -16,12 +16,13 @@ class DefaultController extends Controller
         $packs = $this->getPacksList();
         $dossiers = $this->getMediaTop();
         $events = $this->getEventListLimited(6);
-        dump($events);
+        $partners = $this->getAllPartners();
         return $this->render('LabsFrontBundle:Default:index.html.twig',[
             'about' => $about,
             'packs' => $packs,
             'dossiers' => $dossiers,
-            'events'   => $events
+            'events'   => $events,
+            'partners' => $partners 
         ]);
     }
 
@@ -156,6 +157,17 @@ class DefaultController extends Controller
             $data = $em->getRepository('LabsBackBundle:Events')->findEvents($num);
         else
             $data = $em->getRepository('LabsBackBundle:Events')->findEvents();
+        return $data;
+    }
+
+    /**
+     * @return array|\Labs\BackBundle\Entity\Partner[]
+     * Retourne tous les partenaires
+     */
+    private function getAllPartners()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $data = $em->getRepository('LabsBackBundle:Partner')->findAll();
         return $data;
     }
 

@@ -3,6 +3,8 @@
 namespace Labs\BackBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Vich\UploaderBundle\Form\Type\VichImageType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -15,9 +17,19 @@ class PartnerType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('name')
-            ->add('path')
-            ->add('website')
+            ->add('name', TextType::class, array(
+                'label' => false,
+                'attr' => array('class' => 'form-control')
+            ))
+            ->add('imageFile', VichImageType::class,array(
+                'label' => false,
+                'required' => false,
+                'allow_delete' => true
+            ))
+            ->add('website', TextType::class, [
+                'label' => false,
+                'attr' => array('class' => 'form-control')
+            ])
         ;
     }
     

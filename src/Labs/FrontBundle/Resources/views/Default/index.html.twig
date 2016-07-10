@@ -189,18 +189,9 @@
     <h4 class="center">{{ 'Nos partenaires' }}</h4>
 
     <ul class="clients-grid grid-6 bottommargin clearfix">
-     <li><a href="http://logofury.com/logo/enzo.html"><img src="{{ asset('images/clients/1.png') }}" alt="Clients"></a></li>
-     <li><a href="http://logofury.com"><img src="{{ asset('images/clients/2.png') }}" alt="Clients"></a></li>
-     <li><a href="http://logofaves.com/2014/03/grabbt/"><img src="{{ asset('images/clients/3.png') }}" alt="Clients"></a></li>
-     <li><a href="http://logofaves.com/2014/01/ladera-granola/"><img src="{{ asset('images/clients/4.png') }}" alt="Clients"></a></li>
-     <li><a href="http://logofaves.com/2014/02/hershel-farms/"><img src="{{ asset('images/clients/5.png') }}" alt="Clients"></a></li>
-     <li><a href="http://logofaves.com/2014/02/hershel-farms/"><img src="{{ asset('images/clients/5.png') }}" alt="Clients"></a></li>
-     <li><a href="http://logofaves.com/2014/02/hershel-farms/"><img src="{{ asset('images/clients/5.png') }}" alt="Clients"></a></li>
-     <li><a href="http://logofaves.com/2014/02/hershel-farms/"><img src="{{ asset('images/clients/5.png') }}" alt="Clients"></a></li>
-     <li><a href="http://logofaves.com/2014/02/hershel-farms/"><img src="{{ asset('images/clients/5.png') }}" alt="Clients"></a></li>
-     <li><a href="http://logofaves.com/2014/02/hershel-farms/"><img src="{{ asset('images/clients/5.png') }}" alt="Clients"></a></li>
-     <li><a href="http://logofaves.com/2014/02/hershel-farms/"><img src="{{ asset('images/clients/5.png') }}" alt="Clients"></a></li>
-     <li><a href="http://logofaves.com/2014/02/hershel-farms/"><img src="{{ asset('images/clients/5.png') }}" alt="Clients"></a></li>
+     {% for partner in partners %}
+      <li><a href="{% if partner.website|length > 0 %}   {{ partner.website }} {% endif %}"><img src="{{ partner.assertPath|imagine_filter('logo_partenaire') }}" alt="Clients"></a></li>
+     {% endfor %}
     </ul>
 
    </div>
