@@ -136,4 +136,52 @@ class UpdateStatusService
         $this->entity->flush();
         return true;
     }
+
+    /**
+     * @param $media
+     * @param $event
+     * @return array
+     * Met à jour le media de l'event passé en @param à activé
+     */
+    public function UpdateActivedEvent($media, $event)
+    {
+        //dump($this->UpdateActivedMediaEvent($event)); die;
+        $response = [];
+        if($this->UpdateActivedMediaEvent($event)){
+            $medias = $this->entity->getRepository('LabsBackBundle:Media')->findOneMedia($media, $event);
+            $medias->setActived(1);
+            $this->entity->persist($medias);
+            $this->entity->flush();
+            $response = [
+                "message" => " Enregistrement effectué avec success" ,
+                "status"  => "success"
+            ];
+        }else{
+            $response = [
+                "message" => " Une erreur est survenue" ,
+                "status"  => "error"
+            ];
+        }
+        return $response;
+    }
+
+    /**
+     * @param $event
+     * @return bool
+     * Met tout les media de l'event passe en paramètre à non activé
+     */
+    private function UpdateActivedMediaEvent($event)
+    {
+        $medias = $this->entity->getRepository('LabsBackBundle:Media')->findBy(array(
+            'event' => $event
+        ));
+        if(!empty($medias)){
+            foreach ($medias as  $m){
+                $m->setActived(0);
+                $this->entity->persist($m);
+            }
+            $this->entity->flush();
+            return true;
+        }
+    }
 }

@@ -30,11 +30,14 @@ class DossierRepository extends \Doctrine\ORM\EntityRepository
         return $qb->getQuery()->getOneOrNullResult();
     }
 
-    public function findDossierLimit()
+    public function findDossierLimit($num = null)
     {
         $qb = $this->createQueryBuilder('d');
+        $qb->where($qb->expr()->eq('d.online', 1));
         $qb->orderBy('d.created', 'DESC');
-        $qb->setMaxResults(6);
+        if( null !== $num ){
+            $qb->setMaxResults($num);
+        }
         return $qb->getQuery()->getResult();
     }
 }

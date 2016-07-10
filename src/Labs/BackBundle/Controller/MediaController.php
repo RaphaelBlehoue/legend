@@ -3,6 +3,7 @@
 namespace Labs\BackBundle\Controller;
 
 use Labs\BackBundle\Entity\Booking;
+use Labs\BackBundle\Entity\Events;
 use Labs\BackBundle\Entity\Media;
 use Labs\BackBundle\Entity\Dossier;
 use Labs\BackBundle\Entity\Type;
@@ -48,7 +49,6 @@ class MediaController extends Controller
         $form->handleRequest($request);
             if($form->isValid()){
                 $type_array = $request->request->all();
-
                 $type = $em->getRepository('LabsBackBundle:Type')->getOne($type_array['media']['type']);
                 $dossier = $em->getRepository('LabsBackBundle:Dossier')->getOne($dossier);
                 return $this->redirectToRoute('media_add', ['dossier' => $dossier->getId() ,  'type' => $type->getId()], 302);
@@ -89,8 +89,6 @@ class MediaController extends Controller
                 $fileName
             );
             $media->setUrl($fileName);
-            $media->setStatus(true);
-            $media->setActived(true);
             $media->setType($types);
             $media->setDossier($dossier);
             $em->persist($media);
@@ -99,9 +97,44 @@ class MediaController extends Controller
             return new JsonResponse($response);
         }
 
-        return $this->render('LabsBackBundle:Medias:upload.html.twig', array(
+        return $this->render('LabsBackBundle:Medias:upload_dossier.html.twig', array(
             'type' => $type,
             'dossier' => $dossier
+        ));
+    }
+
+    /**
+     * @param Request $request
+     * @param Events $event
+     * @return JsonResponse|\Symfony\Component\HttpFoundation\Response
+     * @Route("/event/{id}", name="media_event_add")
+     */
+    public function AddEventMediaAction(Request $request, Events $event)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $media = new Media();
+        if( null === $event){
+            throw  new NotFoundHttpException('Page introuvable');
+        }
+
+        if($request->isXmlHttpRequest()){
+            /** @var Symfony\Component\HttpFoundation\File\UploadedFile $file */
+            $file = $request->files->get('file');
+            $fileName = md5(uniqid()).'.'.$file->guessExtension();
+            $file->move(
+                $this->container->getParameter('gallery_directory'),
+                $fileName
+            );
+            $media->setUrl($fileName);
+            $media->setEvent($event);
+            $em->persist($media);
+            $em->flush($media);
+            $response = ['success' => 'true'];
+            return new JsonResponse($response);
+        }
+
+        return $this->render('LabsBackBundle:Medias:upload_events.html.twig', array(
+            'events' => $event
         ));
     }
 
@@ -142,50 +175,47 @@ class MediaController extends Controller
         }
     }
 
+
     /**
-     * @param Booking $booking
      * @param Request $request
-     * @return \Symfony\Component\HttpFoundation\Response
-     * @Route("/{id}/edit", name="booking_edit")
-     * @Method({"GET", "POST"})
-     */
-   /* public function editAction(Booking $booking, Request $request)
-    {
-        $em = $this->getDoctrine()->getManager();
-        $bookings = $em->getRepository('LabsBackBundle:Booking')->getOne($booking);
-        if(null === $bookings)
-        {
-            throw new NotFoundHttpException('Page Introuvable',null, 404);
-        }
-        $form = $this->createForm(BookingEditType::class, $bookings);
-        $form->handleRequest($request);
-
-        if($form->isValid()){
-            $em->flush();
-            $this->addFlash('success', 'La modification a été effectué');
-            return $this->redirectToRoute('booking_index', array(), 302);
-        }
-        return $this->render('LabsBackBundle:Booking:edit.html.twig',array(
-            'form' => $form->createView()
-        ));
-    } */
-
-    /**
-     * @param Booking $booking
+     * @param Media $medias
+     * @param Events $events
      * @return \Symfony\Component\HttpFoundation\RedirectResponse
-     * @Route("/{id}/delete", name="booking_delete")
+     * @Route("/update/{id}/actived/{events}", name="update_media_actived")
      * @Method("GET")
      */
-    /*public function deleteAction(Booking $booking)
+    public function addTopActivedMediaAction(Request $request, Media $medias,  Events $events)
     {
         $em = $this->getDoctrine()->getManager();
-        $bookings = $em->getRepository('LabsBackBundle:Booking')->find($booking);
-        if(null === $bookings)
+        if($request->isMethod('GET')){
+            $event = $em->getRepository('LabsBackBundle:Events')->getOne($events);
+            $media = $em->getRepository('LabsBackBundle:Media')->getOne($medias);
+
+            $service = $this->container->get('update.status.service');
+            $response = $service->UpdateActivedEvent($media, $event);
+
+            $this->addFlash($response['status'], $response['message']);
+            return $this->redirectToRoute('event_view', ['id' => $event->getId()], 302);
+        }
+    }
+
+
+    /**
+     * @param Media $media
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse
+     * @Route("/{id}/delete/{event}", name="media_delete")
+     * @Method("GET")
+     */
+    public function deleteMediaEventAction(Media $media, $event)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $events = $em->getRepository('LabsBackBundle:Events')->getOne($event);
+        if(null === $media)
             throw new NotFoundHttpException('Page Introuvable',null, 404);
         else
-            $em->remove($bookings);
+            $em->remove($media);
             $em->flush();
             $this->addFlash('success', 'La suppression a été fait avec succès');
-            return $this->redirectToRoute('booking_index', array(), 302);
-    }*/
+            return $this->redirectToRoute('event_view', ['id' => $events->getId()], 302);
+    }
 }

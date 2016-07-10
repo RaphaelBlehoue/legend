@@ -57,6 +57,13 @@ class Media
     protected $type;
 
     /**
+     * @var
+     *
+     * @ORM\ManyToOne(targetEntity="Labs\BackBundle\Entity\Events", inversedBy="medias")
+     */
+    protected $event;
+
+    /**
      * Get id
      *
      * @return int
@@ -160,5 +167,51 @@ class Media
     public function getDossier()
     {
         return $this->dossier;
+    }
+
+    /**
+     * Set type
+     *
+     * @param \Labs\BackBundle\Entity\Type $type
+     *
+     * @return Media
+     */
+    public function setType(\Labs\BackBundle\Entity\Type $type)
+    {
+        $this->type = $type;
+
+        return $this;
+    }
+
+    /**
+     * Get type
+     *
+     * @return \Labs\BackBundle\Entity\Type
+     */
+    public function getType()
+    {
+        return $this->type;
+    }
+
+    public function getUploadDir()
+    {
+        // On retourne le chemin relatif vers l'image pour un navigateur
+        return 'uploads/gallery';
+    }
+
+
+    protected function getUploadRootDir()
+    {
+        // On retourne le chemin relatif vers l'image pour notre code PHP
+        return __DIR__.'/../../../../web/'.$this->getUploadDir();
+    }
+
+
+    /**
+     * @return string
+     */
+    public function getAssertPath()
+    {
+        return $this->getUploadDir().'/'.$this->url;
     }
 }

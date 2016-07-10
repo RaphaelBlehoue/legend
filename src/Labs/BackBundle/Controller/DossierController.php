@@ -110,6 +110,25 @@ class DossierController extends Controller
     }
 
     /**
+     * @param Request $request
+     * @param Dossier $dossier
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse
+     * @Route("/online/{id}", name="dossier_online")
+     */
+    public function PostOnline(Request $request ,Dossier $dossier)
+    {
+        $em = $this->getDoctrine()->getManager();
+        if(null === $dossier){
+            throw  new NotFoundHttpException('Page introuvable');
+        }
+        if($request->isMethod('GET')){
+            $dossier->setOnline(1);
+            $em->flush();
+            return $this->redirectToRoute('dossier_view', ['id' => $dossier->getId()], '302');
+        }
+    }
+
+    /**
      * @param Dossier $dossier
      * @return \Symfony\Component\HttpFoundation\RedirectResponse
      * @Route("/{id}/delete", name="dossier_delete")

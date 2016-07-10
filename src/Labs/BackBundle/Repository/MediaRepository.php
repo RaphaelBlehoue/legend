@@ -10,6 +10,14 @@ namespace Labs\BackBundle\Repository;
  */
 class MediaRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function getOne($id)
+    {
+        $qb = $this->createQueryBuilder('m');
+        $qb->where($qb->expr()->eq('m.id', ':id'));
+        $qb->setParameter(':id', $id);
+        return $qb->getQuery()->getOneOrNullResult();
+    }
+    
    public function UpdateAllFalse($type = null, $dossier)
    {
        $qb = $this->createQueryBuilder('m');
@@ -79,5 +87,18 @@ class MediaRepository extends \Doctrine\ORM\EntityRepository
         $qb->groupBy('d.id');
         $qb->setParameter(':dossier', $dossier);
         return $qb->getQuery()->getResult();
+    }
+
+    public function findOneMedia($media, $event)
+    {
+        $qb = $this->createQueryBuilder('m');
+        $qb->leftJoin('m.event', 'e');
+        $qb->where(
+            $qb->expr()->eq('m.id', ':media'),
+            $qb->expr()->eq('m.event', ':event')
+        );
+        $qb->setParameter(':media', $media);
+        $qb->setParameter(':event', $event);
+        return $qb->getQuery()->getSingleResult();
     }
 }

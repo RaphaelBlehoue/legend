@@ -9,6 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
  *
  * @ORM\Table(name="media")
  * @ORM\Entity(repositoryClass="Labs\BackBundle\Repository\MediaRepository")
+ * @ORM\HasLifecycleCallbacks()
  */
 class Media
 {
@@ -45,16 +46,30 @@ class Media
     /**
      * @var
      * @ORM\ManyToOne(targetEntity="Labs\BackBundle\Entity\Dossier", inversedBy="medias")
-     * @ORM\JoinColumn(referencedColumnName="id", nullable=false)
+     * @ORM\JoinColumn(referencedColumnName="id", nullable=true)
      */
     protected $dossier;
 
     /**
      * @var
      * @ORM\ManyToOne(targetEntity="Labs\BackBundle\Entity\Type", inversedBy="medias")
-     * @ORM\JoinColumn(referencedColumnName="id", nullable=false)
+     * @ORM\JoinColumn(referencedColumnName="id", nullable=true)
      */
     protected $type;
+
+    /**
+     * @var
+     *
+     * @ORM\ManyToOne(targetEntity="Labs\BackBundle\Entity\Events", inversedBy="medias")
+     * @ORM\JoinColumn(referencedColumnName="id", nullable=true)
+     */
+    protected $event;
+    
+    public function __construct()
+    {
+        $this->actived = false;
+        $this->status = false;
+    }
 
     /**
      * Get id
@@ -206,5 +221,41 @@ class Media
     public function getAssertPath()
     {
         return $this->getUploadDir().'/'.$this->url;
+    }
+
+    /**
+     * Set event
+     *
+     * @param \Labs\BackBundle\Entity\Events $event
+     *
+     * @return Media
+     */
+    public function setEvent(\Labs\BackBundle\Entity\Events $event = null)
+    {
+        $this->event = $event;
+
+        return $this;
+    }
+
+    /**
+     * Get event
+     *
+     * @return \Labs\BackBundle\Entity\Events
+     */
+    public function getEvent()
+    {
+        return $this->event;
+    }
+
+    /**
+     * @ORM\PostRemove()
+     */
+    public function deleteMedia()
+    {
+        // En PostRemove, on n'a pas accès à l'id, on utilise notre nom sauvegardé
+        if (file_exists($this->getAssertPath())) {
+            // On supprime le fichier
+            unlink($this->getAssertPath());
+        }
     }
 }

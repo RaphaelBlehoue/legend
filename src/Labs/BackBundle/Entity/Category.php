@@ -36,6 +36,13 @@ class Category
      */
     protected $top;
 
+    /**
+     * @var
+     *
+     * @ORM\OneToMany(targetEntity="Labs\BackBundle\Entity\Events", mappedBy="category")
+     */
+    protected $events;
+
 
     public function __construct()
     {
@@ -99,5 +106,40 @@ class Category
     public function getTop()
     {
         return $this->top;
+    }
+     
+
+    /**
+     * Add event
+     *
+     * @param \Labs\BackBundle\Entity\Events $event
+     *
+     * @return Category
+     */
+    public function addEvent(\Labs\BackBundle\Entity\Events $event)
+    {
+        $this->events[] = $event;
+
+        return $this;
+    }
+
+    /**
+     * Remove event
+     *
+     * @param \Labs\BackBundle\Entity\Events $event
+     */
+    public function removeEvent(\Labs\BackBundle\Entity\Events $event)
+    {
+        $this->events->removeElement($event);
+    }
+
+    /**
+     * Get events
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getEvents()
+    {
+        return $this->events;
     }
 }

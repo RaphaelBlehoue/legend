@@ -15,11 +15,13 @@ class DefaultController extends Controller
         $about = $this->getAboutContent();
         $packs = $this->getPacksList();
         $dossiers = $this->getMediaTop();
-        //dump($dossiers);
+        $events = $this->getEventListLimited(6);
+        dump($events);
         return $this->render('LabsFrontBundle:Default:index.html.twig',[
             'about' => $about,
             'packs' => $packs,
-            'dossiers' => $dossiers
+            'dossiers' => $dossiers,
+            'events'   => $events
         ]);
     }
 
@@ -127,15 +129,33 @@ class DefaultController extends Controller
     }
 
 
-    private function getMediaTop()
+    private function getMediaTop($num = null)
     {
         $em = $this->getDoctrine()->getManager();
         $dossiers = [];
-        $dossier = $em->getRepository('LabsBackBundle:Dossier')->findDossierLimit(6);
+        if(null !== $num)
+            $dossier = $em->getRepository('LabsBackBundle:Dossier')->findDossierLimit($num);
+        else
+            $dossier = $em->getRepository('LabsBackBundle:Dossier')->findDossierLimit();
         foreach ($dossier as $d ) {
             $dossiers[] = $d->getId();
         }
         $data = $em->getRepository('LabsBackBundle:Media')->findLastMedia($dossiers);
+        return $data;
+    }
+
+    /**
+     * @param null $num
+     * @return array
+     * Recupération de tous les evenements en fonction d'une limite
+     */
+    private  function getEventListLimited($num = null)
+    {
+        $em = $this->getDoctrine()->getManager();
+        if(null !== $num)
+            $data = $em->getRepository('LabsBackBundle:Events')->findEvents($num);
+        else
+            $data = $em->getRepository('LabsBackBundle:Events')->findEvents();
         return $data;
     }
 

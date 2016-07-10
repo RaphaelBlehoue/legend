@@ -70,7 +70,7 @@ ivory_ck_editor:
     default_config: my_custom_config
     configs:
         my_custom_config:
-            language: %locale%
+            language: "%locale%"
             toolbar: [ [ 'Bold','Italic','Underline' ], [ 'NumberedList','BulletedList','-','Outdent','Indent','-','-','JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock' ], '/', [ 'Maximize' ] ]
             uiColor:   "#FCFCFC"
             forcePasteAsPlainText: true
@@ -83,7 +83,7 @@ vich_uploader:
     mappings:
         team_image:
             uri_prefix:         /uploads/bestman
-            upload_destination: %kernel.root_dir%/../web/uploads/bestman
+            upload_destination: "%kernel.root_dir%/../web/uploads/bestman"
             inject_on_load:     false
             delete_on_update:   true
             delete_on_remove:   true
@@ -91,7 +91,7 @@ vich_uploader:
 
         banner_image:
             uri_prefix:         /uploads/banners
-            upload_destination: %kernel.root_dir%/../web/uploads/banners
+            upload_destination: "%kernel.root_dir%/../web/uploads/banners"
             inject_on_load:     false
             delete_on_update:   true
             delete_on_remove:   true
@@ -99,7 +99,7 @@ vich_uploader:
 
         banner_image_page:
             uri_prefix:         /uploads/pages
-            upload_destination: %kernel.root_dir%/../web/uploads/pages
+            upload_destination: "%kernel.root_dir%/../web/uploads/pages"
             inject_on_load:     false
             delete_on_update:   true
             delete_on_remove:   true
@@ -117,11 +117,20 @@ liip_imagine:
             quality: 75
             filters:
                 thumbnail: { size: [100, 100], mode: outbound }
+                watermark :
+                    image: Resources/data/logo-dark.png
+                    size: 0.2
+                    position: bottomright
+
 
         my_thumb_admin_gallery:
             quality: 60
             filters:
                 thumbnail: { size: [218, 145], mode: outbound }
+                watermark :
+                    image: Resources/data/logo-dark.png
+                    size: 0.2
+                    position: bottomright
 
         photo_dg:
             quality: 100
@@ -132,15 +141,29 @@ liip_imagine:
             quality: 100
             filters:
                 thumbnail: { size: [400, 300], mode: outbound }
+                watermark :
+                    image: Resources/data/logo-dark.png
+                    size: 0.2
+                    position: bottomright
 
         image_profolio_full:
             quality: 100
             filters:
                 relative_resize: { widen: 980 }
+                watermark :
+                    image: Resources/data/logo-dark.png
+                    size: 0.2
+                    position: bottomright
+
         slide:
             quality: 100
             filters:
                 thumbnail: { size: [980, 653], mode: outbound }
+                watermark :
+                    image: Resources/data/logo-dark.png
+                    size: 0.2
+                    position: bottomright
+
 
 # Swiftmailer Configuration
 swiftmailer:
