@@ -1,0 +1,134 @@
+{% extends 'LabsTemplateBundle::layout.html.twig' %}
+{% block Title %}{{ 'Evenements - catégories | Legend Photography' }}{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet"
+          href="{{ asset('bundles/labstemplate/assets/css/admin/module.admin.page.profile_resume.min.css') }}"
+          xmlns="http://www.w3.org/1999/html"/>
+    <link rel="stylesheet" href="{{ asset('bundles/labstemplate/assets/css/admin/module.admin.page.contacts.min.css') }}"/>
+
+{% endblock %}
+{% block body %}
+
+    {% if app.session.flashBag.has('success') %}
+        <div class="alert alert-success" role="alert">
+            {% for msg in app.session.flashBag.get('success') %}
+                <strong> Succès </strong>{{ msg }}.
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    {% if app.session.flashBag.has('error') %}
+        <div class="alert alert-danger" role="alert">
+            {% for msg in app.session.flashBag.get('error') %}
+                <strong> Succès </strong>{{ msg }}.
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <h1 class="bg-white content-heading border-bottom">Dashboard</h1>
+    <div class="bg-white innerAll border-bottom">
+        <ul class="menubar">
+            <li class="active"><a href="">Dashboard</a></li>
+            <li><a href="#">{{ 'Dossier' }}</a></li>
+            <li><a href="#">{{ 'Evenements' }}</a></li>
+        </ul>
+    </div>
+    <div class="innerAll spacing-x2">
+        <!-- Widget -->
+        <div class="widget finances_summary widget-inverse">
+
+            <div class="row row-merge">
+                <!-- col -->
+                <div class="col-lg-12 col-md-12 col-sm-12">
+
+                    <div class="innerAll half border-bottom">
+                        <h4 class="pull-left innerT half margin-none">Dossier events : {{ event.name }} - Type : {{ event.category.name }}</h4>
+                        <div class="clearfix"></div>
+
+                    </div>
+                    <div class="innerAll ">
+                        <p>{% if event.content|length > 0 %}{{ event.content|raw }}{% endif %}</p>
+                        <a href="{{ path('event_edit', { 'id': event.id })  }}" class="btn btn-info btn-sm"><i class="fa fa-edit fa-fw"></i> Modifier</a>
+                        {% if event.online == 0 %}
+                            <a href="{{ path('event_online', { 'id': event.id })  }}" class="btn btn-success btn-sm"><i class="fa fa-plus fa-fw"></i> Publier</a>
+                        {% endif %}
+                    </div>
+
+
+
+                    <div class="innerAll half heading-buttons border-bottom">
+                        <h4 class="margin-none pull-left"></h4>
+
+                        <button class="btn btn-default btn-xs  pull-right"><i class="fa fa-cog "></i></button>
+
+                        <div class="clearfix"></div>
+
+                    </div>
+
+                        <div class="innerAll" id="EventSection">
+                            <div class="widget widget-inverse widget-gallery" data-toggle="collapse-widget">
+                                <div class="widget-head">
+                                    <h4 class="heading">{{ event.category.name }} | {{ event.dateEvent|date('d, M Y') }}</h4>
+                                    <a href="{{ path('media_event_add', { 'id' : event.id}) }}" class="btn btn-xs btn-info pull-right">
+                                        <i class="fa fa-plus fa-fw"></i> {{ 'Ajouter des photos ' }}
+                                    </a>
+                                </div>
+                                <div class="widget-body">
+                                    <!-- Gallery Layout -->
+                                    <div class="gallery gallery-2">
+                                        <ul class="row list-unstyled" data-toggle="modal-gallery" data-target="#modal-gallery" id="gallery-4" data-delegate="#gallery-4">
+                                            {% for media in event.medias %}
+                                                <li class="col-md-3">
+                                                    <a class="thumb" href="{{ media.assertPath|imagine_filter('my_thumb_admin_gallery') }}" data-gallery="gallery">
+                                                        <img src="{{ media.assertPath|imagine_filter('my_thumb_admin_gallery') }}" alt="photo" data-toggle="prettyPhoto" class="img-responsive"/>
+                                                    </a>
+                                                    <div class="description">
+                                                        <a href="{{ path('update_media_actived', { 'id' : media.id, 'events' : media.event.id }) }}" class="btn btn-stroke btn-circle btn-success mediaUpdate" id="mediaUpdateEvent{{ media.id }}" data-toggle="tooltip" data-original-title="Mettre à la une de l'event" data-placement="bottom"><i class="fa fa-check"></i></a>
+                                                        <a href="{{ path('media_delete', {'id' : media.id, 'event' : media.event.id }) }}" class="btn btn-stroke btn-circle btn-danger" data-toggle="tooltip" data-original-title="Supprimer l'image" data-placement="bottom"><i class="fa fa-times"></i></a>
+                                                        {% if media.actived == 1 %}
+                                                            <span class="btn btn-circle btn-success" data-toggle="tooltip" data-original-title="A la une de l'event " data-placement="bottom"><i class="fa fa-certificate"></i></span>
+                                                        {% endif %}
+                                                        <hr>
+                                                    </div>
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                    <!-- // Gallery Layout END -->
+                                </div>
+                            </div>
+                        </div>
+
+
+                </div>
+                <!-- // END col -->
+
+            </div>
+
+        </div>
+        <!-- // END row -->
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('bundles/labstemplate/assets/components/library/bootstrap/js/bootstrap.min.js?v=v1.2.3') }}"></script>
+    <script src="{{ asset('bundles/labstemplate/assets/components/plugins/nicescroll/jquery.nicescroll.min.js?v=v1.2.3') }}"></script>
+    <script src="{{ asset('bundles/labstemplate/assets/components/plugins/breakpoints/breakpoints.js?v=v1.2.3') }}"></script>
+    <script src="{{ asset('bundles/labstemplate/assets/components/core/js/animations.init.js?v=v1.2.3') }}"></script>
+    <script src="{{ asset('bundles/labstemplate/assets/components/plugins/slimscroll/jquery.slimscroll.js?v=v1.2.3') }}"></script>
+
+    <script src="{{ asset('bundles/labstemplate/assets/components/modules/admin/gallery/gridalicious/assets/lib/jquery.gridalicious.min.js?v=v1.2.3') }}"></script>
+    <script src="{{ asset('bundles/labstemplate/assets/components/modules/admin/gallery/gridalicious/assets/custom/gridalicious.init.js?v=v1.2.3') }}"></script>
+    <script src="{{ asset('bundles/labstemplate/assets/components/modules/admin/gallery/blueimp-gallery/assets/lib/js/blueimp-gallery.min.js?v=v1.2.3') }}"></script>
+    <script src="{{ asset('bundles/labstemplate/assets/components/modules/admin/gallery/blueimp-gallery/assets/lib/js/jquery.blueimp-gallery.min.js?v=v1.2.3') }}"></script>
+
+
+    <script src="{{ asset('bundles/labstemplate/assets/components/plugins/holder/holder.js?v=v1.2.3') }}"></script>
+    <script src="{{ asset('bundles/labstemplate/assets/components/core/js/sidebar.main.init.js?v=v1.2.3') }}"></script>
+    <script src="{{ asset('bundles/labstemplate/assets/components/core/js/sidebar.collapse.init.js?v=v1.2.3') }}"></script>
+    <script src="{{ asset('bundles/labstemplate/assets/components/helpers/themer/assets/plugins/cookie/jquery.cookie.js?v=v1.2.3') }}"></script>
+    <script src="{{ asset('bundles/labstemplate/assets/components/core/js/core.init.js?v=v1.2.3') }}"></script>
+
+{% endblock %}
