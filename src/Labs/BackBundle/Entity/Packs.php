@@ -4,6 +4,7 @@ namespace Labs\BackBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * Packs
@@ -50,6 +51,13 @@ class Packs
      */
     protected $online;
 
+    /**
+     * @var
+     *
+     * @ORM\Column(name="video", type="string", length=225, nullable=true)
+     */
+    protected $video;
+
 
     /**
      * @var
@@ -57,6 +65,13 @@ class Packs
      * @ORM\OneToMany(targetEntity="Labs\BackBundle\Entity\Packages", mappedBy="pack", cascade={"remove"})
      */
     protected $packages;
+
+
+    /**
+     * @Gedmo\Slug(fields={"name", "id"})
+     * @ORM\Column(length=128, unique=true)
+     */
+    protected $slug;
 
 
     public function __construct()
@@ -199,4 +214,61 @@ class Packs
     {
         return $this->packages;
     }
+
+    /**
+     * @return string
+     */
+    public function getColors()
+    {
+        return $this->colors;
+    }
+
+    /**
+     * @param string $colors
+     */
+    public function setColors($colors)
+    {
+        $this->colors = $colors;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getVideo()
+    {
+        return $this->video;
+    }
+
+    /**
+     * @param mixed $video
+     */
+    public function setVideo($video)
+    {
+        $this->video = $video;
+    }
+
+    /**
+     * Set slug
+     *
+     * @param string $slug
+     *
+     * @return Product
+     */
+    public function setSlug($slug)
+    {
+        $this->slug = $slug;
+
+        return $this;
+    }
+
+    /**
+     * Get slug
+     *
+     * @return string
+     */
+    public function getSlug()
+    {
+        return $this->slug;
+    }
+
 }

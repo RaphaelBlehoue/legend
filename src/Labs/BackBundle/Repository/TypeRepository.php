@@ -38,4 +38,18 @@ class TypeRepository extends \Doctrine\ORM\EntityRepository
             ->setParameter(':dossier', $dossier);
         return $qb->getQuery()->getResult();
     }
+
+    public function findDossierAndMediaForType()
+    {
+        $qb = $this->createQueryBuilder('t');
+        $qb->leftJoin('t.medias', 'm')
+            ->addSelect('m')
+            ->leftJoin('m.dossier','d')
+            ->addSelect('d')
+            ->where($qb->expr()->eq('m.actived', 1))
+            ->andWhere($qb->expr()->eq('d.online', 1))
+            ->orderBy('d.created', 'DESC')
+            ->setMaxResults(6);
+        return $qb->getQuery()->getResult();
+    }
 }

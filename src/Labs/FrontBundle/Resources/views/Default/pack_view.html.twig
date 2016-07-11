@@ -1,0 +1,158 @@
+{% extends '::base.html.twig' %}
+{% block menu %}
+    {{ render(controller('LabsFrontBundle:Default:getMenuGlobal')) }}
+{% endblock %}
+
+{% block body %}
+    <section id="content">
+        <div class="content-wrap">
+            <div class="container clearfix">
+
+                <div id="section-home" class="heading-block title-center nobottomborder page-section">
+                    <h1>{{ page.name }}</h1>
+                    <span>{{ page.title }}</span>
+                </div>
+
+                <div class="clear"></div>
+
+                <div class="col_two_third topmargin nobottommargin">
+
+                    <div style="position: relative;" data-height-lg="535" data-height-md="442" data-height-sm="338" data-height-xs="316" data-height-xxs="201">
+                        <img data-animate="fadeInLeft" src="{{ page.assertPath|imagine_filter('page_pckage') }}" alt="{{ page.name }}" style="position: absolute; top: 0; left: 0;">
+                    </div>
+
+                </div>
+
+                <div class="col_one_third topmargin nobottommargin col_last">
+
+                    <h3>{{ page.subTitle }}</h3>
+
+                    <p>{{ page.content|raw }}</p>
+
+                    <div class="divider divider-short"><i class="icon-circle"></i></div>
+
+                    <ul class="iconlist iconlist-large iconlist-color">
+                        {%  for pack in packs %}
+                            <li><i class="icon-ok-sign"></i> {{ pack.name }}</li>
+                        {% endfor %}
+                    </ul>
+
+                </div>
+
+                <div class="clear"></div>
+
+                <div class="divider divider-short divider-center"><i class="icon-circle"></i></div>
+
+                    <div id="section-features" class="heading-block title-center page-section">
+                        <h2>{{ packs.name }}</h2>
+                        <span>{{ page.allpackSubtitle }} | {{ packs.name }}</span>
+                    </div>
+
+                    {% for package in packs.packages %}
+                        <div class="col-md-4 dark col-padding ohidden" style="background-color: {{ package.color }} ; margin-bottom: 5px; height:28.529em;">
+                            <div>
+                                <h3 class="uppercase" style="font-weight: 600;">{{ package.name }}</h3>
+                                <p style="line-height: 1.8;">{{ package.content|raw }}</p>
+                                <i class="icon-bulb bgicon"></i>
+                            </div>
+                        </div>
+                    {% endfor %}
+
+                <div class="clear"></div>
+
+                <div class="divider divider-short divider-center"><i class="icon-circle"></i></div>
+
+                <div id="section-pricing" class="heading-block title-center page-section">
+                    <h2>{{ 'Nos partenaires' }}</h2>
+                </div>
+
+                <div class="pricing bottommargin clearfix">
+                    <ul class="clients-grid grid-6 bottommargin clearfix">
+                        {% for partner in partners %}
+                            <li><a href="{% if partner.website|length > 0 %}   {{ partner.website }} {% endif %}"><img src="{{ partner.assertPath|imagine_filter('logo_partenaire') }}" alt="Clients"></a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="divider divider-short divider-center"><i class="icon-circle"></i></div>
+
+                <div id="section-faqs" class="heading-block title-center page-section">
+                    <h2>{{ 'Que disent nos clients' }}</h2>
+                </div>
+
+                <div class="fslider testimonial testimonial-full" data-animation="fade" data-arrows="false">
+                    <div class="flexslider">
+                        <div class="slider-wrap">
+                            {% for citation in citations %}
+                                <div class="slide">
+                                    <div class="testi-image">
+                                        <a href="#"><img src="{{ citation.assertPath|imagine_filter('citation_thumb') }}" alt="{{ citation.author|capitalize }}"></a>
+                                    </div>
+                                    <div class="testi-content">
+                                        <p>{{ citation.content }}</p>
+                                        <div class="testi-meta">
+                                            {{ citation.author|capitalize }}
+                                            <span>{{ citation.entreprise|capitalize }}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="clear"></div>
+
+                <div class="divider divider-short divider-center"><i class="icon-circle"></i></div>
+
+                <div id="section-contact" class="heading-block title-center page-section">
+                    <h2>{{ 'Nous contactez' }}</h2>
+                </div>
+
+                <!-- Contact Info
+                ============================================= -->
+                <div class="col_full nobottommargin clearfix">
+
+                    <div class="col_one_fourth">
+                        <div class="feature-box fbox-center fbox-bg fbox-plain">
+                            <div class="fbox-icon">
+                                <a href="#"><i class="icon-map-marker2"></i></a>
+                            </div>
+                            <h3>Our Headquarters<span class="subtitle">Melbourne, Australia</span></h3>
+                        </div>
+                    </div>
+
+                    <div class="col_one_fourth">
+                        <div class="feature-box fbox-center fbox-bg fbox-plain">
+                            <div class="fbox-icon">
+                                <a href="#"><i class="icon-phone3"></i></a>
+                            </div>
+                            <h3>{{ 'parlez avec nous'|capitalize }}<span class="subtitle">(123) 456 7890</span></h3>
+                        </div>
+                    </div>
+
+                    <div class="col_one_fourth">
+                        <div class="feature-box fbox-center fbox-bg fbox-plain">
+                            <div class="fbox-icon">
+                                <a href="#"><i class="icon-skype2"></i></a>
+                            </div>
+                            <h3>{{ 'Nous joindre sur skype'|capitalize }}<span class="subtitle">CanvasOnSkype</span></h3>
+                        </div>
+                    </div>
+
+                    <div class="col_one_fourth col_last">
+                        <div class="feature-box fbox-center fbox-bg fbox-plain">
+                            <div class="fbox-icon">
+                                <a href="#"><i class="icon-facebook2"></i></a>
+                            </div>
+                            <h3>{{ 'nous suivre sur facebook'|capitalize }}<span class="subtitle">2.3M Followers</span></h3>
+                        </div>
+                    </div>
+
+                </div><!-- Contact Info End -->
+
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -246,4 +246,6 @@ class Packages
     {
         return $this->booking;
     }
+
+
 }

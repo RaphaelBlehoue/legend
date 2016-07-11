@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             new Liip\ImagineBundle\LiipImagineBundle(),
             new Vich\UploaderBundle\VichUploaderBundle(),
             new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
+            new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
             new Labs\TemplateBundle\LabsTemplateBundle(),
             new Labs\BackBundle\LabsBackBundle(),
             new Labs\FrontBundle\LabsFrontBundle(),

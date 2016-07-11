@@ -2,13 +2,149 @@
 {% block title %} {{ 'Legend Photograhy | Qui sommes nous' }} {% endblock %}
 
 {% block menu %}
-    {{ render(controller('LabsFrontBundle:Default:getMenuGlobal')) }}
+    {{ render(controller('LabsFrontBundle:Default:getMenu')) }}
 {% endblock %}
 
 {% block body %}
-    <section id="content">
-        <div class="content-wrap">
-            <h2>{{ 'Page Qui sommes nous' }}</h2>
+    <section id="page-title" class="page-title-parallax page-title-dark" style="padding: 250px 0; background-image: url('{{ asset(about.bannerImage.assertPath|imagine_filter('slide')) }}'); background-size: cover; background-position: center center;" data-stellar-background-ratio="0.4">
+
+        <div class="container clearfix">
+            <h1>{{ about.bannerImage.name }}</h1>
+            <span>{{ about.title|capitalize }}</span>
+            <ol class="breadcrumb">
+                <li><a href="{{ path('homepage') }}">{{ 'Accueil' }}</a></li>
+                <li class="active">{{ about.bannerImage.name }}</li>
+            </ol>
         </div>
-    </section>
+
+    </section><!-- #page-title end -->
+    <!-- Content
+============================================= -->
+    <section id="content">
+
+        <div class="content-wrap">
+
+            <div class="container clearfix">
+
+                <div class="heading-block center nobottomborder bottommargin-lg">
+                    <h1>{{ about.title }}</h1>
+                    <span>{{ about.subtitle }}</span>
+                </div>
+
+                <div class="col_one_third nobottommargin">
+
+                    <div class="heading-block fancy-title nobottomborder title-bottom-border">
+                        <h4> {{ about.titleWhy }}.</h4>
+                    </div>
+
+                    <p>{{ about.contentWhy|raw }}</p>
+
+                </div>
+
+                <div class="col_one_third nobottommargin">
+
+                    <div class="heading-block fancy-title nobottomborder title-bottom-border">
+                        <h4> {{ about.titleMission }}</h4>
+                    </div>
+
+                    <p>{{ about.contentMission|raw }}</p>
+                </div>
+
+                <div class="col_one_third nobottommargin col_last">
+
+                    <div class="heading-block fancy-title nobottomborder title-bottom-border">
+                        <h4> {{ about.titleDo }}</h4>
+                    </div>
+
+                    <p>{{ about.contentDo|raw }}</p>
+
+                </div>
+
+                <div class="clear"></div>
+
+            </div>
+
+            <div class="section nomargin">
+                <div class="container clearfix">
+                    <!--  bloc video DG -->
+                    <div class="container clearfix">
+
+                        <div class="clear"></div><div class="line bottommargin-lg"></div>
+
+                        <div class="col_two_fifth nobottommargin">
+                            {{ about.video|raw }}
+                        </div>
+
+                        <div class="col_three_fifth nobottommargin col_last">
+
+                            <div class="heading-block">
+                                <h2>{{ about.titleVideo }}</h2>
+                            </div>
+
+                            <p>{{ about.contentVideo|raw }}</p>
+
+                        </div>
+
+                        <div class="clear"></div>
+
+                    </div>
+                    <!--  end bloc video DG -->
+                </div>
+            </div>
+
+            <div class="container clearfix">
+
+                <div class="clear"></div>
+
+                <!--  bloc partenaire -->
+                <div class="container clearfix">
+
+                    <div class="clear"></div><div class="line"></div>
+
+                    <h4 class="center">{{ 'Nos partenaires' }}</h4>
+
+                    <ul class="clients-grid grid-6 bottommargin clearfix">
+                        {% for partner in partners %}
+                            <li><a href="{% if partner.website|length > 0 %}   {{ partner.website }} {% endif %}"><img src="{{ partner.assertPath|imagine_filter('logo_partenaire') }}" alt="Clients"></a></li>
+                        {% endfor %}
+                    </ul>
+
+                </div>
+                <!--  end bloc partenaire -->
+
+            </div>
+
+            <!--  bloc temoignage -->
+            <div class="section topmargin-sm footer-stick">
+
+                <h4 class="uppercase center">Que  Disent nos <span>Clients</span> et nous ?</h4>
+
+                <div class="fslider testimonial testimonial-full" data-animation="fade" data-arrows="false">
+                    <div class="flexslider">
+                        <div class="slider-wrap">
+                            {% for citation in citations %}
+                                <div class="slide">
+                                    <div class="testi-image">
+                                        <a href="#"><img src="{{ citation.assertPath|imagine_filter('citation_thumb') }}" alt="{{ citation.author|capitalize }}"></a>
+                                    </div>
+                                    <div class="testi-content">
+                                        <p>{{ citation.content }}</p>
+                                        <div class="testi-meta">
+                                            {{ citation.author|capitalize }}
+                                            <span>{{ citation.entreprise|capitalize }}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--  end bloc temoignage -->
+
+        </div>
+
+    </section><!-- #content end -->
+
 {% endblock %}

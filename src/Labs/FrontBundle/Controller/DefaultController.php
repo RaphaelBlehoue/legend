@@ -2,6 +2,7 @@
 
 namespace Labs\FrontBundle\Controller;
 
+use Labs\BackBundle\Entity\Packs;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
@@ -18,13 +19,15 @@ class DefaultController extends Controller
         $events = $this->getEventListLimited(6);
         $partners = $this->getAllPartners();
         $citations = $this->findTemoignage();
+        $page  = $this->getInfoPagePackage();
         return $this->render('LabsFrontBundle:Default:index.html.twig',[
             'about' => $about,
             'packs' => $packs,
             'dossiers' => $dossiers,
             'events'   => $events,
             'partners' => $partners,
-            'citations' => $citations
+            'citations' => $citations,
+            'page'      => $page
         ]);
     }
 
@@ -33,7 +36,68 @@ class DefaultController extends Controller
      * @Route("/about-us", name="about")
      */
     public function AboutAction(){
-        return $this->render('LabsFrontBundle:Default:about_us.html.twig');
+        $about = $this->getAboutContent();
+        $partners = $this->getAllPartners();
+        $citations = $this->findTemoignage();
+        return $this->render('LabsFrontBundle:Default:about_us.html.twig',[
+            'about' => $about,
+            'partners' => $partners,
+            'citations' => $citations
+        ]);
+    }
+
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route("/nos-packages", name="pack")
+     */
+    public function PackPageAction()
+    {
+        $packs = $this->getPacksList();
+        $partners = $this->getAllPartners();
+        $citations = $this->findTemoignage();
+        $page  = $this->getInfoPagePackage();
+        return $this->render('LabsFrontBundle:Default:pack.html.twig',[
+            'partners' => $partners,
+            'packs' => $packs,
+            'citations' => $citations,
+            'page'      => $page
+        ]);
+    }
+
+    /**
+ * @param Packs $packs
+ * @param $slug
+ * @return \Symfony\Component\HttpFoundation\Response
+ * @Route("/nos-packages/{id}_{slug}", name="pack_view_list")
+ */
+    public function PackPageViewAction( Packs $packs, $slug )
+    {
+        $packs = $this->getPacksAndPackageList($packs);
+        $partners = $this->getAllPartners();
+        $citations = $this->findTemoignage();
+        $page  = $this->getInfoPagePackage();
+        dump($packs);
+        return $this->render('LabsFrontBundle:Default:pack_view.html.twig',[
+            'partners' => $partners,
+            'packs' => $packs,
+            'citations' => $citations,
+            'page'      => $page
+        ]);
+    }
+
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route("/page/wedding/", name="wedding")
+     */
+    public function WeddingPageViewAction()
+    {
+        $partners = $this->getAllPartners();
+        $TypeWeddings = $this->getInfoPageMariage();
+        dump($TypeWeddings);
+        return $this->render('LabsFrontBundle:Default:wedding.html.twig',[
+            'partners' => $partners,
+            'TypeWeddings'  => $TypeWeddings
+        ]);
     }
 
     /**
@@ -139,6 +203,16 @@ class DefaultController extends Controller
         return $data;
     }
 
+    /**
+     * @return array|\Labs\BackBundle\Entity\Packs[]
+     */
+    private function getPacksAndPackageList($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $data = $em->getRepository('LabsBackBundle:Packs')->findPackAndPackage($id);
+        return $data;
+    }
+
 
     private function getMediaTop($num = null)
     {
@@ -187,6 +261,29 @@ class DefaultController extends Controller
         $data = $em->getRepository('LabsBackBundle:Citation')->findAll();
         return $data; 
     }
+
+    /**
+     * @return mixed
+     * Page package information
+     */
+    private function getInfoPagePackage()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $data = $em->getRepository('LabsBackBundle:Packpage')->getOne();
+        return $data;
+    }
+
+    /**
+     * @return mixed
+     * Page package information
+     */
+    private function getInfoPageMariage()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $data = $em->getRepository('LabsBackBundle:Type')->findDossierAndMediaForType();
+        return $data;
+    }
+
 
 
 }

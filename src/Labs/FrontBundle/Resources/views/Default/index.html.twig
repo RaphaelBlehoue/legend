@@ -85,8 +85,8 @@
      <div class="col_full bottommargin-lg common-height">
 
       <div class="heading-block center">
-       <h3>Some of our <span>Featured</span> Works</h3>
-       <span>We have worked on some Awesome Projects that are worth boasting of.</span>
+        <h3><span>{{ page.allpackTitle }}</span> </h3>
+        <span>{{ page.allpackSubtitle }}</span>
       </div>
 
       {%  for pack in packs %}
@@ -94,7 +94,7 @@
           <div>
            <h3 class="uppercase" style="font-weight: 600;">{{ pack.name }}</h3>
            <p style="line-height: 1.8;">{{ pack.content|raw }}</p>
-           <a href="#" class="button button-border button-light button-rounded uppercase nomargin">{{ 'afficher tout' }}</a>
+           <a href="{{ path('pack_view_list', { 'id': pack.id, 'slug' : pack.slug }) }}" class="button button-border button-light button-rounded uppercase nomargin">{{ 'afficher tout' }}</a>
            <i class="icon-bulb bgicon"></i>
           </div>
          </div>

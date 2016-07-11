@@ -18,4 +18,14 @@ class PacksRepository extends \Doctrine\ORM\EntityRepository
         $qb->setParameter(':id', $id);
         return $qb->getQuery()->getOneOrNullResult();
     }
+
+    public function findPackAndPackage($id)
+    {
+        $qb = $this->createQueryBuilder('p');
+        $qb->leftJoin('p.packages', 'pac')
+            ->addSelect('pac');
+        $qb->where($qb->expr()->eq('p.id', ':id'));
+        $qb->setParameter(':id', $id);
+        return $qb->getQuery()->getOneOrNullResult();
+    }
 }

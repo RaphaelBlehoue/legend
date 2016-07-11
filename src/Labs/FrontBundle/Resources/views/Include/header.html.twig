@@ -19,15 +19,15 @@
 
                 <ul>
                     <li class="current menu"><a href="{{ path('about') }}"><div>{{ 'legend photography' }}</div></a></li>
-                    <li class="menu"><a href="{{ path('blog_page') }}"><div>{{ 'Packages' }}</div></a>
+                    <li class="menu"><a href="{{ path('pack') }}"><div>{{ 'Packages' }}</div></a>
                         <ul>
                             {%  for pack in packs %}
-                                <li><a href="#"><div><i class="icon-stack"></i>{{ pack.name }}</div></a></li>
+                                <li><a href="{{ path('pack_view_list', { 'id': pack.id, 'slug' : pack.slug }) }}"><div><i class="icon-stack"></i>{{ pack.name }}</div></a></li>
                             {% endfor %}
                         </ul>
 
                     </li>
-                    <li><a href="#"><div>{{ 'Mariages' }}</div></a>
+                    <li><a href="{{ path('wedding') }}"><div>{{ 'Mariages' }}</div></a>
                         <ul>
                             {%  for type in types %}
                                 <li><a href="#"><div><i class="icon-stack"></i>{{ type.name }}</div></a></li>

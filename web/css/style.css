@@ -11029,7 +11029,7 @@ label.error { display: none !important; }
 /* Fancy Title - Bottom Short Border
 -----------------------------------------------------------------*/
 
-.fancy-title.title-dotted-border { background: url('images/icons/dotted.png') repeat-x center; }
+.fancy-title.title-dotted-border { background: url('../images/icons/dotted.png') repeat-x center; }
 
 
 /* Sub Heading
@@ -13231,6 +13231,10 @@ body:not(.no-transition) #wrapper,
 	transform: none!important;
 	margin:0!important;
 	padding:0!important
+}
+
+.oc-portfolio{
+	margin-bottom: 10em;
 }
 
 

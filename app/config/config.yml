@@ -57,8 +57,23 @@ doctrine:
 
     orm:
         auto_generate_proxy_classes: "%kernel.debug%"
-        naming_strategy: doctrine.orm.naming_strategy.underscore
-        auto_mapping: true
+        entity_managers:
+            default:
+                naming_strategy: doctrine.orm.naming_strategy.underscore
+                auto_mapping: true
+                mappings:
+                    gedmo_tree:
+                        type: annotation
+                        prefix: Gedmo\Tree\Entity
+                        dir: "%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Tree/Entity"
+                        alias : GedmoTree # (optional) it will default to the name set for the mapping
+                        is_bundle: false
+
+
+stof_doctrine_extensions:
+    orm:
+        default:
+            sluggable: true
 
 doctrine_migrations:
     dir_name: "%kernel.root_dir%/DoctrineMigrations"
@@ -162,6 +177,11 @@ liip_imagine:
                     image: Resources/data/logo-dark.png
                     size: 0.2
                     position: bottomright
+
+        page_pckage:
+            quality: 100
+            filters:
+                relative_resize: { widen: 745 }
 
         logo_partenaire:
             quality: 100
