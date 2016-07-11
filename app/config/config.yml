@@ -168,6 +168,10 @@ liip_imagine:
             filters:
                 thumbnail: { size: [142, 107], mode: outbound }
 
+        citation_thumb:
+            quality: 100
+            filters:
+                thumbnail: { size: [64, 64], mode: outbound }
 
         slide:
             quality: 100

@@ -17,13 +17,23 @@ class DefaultController extends Controller
         $dossiers = $this->getMediaTop();
         $events = $this->getEventListLimited(6);
         $partners = $this->getAllPartners();
+        $citations = $this->findTemoignage();
         return $this->render('LabsFrontBundle:Default:index.html.twig',[
             'about' => $about,
             'packs' => $packs,
             'dossiers' => $dossiers,
             'events'   => $events,
-            'partners' => $partners 
+            'partners' => $partners,
+            'citations' => $citations
         ]);
+    }
+
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route("/about-us", name="about")
+     */
+    public function AboutAction(){
+        return $this->render('LabsFrontBundle:Default:about_us.html.twig');
     }
 
     /**
@@ -169,6 +179,13 @@ class DefaultController extends Controller
         $em = $this->getDoctrine()->getManager();
         $data = $em->getRepository('LabsBackBundle:Partner')->findAll();
         return $data;
+    }
+    
+    private function findTemoignage()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $data = $em->getRepository('LabsBackBundle:Citation')->findAll();
+        return $data; 
     }
 
 
