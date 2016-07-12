@@ -43,7 +43,6 @@ class DossierController extends Controller
         $bestman = $em->getRepository('LabsBackBundle:Best')->findBy(array('dossier' => $dossier,'genre'=> 1),array('top' => 'asc'));
         $bestwomen = $em->getRepository('LabsBackBundle:Best')->findBy(array('dossier' => $dossier,'genre'=> 0),array('top' => 'asc'));
         $galleries = $em->getRepository('LabsBackBundle:Type')->findMediaGroupBy($dossier);
-        dump($galleries);
         if(null === $dossiers)
         {
             throw new NotFoundHttpException('Page Introuvable',null, 404);
@@ -102,7 +101,7 @@ class DossierController extends Controller
         if($form->isValid()){
             $em->flush();
             $this->addFlash('success', 'La modification a été effectué');
-            return $this->redirectToRoute('dossier_index', array(), 302);
+            return $this->redirectToRoute('dossier_view', array('id' => $dossiers->getId()), 302);
         }
         return $this->render('LabsBackBundle:Dossiers:edit.html.twig',array(
             'form' => $form->createView()

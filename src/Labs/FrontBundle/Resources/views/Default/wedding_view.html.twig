@@ -1,0 +1,192 @@
+{% extends '::base.html.twig' %}
+{% block menu %}
+    {{ render(controller('LabsFrontBundle:Default:getMenu')) }}
+{% endblock %}
+
+{% block body %}
+    <div id="most-toppest"></div>
+
+    <section id="slider" class="slider-parallax full-screen page-section dark clearfix">
+
+        <div class="fslider" data-speed="2000" data-pause="6000" data-animation="fade" data-arrows="false" data-pagi="false" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-color: #333;">
+            <div class="flexslider" style="height: 100% !important;">
+                <div class="slider-wrap" style="height: inherit;">
+                    <div class="slide" style="background: url('images/wedding/13.jpg') center center; background-size: cover; height: 100% !important;"></div>
+                    <div class="slide" style="background: url('images/wedding/16.jpg') center center; background-size: cover; height: 100% !important;"></div>
+                    <div class="slide" style="background: url('images/wedding/12.jpg') center center; background-size: cover; height: 100% !important;"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container vertical-middle dark center clearfix" style="z-index: 2;">
+
+            <div class="wedding-head clearfix">
+                <div class="first-name">Bryant<span>Kellam</span></div>
+                <div class="and">&amp;</div>
+                <div class="last-name">Leanna<span>Pyburn</span></div>
+            </div>
+
+            <div class="divider divider-short divider-center"><i class="icon-heart3"></i></div>
+
+            <p class="lead">Getting <strong>Hitched</strong> on:</p>
+
+            <div id="countdown-ex1" class="countdown countdown-large coming-soon divcenter" style="max-width:700px;"></div>
+
+        </div>
+
+        <a href="#" data-scrollto="#section-couple" class="one-page-arrow"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
+
+        <script>
+            jQuery(document).ready( function($){
+                var newDate = new Date(2016, 2, 31);
+                $('#countdown-ex1').countdown({until: newDate});
+            });
+            jQuery(window).load(function(){
+                var t=setTimeout(function(){
+                    $( '.flexslider .slide' ).resize();
+                },500);
+            });
+        </script>
+
+    </section>
+
+    <section id="content">
+        <div class="content-wrap">
+            <div class="container clearfix">
+
+                <div id="section-couple" class="heading-block title-center page-section">
+                    <h2>The Couple</h2>
+                    <span>Meet the Bride &amp; the Groom</span>
+                </div>
+
+                <div class="col-md-6 bottommargin">
+                    <div class="team team-list clearfix">
+                        <div class="team-image" style="width: 150px;">
+                            <img class="img-circle" src="images/wedding/17.jpg" alt="Bryant Kellam">
+                        </div>
+                        <div class="team-desc">
+                            <div class="team-title"><h4>Bryant Kellam</h4><span>Groom</span></div>
+                            <div class="team-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, pariatur, magni! Omnis reiciendis architecto, cupiditate fuga dolores nam accusamus iste molestias quos mollitia totam eius porro culpa incidunt, sunt rerum molestiae aliquid non hic.</div>
+                            <div class="line topmargin-sm nobottommargin"></div>
+                            <a href="#" class="social-icon si-borderless si-small si-facebook" title="Facebook">
+                                <i class="icon-facebook"></i>
+                                <i class="icon-facebook"></i>
+                            </a>
+                            <a href="#" class="social-icon si-borderless si-small si-twitter" title="Twitter">
+                                <i class="icon-twitter"></i>
+                                <i class="icon-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon si-borderless si-small si-pinterest" title="Pinterest">
+                                <i class="icon-pinterest"></i>
+                                <i class="icon-pinterest"></i>
+                            </a>
+                            <a href="#" class="social-icon si-borderless si-small si-instagram" title="Instagram">
+                                <i class="icon-instagram"></i>
+                                <i class="icon-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 bottommargin">
+                    <div class="team team-list clearfix">
+                        <div class="team-image" style="width: 150px;">
+                            <img class="img-circle" src="images/wedding/18.jpg" alt="Leanna Pyburn">
+                        </div>
+                        <div class="team-desc">
+                            <div class="team-title"><h4>Leanna Pyburn</h4><span>Bride</span></div>
+                            <div class="team-content">Blanditiis adipisci laudantium reiciendis distinctio, molestiae, illum. Aut eveniet assumenda expedita labore nulla commodi numquam perspiciatis, amet doloribus cum sint, quisquam possimus eos aspernatur distinctio similique perferendis.</div>
+                            <div class="line topmargin-sm nobottommargin"></div>
+                            <a href="#" class="social-icon si-borderless si-small si-facebook" title="Facebook">
+                                <i class="icon-facebook"></i>
+                                <i class="icon-facebook"></i>
+                            </a>
+                            <a href="#" class="social-icon si-borderless si-small si-twitter" title="Twitter">
+                                <i class="icon-twitter"></i>
+                                <i class="icon-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon si-borderless si-small si-instagram" title="Instagram">
+                                <i class="icon-instagram"></i>
+                                <i class="icon-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+
+                <div id="section-gallery" class="heading-block center topmargin page-section">
+                    <h2>Gallery.</h2>
+                    <span>Check out the Candid Moments</span>
+                </div>
+
+                <div class="fslider flex-thumb-grid grid-12 bottommargin-lg" data-pagi="false" data-arrows="false" data-thumbs="true">
+                    <div class="flexslider">
+                        <div class="slider-wrap">
+                            <div class="slide" data-thumb="images/wedding/thumb/11.jpg"><img src="images/wedding/11.jpg" alt="Image"></div>
+                            <div class="slide" data-thumb="images/wedding/thumb/15.jpg"><img src="images/wedding/15.jpg" alt="Image"></div>
+                            <div class="slide" data-thumb="images/wedding/thumb/19.jpg"><img src="images/wedding/19.jpg" alt="Image"></div>
+                            <div class="slide" data-thumb="images/wedding/thumb/20.jpg"><img src="images/wedding/20.jpg" alt="Image"></div>
+                            <div class="slide" data-thumb="images/wedding/thumb/21.jpg"><img src="images/wedding/21.jpg" alt="Image"></div>
+                            <div class="slide" data-thumb="images/wedding/thumb/22.jpg"><img src="images/wedding/22.jpg" alt="Image"></div>
+                            <div class="slide" data-thumb="images/wedding/thumb/23.jpg"><img src="images/wedding/23.jpg" alt="Image"></div>
+                            <div class="slide" data-thumb="images/wedding/thumb/24.jpg"><img src="images/wedding/24.jpg" alt="Image"></div>
+                            <div class="slide" data-thumb="images/wedding/thumb/25.jpg"><img src="images/wedding/25.jpg" alt="Image"></div>
+                            <div class="slide" data-thumb="images/wedding/thumb/26.jpg"><img src="images/wedding/26.jpg" alt="Image"></div>
+                            <div class="slide" data-thumb="images/wedding/thumb/27.jpg"><img src="images/wedding/27.jpg" alt="Image"></div>
+                            <div class="slide" data-thumb="images/wedding/thumb/28.jpg"><img src="images/wedding/28.jpg" alt="Image"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+
+                <div id="section-events" class="heading-block title-center topmargin-lg page-section">
+                    <h2>Events Schedule.</h2>
+                    <span>List of all the Scheduled Events for your Information</span>
+                </div>
+
+                <div class="col_one_third">
+                    <div class="feature-box center media-box fbox-bg">
+                        <div class="fbox-media">
+                            <img src="images/wedding/events/cocktail.jpg" alt="Image">
+                        </div>
+                        <div class="fbox-desc">
+                            <h3>Cocktail Party<span class="subtitle">Gokul Banquets, 14th June</span></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col_one_third">
+                    <div class="feature-box center media-box fbox-bg">
+                        <div class="fbox-media">
+                            <img src="images/wedding/events/wedding.jpg" alt="Image">
+                        </div>
+                        <div class="fbox-desc">
+                            <h3>Wedding Ceremony<span class="subtitle">Singhi Palace, 15th June</span></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col_one_third col_last">
+                    <div class="feature-box center media-box fbox-bg">
+                        <div class="fbox-media">
+                            <img src="images/wedding/events/afterwedding.jpg" alt="Image">
+                        </div>
+                        <div class="fbox-desc">
+                            <h3>After Wedding Party<span class="subtitle">27 Ballygunge Place, 16th June</span></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+
+                <div id="section-locations" class="heading-block title-center topmargin-lg page-section">
+                    <h2>Locations.</h2>
+                    <span>Lovely Locations at which the Events are scheduled</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+{% endblock %}

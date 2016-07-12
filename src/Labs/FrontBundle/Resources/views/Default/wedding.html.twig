@@ -11,30 +11,14 @@
             <div class="fslider" data-easing="easeInQuad">
                 <div class="flexslider">
                     <div class="slider-wrap">
-                        <div class="slide" data-thumb="{{ asset('images/slider/boxed/thumbs/2.jpg') }}">
-                            <a href="#">
-                                <img src="{{ asset('images/slider/boxed/2.jpg') }}" alt="Slide 2">
-                                <div class="flex-caption slider-caption-bg">Responsive Ready Design</div>
-                            </a>
-                        </div>
-                        <div class="slide" data-thumb="{{ asset('images/slider/boxed/thumbs/3.jpg') }}">
-                            <a href="#">
-                                <img src="{{ asset('images/slider/boxed/3.jpg') }}" alt="Slide 3">
-                                <div class="flex-caption slider-caption-bg slider-caption-bg-light slider-caption-top-left">Retina Graphics Display</div>
-                            </a>
-                        </div>
-                        <div class="slide" data-thumb="{{ asset('images/slider/boxed/thumbs/4.jpg') }}">
-                            <a href="#">
-                                <img src="{{ asset('images/slider/boxed/4.jpg') }}" alt="Slide 4">
-                                <div class="flex-caption slider-caption-bg slider-caption-top-right">Bootstrap 3+ Compatible</div>
-                            </a>
-                        </div>
-                        <div class="slide" data-thumb="{{ asset('images/slider/boxed/thumbs/5.jpg') }}">
-                            <a href="#">
-                                <img src="{{ asset('images/slider/boxed/5.jpg') }}" alt="Slide 5">
-                                <div class="flex-caption slider-caption-bg slider-caption-bg-light slider-caption-bottom-right">eCommerce Design Included</div>
-                            </a>
-                        </div>
+                        {% for slide in slides %}
+                            <div class="slide" data-thumb="{{ slide.assertPath|imagine_filter('image_profolio') }}">
+                                <a href="#">
+                                    <img src="{{ slide.assertPath|imagine_filter('slide_wedding') }}" alt="Slide 2">
+                                    <div class="flex-caption slider-caption-bg">{{ slide.dossier.name }}</div>
+                                </a>
+                            </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
@@ -49,157 +33,31 @@
                     <h3>Some of our <span>Featured</span> Works</h3>
                     <span>We have worked on some Awesome Projects that are worth boasting of.</span>
                 </div>
-                {% for TypeWedding in TypeWeddings %}
+                {%  for type in TypeWeddings %}
                     <div class="fancy-title title-center title-dotted-border topmargin">
-                        <h3>{{ TypeWedding.name }}</h3>
+                        <h3>{{ type.name}}</h3>
                     </div>
                     <div id="oc-portfolio" class="owl-carousel portfolio-carousel oc-portfolio">
-
-                    <div class="oc-item">
-                        <div class="iportfolio">
-                            <div class="portfolio-image">
-                                <a href="portfolio-single.html">
-                                    <img src="images/portfolio/4/1.jpg" alt="Open Imagination">
-                                </a>
-                                <div class="portfolio-overlay">
-                                    <a href="images/portfolio/full/1.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-                                    <a href="portfolio-single.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+                        {% for gallery in type.gallery %}
+                            <div class="oc-item">
+                                <div class="iportfolio">
+                                    <div class="portfolio-image">
+                                        <a href="{{ path('wedding_view', {'id' : gallery.dossier.id , 'slug' : gallery.dossier.slug}) }}">
+                                            <img src="{{ gallery.assertPath|imagine_filter('image_profolio') }}" alt="{{ gallery.dossier.name }}">
+                                        </a>
+                                        <div class="portfolio-overlay">
+                                            <a href="{{ gallery.assertPath|imagine_filter('image_profolio_full') }}" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+                                            <a href="{{ path('wedding_view', {'id' : gallery.dossier.id , 'slug' : gallery.dossier.slug}) }}" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-desc">
+                                        <h3><a href="{{ path('wedding_view', {'id' : gallery.dossier.id , 'slug' : gallery.dossier.slug}) }}">{{ gallery.dossier.name }}</a></h3>
+                                        <span><a href="#">{{ type.name}}</a> | <a href="{{ path('wedding_view', {'id' : gallery.dossier.id , 'slug' : gallery.dossier.slug}) }}">{{ gallery.dossier.created|date('d-M-Y')}}</a></span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="portfolio-desc">
-                                <h3><a href="portfolio-single.html">Open Imagination</a></h3>
-                                <span><a href="#">Media</a>, <a href="#">Icons</a></span>
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div>
-
-                    <div class="oc-item">
-                        <div class="iportfolio">
-                            <div class="portfolio-image">
-                                <a href="portfolio-single.html">
-                                    <img src="images/portfolio/4/2.jpg" alt="Locked Steel Gate">
-                                </a>
-                                <div class="portfolio-overlay">
-                                    <a href="images/portfolio/full/2.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-                                    <a href="portfolio-single.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-                                </div>
-                            </div>
-                            <div class="portfolio-desc">
-                                <h3><a href="portfolio-single.html">Locked Steel Gate</a></h3>
-                                <span><a href="#">Illustrations</a></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="oc-item">
-                        <div class="iportfolio">
-                            <div class="portfolio-image">
-                                <a href="#">
-                                    <img src="images/portfolio/4/3.jpg" alt="Mac Sunglasses">
-                                </a>
-                                <div class="portfolio-overlay">
-                                    <a href="http://vimeo.com/89396394" class="left-icon" data-lightbox="iframe"><i class="icon-line-play"></i></a>
-                                    <a href="portfolio-single-video.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-                                </div>
-                            </div>
-                            <div class="portfolio-desc">
-                                <h3><a href="portfolio-single-video.html">Mac Sunglasses</a></h3>
-                                <span><a href="#">Graphics</a>, <a href="#">UI Elements</a></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="oc-item">
-                        <div class="iportfolio">
-                            <div class="portfolio-image">
-                                <a href="portfolio-single.html">
-                                    <img src="images/portfolio/4/5.jpg" alt="Console Activity">
-                                </a>
-                                <div class="portfolio-overlay">
-                                    <a href="images/portfolio/full/5.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-                                    <a href="portfolio-single.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-                                </div>
-                            </div>
-                            <div class="portfolio-desc">
-                                <h3><a href="portfolio-single.html">Console Activity</a></h3>
-                                <span><a href="#">UI Elements</a>, <a href="#">Media</a></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="oc-item">
-                        <div class="iportfolio">
-                            <div class="portfolio-image">
-                                <a href="portfolio-single-video.html">
-                                    <img src="images/portfolio/4/7.jpg" alt="Backpack Contents">
-                                </a>
-                                <div class="portfolio-overlay">
-                                    <a href="http://www.youtube.com/watch?v=kuceVNBTJio" class="left-icon" data-lightbox="iframe"><i class="icon-line-play"></i></a>
-                                    <a href="portfolio-single-video.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-                                </div>
-                            </div>
-                            <div class="portfolio-desc">
-                                <h3><a href="portfolio-single-video.html">Backpack Contents</a></h3>
-                                <span><a href="#">UI Elements</a>, <a href="#">Icons</a></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="oc-item">
-                        <div class="iportfolio">
-                            <div class="portfolio-image">
-                                <a href="portfolio-single.html">
-                                    <img src="images/portfolio/4/8.jpg" alt="Sunset Bulb Glow">
-                                </a>
-                                <div class="portfolio-overlay">
-                                    <a href="images/portfolio/full/8.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-                                    <a href="portfolio-single.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-                                </div>
-                            </div>
-                            <div class="portfolio-desc">
-                                <h3><a href="portfolio-single.html">Sunset Bulb Glow</a></h3>
-                                <span><a href="#">Graphics</a></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="oc-item">
-                        <div class="iportfolio">
-                            <div class="portfolio-image">
-                                <a href="portfolio-single-video.html">
-                                    <img src="images/portfolio/4/10.jpg" alt="Study Table">
-                                </a>
-                                <div class="portfolio-overlay">
-                                    <a href="http://vimeo.com/91973305" class="left-icon" data-lightbox="iframe"><i class="icon-line-play"></i></a>
-                                    <a href="portfolio-single-video.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-                                </div>
-                            </div>
-                            <div class="portfolio-desc">
-                                <h3><a href="portfolio-single-video.html">Study Table</a></h3>
-                                <span><a href="#">Graphics</a>, <a href="#">Media</a></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="oc-item">
-                        <div class="iportfolio">
-                            <div class="portfolio-image">
-                                <a href="portfolio-single.html">
-                                    <img src="images/portfolio/4/11.jpg" alt="Workspace Stuff">
-                                </a>
-                                <div class="portfolio-overlay">
-                                    <a href="images/portfolio/full/11.jpg" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-                                    <a href="portfolio-single.html" class="right-icon"><i class="icon-line-ellipsis"></i></a>
-                                </div>
-                            </div>
-                            <div class="portfolio-desc">
-                                <h3><a href="portfolio-single.html">Workspace Stuff</a></h3>
-                                <span><a href="#">Media</a>, <a href="#">Icons</a></span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
                 {% endfor %}
 
                 <!--  bloc partenaire -->

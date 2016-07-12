@@ -3,8 +3,12 @@
 namespace Labs\FrontBundle\Controller;
 
 use Labs\BackBundle\Entity\Packs;
+use Labs\BackBundle\Entity\Type;
+use Proxies\__CG__\Labs\BackBundle\Entity\Dossier;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\Request;
+
 
 class DefaultController extends Controller
 {
@@ -76,7 +80,6 @@ class DefaultController extends Controller
         $partners = $this->getAllPartners();
         $citations = $this->findTemoignage();
         $page  = $this->getInfoPagePackage();
-        dump($packs);
         return $this->render('LabsFrontBundle:Default:pack_view.html.twig',[
             'partners' => $partners,
             'packs' => $packs,
@@ -92,12 +95,44 @@ class DefaultController extends Controller
     public function WeddingPageViewAction()
     {
         $partners = $this->getAllPartners();
-        $TypeWeddings = $this->getInfoPageMariage();
-        dump($TypeWeddings);
+        $weddingByType = $this->getMediaByTypeWedding(true, 3);
+        $slides = $this->getSlideWedding(3);
         return $this->render('LabsFrontBundle:Default:wedding.html.twig',[
-            'partners' => $partners,
-            'TypeWeddings'  => $TypeWeddings
+            'partners'      => $partners,
+            'TypeWeddings'  => $weddingByType,
+            'slides'        => $slides
         ]);
+    }
+
+    /**
+     * @param Type $type
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route("/page/wedding/{id}/{slug}", name="wedding_type")
+     */
+    public function WeddingTypePageAction( Type $type, Request $request)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $findmedias = $em->getRepository('LabsBackBundle:Media')->findLastMediaLimit($type);
+        $medias  = $this->get('knp_paginator')->paginate(
+            $findmedias,
+            $request->query->getInt('page', 1), 9);
+        $medias->setTemplate('LabsFrontBundle:Pagination:paginate.html.twig');
+        return $this->render('LabsFrontBundle:Default:wedding_type.html.twig',[
+            'type'   => $type,
+            'medias' => $medias
+        ]);
+    }
+
+    /**
+     * @param Dossier $dossier
+     * @param $slug
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route("{id}/wedding/{slug}", name="wedding_view")
+     */
+    public function WeddingPageView(Dossier $dossier, $slug)
+    {
+        return $this->render('LabsFrontBundle:Default:wedding_view.html.twig');
     }
 
     /**
@@ -273,15 +308,54 @@ class DefaultController extends Controller
         return $data;
     }
 
+
     /**
-     * @return mixed
-     * Page package information
+     * @param bool|false $typeCode
+     * @param null $num
+     * @return array
      */
-    private function getInfoPageMariage()
+    private function getMediaByTypeWedding($typeCode = false, $num = null)
     {
         $em = $this->getDoctrine()->getManager();
-        $data = $em->getRepository('LabsBackBundle:Type')->findDossierAndMediaForType();
-        return $data;
+        $media = [];
+        if(true === $typeCode){
+            $type = [];
+            $data = $em->getRepository('LabsBackBundle:Type')->findAll();
+            foreach ( $data as $d ) {
+                $type[] = $d->getId();
+            }
+            foreach ( $type as $k => $t ) {
+                $findType = $em->getRepository('LabsBackBundle:Type')->find($t);
+                $media[$t] =[
+                    'name' => $findType->getName(),
+                    'gallery' => $em->getRepository('LabsBackBundle:Media')->findLastMediaLimit($findType, $num)
+                ];
+            }
+        }else{
+            $media = $em->getRepository('LabsBackBundle:Media')->findLastMediaLimit();
+        }
+        return $media;
+    }
+
+    /**
+     * @param null $num
+     * @return array
+     * recuperation des medias a la une global en fonction des paramètres
+     */
+    private function getSlideWedding($num = null)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $data = [];
+        $dossier = $em->getRepository('LabsBackBundle:Dossier')->findAll();
+        foreach ( $dossier as  $d) {
+            $data[] = $d->getId();
+        }
+        if(null !== $num)
+            $media = $em->getRepository('LabsBackBundle:Media')->findLastMedia($data, $num);
+        else
+            $media = $em->getRepository('LabsBackBundle:Media')->findLastMedia($dossier);
+
+        return $media;
     }
 
 

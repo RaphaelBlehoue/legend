@@ -14,9 +14,20 @@ use Symfony\Component\HttpFoundation\RequestStack;
 
 class UpdateStatusService
 {
-    private  $entity;
+    /**
+     * @var EntityManager
+     */
+    private $entity;
+
+    /**
+     * @var RequestStack
+     */
     private $request;
 
+    /**
+     * @param EntityManager $entityManager
+     * @param RequestStack $requestStack
+     */
     public function __construct(EntityManager $entityManager, RequestStack $requestStack)
     {
         $this->entity = $entityManager;
@@ -46,6 +57,59 @@ class UpdateStatusService
             }
         return $response;
     }
+
+
+    /**
+     * @param $media
+     * @param $dossier
+     * @return array
+     */
+    public  function UpdateStatus($media, $dossier)
+    {
+        $response = [];
+        if($this->updateStatusFalse($dossier)){
+            $this->UpdateStatusMediaTrue($media , $dossier);
+            $response = [
+                "message" => " Enregistrement effectué avec success" ,
+                "status"  => "success"
+            ];
+        }else{
+            $response = [
+                "message" => " Une erreur est survenue" ,
+                "status"  => "error"
+            ];
+        }
+        return $response;
+    }
+
+    /**
+     * @param $media
+     * @param $event
+     * @return array
+     * Met à jour le media de l'event passé en @param à activé
+     */
+    public function UpdateActivedEvent($media, $event)
+    {
+        //dump($this->UpdateActivedMediaEvent($event)); die;
+        $response = [];
+        if($this->UpdateActivedMediaEvent($event)){
+            $medias = $this->entity->getRepository('LabsBackBundle:Media')->findOneMedia($media, $event);
+            $medias->setActived(1);
+            $this->entity->persist($medias);
+            $this->entity->flush();
+            $response = [
+                "message" => " Enregistrement effectué avec success" ,
+                "status"  => "success"
+            ];
+        }else{
+            $response = [
+                "message" => " Une erreur est survenue" ,
+                "status"  => "error"
+            ];
+        }
+        return $response;
+    }
+
 
     /**
      * @param $type
@@ -82,30 +146,6 @@ class UpdateStatusService
 
 
 
-
-    /**
-     * @param $media
-     * @param $dossier
-     * @return array
-     */
-    public  function UpdateStatus($media, $dossier)
-    {
-        $response = [];
-        if($this->updateStatusFalse($dossier)){
-            $this->UpdateStatusMediaTrue($media , $dossier);
-            $response = [
-                "message" => " Enregistrement effectué avec success" ,
-                "status"  => "success"
-            ];
-        }else{
-            $response = [
-                "message" => " Une erreur est survenue" ,
-                "status"  => "error"
-            ];
-        }
-        return $response;
-    }
-
     /**
      * @param $dossier
      * @return bool
@@ -137,33 +177,6 @@ class UpdateStatusService
         return true;
     }
 
-    /**
-     * @param $media
-     * @param $event
-     * @return array
-     * Met à jour le media de l'event passé en @param à activé
-     */
-    public function UpdateActivedEvent($media, $event)
-    {
-        //dump($this->UpdateActivedMediaEvent($event)); die;
-        $response = [];
-        if($this->UpdateActivedMediaEvent($event)){
-            $medias = $this->entity->getRepository('LabsBackBundle:Media')->findOneMedia($media, $event);
-            $medias->setActived(1);
-            $this->entity->persist($medias);
-            $this->entity->flush();
-            $response = [
-                "message" => " Enregistrement effectué avec success" ,
-                "status"  => "success"
-            ];
-        }else{
-            $response = [
-                "message" => " Une erreur est survenue" ,
-                "status"  => "error"
-            ];
-        }
-        return $response;
-    }
 
     /**
      * @param $event
@@ -184,4 +197,5 @@ class UpdateStatusService
             return true;
         }
     }
+
 }

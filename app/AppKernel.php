@@ -20,6 +20,7 @@ class AppKernel extends Kernel
             new Vich\UploaderBundle\VichUploaderBundle(),
             new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
+            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new Labs\TemplateBundle\LabsTemplateBundle(),
             new Labs\BackBundle\LabsBackBundle(),
             new Labs\FrontBundle\LabsFrontBundle(),

@@ -10,4 +10,19 @@ namespace Labs\BackBundle\Repository;
  */
 class BestRepository extends \Doctrine\ORM\EntityRepository
 {
+
+    public function UpdateStatusTrue($best ,$dossier, $genre)
+    {
+        $qb = $this->createQueryBuilder('b');
+        $qb->leftJoin('b.dossier', 'd');
+        $qb->where(
+            $qb->expr()->eq('b.id', ':best'),
+            $qb->expr()->eq('b.dossier', ':dossier'),
+            $qb->expr()->eq('b.genre', ':genre')
+        );
+        $qb->setParameter(':best', $best);
+        $qb->setParameter(':dossier', $dossier);
+        $qb->setParameter(':genre', $genre);
+        return $qb->getQuery()->getSingleResult();
+    }
 }

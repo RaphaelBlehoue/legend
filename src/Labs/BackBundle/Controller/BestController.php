@@ -58,49 +58,51 @@ class BestController extends Controller
     }
 
     /**
-     * @param Booking $booking
+     * @param Best $best
+     * @param Dossier $dossier
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
-     * @Route("/{id}/edit", name="booking_edit")
+     * @Route("/{id}/{dossier}/edit", name="best_edit")
      * @Method({"GET", "POST"})
      */
-   /* public function editAction(Booking $booking, Request $request)
+    public function editAction(Best $best, Dossier $dossier ,Request $request)
     {
         $em = $this->getDoctrine()->getManager();
-        $bookings = $em->getRepository('LabsBackBundle:Booking')->getOne($booking);
-        if(null === $bookings)
+        if(null === $best)
         {
             throw new NotFoundHttpException('Page Introuvable',null, 404);
         }
-        $form = $this->createForm(BookingEditType::class, $bookings);
+        $form = $this->createForm(BestEditType::class, $best);
         $form->handleRequest($request);
 
         if($form->isValid()){
             $em->flush();
             $this->addFlash('success', 'La modification a été effectué');
-            return $this->redirectToRoute('booking_index', array(), 302);
+            return $this->redirectToRoute('dossier_view',['id' => $dossier->getId()], 302);
         }
-        return $this->render('LabsBackBundle:Booking:edit.html.twig',array(
+        return $this->render('LabsBackBundle:Bests:edit.html.twig',array(
             'form' => $form->createView()
         ));
-    } */
+    }
 
     /**
-     * @param Booking $booking
+     * @param Best $best
+     * @param Dossier $dossier
+     * @param Request $request
      * @return \Symfony\Component\HttpFoundation\RedirectResponse
-     * @Route("/{id}/delete", name="booking_delete")
+     * @Route("/{id}/delete", name="best_delete")
      * @Method("GET")
      */
-    /*public function deleteAction(Booking $booking)
+    public function deleteAction(Best $best, Dossier $dossier, Request $request)
     {
         $em = $this->getDoctrine()->getManager();
-        $bookings = $em->getRepository('LabsBackBundle:Booking')->find($booking);
-        if(null === $bookings)
+        if(null === $best)
             throw new NotFoundHttpException('Page Introuvable',null, 404);
         else
-            $em->remove($bookings);
+            $em->remove($best);
             $em->flush();
             $this->addFlash('success', 'La suppression a été fait avec succès');
-            return $this->redirectToRoute('booking_index', array(), 302);
-    }*/
+            return $this->redirectToRoute('dossier_view',['id' => $dossier->getId()], 302);
+    }
+
 }

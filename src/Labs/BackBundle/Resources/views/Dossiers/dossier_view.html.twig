@@ -30,8 +30,7 @@
     <div class="bg-white innerAll border-bottom">
         <ul class="menubar">
             <li class="active"><a href="">Dashboard</a></li>
-            <li><a href="#">{{ 'Categories' }}</a></li>
-            <li><a href="#">{{ 'Evenements' }}</a></li>
+            <li><a href="{{ path('dossier_index') }}">{{ 'Dossier' }}</a></li>
         </ul>
     </div>
     <div class="innerAll spacing-x2">
@@ -53,6 +52,8 @@
                         {% if dossier.online == 0 %}
                             <a href="{{ path('dossier_online', { 'id': dossier.id })  }}" class="btn btn-success btn-sm"><i class="fa fa-plus fa-fw"></i> Publier</a>
                         {% endif %}
+                        <a href="{{ path('media_create', { 'id': dossier.id })  }}" class="btn btn-warning btn-sm"><i class="fa fa-edit fa-fw"></i> Ajouter des photos</a>
+
                     </div>
 
 
@@ -87,7 +88,7 @@
                                                     <div class="description">
                                                         <a href="{{ path('update_media_status_global', { 'id' : media.id, 'dossier' : dossier.id}) }}" class="btn btn-stroke btn-circle btn-warning mediaUpdateStatus" id="mediaUpdateStatus{{ media.id }}" data-toggle="tooltip" data-original-title="Mise globale a la une" data-placement="bottom"><i class="fa  fa-check-circle"></i></a>
                                                         <a href="{{ path('update_media_status', { 'id' : media.id, 'type' : media.type.id, 'dossier' : dossier.id}) }}" class="btn btn-stroke btn-circle btn-success mediaUpdate" id="mediaUpdate{{ media.id }}" data-toggle="tooltip" data-original-title="Mettre à la une du type {{ media.type.name }}" data-placement="bottom"><i class="fa fa-check"></i></a>
-                                                        <a href="#" class="btn btn-stroke btn-circle btn-danger" data-toggle="tooltip" data-original-title="Supprimer l'image" data-placement="bottom"><i class="fa fa-times"></i></a>
+                                                        <a href="{{ path('media_delete_dossier', { 'dossier' : dossier.id, 'id' : media.id } ) }}" class="btn btn-stroke btn-circle btn-danger" data-toggle="tooltip" data-original-title="Supprimer l'image" data-placement="bottom"><i class="fa fa-times"></i></a>
                                                         {% if media.actived == 1 %}
                                                             <span class="btn btn-circle btn-success" data-toggle="tooltip" data-original-title="A la une du type {{ media.type.name }}" data-placement="bottom"><i class="fa fa-certificate"></i></span>
                                                         {% endif %}
@@ -108,7 +109,12 @@
 
                     <div class="innerAll">
                         <div class="widget widget-inverse widget-gallery" data-toggle="collapse-widget">
-                            <div class="widget-head"><h4 class="heading">Best Man</h4></div>
+                            <div class="widget-head">
+                                <h4 class="heading">Best Man</h4>
+                                <a href="{{ path('best_create', {'id' : dossier.id}) }}" class="btn btn-xs btn-info pull-right">
+                                    <i class="fa fa-plus fa-fw"></i> {{ 'Ajouter bestman'|upper }}
+                                </a>
+                            </div>
                             <div class="widget-body">
                                 <!-- Gallery Layout -->
 
@@ -122,8 +128,11 @@
                                                 <div class="description">
                                                     <h4 class="media-heading padding-none"><a href="">{{ man.name }}</a> </h4>
                                                     <small class="text-success"><i class="fa fa-check"></i> {{ (man.top == 1) ? 'Best Man en chef' : 'Best Man' }}</small></br>
-                                                    <a href="#" class="btn btn-stroke btn-circle btn-success"><i class="fa fa-check"></i></a>
-                                                    <a href="#" class="btn btn-stroke btn-circle btn-danger"><i class="fa fa-times"></i></a>
+                                                    {% if man.top == 1 %}
+                                                        <span class="btn btn-circle btn-success" data-toggle="tooltip" data-original-title="A la une" data-placement="bottom"><i class="fa fa-certificate"></i></span>
+                                                    {% endif %}
+                                                    <a href="{{ path('best_edit', {'id' : man.id, 'dossier': dossier.id}) }}" class="btn btn-stroke btn-circle btn-success"><i class="fa fa-check"></i></a>
+                                                    <a href="{{ path('best_delete', {'id' : man.id}) }}" class="btn btn-stroke btn-circle btn-danger"><i class="fa fa-times"></i></a>
                                                     <hr>
                                                 </div>
                                             </li>
@@ -137,7 +146,12 @@
 
                     <div class="innerAll">
                         <div class="widget widget-inverse widget-gallery" data-toggle="collapse-widget">
-                            <div class="widget-head"><h4 class="heading">Best Women</h4></div>
+                            <div class="widget-head">
+                                <h4 class="heading">Best Women</h4>
+                                <a href="{{ path('best_create', {'id' : dossier.id}) }}" class="btn btn-xs btn-info pull-right">
+                                    <i class="fa fa-plus fa-fw"></i> {{ 'Ajouter bestman'|upper }}
+                                </a>
+                            </div>
                             <div class="widget-body">
                                 <!-- Gallery Layout -->
 
@@ -151,8 +165,11 @@
                                                 <div class="description">
                                                     <h4 class="media-heading padding-none"><a href="">{{ women.name }}</a> </h4>
                                                     <small class="text-success"><i class="fa fa-check"></i> {{ (women.top == 1) ? 'Best women en chef' : 'Best women' }}</small></br>
-                                                    <a href="#" class="btn btn-stroke btn-circle btn-success"><i class="fa fa-check"></i></a>
-                                                    <a href="#" class="btn btn-stroke btn-circle btn-danger"><i class="fa fa-times"></i></a>
+                                                    {% if women.top == 1 %}
+                                                        <span class="btn btn-circle btn-success" data-toggle="tooltip" data-original-title="A la une" data-placement="bottom"><i class="fa fa-certificate"></i></span>
+                                                    {% endif %}
+                                                    <a href="{{ path('best_edit', {'id' : women.id, 'dossier' : dossier.id}) }}" class="btn btn-stroke btn-circle btn-success"><i class="fa fa-check"></i></a>
+                                                    <a href="{{ path('best_delete', {'id' : women.id}) }}" class="btn btn-stroke btn-circle btn-danger"><i class="fa fa-times"></i></a>
                                                     <hr>
                                                 </div>
                                             </li>

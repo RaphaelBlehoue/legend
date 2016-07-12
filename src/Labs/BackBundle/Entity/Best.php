@@ -299,4 +299,16 @@ class Best
         $this->created = $created;
     }
 
+    /**
+     * @ORM\PostRemove()
+     */
+    public function deleteMedia()
+    {
+        // En PostRemove, on n'a pas accès à l'id, on utilise notre nom sauvegardé
+        if (file_exists($this->getAssertPath())) {
+            // On supprime le fichier
+            unlink($this->getAssertPath());
+        }
+    }
+
 }

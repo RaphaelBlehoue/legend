@@ -39,6 +39,13 @@ class BestType extends AbstractType
                         'BEST WOMEN' => false,
                     ))
             )
+            ->add('top', ChoiceType::class, array(
+                'label' => false,
+                'choices' => array(
+                    'OUI' => true,
+                    'NON' => false,
+                )
+            ))
         ;
     }
     

@@ -30,7 +30,7 @@
                     <li><a href="{{ path('wedding') }}"><div>{{ 'Mariages' }}</div></a>
                         <ul>
                             {%  for type in types %}
-                                <li><a href="#"><div><i class="icon-stack"></i>{{ type.name }}</div></a></li>
+                                <li><a href="{{ path('wedding_type', {'id' : type.id, 'slug' : type.slug}) }}"><div><i class="icon-stack"></i>{{ type.name }}</div></a></li>
                             {% endfor %}
                         </ul>
                     </li>

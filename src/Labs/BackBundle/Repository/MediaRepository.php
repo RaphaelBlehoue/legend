@@ -10,6 +10,12 @@ namespace Labs\BackBundle\Repository;
  */
 class MediaRepository extends \Doctrine\ORM\EntityRepository
 {
+    /**
+     * @param $id
+     * @return mixed
+     * @throws \Doctrine\ORM\NonUniqueResultException
+     * Recupere un seul media
+     */
     public function getOne($id)
     {
         $qb = $this->createQueryBuilder('m');
@@ -17,7 +23,13 @@ class MediaRepository extends \Doctrine\ORM\EntityRepository
         $qb->setParameter(':id', $id);
         return $qb->getQuery()->getOneOrNullResult();
     }
-    
+
+    /**
+     * @param null $type
+     * @param $dossier
+     * @return array
+     * Met tout les medias à false du type et du dossier concernés
+     */
    public function UpdateAllFalse($type = null, $dossier)
    {
        $qb = $this->createQueryBuilder('m');
@@ -32,6 +44,15 @@ class MediaRepository extends \Doctrine\ORM\EntityRepository
        return $qb->getQuery()->getResult();
    }
 
+    /**
+     * @param $media
+     * @param null $type
+     * @param $dossier
+     * @return mixed
+     * @throws \Doctrine\ORM\NoResultException
+     * @throws \Doctrine\ORM\NonUniqueResultException
+     * Met le media à True du type et du dossier concerné et le media associée
+     */
     public function UpdateTrue($media, $type = null, $dossier)
     {
         $qb = $this->createQueryBuilder('m');
@@ -48,6 +69,11 @@ class MediaRepository extends \Doctrine\ORM\EntityRepository
         return $qb->getQuery()->getSingleResult();
     }
 
+    /**
+     * @param $dossier
+     * @return array
+     * Met tout les medias a false du dossier concernée
+     */
     public function UpdateStatusAllFalse($dossier)
     {
         $qb = $this->createQueryBuilder('m');
@@ -59,6 +85,14 @@ class MediaRepository extends \Doctrine\ORM\EntityRepository
         return $qb->getQuery()->getResult();
     }
 
+    /**
+     * @param $media
+     * @param $dossier
+     * @return mixed
+     * @throws \Doctrine\ORM\NoResultException
+     * @throws \Doctrine\ORM\NonUniqueResultException
+     * Met le media à True du dossier concerné et le media associée
+     */
     public function UpdateStatusTrue($media, $dossier)
     {
         $qb = $this->createQueryBuilder('m');
@@ -72,7 +106,11 @@ class MediaRepository extends \Doctrine\ORM\EntityRepository
         return $qb->getQuery()->getSingleResult();
     }
 
-    public function findLastMedia($dossier)
+    /**
+     * @param $dossier
+     * @return array
+     */
+    public function findLastMedia($dossier, $num = null)
     {
         $qb = $this->createQueryBuilder('m');
         $qb->leftJoin('m.dossier', 'd')
@@ -86,9 +124,20 @@ class MediaRepository extends \Doctrine\ORM\EntityRepository
         );
         $qb->groupBy('d.id');
         $qb->setParameter(':dossier', $dossier);
+        if(null !== $num)
+        {
+            $qb->setMaxResults($num);
+        }
         return $qb->getQuery()->getResult();
     }
 
+    /**
+     * @param $media
+     * @param $event
+     * @return mixed
+     * @throws \Doctrine\ORM\NoResultException
+     * @throws \Doctrine\ORM\NonUniqueResultException
+     */
     public function findOneMedia($media, $event)
     {
         $qb = $this->createQueryBuilder('m');
@@ -100,5 +149,30 @@ class MediaRepository extends \Doctrine\ORM\EntityRepository
         $qb->setParameter(':media', $media);
         $qb->setParameter(':event', $event);
         return $qb->getQuery()->getSingleResult();
+    }
+
+    public function findLastMediaLimit($type = null, $num = null)
+    {
+        $qb = $this->createQueryBuilder('m');
+        $qb->leftJoin('m.dossier', 'd')
+            ->leftJoin('m.type', 't')
+            ->addSelect('t')
+            ->addSelect('d');
+        // Si le Type de wedding est passé en parametre et different de null
+        if(null !== $type){
+            $qb->where(
+                $qb->expr()->eq('m.actived', 1)
+            );
+            $qb->andWhere($qb->expr()->in('m.type', ':type'));
+            $qb->setParameter(':type', $type);
+        }
+        // Si le num de selection de wedding est passé en parametre et different de null
+
+        if(null !== $num){
+            $qb->setMaxResults($num);
+        }
+
+        $qb->orderBy('d.created', 'DESC');
+        return $qb->getQuery()->getResult();
     }
 }

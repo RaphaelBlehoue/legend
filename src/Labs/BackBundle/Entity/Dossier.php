@@ -4,6 +4,7 @@ namespace Labs\BackBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 
 /**
@@ -11,6 +12,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  *
  * @ORM\Table(name="dossier")
  * @ORM\Entity(repositoryClass="Labs\BackBundle\Repository\DossierRepository")
+ *
  */
 class Dossier
 {
@@ -114,7 +116,13 @@ class Dossier
      * @ORM\JoinColumn(referencedColumnName="id", nullable=false)
      */
     protected $package;
-    
+
+    /**
+     * @Gedmo\Slug(fields={"name", "id"})
+     * @ORM\Column(length=128, unique=true)
+     */
+    protected $slug;
+
 
     public function __construct()
     {
@@ -432,5 +440,29 @@ class Dossier
     public function getPackage()
     {
         return $this->package;
+    }
+
+    /**
+     * Set slug
+     *
+     * @param string $slug
+     *
+     * @return Product
+     */
+    public function setSlug($slug)
+    {
+        $this->slug = $slug;
+
+        return $this;
+    }
+
+    /**
+     * Get slug
+     *
+     * @return string
+     */
+    public function getSlug()
+    {
+        return $this->slug;
     }
 }

@@ -83,7 +83,7 @@ class MediaController extends Controller
         if($request->isXmlHttpRequest()){
             /** @var Symfony\Component\HttpFoundation\File\UploadedFile $file */
             $file = $request->files->get('file');
-            $fileName = md5(uniqid()).'.'.$file->guessExtension();
+            $fileName = $dossier->getSlug().'_'.md5(uniqid()).'.'.$file->guessExtension();
             $file->move(
                 $this->container->getParameter('gallery_directory'),
                 $fileName
@@ -120,7 +120,7 @@ class MediaController extends Controller
         if($request->isXmlHttpRequest()){
             /** @var Symfony\Component\HttpFoundation\File\UploadedFile $file */
             $file = $request->files->get('file');
-            $fileName = md5(uniqid()).'.'.$file->guessExtension();
+            $fileName = $event->getSlug().'_'.md5(uniqid()).'.'.$file->guessExtension();
             $file->move(
                 $this->container->getParameter('gallery_directory'),
                 $fileName
@@ -217,5 +217,24 @@ class MediaController extends Controller
             $em->flush();
             $this->addFlash('success', 'La suppression a été fait avec succès');
             return $this->redirectToRoute('event_view', ['id' => $events->getId()], 302);
+    }
+
+    /**
+     * @param Media $media
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse
+     * @Route("/{id}/delete_dossier/{dossier}", name="media_delete_dossier")
+     * @Method("GET")
+     */
+    public function deleteMediaDossierAction(Media $media, $dossier)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $dossiers = $em->getRepository('LabsBackBundle:Dossier')->getOne($dossier);
+        if(null === $media)
+            throw new NotFoundHttpException('Page Introuvable',null, 404);
+        else
+            $em->remove($media);
+        $em->flush();
+        $this->addFlash('success', 'La suppression a été fait avec succès');
+        return $this->redirectToRoute('dossier_view', ['id' => $dossiers->getId()], 302);
     }
 }

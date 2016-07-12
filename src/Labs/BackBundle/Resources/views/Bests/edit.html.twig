@@ -1,16 +1,24 @@
 {% extends 'LabsTemplateBundle::layout.html.twig' %}
-{% block Title %}{{ 'Reservation | Legend Photography' }}{% endblock %}
+{% block Title %}{{ 'Best Man-Women weddding | Legend Photography' }}{% endblock %}
 {% block stylesheets %}
     {{ parent() }}
     <link rel="stylesheet" href="{{ asset('bundles/labstemplate/assets/css/admin/module.admin.page.form_elements.min.css') }}" />
 {% endblock %}
 {% block body %}
+    {% if app.session.flashBag.has('success') %}
+        <div class="alert alert-success" role="alert">
+            {% for msg in app.session.flashBag.get('success') %}
+                <strong> Succès </strong>{{ msg }}.
+            {% endfor %}
+        </div>
+    {% endif %}
+
     <h1 class="bg-white content-heading border-bottom">Dashboard</h1>
     <div class="bg-white innerAll border-bottom">
         <ul class="menubar">
             <li class="active"><a href="">Dashboard</a></li>
-            <li><a href="{{ path('booking_index') }}">{{ 'Reservation' }}</a></li>
-            <li><a href="#">{{ 'Edition' }}</a></li>
+            <li><a href="{{ path('dossier_index') }}">{{ 'Dossier Weddings' }}</a></li>
+            <li><a href="#">{{ 'Best Man-Woment wedddin - Creation' }}</a></li>
         </ul>
     </div>
     <div class="innerAll spacing-x2">
@@ -23,17 +31,22 @@
                 <div class="widget widget-inverse" >
                     <!-- Widget heading -->
                     <div class="widget-head">
-                        <a href="{{ path('booking_index') }}" class="btn btn-xs btn-info pull-right">
-                            <i class="fa fa-plus fa-fw"></i> {{ 'Liste des reservations' }}
-                        </a>
-                        <h4 class="heading">{{ 'Modifier la reservation'|upper }}</h4>
+                        <h4 class="heading">{{ 'Modifier des bests Man & Women'|upper }}</h4>
                     </div>
                     <!-- // Widget heading END -->
                     <div class="widget-body">
                         <div class="innerB">
                             <div class="row">
                                 <div class="col-xs-8 col-xs-offset-2 form-group">
-                                    <label class="control-label" for="name">{{ 'Nom du reservant' }}</label>
+                                    <label class="control-label" for="name">{{ 'Best Man ou Women en Chef' }}</label>
+                                    {{ form_row(form.top) }}
+                                    {{ form_errors(form.top) }}
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-8 col-xs-offset-2 form-group">
+                                    <label class="control-label" for="name">{{ 'Nom du Best Man ou Women' }}</label>
                                     {{ form_row(form.name) }}
                                     {{ form_errors(form.name) }}
                                 </div>
@@ -41,46 +54,33 @@
 
                             <div class="row">
                                 <div class="col-xs-8 col-xs-offset-2 form-group">
-                                    <label class="control-label" for="name">{{ 'Lieu de l\'evenement' }}</label>
-                                    {{ form_row(form.lieu) }}
-                                    {{ form_errors(form.lieu) }}
+                                    <label class="control-label" for="name">{{ 'Photo du Best Man ou Women' }}</label>
+                                    {{ form_row(form.imageFile) }}
+                                    {{ form_errors(form.imageFile) }}
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-xs-8 col-xs-offset-2 form-group">
+                                    <label class="control-label" for="name">{{ 'Description du Best Man ou Women' }}</label>
+                                    {{ form_row(form.content) }}
+                                    {{ form_errors(form.content) }}
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="col-xs-8 col-xs-offset-2 form-group">
-                                    <label class="control-label" for="name">{{ 'email du reservant' }}</label>
-                                    {{ form_row(form.email) }}
-                                    {{ form_errors(form.email) }}
+                                    <label class="control-label" for="name">{{ 'Genre du Best Man ou Women' }}</label>
+                                    {{ form_row(form.genre) }}
+                                    {{ form_errors(form.genre) }}
                                 </div>
                             </div>
 
-                            <div class="row">
-                                <div class="col-xs-8 col-xs-offset-2 form-group">
-                                    <label class="control-label" for="name">{{ 'date de reservation' }}</label>
-                                    {{ form_row(form.date_res) }}
-                                    {{ form_errors(form.date_res) }}
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-8 col-xs-offset-2 form-group">
-                                    <label class="control-label" for="name">{{ 'Choix du pack' }}</label>
-                                    {{ form_row(form.pack) }}
-                                    {{ form_errors(form.pack) }}
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-xs-8 col-xs-offset-2 form-group">
-                                    <label class="control-label" for="name">{{ 'Validé la reservation' }}</label>
-                                    {{ form_row(form.status) }}
-                                    {{ form_errors(form.status) }}
-                                </div>
-                            </div>
                             <div class="row">
                                 <div class="form-group">
                                     <div class="col-sm-offset-2 col-sm-10">
-                                        <button type="submit" class="btn btn-primary" formnovalidate>{{ 'Modifier la reservation' }}</button>
+                                        <button type="submit" class="btn btn-primary" formnovalidate>{{ 'Modifier'|upper }}</button>
                                     </div>
                                 </div>
                             </div>
