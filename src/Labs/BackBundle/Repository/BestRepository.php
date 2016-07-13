@@ -25,4 +25,16 @@ class BestRepository extends \Doctrine\ORM\EntityRepository
         $qb->setParameter(':genre', $genre);
         return $qb->getQuery()->getSingleResult();
     }
+
+    public function getBestByDossier($dossier)
+    {
+        $qb = $this->createQueryBuilder('b');
+        $qb->leftJoin('b.dossier', 'd');
+        $qb->where(
+            $qb->expr()->eq('b.dossier', ':dossier')
+        );
+        $qb->orderBy('b.top', 'ASC');
+        $qb->setParameter(':dossier', $dossier);
+        return $qb->getQuery()->getResult();
+    }
 }

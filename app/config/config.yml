@@ -127,6 +127,14 @@ vich_uploader:
             delete_on_update:   true
             delete_on_remove:   true
             namer:              vich_uploader.namer_uniqid
+
+        dossier_image_page:
+            uri_prefix:         /uploads/dossier
+            upload_destination: "%kernel.root_dir%/../web/uploads/dossier"
+            inject_on_load:     false
+            delete_on_update:   true
+            delete_on_remove:   true
+            namer:              vich_uploader.namer_uniqid
 #liip_imagine upload crop image
 
 liip_imagine:
@@ -210,6 +218,40 @@ liip_imagine:
                     image: Resources/data/logo-dark.png
                     size: 0.2
                     position: bottomright
+
+        slide_wedding_view:
+            quality: 100
+            filters:
+                thumbnail: { size: [1500, 833], mode: outbound }
+                watermark :
+                    image: Resources/data/logo-dark.png
+                    size: 0.2
+                    position: bottomright
+
+        slide_wedding_view_page:
+            quality: 100
+            filters:
+                relative_resize: { widen: 1500  }
+                watermark :
+                    image: Resources/data/logo-dark.png
+                    size: 0.2
+                    position: bottomright
+
+
+        slide_wedding_view_thumb:
+            quality: 100
+            filters:
+                thumbnail: { size: [400, 300], mode: outbound }
+                watermark :
+                    image: Resources/data/logo-dark.png
+                    size: 0.2
+                    position: bottomright
+
+        wedding_couple:
+            quality: 100
+            filters:
+                thumbnail: { size: [300, 300], mode: outbound }
+
 
 # Swiftmailer Configuration
 swiftmailer:

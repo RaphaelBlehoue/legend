@@ -4,7 +4,7 @@ namespace Labs\FrontBundle\Controller;
 
 use Labs\BackBundle\Entity\Packs;
 use Labs\BackBundle\Entity\Type;
-use Proxies\__CG__\Labs\BackBundle\Entity\Dossier;
+use Labs\BackBundle\Entity\Dossier;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Request;
@@ -92,7 +92,7 @@ class DefaultController extends Controller
      * @return \Symfony\Component\HttpFoundation\Response
      * @Route("/page/wedding/", name="wedding")
      */
-    public function WeddingPageViewAction()
+    public function WeddingPageAction()
     {
         $partners = $this->getAllPartners();
         $weddingByType = $this->getMediaByTypeWedding(true, 3);
@@ -130,9 +130,17 @@ class DefaultController extends Controller
      * @return \Symfony\Component\HttpFoundation\Response
      * @Route("{id}/wedding/{slug}", name="wedding_view")
      */
-    public function WeddingPageView(Dossier $dossier, $slug)
+    public function WeddingPageViewAction(Dossier $dossier, $slug)
     {
-        return $this->render('LabsFrontBundle:Default:wedding_view.html.twig');
+        $slides = $this->getSlideWeddingViewPage($dossier);
+        $gallery = $this->findMediaByDossier($dossier);
+        $best = $this->findBestManAndWomen($dossier);
+        dump($best);
+        return $this->render('LabsFrontBundle:Default:wedding_view.html.twig',[
+            'slides' => $slides,
+            'galeries' => $gallery,
+            'best'     => $best
+        ]);
     }
 
     /**
@@ -239,7 +247,8 @@ class DefaultController extends Controller
     }
 
     /**
-     * @return array|\Labs\BackBundle\Entity\Packs[]
+     * @param $id
+     * @return mixed
      */
     private function getPacksAndPackageList($id)
     {
@@ -356,6 +365,55 @@ class DefaultController extends Controller
             $media = $em->getRepository('LabsBackBundle:Media')->findLastMedia($dossier);
 
         return $media;
+    }
+
+    /**
+     * @param $dossier
+     * @return mixed
+     * Recuperation du slide de la page wedding
+     */
+    private function getSlideWeddingViewPage($dossier)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $media = $em->getRepository('LabsBackBundle:Media')->findSlideMedia($dossier);
+        return $media;
+    }
+
+    /**
+     * @param Dossier $dossier
+     * @return array
+     */
+    private function findMediaByDossier(Dossier $dossier)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $galleries = $em->getRepository('LabsBackBundle:Type')->findMediaGroupBy($dossier);
+        return $galleries;
+    }
+
+    /**
+     * @param Dossier $dossier
+     * @return mixed
+     * Retour tous les bests man et woment du dossier
+     */
+    private function findBestManAndWomen(Dossier $dossier)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $data = [];
+        $result = [];
+        $best = $em->getRepository('LabsBackBundle:Best')->getBestByDossier($dossier);
+        foreach ( $best as $k => $b) {
+            if($b->getGenre() == true){
+                $data[$k] =[
+                     'men' => $b
+                ];
+            }else{
+                $data[$k] =[
+                    'women' => $b
+                ];
+            }
+            $result = array_merge($data);
+        }
+        return $result;
     }
 
 

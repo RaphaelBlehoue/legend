@@ -4,7 +4,10 @@ namespace Labs\BackBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\HttpFoundation\File\File;
 use Gedmo\Mapping\Annotation as Gedmo;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
+
 
 
 /**
@@ -12,7 +15,8 @@ use Gedmo\Mapping\Annotation as Gedmo;
  *
  * @ORM\Table(name="dossier")
  * @ORM\Entity(repositoryClass="Labs\BackBundle\Repository\DossierRepository")
- *
+ * @ORM\HasLifecycleCallbacks()
+ * @Vich\Uploadable
  */
 class Dossier
 {
@@ -41,11 +45,68 @@ class Dossier
     protected $weddingMen;
 
     /**
+     * @var
+     * @Assert\NotBlank(message="Entrez le contenu avant de continuer")
+     * @ORM\Column(name="content_wedding_men", type="text")
+     */
+    protected $content_wedding_men;
+
+    /**
+     * @Assert\File(
+     *     maxSize="3M",
+     *     mimeTypes={"image/png", "image/jpeg", "image/jpg"}
+     * )
+     *
+     * @Vich\UploadableField(mapping="dossier_image_page", fileNameProperty="profile_men")
+     *
+     * @var File $profileMenFile
+     */
+    protected $profileMenFile;
+
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="profile_men", type="string", length=225)
+     */
+    protected $profile_men;
+
+
+    /**
      * @var string
      * @Assert\NotNull(message="Entrez le nom de la marié avant de continuer")
      * @ORM\Column(name="wedding_women", type="string", length=255)
      */
     protected $weddingWomen;
+
+
+    /**
+     * @var
+     * @Assert\NotBlank(message="Entrez le contenu avant de continuer")
+     * @ORM\Column(name="content_wedding_women", type="text")
+     */
+    protected $content_wedding_women;
+
+    /**
+     * @Assert\File(
+     *     maxSize="3M",
+     *     mimeTypes={"image/png", "image/jpeg", "image/jpg"}
+     * )
+     *
+     * @Vich\UploadableField(mapping="dossier_image_page", fileNameProperty="profile_women")
+     *
+     * @var File $profileWomenFile
+     */
+    protected $profileWomenFile;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="profile_women", type="string", length=225)
+     */
+    protected $profile_women;
+
+
 
     /**
      * @var string
@@ -76,12 +137,6 @@ class Dossier
      */
     protected $video;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="video_prewedding", type="string", length=255, nullable=true)
-     */
-    protected $video_prewedding;
 
     /**
      * @var
@@ -300,22 +355,6 @@ class Dossier
         $this->video = $video;
     }
 
-    /**
-     * @return string
-     */
-    public function getVideoPrewedding()
-    {
-        return $this->video_prewedding;
-    }
-
-    /**
-     * @param string $video_prewedding
-     */
-    public function setVideoPrewedding($video_prewedding)
-    {
-        $this->video_prewedding = $video_prewedding;
-    }
-
 
     /**
      * Add media
@@ -464,5 +503,183 @@ class Dossier
     public function getSlug()
     {
         return $this->slug;
+    }
+
+    /**
+     * @param File|null $image
+     * @return $this
+     */
+    public function setProfileMenFile(File $image = null)
+    {
+        $this->profileMenFile = $image;
+        if ($image) {
+            // It is required that at least one field changes if you are using doctrine
+            // otherwise the event listeners won't be called and the file is lost
+            $this->created = new \DateTime('now');
+        }
+        return $this;
+    }
+
+    /**
+     * @return File
+     */
+    public function getProfileMenFile()
+    {
+        return $this->profileMenFile;
+    }
+
+
+    /**
+     * @return string
+     */
+    public function getUploadDir()
+    {
+        // On retourne le chemin relatif vers l'image pour un navigateur
+        return 'uploads/dossier';
+    }
+
+    /**
+     * @return string
+     */
+    protected function getUploadRootDir()
+    {
+        // On retourne le chemin relatif vers l'image pour notre code PHP
+        return __DIR__.'/../../../../web/'.$this->getUploadDir();
+    }
+
+    /**
+     * @return string
+     */
+    public function getAssertPathMen()
+    {
+        return $this->getUploadDir().'/'.$this->profile_men;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAssertPathWomen()
+    {
+        return $this->getUploadDir().'/'.$this->profile_women;
+    }
+
+
+    /**
+     * Set contentWeddingMen
+     *
+     * @param string $contentWeddingMen
+     *
+     * @return Dossier
+     */
+    public function setContentWeddingMen($contentWeddingMen)
+    {
+        $this->content_wedding_men = $contentWeddingMen;
+
+        return $this;
+    }
+
+    /**
+     * Get contentWeddingMen
+     *
+     * @return string
+     */
+    public function getContentWeddingMen()
+    {
+        return $this->content_wedding_men;
+    }
+
+    /**
+     * Set profileMen
+     *
+     * @param string $profileMen
+     *
+     * @return Dossier
+     */
+    public function setProfileMen($profileMen)
+    {
+        $this->profile_men = $profileMen;
+
+        return $this;
+    }
+
+    /**
+     * Get profileMen
+     *
+     * @return string
+     */
+    public function getProfileMen()
+    {
+        return $this->profile_men;
+    }
+
+    /**
+     * @param File|null $image
+     * @return $this
+     */
+    public function setProfileWomenFile(File $image = null)
+    {
+        $this->profileWomenFile = $image;
+        if ($image) {
+            // It is required that at least one field changes if you are using doctrine
+            // otherwise the event listeners won't be called and the file is lost
+            $this->created = new \DateTime('now');
+        }
+        return $this;
+    }
+
+    /**
+     * @return File
+     */
+    public function getProfileWomenFile()
+    {
+        return $this->profileWomenFile;
+    }
+
+    /**
+     * Set contentWeddingWomen
+     *
+     * @param string $contentWeddingWomen
+     *
+     * @return Dossier
+     */
+    public function setContentWeddingWomen($contentWeddingWomen)
+    {
+        $this->content_wedding_women = $contentWeddingWomen;
+
+        return $this;
+    }
+
+    /**
+     * Get contentWeddingWomen
+     *
+     * @return string
+     */
+    public function getContentWeddingWomen()
+    {
+        return $this->content_wedding_women;
+    }
+
+    /**
+     * Set profileWomen
+     *
+     * @param string $profileWomen
+     *
+     * @return Dossier
+     */
+    public function setProfileWomen($profileWomen)
+    {
+        $this->profile_women = $profileWomen;
+
+        return $this;
+    }
+
+    /**
+     * Get profileWomen
+     *
+     * @return string
+     */
+    public function getProfileWomen()
+    {
+        return $this->profile_women;
     }
 }

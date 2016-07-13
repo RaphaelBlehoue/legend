@@ -7,6 +7,7 @@ use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Vich\UploaderBundle\Form\Type\VichImageType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -57,6 +58,22 @@ class DossierType extends AbstractType
                 'label' => false,
                 'class' => 'LabsBackBundle:Packages',
                 'choice_label' => 'name'
+            ))
+            ->add('profileWomenFile', VichImageType::class,array(
+                'label' => false,
+                'required' => false,
+                'allow_delete' => true
+            ))
+            ->add('profileMenFile', VichImageType::class,array(
+                'label' => false,
+                'required' => false,
+                'allow_delete' => true
+            ))
+            ->add('content_wedding_men', CKEditorType::class, array(
+                'label' => false
+            ))
+            ->add('content_wedding_women', CKEditorType::class, array(
+                'label' => false
             ))
         ;
     }

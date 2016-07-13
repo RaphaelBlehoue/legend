@@ -57,11 +57,45 @@
 
                             <div class="row">
                                 <div class="col-xs-8 col-xs-offset-2 form-group">
+                                    <label class="control-label" for="weddingMen">{{ 'photo de profile du marié' }}</label>
+                                    {{ form_row(form.profileMenFile) }}
+                                    {{ form_errors(form.profileMenFile) }}
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-8 col-xs-offset-2 form-group">
+                                    <label class="control-label" for="weddingMen">{{ 'description du marié' }}</label>
+                                    {{ form_row(form.content_wedding_men) }}
+                                    {{ form_errors(form.content_wedding_men) }}
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-8 col-xs-offset-2 form-group">
                                     <label class="control-label" for="weddingWomen">{{ 'Nom de la mariée' }}</label>
                                     {{ form_row(form.weddingWomen) }}
                                     {{ form_errors(form.weddingWomen) }}
                                 </div>
                             </div>
+
+
+                            <div class="row">
+                                <div class="col-xs-8 col-xs-offset-2 form-group">
+                                    <label class="control-label" for="weddingMen">{{ 'photo de profile de la mariée' }}</label>
+                                    {{ form_row(form.profileWomenFile) }}
+                                    {{ form_errors(form.profileWomenFile) }}
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-8 col-xs-offset-2 form-group">
+                                    <label class="control-label" for="weddingMen">{{ 'description de la marié' }}</label>
+                                    {{ form_row(form.content_wedding_women) }}
+                                    {{ form_errors(form.content_wedding_women) }}
+                                </div>
+                            </div>
+
 
                             <div class="row">
                                 <div class="col-xs-8 col-xs-offset-2 form-group">
@@ -85,14 +119,6 @@
                                     <label class="control-label" for="name">{{ 'video wedding' }}</label>
                                     {{ form_row(form.video) }}
                                     {{ form_errors(form.video) }}
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-xs-8 col-xs-offset-2 form-group">
-                                    <label class="control-label" for="name">{{ 'video pre-wedding' }}</label>
-                                    {{ form_row(form.video_prewedding) }}
-                                    {{ form_errors(form.video_prewedding) }}
                                 </div>
                             </div>
 

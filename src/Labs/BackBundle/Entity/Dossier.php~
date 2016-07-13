@@ -4,6 +4,9 @@ namespace Labs\BackBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
+use Gedmo\Mapping\Annotation as Gedmo;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
+
 
 
 /**
@@ -11,6 +14,8 @@ use Symfony\Component\Validator\Constraints as Assert;
  *
  * @ORM\Table(name="dossier")
  * @ORM\Entity(repositoryClass="Labs\BackBundle\Repository\DossierRepository")
+ * @ORM\HasLifecycleCallbacks()
+ * @Vich\Uploadable
  */
 class Dossier
 {
@@ -39,11 +44,68 @@ class Dossier
     protected $weddingMen;
 
     /**
+     * @var
+     * @Assert\NotBlank(message="Entrez le contenu avant de continuer")
+     * @ORM\Column(name="content_wedding_men", type="text")
+     */
+    protected $content_wedding_men;
+
+    /**
+     * @Assert\File(
+     *     maxSize="3M",
+     *     mimeTypes={"image/png", "image/jpeg", "image/jpg"}
+     * )
+     *
+     * @Vich\UploadableField(mapping="dossier_image_page", fileNameProperty="profile_men")
+     *
+     * @var File $profileMenFile
+     */
+    protected $profileMenFile;
+
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="profile_men", type="string", length=225)
+     */
+    protected $profile_men;
+
+
+    /**
      * @var string
      * @Assert\NotNull(message="Entrez le nom de la marié avant de continuer")
      * @ORM\Column(name="wedding_women", type="string", length=255)
      */
     protected $weddingWomen;
+
+
+    /**
+     * @var
+     * @Assert\NotBlank(message="Entrez le contenu avant de continuer")
+     * @ORM\Column(name="content_wedding_women", type="text")
+     */
+    protected $content_wedding_women;
+
+    /**
+     * @Assert\File(
+     *     maxSize="3M",
+     *     mimeTypes={"image/png", "image/jpeg", "image/jpg"}
+     * )
+     *
+     * @Vich\UploadableField(mapping="dossier_image_page", fileNameProperty="profile_women")
+     *
+     * @var File $profileWomenFile
+     */
+    protected $profileWomenFile;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="profile_women", type="string", length=225)
+     */
+    protected $profile_women;
+
+
 
     /**
      * @var string
@@ -114,7 +176,13 @@ class Dossier
      * @ORM\JoinColumn(referencedColumnName="id", nullable=false)
      */
     protected $package;
-    
+
+    /**
+     * @Gedmo\Slug(fields={"name", "id"})
+     * @ORM\Column(length=128, unique=true)
+     */
+    protected $slug;
+
 
     public function __construct()
     {
@@ -409,4 +477,52 @@ class Dossier
         $this->created = $created;
     }
     
+
+    /**
+     * Set package
+     *
+     * @param \Labs\BackBundle\Entity\Packages $package
+     *
+     * @return Dossier
+     */
+    public function setPackage(\Labs\BackBundle\Entity\Packages $package)
+    {
+        $this->package = $package;
+
+        return $this;
+    }
+
+    /**
+     * Get package
+     *
+     * @return \Labs\BackBundle\Entity\Packages
+     */
+    public function getPackage()
+    {
+        return $this->package;
+    }
+
+    /**
+     * Set slug
+     *
+     * @param string $slug
+     *
+     * @return Product
+     */
+    public function setSlug($slug)
+    {
+        $this->slug = $slug;
+
+        return $this;
+    }
+
+    /**
+     * Get slug
+     *
+     * @return string
+     */
+    public function getSlug()
+    {
+        return $this->slug;
+    }
 }

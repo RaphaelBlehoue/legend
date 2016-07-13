@@ -175,4 +175,19 @@ class MediaRepository extends \Doctrine\ORM\EntityRepository
         $qb->orderBy('d.created', 'DESC');
         return $qb->getQuery()->getResult();
     }
+
+    public function findSlideMedia($dossier)
+    {
+        $qb = $this->createQueryBuilder('m');
+        $qb->leftJoin('m.dossier', 'd');
+        $qb->where($qb->expr()->eq('d.id', ':dossier'));
+        $qb->andWhere(
+            $qb->expr()->orX(
+                $qb->expr()->eq('m.status', 1),
+                $qb->expr()->eq('m.actived', 1)
+            )
+        );
+        $qb->setParameter(':dossier', $dossier);
+        return $qb->getQuery()->getResult();
+    }
 }
