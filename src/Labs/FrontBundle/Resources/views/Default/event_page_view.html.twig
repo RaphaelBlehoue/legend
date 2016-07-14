@@ -1,0 +1,64 @@
+{% extends '::base.html.twig' %}
+{% block menu %}
+    {{ render(controller('LabsFrontBundle:Default:getMenuGlobal')) }}
+{% endblock %}
+
+{% block body %}
+    <section id="slider" class="slider-parallax full-screen dark" style="overflow: hidden; background: url('{{ slides.assertPath|imagine_filter('slide_wedding_view') }}') no-repeat center center;background-size: cover;">
+        <div class="container clearfix vertical-middle" style="z-index: 3;">
+            <div class="heading-block title-center nobottomborder">
+                <h1>{{ slides.event.name }}</h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="content">
+        <div class="content-wrap">
+            <div class="container clearfix">
+                        <div id="section-couple" class="heading-block title-center page-section">
+                            <h2>{{ slides.event.name }}</h2>
+                        </div>
+
+                        <div class="col-md-12 bottommargin">
+                            <div class="team team-list clearfix">
+                                <div class="team-desc">
+                                    <div class="team-title"><h4>{{ slides.event.name }}</h4><span>{{ slides.event.client }}</span></div>
+                                    <div class="team-content">{% if slides.event.content|length > 0 %} {{ slides.event.content|raw }} {% endif %}</div>
+                                    <div class="line topmargin-sm nobottommargin"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                <div class="col_full nobottommargin clearfix">
+                        <h3>{{ 'Photos ' ~ slides.event.name }} | {{ slides.event.client }}</h3>
+                            <div class="masonry-thumbs col-6" data-big="3" data-lightbox="gallery">
+                                {% for gallery in galeries %}
+                                    {% for media in gallery.medias %}
+                                        <a href="{{ media.assertPath|imagine_filter('slide_wedding_view_page') }}" data-lightbox="gallery-item"><img class="image_fade" src="{{ media.assertPath|imagine_filter('slide_wedding_view_thumb') }}" alt="{{ slides.event.name }}"></a>
+                                    {% endfor %}
+                                {% endfor %}
+                            </div>
+                        <div class="divider"><i class="icon-circle"></i></div>
+
+                    <div class="col_full clearfix"></div>
+
+                    <div class="postcontent nobottommargin clearfix center col-sm-offset-2">
+                        <div id="section-events" class="heading-block title-center topmargin-lg page-section">
+                            <h2>{{ 'film de l\'evenement' }}</h2>
+                            <span>{{ slides.event.name }}</span>
+                        </div>
+                        {{ slides.event.video|raw }}
+                        <div class="divider"><i class="icon-circle"></i></div>
+                    </div>
+
+
+                    <div id="section-locations" class="heading-block title-center topmargin-lg page-section">
+                        <h2>{{ 'Reservez une date' }}.</h2>
+                        <span>{{ 'entrez vos informations et contacts pour reservez une date pour votre évenement ou mariage'|capitalize }}</span>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
+{% endblock %}

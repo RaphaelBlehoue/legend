@@ -33,6 +33,13 @@ class Events
     protected $name;
 
     /**
+     * @var string
+     * @Assert\NotBlank(message="Entrez un nom du client avant de continuer")
+     * @ORM\Column(name="client", type="string", length=255)
+     */
+    protected $client;
+
+    /**
      * @var \DateTime
      * @Assert\NotBlank(message="renseignez la date de l'evenement")
      * @ORM\Column(name="date_event", type="date")
@@ -330,4 +337,22 @@ class Events
     {
         return $this->slug;
     }
+
+    /**
+     * @return string
+     */
+    public function getClient()
+    {
+        return $this->client;
+    }
+
+    /**
+     * @param string $client
+     */
+    public function setClient($client)
+    {
+        $this->client = $client;
+    }
+
+
 }

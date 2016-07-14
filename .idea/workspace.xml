@@ -2,29 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f66c0dc-4822-4176-a5fc-7f7d3a160cba" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/boboum-carine_044e84d56b82358ddf5897d5be8ec542.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/boboum-carine_09679514a2dad28fb6c9d0c7f5772a95.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/boboum-carine_21fcbf3c8e6ee44d1e905e0622586a92.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/boboum-carine_778f710456a226b89c2ca0b19ebed5e7.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/clement-louise_0607cf69ae4bec90d94d94d86ab5cc20.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/clement-louise_21728325374021f79ab970b321c5987b.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/clement-louise_25f503c63be0edae7a841cfa4faf4c1d.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/clement-louise_66a72ddd121d5a7c75e24b75afd8971a.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/djamal-victorine_0de2f4596d10028d7419d7c95031b252.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/djamal-victorine_27b8ec18bd13d96e510fd491fd3781de.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/djamal-victorine_2fbae4b3faa6cd8d5dbaa1f03dad589c.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/djamal-victorine_7f9f01cd26fadc2de06ea52b8021f02e.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/djamal-victorine_98d1cba1423c2c529f401425771863c2.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/gcool-adeladeide_2e9f22100fec1c9d43852975b9886c1d.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/gcool-adeladeide_796c2d8bbb5ecde93a78400385f56f00.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/gcool-adeladeide_87ccfe8577e72b76efe32b0bbb3307f2.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/gcool-adeladeide_c1bd08fce1952ebeaeb51989ac83fd48.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/kemi-okwche-seum-jide_66d1ecfda90d2cac96469a19f8bbe1a5.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/kemi-okwche-seum-jide_a9c68398f1745f534ed8a5e5117b79fd.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/kemi-okwche-seum-jide_bae76e8ca0dd417fc5523f0571571d5c.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/kemi-okwche-seum-jide_d8eff720d09ca067de19292094cc3abb.jpeg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Category.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Category.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/FrontBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/Labs/FrontBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Events.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Events.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Controller/EventsController.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Controller/EventsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Repository/EventsRepository.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Repository/EventsRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Form/EventsType.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Form/EventsType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Repository/MediaRepository.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Repository/MediaRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Events/create.html.twig" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Events/create.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Events/edit.html.twig" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Events/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/header-global.html.twig" afterPath="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/header-global.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/header.html.twig" afterPath="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/header.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Events/index.html.twig" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Events/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/wedding_type.html.twig" afterPath="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/wedding_type.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/wedding_view.html.twig" afterPath="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/wedding_view.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -47,98 +38,28 @@
     <favorites_list name="legend" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Controller/DefaultController.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-38.846153">
-                  <caret line="399" column="49" selection-start-line="399" selection-start-column="49" selection-end-line="399" selection-end-column="49" />
-                  <folding>
-                    <element signature="e#3728#3750#1#PHP" expanded="true" />
-                    <element signature="e#5513#5536#1#PHP" expanded="true" />
-                    <element signature="e#5924#5945#1#PHP" expanded="true" />
-                    <element signature="e#6037#6062#1#PHP" expanded="true" />
-                    <element signature="e#6153#6175#1#PHP" expanded="true" />
-                    <element signature="e#6631#6652#1#PHP" expanded="true" />
-                    <element signature="e#6744#6769#1#PHP" expanded="true" />
-                    <element signature="e#6860#6882#1#PHP" expanded="true" />
-                    <element signature="e#7351#7373#1#PHP" expanded="true" />
-                    <element signature="e#7617#7639#1#PHP" expanded="true" />
-                    <element signature="e#7877#7899#1#PHP" expanded="true" />
-                    <element signature="e#8151#8175#1#PHP" expanded="true" />
-                    <element signature="e#8257#8281#1#PHP" expanded="true" />
-                    <element signature="e#8424#8446#1#PHP" expanded="true" />
-                    <element signature="e#8809#8832#1#PHP" expanded="true" />
-                    <element signature="e#8905#8928#1#PHP" expanded="true" />
-                    <element signature="e#9211#9235#1#PHP" expanded="true" />
-                    <element signature="e#9411#9436#1#PHP" expanded="true" />
-                    <element signature="e#9682#9707#1#PHP" expanded="true" />
-                    <element signature="e#10093#10114#1#PHP" expanded="true" />
-                    <element signature="e#10310#10331#1#PHP" expanded="true" />
-                    <element signature="e#10478#10500#1#PHP" expanded="true" />
-                    <element signature="e#10627#10649#1#PHP" expanded="true" />
-                    <element signature="e#11013#11037#1#PHP" expanded="true" />
-                    <element signature="e#11199#11221#1#PHP" expanded="true" />
-                    <element signature="e#11305#11327#1#PHP" expanded="true" />
-                    <element signature="e#11641#11663#1#PHP" expanded="true" />
-                    <element signature="e#11944#11965#1#PHP" expanded="true" />
-                    <element signature="e#12302#12323#1#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="wedding_view.html.twig" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/wedding_view.html.twig">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8330804">
-                  <caret line="145" column="5" selection-start-line="145" selection-start-column="5" selection-end-line="145" selection-end-column="5" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="BestRepository.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Repository/BestRepository.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-6.769231">
-                  <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="DossierType.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Form/DossierType.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-32.884617">
-                  <caret line="74" column="40" selection-start-line="74" selection-start-column="40" selection-end-line="74" selection-end-column="40" />
-                  <folding>
-                    <element signature="e#40#88#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="config.yml" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="4.223214">
-                  <caret line="258" column="44" selection-start-line="258" selection-start-column="44" selection-end-line="258" selection-end-column="44" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="event_page_view.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/event_page_view.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-22.0">
+              <caret line="31" column="62" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Events.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Entity/Events.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.424886">
+              <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -146,16 +67,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Citation/edit.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Citation/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/footer.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/about_us.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Blog/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Form/PackpageType.php" />
-        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Form/PackpageEditType.php" />
-        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Packpage/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/TemplateBundle/Resources/views/Includes/sidebar.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Packpage.php" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Packpage/create.html.twig" />
@@ -170,7 +81,6 @@
         <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/pack.html.twig" />
         <option value="$PROJECT_DIR$/web/css/style.css" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Repository/TypeRepository.php" />
-        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Events.php" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Best.php" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Service/UpdateStatusService.php" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Form/BestType.php" />
@@ -178,25 +88,36 @@
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Controller/DossierController.php" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Bests/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Controller/BestController.php" />
-        <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Controller/MediaController.php" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Type.php" />
-        <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/header.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/header-global.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Dossiers/dossier_view.html.twig" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Pagination/paginate.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Repository/MediaRepository.php" />
         <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/wedding.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/wedding_type.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Form/DossierType.php" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Dossier.php" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Dossiers/create.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Dossiers/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Repository/BestRepository.php" />
-        <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Category.php" />
+        <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/event_page.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/header-global.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/header.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Controller/EventsController.php" />
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/wedding_type.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/event_page_type.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Repository/MediaRepository.php" />
         <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/wedding_view.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Repository/EventsRepository.php" />
+        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Events.php" />
+        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Form/EventsType.php" />
+        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Events/create.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Events/edit.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Events/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/event_page_view.html.twig" />
       </list>
     </option>
   </component>
@@ -347,42 +268,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="legend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="legend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="media" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cache" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="legend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="legend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -487,7 +372,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Include" />
+              <option name="myItemId" value="Default" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -514,32 +399,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="legend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="legend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Labs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FrontBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -587,37 +446,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="legend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="legend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Labs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BackBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
+              <option name="myItemId" value="Entity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -649,47 +478,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="legend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="legend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="legend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="legend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="DoctrineMigrations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -832,14 +621,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.4972332" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287172" sideWeight="0.4972332" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16759333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16759333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.5027668" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32739726" sideWeight="0.4972332" order="9" side_tool="false" content_ui="tabs" />
@@ -875,135 +664,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Repository/TypeRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-42.23077">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Bests/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="12.692307">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Form/BookingType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7511381">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="58" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Form/BestType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6676783">
-          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Bests/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33383915">
-          <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Bests/create.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2989378">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Service/UpdateStatusService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38239756">
-          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19642857">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Controller/MediaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2822458">
-          <caret line="203" column="26" selection-start-line="203" selection-start-column="26" selection-end-line="203" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Controller/BestController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6494689">
-          <caret line="93" column="21" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Events/event_view.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7344461">
-          <caret line="87" column="74" selection-start-line="87" selection-start-column="74" selection-end-line="87" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Entity/Best.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2003035">
-          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Entity/Events.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.525038">
-          <caret line="331" column="5" selection-start-line="331" selection-start-column="5" selection-end-line="331" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Entity/Media.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2731411">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Entity/Type.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.076923">
-          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-          <folding>
-            <element signature="e#42#74#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/header.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.153847">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/header-global.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31265718">
-          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../canvas v311/HTML/portfolio-3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-29.653847">
@@ -1074,13 +734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Blog/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20284995">
-          <caret line="11" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1111,20 +764,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/wedding.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/wedding_type.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.015174507">
-          <caret line="36" column="100" selection-start-line="36" selection-start-column="81" selection-end-line="36" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../canvas v311/HTML/gallery.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1132,18 +771,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Repository/MediaRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7996965">
-          <caret line="187" column="13" selection-start-line="187" selection-start-column="13" selection-end-line="187" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Controller/DossierController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="44" column="34" selection-start-line="44" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1182,13 +814,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../canvas v311/HTML/media-embeds.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5022762">
-          <caret line="710" column="50" selection-start-line="710" selection-start-column="0" selection-end-line="735" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Dossiers/edit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.616085">
@@ -1203,16 +828,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Form/DossierType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-32.884617">
-          <caret line="74" column="40" selection-start-line="74" selection-start-column="40" selection-end-line="74" selection-end-column="40" />
-          <folding>
-            <element signature="e#40#88#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Repository/BestRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.769231">
@@ -1221,56 +836,324 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Controller/DefaultController.php">
+    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Form/DossierType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-38.846153">
-          <caret line="399" column="49" selection-start-line="399" selection-start-column="49" selection-end-line="399" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.6487102">
+          <caret line="74" column="40" selection-start-line="74" selection-start-column="40" selection-end-line="74" selection-end-column="40" />
           <folding>
-            <element signature="e#3728#3750#1#PHP" expanded="true" />
-            <element signature="e#5513#5536#1#PHP" expanded="true" />
-            <element signature="e#5924#5945#1#PHP" expanded="true" />
-            <element signature="e#6037#6062#1#PHP" expanded="true" />
-            <element signature="e#6153#6175#1#PHP" expanded="true" />
-            <element signature="e#6631#6652#1#PHP" expanded="true" />
-            <element signature="e#6744#6769#1#PHP" expanded="true" />
-            <element signature="e#6860#6882#1#PHP" expanded="true" />
-            <element signature="e#7351#7373#1#PHP" expanded="true" />
-            <element signature="e#7617#7639#1#PHP" expanded="true" />
-            <element signature="e#7877#7899#1#PHP" expanded="true" />
-            <element signature="e#8151#8175#1#PHP" expanded="true" />
-            <element signature="e#8257#8281#1#PHP" expanded="true" />
-            <element signature="e#8424#8446#1#PHP" expanded="true" />
-            <element signature="e#8809#8832#1#PHP" expanded="true" />
-            <element signature="e#8905#8928#1#PHP" expanded="true" />
-            <element signature="e#9211#9235#1#PHP" expanded="true" />
-            <element signature="e#9411#9436#1#PHP" expanded="true" />
-            <element signature="e#9682#9707#1#PHP" expanded="true" />
-            <element signature="e#10093#10114#1#PHP" expanded="true" />
-            <element signature="e#10310#10331#1#PHP" expanded="true" />
-            <element signature="e#10478#10500#1#PHP" expanded="true" />
-            <element signature="e#10627#10649#1#PHP" expanded="true" />
-            <element signature="e#11013#11037#1#PHP" expanded="true" />
-            <element signature="e#11199#11221#1#PHP" expanded="true" />
-            <element signature="e#11305#11327#1#PHP" expanded="true" />
-            <element signature="e#11641#11663#1#PHP" expanded="true" />
-            <element signature="e#11944#11965#1#PHP" expanded="true" />
-            <element signature="e#12302#12323#1#PHP" expanded="true" />
+            <element signature="e#40#88#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../canvas v311/HTML/media-embeds.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-28.538462">
+          <caret line="721" column="0" selection-start-line="721" selection-start-column="0" selection-end-line="721" selection-end-column="0" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Blog/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18361153">
+          <caret line="11" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/wedding.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8330804">
+          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="106" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Entity/Type.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-25.307692">
+          <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="174" selection-end-column="5" />
+          <folding>
+            <element signature="e#42#74#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Entity/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-43.076923">
+          <caret line="168" column="15" selection-start-line="168" selection-start-column="15" selection-end-line="168" selection-end-column="15" />
+          <folding>
+            <element signature="e#42#74#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/pack.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.884615">
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="102" selection-end-column="22" />
+          <folding>
+            <element signature="e#12#28#0#Twig" expanded="false" />
+            <element signature="e#3591#3745#0#HTML" expanded="false" />
+            <element signature="e#3763#4954#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/event_page.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6828528">
+          <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
+          <folding>
+            <element signature="e#2015#2030#0#Twig" expanded="false" />
+            <element signature="e#2604#2619#0#Twig" expanded="false" />
+            <element signature="e#2959#2974#0#Twig" expanded="false" />
+            <element signature="e#3117#3132#0#Twig" expanded="false" />
+            <element signature="e#3249#3264#0#Twig" expanded="false" />
+            <element signature="e#3753#3907#0#HTML" expanded="false" />
+            <element signature="e#3925#5116#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/header-global.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.846153">
+          <caret line="39" column="50" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <element signature="e#1984#1994#0#Twig" expanded="false" />
+            <element signature="e#2169#2184#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/header.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4522003">
+          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+          <folding>
+            <element signature="e#2222#2237#0#Twig" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.223214">
+        <state vertical-scroll-proportion="0.9672619">
           <caret line="258" column="44" selection-start-line="258" selection-start-column="44" selection-end-line="258" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19642857">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Controller/EventsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9013657">
+          <caret line="66" column="10" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
+          <folding>
+            <element signature="e#46#80#0#PHP" expanded="false" />
+            <element signature="e#779#802#1#PHP" expanded="false" />
+            <element signature="e#1271#1294#1#PHP" expanded="false" />
+            <element signature="e#1480#1524#0#PHP" expanded="false" />
+            <element signature="e#2212#2229#0#PHP" expanded="false" />
+            <element signature="e#2306#2346#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/wedding_type.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35204855">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="90" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/event_page_type.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-40.615383">
+          <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+          <folding>
+            <element signature="e#421#429#0#Twig" expanded="false" />
+            <element signature="e#1143#1158#0#Twig" expanded="false" />
+            <element signature="e#1689#1704#0#Twig" expanded="false" />
+            <element signature="e#2007#2022#0#Twig" expanded="false" />
+            <element signature="e#2170#2185#0#Twig" expanded="false" />
+            <element signature="e#2290#2305#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../canvas v311/HTML/events-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6016692">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/wedding_view.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8330804">
-          <caret line="145" column="5" selection-start-line="145" selection-start-column="5" selection-end-line="145" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.7830046">
+          <caret line="143" column="74" selection-start-line="143" selection-start-column="74" selection-end-line="143" selection-end-column="74" />
+          <folding>
+            <element signature="e#726#876#0#HTML" expanded="true" />
+            <element signature="e#2775#2796#0#HTML" expanded="true" />
+            <element signature="e#3739#3760#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7162367">
+          <caret line="210" column="69" selection-start-line="210" selection-start-column="69" selection-end-line="210" selection-end-column="69" />
+          <folding>
+            <element signature="e#47#83#0#PHP" expanded="true" />
+            <element signature="e#489#1172#0#PHP" expanded="false" />
+            <element signature="e#1293#1657#0#PHP" expanded="false" />
+            <element signature="e#1781#2226#0#PHP" expanded="false" />
+            <element signature="e#2399#2890#0#PHP" expanded="false" />
+            <element signature="e#3018#3434#0#PHP" expanded="false" />
+            <element signature="e#3634#4226#0#PHP" expanded="false" />
+            <element signature="e#3800#3822#1#PHP" expanded="true" />
+            <element signature="e#4984#5568#0#PHP" expanded="false" />
+            <element signature="e#5206#5229#1#PHP" expanded="true" />
+            <element signature="e#5283#5305#1#PHP" expanded="true" />
+            <element signature="e#5357#5403#0#PHP" expanded="true" />
+            <element signature="e#5798#6477#0#PHP" expanded="false" />
+            <element signature="e#6038#6060#1#PHP" expanded="true" />
+            <element signature="e#6337#6388#0#PHP" expanded="true" />
+            <element signature="e#6900#6951#0#PHP" expanded="true" />
+            <element signature="e#7234#7272#1#PHP" expanded="true" />
+            <element signature="e#7491#7534#1#PHP" expanded="true" />
+            <element signature="e#7747#7770#1#PHP" expanded="true" />
+            <element signature="e#7857#7898#0#PHP" expanded="true" />
+            <element signature="e#8158#8179#1#PHP" expanded="true" />
+            <element signature="e#8271#8296#1#PHP" expanded="true" />
+            <element signature="e#8387#8409#1#PHP" expanded="true" />
+            <element signature="e#8497#8539#0#PHP" expanded="true" />
+            <element signature="e#8865#8886#1#PHP" expanded="true" />
+            <element signature="e#8978#9003#1#PHP" expanded="true" />
+            <element signature="e#9094#9116#1#PHP" expanded="true" />
+            <element signature="e#9204#9253#0#PHP" expanded="true" />
+            <element signature="e#9585#9607#1#PHP" expanded="true" />
+            <element signature="e#9851#9873#1#PHP" expanded="true" />
+            <element signature="e#10111#10133#1#PHP" expanded="true" />
+            <element signature="e#10385#10409#1#PHP" expanded="true" />
+            <element signature="e#10491#10515#1#PHP" expanded="true" />
+            <element signature="e#10658#10680#1#PHP" expanded="true" />
+            <element signature="e#11043#11066#1#PHP" expanded="true" />
+            <element signature="e#11139#11162#1#PHP" expanded="true" />
+            <element signature="e#11445#11469#1#PHP" expanded="true" />
+            <element signature="e#11751#11776#1#PHP" expanded="true" />
+            <element signature="e#12022#12047#1#PHP" expanded="true" />
+            <element signature="e#12433#12454#1#PHP" expanded="true" />
+            <element signature="e#12650#12671#1#PHP" expanded="true" />
+            <element signature="e#12818#12840#1#PHP" expanded="true" />
+            <element signature="e#12967#12989#1#PHP" expanded="true" />
+            <element signature="e#13353#13377#1#PHP" expanded="true" />
+            <element signature="e#13539#13561#1#PHP" expanded="true" />
+            <element signature="e#13645#13667#1#PHP" expanded="true" />
+            <element signature="e#13981#14003#1#PHP" expanded="true" />
+            <element signature="e#14309#14331#1#PHP" expanded="true" />
+            <element signature="e#14614#14635#1#PHP" expanded="true" />
+            <element signature="e#14917#14940#1#PHP" expanded="true" />
+            <element signature="e#15276#15297#1#PHP" expanded="true" />
+            <element signature="e#15636#15659#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Repository/EventsRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6995448">
+          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Repository/MediaRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6168437">
+          <caret line="199" column="45" selection-start-line="199" selection-start-column="45" selection-end-line="199" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../canvas v311/HTML/index-events.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36646435">
+          <caret line="716" column="18" selection-start-line="689" selection-start-column="8" selection-end-line="716" selection-end-column="18" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Form/EventsType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41729894">
+          <caret line="32" column="58" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Events/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6176024">
+          <caret line="50" column="39" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+          <folding>
+            <element signature="e#12#48#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Events/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7678301">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="e#12#48#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Events/create.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5508346">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/event_page_view.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.0">
+          <caret line="31" column="62" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Entity/Events.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.424886">
+          <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
           <folding />
         </state>
       </provider>

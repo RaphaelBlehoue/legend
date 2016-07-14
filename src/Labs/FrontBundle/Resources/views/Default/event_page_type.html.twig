@@ -4,19 +4,16 @@
 {% endblock %}
 
 {% block body %}
-    <!-- Page Title
-============================================= -->
     <section id="page-title">
 
         <div class="container clearfix">
-            <h1>{{ type.name }}</h1>
-            <span>{{ 'Decouvrez toutes les photos '~ type.name }}</span>
+            <h1>{{ categories.name }}</h1>
+            <span>{{ 'Decouvrez toutes les photos '~ categories.name }}</span>
             <ol class="breadcrumb">
                 <li><a href="{{ path('homepage') }}">{{'Accueil'}}</a></li>
-                <li class="active">{{ type.name }}</li>
+                <li class="active">{{ categories.name }}</li>
             </ol>
         </div>
-
     </section><!-- #page-title end -->
 
     <section id="content">
@@ -27,26 +24,26 @@
                 <!-- Portfolio Items
                 ============================================= -->
                 <div id="portfolio" class="portfolio-3 clearfix">
-                    {%  for media in medias %}
+                    {%  for media in events %}
                         <article class="portfolio-item pf-media pf-icons">
                             <div class="portfolio-image">
-                                <a href="{{ path('wedding_view', {'id' : media.dossier.id , 'slug' : media.dossier.slug}) }}">
-                                    <img src="{{ media.assertPath|imagine_filter('image_profolio') }}" alt="{{ media.dossier.name }}">
+                                <a href="{{ path('page_event_view', {'id' : media.event.id , 'slug' : media.event.slug}) }}">
+                                    <img src="{{ media.assertPath|imagine_filter('image_profolio') }}" alt="{{ media.event.name }}">
                                 </a>
                                 <div class="portfolio-overlay">
                                     <a href="{{ media.assertPath|imagine_filter('image_profolio_full') }}" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
-                                    <a href="{{ path('wedding_view', {'id' : media.dossier.id , 'slug' : media.dossier.slug}) }}" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+                                    <a href="{{ path('page_event_view', {'id' : media.event.id , 'slug' : media.event.slug}) }}" class="right-icon"><i class="icon-line-ellipsis"></i></a>
                                 </div>
                             </div>
                             <div class="portfolio-desc">
-                                <h3><a href="{{ path('wedding_view', {'id' : media.dossier.id , 'slug' : media.dossier.slug}) }}">{{ media.dossier.name }}</a></h3>
-                                <span><a href="{{ path('wedding_view', {'id' : media.type.id , 'slug' : media.type.slug}) }}">{{ type.name }} </a> | <a href="{{ path('wedding_view', {'id' : media.dossier.id , 'slug' : media.dossier.slug}) }}">{{ media.dossier.created|date('d-M-Y')}}</a></span>
+                                <h3><a href="{{ path('page_event_view', {'id' : media.event.id , 'slug' : media.event.slug}) }}">{{ media.event.name }}</a></h3>
+                                <span><a href="{{ path('page_event_type', {'id' : categories.id , 'slug' : categories.slug}) }}">{{ categories.name }} </a> | <a href="{{ path('page_event_view', {'id' : media.event.id , 'slug' : media.event.slug}) }}">{{ media.event.created|date('d-M-Y')}}</a></span>
                             </div>
                         </article>
                     {% endfor %}
                 </div><!-- #portfolio end -->
                 <div class="center">
-                    {{ knp_pagination_render(medias) }}
+                    {{ knp_pagination_render(events) }}
                 </div>
             </div>
         </div>

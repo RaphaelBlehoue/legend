@@ -60,7 +60,6 @@ class EventsController extends Controller
         $event = new Events();
         $form = $this->createForm(EventsType::class, $event);
         $form->handleRequest($request);
-
             if($form->isValid()){
                 $em->persist($event);
                 $em->flush();

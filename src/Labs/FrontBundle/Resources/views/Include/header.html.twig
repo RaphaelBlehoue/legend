@@ -34,10 +34,10 @@
                             {% endfor %}
                         </ul>
                     </li>
-                    <li class="menu"><a href="{{ path('blog_page') }}"><div>{{ 'Events' }}</div></a>
+                    <li class="menu"><a href="{{ path('event_page') }}"><div>{{ 'Events' }}</div></a>
                         <ul>
                             {%  for event in events %}
-                                <li><a href="#"><div><i class="icon-stack"></i>{{ event.name }}</div></a></li>
+                                <li><a href="{{ path('page_event_type', {'id' : event.id, 'slug' : event.slug}) }}"><div><i class="icon-stack"></i>{{ event.name }}</div></a></li>
                             {% endfor %}
                         </ul>
                     </li>

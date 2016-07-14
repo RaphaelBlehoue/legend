@@ -2,6 +2,8 @@
 
 namespace Labs\FrontBundle\Controller;
 
+use Labs\BackBundle\Entity\Category;
+use Labs\BackBundle\Entity\Events;
 use Labs\BackBundle\Entity\Packs;
 use Labs\BackBundle\Entity\Type;
 use Labs\BackBundle\Entity\Dossier;
@@ -135,11 +137,68 @@ class DefaultController extends Controller
         $slides = $this->getSlideWeddingViewPage($dossier);
         $gallery = $this->findMediaByDossier($dossier);
         $bests = $this->findBestManAndWomen($dossier);
-        dump($bests);
         return $this->render('LabsFrontBundle:Default:wedding_view.html.twig',[
             'slides' => $slides,
             'galeries' => $gallery,
             'bests'     => $bests
+        ]);
+    }
+
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route("/page/events", name="event_page")
+     */
+    public function getPageEventsAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $partners = $this->getAllPartners();
+        $citations = $this->findTemoignage();
+        $events = $em->getRepository('LabsBackBundle:Events')->findEvents();
+        $slides = $em->getRepository('LabsBackBundle:Media')->findSlideEvents(6);
+        return $this->render('LabsFrontBundle:Default:event_page.html.twig',[
+            'events'   => $events,
+            'slides'   => $slides,
+            'citations' => $citations,
+            'partners' => $partners
+        ]);
+    }
+
+    /**
+     * @param Category $category
+     * @param $slug
+     * @param Request $request
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route("/events/type/{id}_{slug}", name="page_event_type")
+     */
+    public function getPageEventsTypeAction(Category $category, $slug, Request $request)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $events = $this->findAllEventCategory($category);
+        $findmedias = $em->getRepository('LabsBackBundle:Media')->findLastMediaEventsLimit($events);
+        $data  = $this->get('knp_paginator')->paginate(
+            $findmedias,
+            $request->query->getInt('page', 1), 9);
+        $data->setTemplate('LabsFrontBundle:Pagination:paginate.html.twig');
+        return $this->render('LabsFrontBundle:Default:event_page_type.html.twig',[
+            'events' => $data,
+            'categories' => $category
+        ]);
+    }
+
+    /**
+     * @param Events $events
+     * @param $slug
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route("/events/{id}/{slug}", name="page_event_view")
+     */
+    public function getPageEventsViewAction(Events $events, $slug)
+    {
+        $slides = $this->getSlideEventViewPage($events);
+        $gallery = $this->findMediaByEvents($events);
+        dump($gallery);
+        return $this->render('LabsFrontBundle:Default:event_page_view.html.twig',[
+            'slides' => $slides,
+            'galeries' => $gallery
         ]);
     }
 
@@ -298,7 +357,11 @@ class DefaultController extends Controller
         $data = $em->getRepository('LabsBackBundle:Partner')->findAll();
         return $data;
     }
-    
+
+    /**
+     * @return array|\Labs\BackBundle\Entity\Citation[]
+     * Recherche tous les temoignages
+     */
     private function findTemoignage()
     {
         $em = $this->getDoctrine()->getManager();
@@ -380,6 +443,19 @@ class DefaultController extends Controller
     }
 
     /**
+     * @param $event
+     * @return mixed
+     * Recuperation du slide de la page events
+     */
+    public function getSlideEventViewPage($event)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $media = $em->getRepository('LabsBackBundle:Media')->findAllSlideMedia($event);
+        return $media;
+    }
+
+
+    /**
      * @param Dossier $dossier
      * @return array
      */
@@ -387,6 +463,17 @@ class DefaultController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
         $galleries = $em->getRepository('LabsBackBundle:Type')->findMediaGroupBy($dossier);
+        return $galleries;
+    }
+
+    /**
+     * @param Events $events
+     * @return array
+     */
+    private function findMediaByEvents(Events $events)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $galleries = $em->getRepository('LabsBackBundle:Events')->findMediaGroupBy($events);
         return $galleries;
     }
 
@@ -402,6 +489,16 @@ class DefaultController extends Controller
         return $best;
     }
 
-
+    /**
+     * @param Category $category
+     * @return mixed
+     * Recherche tous les evenements de cette categorie
+     */
+    private function findAllEventCategory(Category $category)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $data = $em->getRepository('LabsBackBundle:Events')->findAllEvents($category);
+        return $data;
+    }
 
 }

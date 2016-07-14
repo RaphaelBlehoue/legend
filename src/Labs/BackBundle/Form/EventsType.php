@@ -24,6 +24,10 @@ class EventsType extends AbstractType
                 'label' => false,
                 'attr' => array('class' => 'form-control')
             ))
+            ->add('client', TextType::class, array(
+                'label' => false,
+                'attr' => array('class' => 'form-control')
+            ))
             ->add('video', TextType::class, array(
                 'label' => false,
                 'attr' => array('class' => 'form-control')

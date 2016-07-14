@@ -190,4 +190,56 @@ class MediaRepository extends \Doctrine\ORM\EntityRepository
         $qb->setParameter(':dossier', $dossier);
         return $qb->getQuery()->getResult();
     }
+
+    public function findAllSlideMedia($events)
+    {
+        $qb = $this->createQueryBuilder('m');
+        $qb->leftJoin('m.event', 'e');
+        $qb->where($qb->expr()->eq('e.id', ':event'));
+        $qb->andWhere($qb->expr()->eq('m.actived', 1));
+        $qb->setParameter(':event', $events);
+        return $qb->getQuery()->getSingleResult();
+    }
+
+    public function findSlideEvents($num = null)
+    {
+        $qb = $this->createQueryBuilder('m');
+        $qb->leftJoin('m.event','e')
+            ->addSelect('e')
+            ->leftJoin('e.category', 'c')
+            ->addSelect('c')
+            ->where($qb->expr()->eq('e.online', 1))
+            ->andWhere($qb->expr()->eq('m.actived', 1))
+            ->orderBy('e.created', 'DESC');
+        if(null !== $num){
+            $qb->setMaxResults($num);
+        }
+        return $qb->getQuery()->getResult();
+    }
+
+
+    public function findLastMediaEventsLimit($events = null, $num = null)
+    {
+        $qb = $this->createQueryBuilder('m');
+        $qb->leftJoin('m.event', 'e')
+            ->leftJoin('e.category', 'c')
+            ->addSelect('e')
+            ->addSelect('c');
+        // Si le Type de wedding est passé en parametre et different de null
+        if(null !== $events){
+            $qb->where(
+                $qb->expr()->eq('m.actived', 1)
+            );
+            $qb->andWhere($qb->expr()->in('m.event', ':events'));
+            $qb->setParameter(':events', $events);
+        }
+        // Si le num de selection de wedding est passé en parametre et different de null
+
+        if(null !== $num){
+            $qb->setMaxResults($num);
+        }
+
+        $qb->orderBy('e.created', 'DESC');
+        return $qb->getQuery()->getResult();
+    }
 }

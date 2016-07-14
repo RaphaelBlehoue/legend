@@ -1,0 +1,138 @@
+{% extends '::base.html.twig' %}
+{% block menu %}
+    {{ render(controller('LabsFrontBundle:Default:getMenuGlobal')) }}
+{% endblock %}
+
+{% block body %}
+    <section id="slider" class="boxed-slider">
+
+        <div class="container clearfix">
+
+            <div class="fslider" data-easing="easeInQuad">
+                <div class="flexslider">
+                    <div class="slider-wrap">
+                        {% for slide in slides %}
+                            <div class="slide" data-thumb="{{ slide.assertPath|imagine_filter('image_profolio') }}">
+                                <a href="#">
+                                    <img src="{{ slide.assertPath|imagine_filter('slide_wedding') }}" alt="Slide 2">
+                                    <div class="flex-caption slider-caption-bg">{{ slide.event.name }}</div>
+                                </a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="content">
+        <div class="content-wrap">
+            <div class="container clearfix">
+                <div class="heading-block center">
+                    <h3>Some of our <span>Featured</span> Works</h3>
+                    <span>We have worked on some Awesome Projects that are worth boasting of.</span>
+                </div>
+                    <div class="fancy-title title-center title-dotted-border topmargin">
+                        <h3>{{ 'Nos evenements'}}</h3>
+                    </div>
+                    <div id="oc-portfolio" class="owl-carousel portfolio-carousel oc-portfolio">
+                        {% for event in events %}
+                            {%  for media in event.medias %}
+                                <div class="oc-item">
+                                    <div class="iportfolio">
+                                        <div class="portfolio-image">
+                                            <a href="{{ path('page_event_view', {'id' : event.id , 'slug' : event.slug }) }}">
+                                                <img src="{{ media.assertPath|imagine_filter('image_profolio') }}" alt="{{ event.name }}">
+                                            </a>
+                                            <div class="portfolio-overlay">
+                                                <a href="{{ media.assertPath|imagine_filter('image_profolio_full') }}" class="left-icon" data-lightbox="image"><i class="icon-line-plus"></i></a>
+                                                <a href="{{ path('page_event_view', {'id' : event.id , 'slug' : event.slug }) }}" class="right-icon"><i class="icon-line-ellipsis"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="portfolio-desc">
+                                            <h3><a href="{{ path('page_event_view', {'id' : event.id , 'slug' : event.slug }) }}">{{ event.name }}</a></h3>
+                                            <span><a href="{{ path('page_event_type', {'id' : event.category.id , 'slug' : event.category.slug }) }}">{{ event.category.name }}</a> | <a href="{{ path('page_event_view', {'id' : event.id , 'slug' : event.slug }) }} ">{{ event.created|date('d-M-Y')}}</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        {% endfor %}
+                    </div>
+
+                <div class="clear"></div>
+
+                <div class="divider divider-short divider-center"><i class="icon-circle"></i></div>
+
+                <div id="section-faqs" class="heading-block title-center page-section">
+                    <h2>{{ 'Que disent nos clients' }}</h2>
+                </div>
+
+                <div class="fslider testimonial testimonial-full" data-animation="fade" data-arrows="false">
+                    <div class="flexslider">
+                        <div class="slider-wrap">
+                            {% for citation in citations %}
+                                <div class="slide">
+                                    <div class="testi-image">
+                                        <a href="#"><img src="{{ citation.assertPath|imagine_filter('citation_thumb') }}" alt="{{ citation.author|capitalize }}"></a>
+                                    </div>
+                                    <div class="testi-content">
+                                        <p>{{ citation.content }}</p>
+                                        <div class="testi-meta">
+                                            {{ citation.author|capitalize }}
+                                            <span>{{ citation.entreprise|capitalize }}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+                <!--  bloc partenaire -->
+                <div class="container clearfix">
+
+                    <div class="clear"></div><div class="line"></div>
+
+                    <h4 class="center">{{ 'Nos partenaires' }}</h4>
+
+                    <ul class="clients-grid grid-6 bottommargin clearfix">
+                        {% for partner in partners %}
+                            <li><a href="{% if partner.website|length > 0 %}   {{ partner.website }} {% endif %}"><img src="{{ partner.assertPath|imagine_filter('logo_partenaire') }}" alt="Clients"></a></li>
+                        {% endfor %}
+                    </ul>
+
+                </div>
+                <!--  end bloc partenaire -->
+
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+
+            var ocPortfolio = $(".oc-portfolio");
+
+            ocPortfolio.owlCarousel({
+                margin: 20,
+                nav: true,
+                navText: ['<i class="icon-angle-left"></i>','<i class="icon-angle-right"></i>'],
+                autoplay: false,
+                autoplayHoverPause: true,
+                dots: false,
+                responsive:{
+                    0:{ items:1 },
+                    600:{ items:2 },
+                    1000:{ items:3 },
+                    1200:{ items:4 }
+                }
+            });
+
+        });
+    </script>
+{% endblock %}

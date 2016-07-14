@@ -45,4 +45,34 @@ class EventsRepository extends \Doctrine\ORM\EntityRepository
         }
         return $qb->getQuery()->getResult();
     }
+
+    public function findAllEvents($category, $num = null)
+    {
+        $qb = $this->createQueryBuilder('e');
+        $qb->leftJoin('e.category', 'c')
+            ->addSelect('c')
+            ->where($qb->expr()->eq('e.online', 1))
+            ->andWhere($qb->expr()->eq('c.id', ':category'))
+            ->orderBy('e.created', 'DESC');
+        if(null !== $num){
+            $qb->setMaxResults($num);
+        }
+        $qb->setParameter(':category', $category);
+        return $qb->getQuery()->getResult();
+    }
+
+    public function findMediaGroupBy($events)
+    {
+        $qb = $this->createQueryBuilder('e');
+        $qb->leftJoin('e.category', 'c')
+            ->addSelect('c')
+            ->leftJoin('e.medias','m')
+            ->addSelect('m')
+            ->where($qb->expr()->eq('e.online', 1))
+            ->andWhere($qb->expr()->eq('e.id', ':events'))
+            ->orderBy('e.created', 'DESC');
+        $qb->setParameter(':events', $events);
+        return $qb->getQuery()->getResult();
+    }
+
 }

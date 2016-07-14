@@ -4,6 +4,8 @@ namespace Labs\BackBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
+use Gedmo\Mapping\Annotation as Gedmo;
+
 
 /**
  * Category
@@ -42,6 +44,12 @@ class Category
      * @ORM\OneToMany(targetEntity="Labs\BackBundle\Entity\Events", mappedBy="category")
      */
     protected $events;
+
+    /**
+     * @Gedmo\Slug(fields={"name", "id"})
+     * @ORM\Column(length=128, unique=true)
+     */
+    protected $slug;
 
 
     public function __construct()
@@ -141,5 +149,29 @@ class Category
     public function getEvents()
     {
         return $this->events;
+    }
+
+    /**
+     * Set slug
+     *
+     * @param string $slug
+     *
+     * @return Product
+     */
+    public function setSlug($slug)
+    {
+        $this->slug = $slug;
+
+        return $this;
+    }
+
+    /**
+     * Get slug
+     *
+     * @return string
+     */
+    public function getSlug()
+    {
+        return $this->slug;
     }
 }
