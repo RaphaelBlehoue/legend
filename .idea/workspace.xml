@@ -2,101 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f66c0dc-4822-4176-a5fc-7f7d3a160cba" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160711153843.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160712183155.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/0251057b323bbdbde9e0a4de388eb719.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/2716fef297aeacb3b69904be38a0144b.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/34ce727c5d0cefa1c8bc0c27db006d02.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/bc25f810e1496045186b8c5b1fb9a77c.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/ec4580ddfc4753c2af7bda2ce4bbdd9b.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio_full/uploads/gallery/0251057b323bbdbde9e0a4de388eb719.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio_full/uploads/gallery/2716fef297aeacb3b69904be38a0144b.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio_full/uploads/gallery/34ce727c5d0cefa1c8bc0c27db006d02.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio_full/uploads/gallery/bc25f810e1496045186b8c5b1fb9a77c.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio_full/uploads/gallery/ec4580ddfc4753c2af7bda2ce4bbdd9b.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/bestman/577fb1ae6f3e1.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/bestman/577fb1cdadbef.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/bestman/577fb21bb19ed.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/bestman/577fb2407f8a2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/bestman/577fb26271e0b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/bestman/577fb32eda79d.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/bestman/57800f68c11cd.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/0251057b323bbdbde9e0a4de388eb719.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/1d7a5ae917b92bc5c747c61e9ffaab32.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/20f5dd7f9e7fc721581ecbc0dfb74593.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/231684afde5b46bfb704d977586d9e77.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/236266747390d53f3af02499dedccb59.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/2716fef297aeacb3b69904be38a0144b.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/2eca6e8774008e57e06a577ead931d1e.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/2faae4b653cb63d9412146bf199341d1.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/34ce727c5d0cefa1c8bc0c27db006d02.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/358ae08644baf0c1718da0eaaf65c2ee.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/3ec3c1c6feac5de5f26eeabe04410da8.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/43ac5592030ec4ab617a158a1b48b6bc.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/4451ce818aca26a49b12419986b5012f.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/4b5a6d363adbde8fb2b7c1ebee463d41.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/4fb27f3a649591b7276279174264462a.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/5001ac3e907a1f4167e2797948ef3c90.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/51f3adc8035c4654ff7e0c4b364376b4.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/5545ee701d77c2a1d72483cea12d054a.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/613702841011bf293618d88b3cd9a941.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/63219c0d047a56c51e304091ec569f71.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/6667d03795a023f30780c57a4e6a5def.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/6b99c41e6435d202122fddaf0abd0f66.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/7bdaae628bcac55e9e77281b32df2ab6.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/7c4a28b960a043a8c0e7b02aed3442b2.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/8bba25fae4925f945b1f28727bce309b.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/93e9800662957e6d0360a352317aa157.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/964c2f48ddb15bb933975d7951a85841.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/97f54183a57e81fc7efe6ef3800a7bf3.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/9a404a178667ab4e95074ed94686741b.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/9b7c52c740be090d6b8486adbeeb1936.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/9d6242b66e3c97a7ab41696f1b2d4dea.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/a0b5abb4c154b48c84ec9f86d964a41c.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/a457695eeb05104db54f71acc6fe0d71.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/a99d743c1e7266f445164b124479871c.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/ad085224f5a65b14e15154ab7b410f8f.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/ad243dcb9eb39bcd6f8f09210681052b.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/b534d7a8cc5f2386f7a9d62fc1fbf793.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/bc25f810e1496045186b8c5b1fb9a77c.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/bccead118ed35fe9e71c905ec8527c06.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/c43611de7fefa9f0f82a34727f37c9a2.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/c70779f0f90a6d20a87d73669e0d234b.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/cf1484aa5c6c7ccfb23025f8c04ab44c.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/d3d921398af7ce519fda238c19230228.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/d68f5334147e651e28ce2c41795f81eb.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/e124fdc3999155a60ba1f0c301cdfc74.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/e2a6777391e2e9fa252abc90c9aa8a91.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/e7e7305b34bf5f3e197b029eea74e8cb.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/e89ac4725e541681ee96dc0c7cc3e5ed.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/ea9d3fa86c2b191b7cfe19623c4d468d.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/ec4580ddfc4753c2af7bda2ce4bbdd9b.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/ee2e0d5ca5411631c534f3b32af7d754.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/f8cdff641e0766a1d234cbb4f96b4e91.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/fb7330316de7b7797889995a303273d7.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_admin_gallery/uploads/gallery/fd797ff82ba26ec1fdfb2e43a5aa325c.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_best/uploads/banners/577bf3e0158fb.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_best/uploads/banners/577bf43e68c7e.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_best/uploads/banners/577e7b32bd06c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_best/uploads/partner/57829f5b38a0b.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_best/uploads/partner/57829f812c82c.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_best/uploads/partner/57829f9c6f2ba.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_best/uploads/partner/57829fac9297e.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_best/uploads/partner/57829fbf89d0e.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_best/uploads/partner/57829fde03065.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_best/uploads/partner/57829ff015e67.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/my_thumb_best/uploads/partner/5782a00ed2b4d.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/page_pckage/uploads/partner/5783b41229431.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/slide/uploads/pages/577e80ed1837a.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Repository/BestRepository.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Repository/BestRepository.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/boboum-carine_044e84d56b82358ddf5897d5be8ec542.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/boboum-carine_09679514a2dad28fb6c9d0c7f5772a95.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/boboum-carine_21fcbf3c8e6ee44d1e905e0622586a92.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/boboum-carine_778f710456a226b89c2ca0b19ebed5e7.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/clement-louise_0607cf69ae4bec90d94d94d86ab5cc20.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/clement-louise_21728325374021f79ab970b321c5987b.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/clement-louise_25f503c63be0edae7a841cfa4faf4c1d.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/clement-louise_66a72ddd121d5a7c75e24b75afd8971a.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/djamal-victorine_0de2f4596d10028d7419d7c95031b252.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/djamal-victorine_27b8ec18bd13d96e510fd491fd3781de.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/djamal-victorine_2fbae4b3faa6cd8d5dbaa1f03dad589c.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/djamal-victorine_7f9f01cd26fadc2de06ea52b8021f02e.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/djamal-victorine_98d1cba1423c2c529f401425771863c2.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/gcool-adeladeide_2e9f22100fec1c9d43852975b9886c1d.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/gcool-adeladeide_796c2d8bbb5ecde93a78400385f56f00.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/gcool-adeladeide_87ccfe8577e72b76efe32b0bbb3307f2.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/gcool-adeladeide_c1bd08fce1952ebeaeb51989ac83fd48.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/kemi-okwche-seum-jide_66d1ecfda90d2cac96469a19f8bbe1a5.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/kemi-okwche-seum-jide_a9c68398f1745f534ed8a5e5117b79fd.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/kemi-okwche-seum-jide_bae76e8ca0dd417fc5523f0571571d5c.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/media/cache/image_profolio/uploads/gallery/kemi-okwche-seum-jide_d8eff720d09ca067de19292094cc3abb.jpeg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/FrontBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/Labs/FrontBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Dossier.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Dossier.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Form/DossierType.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Form/DossierType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Repository/MediaRepository.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Repository/MediaRepository.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Dossiers/create.html.twig" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Dossiers/create.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Dossiers/edit.html.twig" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Dossiers/edit.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/wedding_type.html.twig" afterPath="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/wedding_type.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/wedding_view.html.twig" afterPath="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/wedding_view.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -122,28 +50,52 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Controller/DefaultController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8163885">
-                  <caret line="409" column="28" selection-start-line="409" selection-start-column="28" selection-end-line="409" selection-end-column="28" />
+                <state vertical-scroll-proportion="-38.846153">
+                  <caret line="399" column="49" selection-start-line="399" selection-start-column="49" selection-end-line="399" selection-end-column="49" />
                   <folding>
-                    <element signature="e#12340#12361#1#PHP" expanded="true" />
+                    <element signature="e#3728#3750#1#PHP" expanded="true" />
+                    <element signature="e#5513#5536#1#PHP" expanded="true" />
+                    <element signature="e#5924#5945#1#PHP" expanded="true" />
+                    <element signature="e#6037#6062#1#PHP" expanded="true" />
+                    <element signature="e#6153#6175#1#PHP" expanded="true" />
+                    <element signature="e#6631#6652#1#PHP" expanded="true" />
+                    <element signature="e#6744#6769#1#PHP" expanded="true" />
+                    <element signature="e#6860#6882#1#PHP" expanded="true" />
+                    <element signature="e#7351#7373#1#PHP" expanded="true" />
+                    <element signature="e#7617#7639#1#PHP" expanded="true" />
+                    <element signature="e#7877#7899#1#PHP" expanded="true" />
+                    <element signature="e#8151#8175#1#PHP" expanded="true" />
+                    <element signature="e#8257#8281#1#PHP" expanded="true" />
+                    <element signature="e#8424#8446#1#PHP" expanded="true" />
+                    <element signature="e#8809#8832#1#PHP" expanded="true" />
+                    <element signature="e#8905#8928#1#PHP" expanded="true" />
+                    <element signature="e#9211#9235#1#PHP" expanded="true" />
+                    <element signature="e#9411#9436#1#PHP" expanded="true" />
+                    <element signature="e#9682#9707#1#PHP" expanded="true" />
+                    <element signature="e#10093#10114#1#PHP" expanded="true" />
+                    <element signature="e#10310#10331#1#PHP" expanded="true" />
+                    <element signature="e#10478#10500#1#PHP" expanded="true" />
+                    <element signature="e#10627#10649#1#PHP" expanded="true" />
+                    <element signature="e#11013#11037#1#PHP" expanded="true" />
+                    <element signature="e#11199#11221#1#PHP" expanded="true" />
+                    <element signature="e#11305#11327#1#PHP" expanded="true" />
+                    <element signature="e#11641#11663#1#PHP" expanded="true" />
+                    <element signature="e#11944#11965#1#PHP" expanded="true" />
+                    <element signature="e#12302#12323#1#PHP" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="wedding_view.html.twig" pinned="false" current-in-tab="false">
+          <file leaf-file-name="wedding_view.html.twig" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/wedding_view.html.twig">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-25.307692">
-                  <caret line="102" column="45" selection-start-line="102" selection-start-column="45" selection-end-line="102" selection-end-column="45" />
-                  <folding>
-                    <element signature="e#12#28#0#Twig" expanded="false" />
-                    <element signature="e#2697#2718#0#HTML" expanded="true" />
-                    <element signature="e#3661#3682#0#HTML" expanded="true" />
-                  </folding>
+                <state vertical-scroll-proportion="0.8330804">
+                  <caret line="145" column="5" selection-start-line="145" selection-start-column="5" selection-end-line="145" selection-end-column="5" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -151,8 +103,8 @@
           <file leaf-file-name="BestRepository.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Repository/BestRepository.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-29.615385">
-                  <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+                <state vertical-scroll-proportion="-6.769231">
+                  <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
                   <folding />
                 </state>
               </provider>
@@ -162,14 +114,24 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="DossierType.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="DossierType.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Form/DossierType.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8330804">
+                <state vertical-scroll-proportion="-32.884617">
                   <caret line="74" column="40" selection-start-line="74" selection-start-column="40" selection-end-line="74" selection-end-column="40" />
                   <folding>
                     <element signature="e#40#88#0#PHP" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="config.yml" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="4.223214">
+                  <caret line="258" column="44" selection-start-line="258" selection-start-column="44" selection-end-line="258" selection-end-column="44" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -227,14 +189,14 @@
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Repository/MediaRepository.php" />
         <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/wedding.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/wedding_type.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Form/DossierType.php" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Dossier.php" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Dossiers/create.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Dossiers/edit.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/wedding_view.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Repository/BestRepository.php" />
         <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/wedding_view.html.twig" />
       </list>
     </option>
   </component>
@@ -385,6 +347,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="legend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="legend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="media" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="legend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="legend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -426,6 +424,96 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="FrontBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="legend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="legend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Labs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="legend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="legend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Labs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Include" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="legend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="legend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Labs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FrontBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -452,6 +540,84 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="legend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="legend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Labs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BackBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="legend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="legend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Labs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BackBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="legend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="legend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Labs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BackBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -506,6 +672,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="legend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="legend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -647,7 +831,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="2560" height="1440" extended-state="6" />
+    <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.4972332" order="7" side_tool="false" content_ui="tabs" />
@@ -655,7 +839,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16640191" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16759333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931727" sideWeight="0.5027668" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32739726" sideWeight="0.4972332" order="9" side_tool="false" content_ui="tabs" />
@@ -664,13 +848,13 @@
       <window_info id="Packages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="The R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39941692" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39941692" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -931,7 +1115,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -939,7 +1122,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.015174507">
           <caret line="36" column="100" selection-start-line="36" selection-start-column="81" selection-end-line="36" selection-end-column="100" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -947,16 +1129,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="759" column="0" selection-start-line="759" selection-start-column="0" selection-end-line="761" selection-end-column="51" />
-          <folding>
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#2;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#4;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#6;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#8;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#8;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -972,7 +1144,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="44" column="34" selection-start-line="44" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -980,14 +1151,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.10015175">
           <caret line="6" column="39" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="249" column="8" selection-start-line="249" selection-start-column="8" selection-end-line="249" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1006,7 +1169,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.113208">
           <caret line="728" column="42" selection-start-line="728" selection-start-column="28" selection-end-line="728" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1015,7 +1177,7 @@
         <state vertical-scroll-proportion="-30.461538">
           <caret line="364" column="7" selection-start-line="364" selection-start-column="7" selection-end-line="364" selection-end-column="7" />
           <folding>
-            <element signature="e#42#74#0#PHP" expanded="true" />
+            <element signature="e#42#74#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1024,11 +1186,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5022762">
           <caret line="710" column="50" selection-start-line="710" selection-start-column="0" selection-end-line="735" selection-end-column="0" />
-          <folding>
-            <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1036,7 +1193,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.616085">
           <caret line="134" column="24" selection-start-line="134" selection-start-column="24" selection-end-line="134" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1044,13 +1200,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5508346">
           <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Form/DossierType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8330804">
+        <state vertical-scroll-proportion="-32.884617">
           <caret line="74" column="40" selection-start-line="74" selection-start-column="40" selection-end-line="74" selection-end-column="40" />
           <folding>
             <element signature="e#40#88#0#PHP" expanded="true" />
@@ -1058,33 +1213,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/wedding_view.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.307692">
-          <caret line="102" column="45" selection-start-line="102" selection-start-column="45" selection-end-line="102" selection-end-column="45" />
-          <folding>
-            <element signature="e#12#28#0#Twig" expanded="false" />
-            <element signature="e#2697#2718#0#HTML" expanded="true" />
-            <element signature="e#3661#3682#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Repository/BestRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-29.615385">
-          <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+        <state vertical-scroll-proportion="-6.769231">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8163885">
-          <caret line="409" column="28" selection-start-line="409" selection-start-column="28" selection-end-line="409" selection-end-column="28" />
+        <state vertical-scroll-proportion="-38.846153">
+          <caret line="399" column="49" selection-start-line="399" selection-start-column="49" selection-end-line="399" selection-end-column="49" />
           <folding>
-            <element signature="e#12340#12361#1#PHP" expanded="true" />
+            <element signature="e#3728#3750#1#PHP" expanded="true" />
+            <element signature="e#5513#5536#1#PHP" expanded="true" />
+            <element signature="e#5924#5945#1#PHP" expanded="true" />
+            <element signature="e#6037#6062#1#PHP" expanded="true" />
+            <element signature="e#6153#6175#1#PHP" expanded="true" />
+            <element signature="e#6631#6652#1#PHP" expanded="true" />
+            <element signature="e#6744#6769#1#PHP" expanded="true" />
+            <element signature="e#6860#6882#1#PHP" expanded="true" />
+            <element signature="e#7351#7373#1#PHP" expanded="true" />
+            <element signature="e#7617#7639#1#PHP" expanded="true" />
+            <element signature="e#7877#7899#1#PHP" expanded="true" />
+            <element signature="e#8151#8175#1#PHP" expanded="true" />
+            <element signature="e#8257#8281#1#PHP" expanded="true" />
+            <element signature="e#8424#8446#1#PHP" expanded="true" />
+            <element signature="e#8809#8832#1#PHP" expanded="true" />
+            <element signature="e#8905#8928#1#PHP" expanded="true" />
+            <element signature="e#9211#9235#1#PHP" expanded="true" />
+            <element signature="e#9411#9436#1#PHP" expanded="true" />
+            <element signature="e#9682#9707#1#PHP" expanded="true" />
+            <element signature="e#10093#10114#1#PHP" expanded="true" />
+            <element signature="e#10310#10331#1#PHP" expanded="true" />
+            <element signature="e#10478#10500#1#PHP" expanded="true" />
+            <element signature="e#10627#10649#1#PHP" expanded="true" />
+            <element signature="e#11013#11037#1#PHP" expanded="true" />
+            <element signature="e#11199#11221#1#PHP" expanded="true" />
+            <element signature="e#11305#11327#1#PHP" expanded="true" />
+            <element signature="e#11641#11663#1#PHP" expanded="true" />
+            <element signature="e#11944#11965#1#PHP" expanded="true" />
+            <element signature="e#12302#12323#1#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.223214">
+          <caret line="258" column="44" selection-start-line="258" selection-start-column="44" selection-end-line="258" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/wedding_view.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8330804">
+          <caret line="145" column="5" selection-start-line="145" selection-start-column="5" selection-end-line="145" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -253,6 +253,11 @@ liip_imagine:
                 thumbnail: { size: [300, 300], mode: outbound }
 
 
+        best_man:
+            quality: 100
+            filters:
+                thumbnail: { size: [430, 300], mode: outbound }
+
 # Swiftmailer Configuration
 swiftmailer:
     transport: "%mailer_transport%"

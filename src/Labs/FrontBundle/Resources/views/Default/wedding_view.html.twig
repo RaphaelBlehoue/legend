@@ -20,11 +20,13 @@
 
         {% set menWedding = '' %}
         {% set womenWeddinf = '' %}
+        {% set video = '' %}
 
         <div class="container vertical-middle dark center clearfix" style="z-index: 2;">
             {% for slide in slides %}
                {%  if loop.first %}
                    {% set menWedding = slide.dossier.weddingMen|split(' ') %}
+                   {% set video = slide.dossier.video %}
                    {% set womenWeddinf = slide.dossier.weddingWomen|split(' ') %}
                     <div class="wedding-head clearfix">
                         <div class="first-name">{{ menWedding[0] }}<span>{{ menWedding[1] }}</span></div>
@@ -93,61 +95,55 @@
                     {% endfor %}
                 </div>
 
-                <div class="postcontent nobottommargin clearfix center col-sm-offset-2">
+                <div class="clear"></div>
                     <div id="section-events" class="heading-block title-center topmargin-lg page-section">
-                        <h2>{{ 'l\'histoire de leur amour' }}</h2>
-                        <span>{{ menWedding[0] }} {{ menWedding[1] }} & {{ womenWeddinf[0] }} {{ womenWeddinf[1] }}</span>
+                        <h2>{{ 'Hommes d\'honneur' }}</h2>
                     </div>
+                    {% for best in bests %}
+                        {% if best.genre == 1 %}
+                        <div class="col_one_fourth">
+                            <div class="feature-box center media-box fbox-bg">
+                                <div class="fbox-media">
+                                    <img src="{{ best.assertPath|imagine_filter('best_man') }}" alt="Image">
+                                </div>
+                                <div class="fbox-desc">
+                                    <h3>{{ best.name }}<span class="subtitle">{{ best.content }}</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
 
-                    {% for embed in slides %}
-                         {%  if loop.first %}
-                             {{ embed.dossier.video|raw }}
+
+                <div class="clear"></div>
+                    <div id="section-events" class="heading-block title-center topmargin-lg page-section">
+                        <h2>{{ 'Dame d\'honneure' }}</h2>
+                    </div>
+                    {% for best in bests %}
+                        {% if best.genre == 0 %}
+                            <div class="col_one_fourth">
+                                <div class="feature-box center media-box fbox-bg">
+                                    <div class="fbox-media">
+                                        <img src="{{ best.assertPath|imagine_filter('best_man') }}" alt="Image">
+                                    </div>
+                                    <div class="fbox-desc">
+                                        <h3>{{ best.name }}<span class="subtitle">{{ best.content }}</span></h3>
+                                    </div>
+                                </div>
+                            </div>
                         {% endif %}
                     {% endfor %}
-                    <div class="divider"><i class="icon-circle"></i></div>
-                </div>
-
                 <div class="clear"></div>
 
-                <div id="section-events" class="heading-block title-center topmargin-lg page-section">
-                    <h2>Events Schedule.</h2>
-                    <span>List of all the Scheduled Events for your Information</span>
-                </div>
-
-                <div class="col_one_third">
-                    <div class="feature-box center media-box fbox-bg">
-                        <div class="fbox-media">
-                            <img src="images/wedding/events/cocktail.jpg" alt="Image">
+                    <div class="postcontent nobottommargin clearfix center col-sm-offset-2">
+                        <div id="section-events" class="heading-block title-center topmargin-lg page-section">
+                            <h2>{{ 'l\'histoire de leur amour' }}</h2>
+                            <span>{{ menWedding[0] }} {{ menWedding[1] }} & {{ womenWeddinf[0] }} {{ womenWeddinf[1] }}</span>
                         </div>
-                        <div class="fbox-desc">
-                            <h3>Cocktail Party<span class="subtitle">Gokul Banquets, 14th June</span></h3>
-                        </div>
+                        {{ video|raw }}
+                        <div class="divider"><i class="icon-circle"></i></div>
                     </div>
-                </div>
-
-                <div class="col_one_third">
-                    <div class="feature-box center media-box fbox-bg">
-                        <div class="fbox-media">
-                            <img src="images/wedding/events/wedding.jpg" alt="Image">
-                        </div>
-                        <div class="fbox-desc">
-                            <h3>Wedding Ceremony<span class="subtitle">Singhi Palace, 15th June</span></h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col_one_third col_last">
-                    <div class="feature-box center media-box fbox-bg">
-                        <div class="fbox-media">
-                            <img src="images/wedding/events/afterwedding.jpg" alt="Image">
-                        </div>
-                        <div class="fbox-desc">
-                            <h3>After Wedding Party<span class="subtitle">27 Ballygunge Place, 16th June</span></h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="clear"></div>
+     
 
                 <div id="section-locations" class="heading-block title-center topmargin-lg page-section">
                     <h2>Locations.</h2>

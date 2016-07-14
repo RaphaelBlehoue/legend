@@ -134,12 +134,12 @@ class DefaultController extends Controller
     {
         $slides = $this->getSlideWeddingViewPage($dossier);
         $gallery = $this->findMediaByDossier($dossier);
-        $best = $this->findBestManAndWomen($dossier);
-        dump($best);
+        $bests = $this->findBestManAndWomen($dossier);
+        dump($bests);
         return $this->render('LabsFrontBundle:Default:wedding_view.html.twig',[
             'slides' => $slides,
             'galeries' => $gallery,
-            'best'     => $best
+            'bests'     => $bests
         ]);
     }
 
@@ -398,22 +398,8 @@ class DefaultController extends Controller
     private function findBestManAndWomen(Dossier $dossier)
     {
         $em = $this->getDoctrine()->getManager();
-        $data = [];
-        $result = [];
         $best = $em->getRepository('LabsBackBundle:Best')->getBestByDossier($dossier);
-        foreach ( $best as $k => $b) {
-            if($b->getGenre() == true){
-                $data[$k] =[
-                     'men' => $b
-                ];
-            }else{
-                $data[$k] =[
-                    'women' => $b
-                ];
-            }
-            $result = array_merge($data);
-        }
-        return $result;
+        return $best;
     }
 
 
