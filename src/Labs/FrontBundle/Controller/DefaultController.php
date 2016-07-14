@@ -217,7 +217,11 @@ class DefaultController extends Controller
      */
     public function ContactControllerAction()
     {
-        return $this->render('LabsFrontBundle:Contact:contact.html.twig');
+        $em = $this->getDoctrine()->getManager();
+        $contact = $em->getRepository('LabsBackBundle:Contacts')->getOne();
+        return $this->render('LabsFrontBundle:Contact:contact.html.twig', [
+            'contact' => $contact
+        ]);
     }
 
     /**
