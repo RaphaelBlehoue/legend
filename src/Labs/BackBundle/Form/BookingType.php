@@ -39,16 +39,16 @@ class BookingType extends AbstractType
                 ]
             ))
             ->add('date_res',DateType::class, array(
+                'widget' => 'single_text',
+                'html5'  => false,
                 'label'  => false,
-                'widget' => 'choice',
-                'input'  => 'datetime',
-                'format' => 'dd-MMMM-yyyy',
-                'years'  => range(date('Y'), date('Y') - 30, -1)
+                'attr' => ['class' => 'js-datepicker form-control']
             ))
-            ->add('pack',EntityType::class, array(
+            ->add('packages',EntityType::class, array(
                 'label' => false,
-                'class' => 'LabsBackBundle:Packs',
-                'choice_label' => 'name'
+                'class' => 'LabsBackBundle:Packages',
+                'choice_label' => 'name',
+                'attr' => ['class' => 'form-control']
             ))
             ->add('status', ChoiceType::class, array(
                 'label' => false,

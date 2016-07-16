@@ -2748,16 +2748,16 @@
         },
         {
             "name": "vich/uploader-bundle",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dustin10/VichUploaderBundle.git",
-                "reference": "f803b16f419af72d498753324051f283384871ef"
+                "reference": "0f40b0eabcc50732ec50fb5ce8adc15f8e5b055c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dustin10/VichUploaderBundle/zipball/f803b16f419af72d498753324051f283384871ef",
-                "reference": "f803b16f419af72d498753324051f283384871ef",
+                "url": "https://api.github.com/repos/dustin10/VichUploaderBundle/zipball/0f40b0eabcc50732ec50fb5ce8adc15f8e5b055c",
+                "reference": "0f40b0eabcc50732ec50fb5ce8adc15f8e5b055c",
                 "shasum": ""
             },
             "require": {
@@ -2801,7 +2801,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -2825,7 +2825,7 @@
                 "file uploads",
                 "upload"
             ],
-            "time": "2016-05-29 16:30:28"
+            "time": "2016-07-14 21:22:59"
         },
         {
             "name": "zendframework/zend-code",

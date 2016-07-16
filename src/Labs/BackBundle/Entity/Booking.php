@@ -3,6 +3,7 @@
 namespace Labs\BackBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Booking
@@ -23,21 +24,21 @@ class Booking
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="email", type="string", length=255)
+     * @Assert\Email(message="Entrez un email valide")
+     * @ORM\Column(name="email", type="string", length=255, nullable=true)
      */
     protected $email;
 
     /**
      * @var string
-     *
+     * @Assert\NotBlank(message="Entrez le lieu de l'evenement avant de continuer")
      * @ORM\Column(name="lieu", type="string", length=255)
      */
     protected $lieu;
 
     /**
      * @var string
-     *
+     * @Assert\NotBlank(message="Entrez votre nom")
      * @ORM\Column(name="name", type="string", length=255)
      */
     protected $name;
@@ -45,14 +46,15 @@ class Booking
 
     /**
      * @var Date
-     *
+     * @Assert\Date(message="Entrez une date valide")
+     * @Assert\NotBlank(message="Entrez une date de reservation avant de continer")
      * @ORM\Column(name="date_res", type="date")
      */
     protected $date_res;
 
     /**
      * @var
-     *
+     * @Assert\NotBlank(message="Veuillez choisir votre package")
      * @ORM\ManyToOne(targetEntity="Labs\BackBundle\Entity\Packages", inversedBy="booking")
      */
     protected $packages;

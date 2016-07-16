@@ -3,6 +3,7 @@
 {% block stylesheets %}
     {{ parent() }}
     <link rel="stylesheet" href="{{ asset('bundles/labstemplate/assets/css/admin/module.admin.page.form_elements.min.css') }}" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/css/bootstrap-datepicker.css"></script>
 {% endblock %}
 {% block body %}
     <h1 class="bg-white content-heading border-bottom">Dashboard</h1>
@@ -50,7 +51,7 @@
 
                                 <div class="row">
                                     <div class="col-xs-8 col-xs-offset-2 form-group">
-                                        <label class="control-label" for="name">{{ 'email du reservant' }}</label>
+                                        <label class="control-label" for="name">{{ 'Email du reservant' }}</label>
                                         {{ form_row(form.email) }}
                                         {{ form_errors(form.email) }}
                                     </div>
@@ -58,7 +59,7 @@
 
                                 <div class="row">
                                     <div class="col-xs-8 col-xs-offset-2 form-group">
-                                        <label class="control-label" for="name">{{ 'date de reservation' }}</label>
+                                        <label class="control-label" for="name">{{ 'Date de reservation' }}</label>
                                         {{ form_row(form.date_res) }}
                                         {{ form_errors(form.date_res) }}
                                     </div>
@@ -66,15 +67,15 @@
 
                                 <div class="row">
                                     <div class="col-xs-8 col-xs-offset-2 form-group">
-                                        <label class="control-label" for="name">{{ 'Choix du pack' }}</label>
-                                        {{ form_row(form.pack) }}
-                                        {{ form_errors(form.pack) }}
+                                        <label class="control-label" for="name">{{ 'Choix de votre package' }}</label>
+                                        {{ form_row(form.packages) }}
+                                        {{ form_errors(form.packages) }}
                                     </div>
                                 </div>
 
 
                                 <div class="row">
-                                    <div class="col-xs-8 col-xs-offset-2 form-group">
+                                    <div class="col-xs-4 col-xs-offset-2 form-group">
                                         <label class="control-label" for="name">{{ 'Validé la reservation' }}</label>
                                         {{ form_row(form.status) }}
                                         {{ form_errors(form.status) }}
@@ -139,5 +140,17 @@
     <script src="{{ asset('bundles/labstemplate/assets/components/core/js/sidebar.collapse.init.js?v=v1.2.3') }}"></script>
     <script src="{{ asset('bundles/labstemplate/assets/components/helpers/themer/assets/plugins/cookie/jquery.cookie.js?v=v1.2.3') }}"></script>
     <script src="{{ asset('bundles/labstemplate/assets/components/core/js/core.init.js?v=v1.2.3') }}"></script>
-
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/locales/bootstrap-datepicker.fr.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.js-datepicker').datepicker({
+                format: 'yyyy-mm-dd',
+                language : 'fr',
+                orientation : "bottom",
+                showOnFocus : true,
+                todayHighlight : true
+            });
+        });
+    </script>
 {% endblock %}
