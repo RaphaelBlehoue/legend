@@ -21,6 +21,8 @@ class AppKernel extends Kernel
             new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
             new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+            new JMS\SerializerBundle\JMSSerializerBundle(),
+            new Misd\PhoneNumberBundle\MisdPhoneNumberBundle(),
             new Labs\TemplateBundle\LabsTemplateBundle(),
             new Labs\BackBundle\LabsBackBundle(),
             new Labs\FrontBundle\LabsFrontBundle(),

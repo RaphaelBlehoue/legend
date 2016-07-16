@@ -37,6 +37,7 @@
                     <!-- Table heading -->
                     <thead>
                     <tr>
+                        <th>{{ 'Valider' }}</th>
                         <th>{{ 'Reservant' }}</th>
                         <th>{{ 'Packs '}}</th>
                         <th>{{ 'Email' }}</th>
@@ -52,9 +53,13 @@
                         <!-- Table row -->
                         {% for booking in bookings %}
                             <tr class="gradeX">
+                                <td><a href="#">
+                                        <i class="fa fa-check"></i>
+                                    </a>
+                                </td>
                                 <td>{{ booking.name }}</td>
-                                <td>{% if booking.pack|length > 0 %} <span class="label label-success label-stroke">{{ booking.pack.name }}</span>  {% endif %}</td>
-                                <td>{{ booking.email }}</td>
+                                <td>{% if booking.packages|length > 0 %} <span class="label label-success label-stroke">{{ booking.packages.name }}</span>  {% endif %}</td>
+                                <td>{% if booking.email|length > 0 %} {{ booking.email }} {% endif %} </td>
                                 <td><span class="label label-{{ (booking.status == 1) ? 'success' : 'primary' }}">{{ (booking.status == 1) ? 'Valider' : 'En attente' }}</span></td>
                                 <td>{{ booking.dateRes|date('d-M-Y') }}</td>
                                 <td>

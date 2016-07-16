@@ -4,6 +4,8 @@ namespace Labs\BackBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
+use Misd\PhoneNumberBundle\Validator\Constraints\PhoneNumber as AssertPhoneNumber;
+
 
 /**
  * Booking
@@ -36,6 +38,7 @@ class Booking
      */
     protected $lieu;
 
+
     /**
      * @var string
      * @Assert\NotBlank(message="Entrez votre nom")
@@ -43,6 +46,27 @@ class Booking
      */
     protected $name;
 
+    /**
+     * @var
+     * @ORM\Column(name="content", type="text", nullable=true)
+     */
+    protected $content;
+
+    /**
+     * @var
+     * @Assert\NotBlank(message="Entrez votre numero de téléphone fixe")
+     * @ORM\Column(name="phone", type="phone_number")
+     * @AssertPhoneNumber(defaultRegion="CI")
+     */
+    protected $phone;
+
+    /**
+     * @var
+     * @Assert\NotBlank(message="Entrez votre numero de mobile")
+     * @ORM\Column(name="mobile", type="phone_number")
+     * @AssertPhoneNumber(defaultRegion="CI", type="mobile")
+     */
+    protected $mobile;
 
     /**
      * @var Date
@@ -219,4 +243,53 @@ class Booking
     {
         return $this->packages;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getContent()
+    {
+        return $this->content;
+    }
+
+    /**
+     * @param mixed $content
+     */
+    public function setContent($content)
+    {
+        $this->content = $content;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPhone()
+    {
+        return $this->phone;
+    }
+
+    /**
+     * @param mixed $phone
+     */
+    public function setPhone($phone)
+    {
+        $this->phone = $phone;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getMobile()
+    {
+        return $this->mobile;
+    }
+
+    /**
+     * @param mixed $mobile
+     */
+    public function setMobile($mobile)
+    {
+        $this->mobile = $mobile;
+    }
+    
 }

@@ -2,11 +2,13 @@
 
 namespace Labs\FrontBundle\Controller;
 
+use Labs\BackBundle\Entity\Booking;
 use Labs\BackBundle\Entity\Category;
 use Labs\BackBundle\Entity\Events;
 use Labs\BackBundle\Entity\Packs;
 use Labs\BackBundle\Entity\Type;
 use Labs\BackBundle\Entity\Dossier;
+use Labs\BackBundle\Form\BookingType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Request;
@@ -212,15 +214,27 @@ class DefaultController extends Controller
     }
 
     /**
+     * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
      * @Route("/nous-contactez", name="contact_page")
      */
-    public function ContactControllerAction()
+    public function ContactControllerAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
         $contact = $em->getRepository('LabsBackBundle:Contacts')->getOne();
+        $booking = new Booking();
+        $form = $this->createForm(BookingType::class, $booking);
+        $form->handleRequest($request);
+        if($form->isValid()){
+            $em->persist($booking);
+            $em->flush();
+            $this->addFlash('succcess', 'Votre reservation a été prise en compte');
+            return $this->redirectToRoute('contact_page', array(), 302);
+        }
+        
         return $this->render('LabsFrontBundle:Contact:contact.html.twig', [
-            'contact' => $contact
+            'contact' => $contact,
+            'form'    => $form->createView()
         ]);
     }
 
