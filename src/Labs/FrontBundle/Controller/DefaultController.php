@@ -6,6 +6,7 @@ use Labs\BackBundle\Entity\Booking;
 use Labs\BackBundle\Entity\Category;
 use Labs\BackBundle\Entity\Events;
 use Labs\BackBundle\Entity\Packs;
+use Labs\BackBundle\Entity\Post;
 use Labs\BackBundle\Entity\Type;
 use Labs\BackBundle\Entity\Dossier;
 use Labs\BackBundle\Form\BookingType;
@@ -60,15 +61,34 @@ class DefaultController extends Controller
      */
     public function PackPageAction()
     {
+        $em = $this->getDoctrine()->getManager();
         $packs = $this->getPacksList();
         $partners = $this->getAllPartners();
         $citations = $this->findTemoignage();
         $page  = $this->getInfoPagePackage();
+        $contact = $em->getRepository('LabsBackBundle:Contacts')->getOne();
         return $this->render('LabsFrontBundle:Default:pack.html.twig',[
             'partners' => $partners,
             'packs' => $packs,
             'citations' => $citations,
-            'page'      => $page
+            'page'      => $page,
+            'contact'   => $contact
+        ]);
+    }
+
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route("/demande-en-mariage", name="demand")
+     */
+    public function PageDemandAction()
+    {
+        $demand = $this->getDemandContent();
+        $partners = $this->getAllPartners();
+        $citations = $this->findTemoignage();
+        return $this->render('LabsFrontBundle:Default:demand.html.twig',[
+            'demand' => $demand,
+            'partners' => $partners,
+            'citations' => $citations
         ]);
     }
 
@@ -80,15 +100,18 @@ class DefaultController extends Controller
  */
     public function PackPageViewAction( Packs $packs, $slug )
     {
+        $em = $this->getDoctrine()->getManager();
         $packs = $this->getPacksAndPackageList($packs);
         $partners = $this->getAllPartners();
         $citations = $this->findTemoignage();
         $page  = $this->getInfoPagePackage();
+        $contact = $em->getRepository('LabsBackBundle:Contacts')->getOne();
         return $this->render('LabsFrontBundle:Default:pack_view.html.twig',[
             'partners' => $partners,
             'packs' => $packs,
             'citations' => $citations,
-            'page'      => $page
+            'page'      => $page,
+            'contact'   => $contact
         ]);
     }
 
@@ -136,13 +159,16 @@ class DefaultController extends Controller
      */
     public function WeddingPageViewAction(Dossier $dossier, $slug)
     {
+        $em = $this->getDoctrine()->getManager();
         $slides = $this->getSlideWeddingViewPage($dossier);
         $gallery = $this->findMediaByDossier($dossier);
         $bests = $this->findBestManAndWomen($dossier);
+        $view = $em->getRepository('LabsBackBundle:Dossier')->getOneDossier($dossier, $slug);
         return $this->render('LabsFrontBundle:Default:wedding_view.html.twig',[
             'slides' => $slides,
             'galeries' => $gallery,
-            'bests'     => $bests
+            'bests'     => $bests,
+            'post'      => $view
         ]);
     }
 
@@ -197,7 +223,6 @@ class DefaultController extends Controller
     {
         $slides = $this->getSlideEventViewPage($events);
         $gallery = $this->findMediaByEvents($events);
-        dump($gallery);
         return $this->render('LabsFrontBundle:Default:event_page_view.html.twig',[
             'slides' => $slides,
             'galeries' => $gallery
@@ -205,12 +230,38 @@ class DefaultController extends Controller
     }
 
     /**
+     * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
      * @Route("/blog", name="blog_page")
      */
-    public function BlogControllerAction()
+    public function BlogAction(Request $request)
     {
-        return $this->render('LabsFrontBundle:Blog:index.html.twig');
+        $em = $this->getDoctrine()->getManager();
+        $findpost = $em->getRepository('LabsBackBundle:Post')->findAll();
+        $post  = $this->get('knp_paginator')->paginate(
+            $findpost,
+            $request->query->getInt('page', 1), 9);
+        $post->setTemplate('LabsFrontBundle:Pagination:paginate.html.twig');
+        return $this->render('LabsFrontBundle:Blog:index.html.twig', array(
+            'posts' => $post
+        ));
+    }
+
+    /**
+     * @param Post $post
+     * @param $slug
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route("/blog/{id}/{slug}", name="blog_view")
+     */
+    public function BlogViewAction(Post $post, $slug)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $view = $em->getRepository('LabsBackBundle:Post')->getOneArticles($post, $slug);
+        $viewLast = $em->getRepository('LabsBackBundle:Post')->findAllArticles();
+        return $this->render('LabsFrontBundle:Blog:view.html.twig', array(
+            'post' => $view,
+            'lasts' => $viewLast
+        ));
     }
 
     /**
@@ -218,7 +269,7 @@ class DefaultController extends Controller
      * @return \Symfony\Component\HttpFoundation\Response
      * @Route("/nous-contactez", name="contact_page")
      */
-    public function ContactControllerAction(Request $request)
+    public function ContactAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
         $contact = $em->getRepository('LabsBackBundle:Contacts')->getOne();
@@ -228,7 +279,7 @@ class DefaultController extends Controller
         if($form->isValid()){
             $em->persist($booking);
             $em->flush();
-            $this->addFlash('succcess', 'Votre reservation a été prise en compte');
+            $this->addFlash('success', 'Votre reservation a été prise en compte');
             return $this->redirectToRoute('contact_page', array(), 302);
         }
         
@@ -302,6 +353,22 @@ class DefaultController extends Controller
         ));
     }
 
+
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function getFooterAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $viewLast = $em->getRepository('LabsBackBundle:Post')->findAllArticles(4);
+        $contact = $em->getRepository('LabsBackBundle:Contacts')->getOne();
+        return $this->render('LabsFrontBundle:Include:footer.html.twig', array(
+            'contact' => $contact,
+            'posts'  => $viewLast
+        ));
+    }
+
+
     /**
      * @return mixed
      * Retour les contentes de la page About
@@ -311,6 +378,17 @@ class DefaultController extends Controller
         $em = $this->getDoctrine()->getManager();
         $about = $em->getRepository('LabsBackBundle:About')->findOnePage();
         return $about;
+    }
+
+    /**
+     * @return mixed
+     * retourne le contenu de la page demande en mariage
+     */
+    private function getDemandContent()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $demand = $em->getRepository('LabsBackBundle:Demand')->findOnePage();
+        return $demand;
     }
 
     /**

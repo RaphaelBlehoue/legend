@@ -19,7 +19,9 @@
             </ol>
         </div>
     </section><!-- #page-title end -->
-    <section id="google-map" class="gmap slider-parallax"></section>
+    <section class="gmap slider-parallax">
+        <img src="{{ asset('images/local.jpg') }}" alt="">
+    </section>
 
     <section id="content">
 
@@ -36,7 +38,7 @@
                     {% if app.session.flashBag.has('success') %}
                         <div class="alert alert-success" role="alert">
                             {% for msg in app.session.flashBag.get('success') %}
-                                <strong> Succès </strong>{{ msg }}.
+                                <strong> Succès : </strong>{{ msg }}.
                             {% endfor %}
                         </div>
                     {% endif %}
@@ -44,7 +46,7 @@
                     {% if app.session.flashBag.has('error') %}
                         <div class="alert alert-danger" role="alert">
                             {% for msg in app.session.flashBag.get('error') %}
-                                <strong> Succès </strong>{{ msg }}.
+                                <strong> Oops !  </strong>{{ msg }}.
                             {% endfor %}
                         </div>
                     {% endif %}
@@ -188,38 +190,4 @@
             });
         });
     </script>
-    <script type="text/javascript">
-
-        $(document).ready(function($) {
-            "use strict";
-
-            /* ---------------------------------------------------------------------- */
-            /*	Contact Map 2
-             /* ---------------------------------------------------------------------- */
-            var contact = {"lat":"5.387489", "lon":"-4.000118"}; //Change a map coordinate here!
-
-            try {
-                var mapContainer = $('#google-map');
-                mapContainer.gmap3({
-                            action: 'addMarker',
-                            marker:{
-                                options:{
-                                    icon : new google.maps.MarkerImage('images/marker.png')
-                                }
-                            },
-                            latLng: [contact.lat, contact.lon],
-                            map:{
-                                center: [contact.lat, contact.lon],
-                                zoom: 16
-                            },
-                        },
-                        {action: 'setOptions', args:[{scrollwheel:false}]}
-                );
-            } catch(err) {
-
-            }
-
-        });
-
-    </script><!-- Google Map End -->
 {% endblock %}
