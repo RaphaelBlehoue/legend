@@ -85,6 +85,14 @@ class BannerImage
      */
     protected $about;
 
+    /**
+     * @var
+     * @ORM\OneToMany(targetEntity="Labs\BackBundle\Entity\Demand", mappedBy="bannerImage")
+     * @ORM\JoinColumn(referencedColumnName="id", nullable=true)
+     */
+    protected $demand;
+
+
 
     public function __construct()
     {
@@ -283,5 +291,39 @@ class BannerImage
     public function getAbout()
     {
         return $this->about;
+    }
+
+    /**
+     * Add demand
+     *
+     * @param \Labs\BackBundle\Entity\Demand $demand
+     *
+     * @return BannerImage
+     */
+    public function addDemand(\Labs\BackBundle\Entity\Demand $demand)
+    {
+        $this->demand[] = $demand;
+
+        return $this;
+    }
+
+    /**
+     * Remove demand
+     *
+     * @param \Labs\BackBundle\Entity\Demand $demand
+     */
+    public function removeDemand(\Labs\BackBundle\Entity\Demand $demand)
+    {
+        $this->demand->removeElement($demand);
+    }
+
+    /**
+     * Get demand
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getDemand()
+    {
+        return $this->demand;
     }
 }

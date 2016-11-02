@@ -9,14 +9,14 @@ use Symfony\Component\Validator\Constraints as Assert;
 
 
 /**
- * About
+ * Demand
  *
- * @ORM\Table(name="about")
- * @ORM\Entity(repositoryClass="Labs\BackBundle\Repository\AboutRepository")
+ * @ORM\Table(name="demand")
+ * @ORM\Entity(repositoryClass="Labs\BackBundle\Repository\DemandRepository")
  * @ORM\HasLifecycleCallbacks()
  * @Vich\Uploadable
  */
-class About
+class Demand
 {
     /**
      * @var int
@@ -133,7 +133,7 @@ class About
 
     /**
      * @var
-     * @ORM\ManyToOne(targetEntity="Labs\BackBundle\Entity\BannerImage", inversedBy="about")
+     * @ORM\ManyToOne(targetEntity="Labs\BackBundle\Entity\BannerImage", inversedBy="demand")
      * @ORM\JoinColumn(referencedColumnName="id", nullable=true)
      */
     protected $bannerImage;
@@ -198,7 +198,7 @@ class About
      *
      * @param string $title
      *
-     * @return About
+     * @return Demand
      */
     public function setTitle($title)
     {
@@ -222,7 +222,7 @@ class About
      *
      * @param string $subtitle
      *
-     * @return About
+     * @return Demand
      */
     public function setSubtitle($subtitle)
     {
@@ -246,7 +246,7 @@ class About
      *
      * @param string $titleWhy
      *
-     * @return About
+     * @return Demand
      */
     public function setTitleWhy($titleWhy)
     {
@@ -270,7 +270,7 @@ class About
      *
      * @param string $titleMission
      *
-     * @return About
+     * @return Demand
      */
     public function setTitleMission($titleMission)
     {
@@ -294,7 +294,7 @@ class About
      *
      * @param string $titleDo
      *
-     * @return About
+     * @return Demand
      */
     public function setTitleDo($titleDo)
     {
@@ -318,7 +318,7 @@ class About
      *
      * @param string $contentWhy
      *
-     * @return About
+     * @return Demand
      */
     public function setContentWhy($contentWhy)
     {
@@ -342,7 +342,7 @@ class About
      *
      * @param string $contentMission
      *
-     * @return About
+     * @return Demand
      */
     public function setContentMission($contentMission)
     {
@@ -366,7 +366,7 @@ class About
      *
      * @param string $contentDo
      *
-     * @return About
+     * @return Demand
      */
     public function setContentDo($contentDo)
     {
@@ -390,7 +390,7 @@ class About
      *
      * @param string $video
      *
-     * @return About
+     * @return Demand
      */
     public function setVideo($video)
     {
@@ -414,7 +414,7 @@ class About
      *
      * @param string $contentVideo
      *
-     * @return About
+     * @return Demand
      */
     public function setContentVideo($contentVideo)
     {
@@ -438,7 +438,7 @@ class About
      *
      * @param string $titleVideo
      *
-     * @return About
+     * @return Demand
      */
     public function setTitleVideo($titleVideo)
     {
@@ -504,4 +504,28 @@ class About
         return $this->getUploadDir().'/'.$this->imageName;
     }
 
+
+    /**
+     * Set bannerImage
+     *
+     * @param \Labs\BackBundle\Entity\BannerImage $bannerImage
+     *
+     * @return Demand
+     */
+    public function setBannerImage(\Labs\BackBundle\Entity\BannerImage $bannerImage = null)
+    {
+        $this->bannerImage = $bannerImage;
+
+        return $this;
+    }
+
+    /**
+     * Get bannerImage
+     *
+     * @return \Labs\BackBundle\Entity\BannerImage
+     */
+    public function getBannerImage()
+    {
+        return $this->bannerImage;
+    }
 }

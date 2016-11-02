@@ -8,7 +8,7 @@ use Doctrine\DBAL\Schema\Schema;
 /**
  * Auto-generated Migration: Please modify to your needs!
  */
-class Version20160714201745 extends AbstractMigration
+class Version20160719203330 extends AbstractMigration
 {
     /**
      * @param Schema $schema
@@ -18,7 +18,7 @@ class Version20160714201745 extends AbstractMigration
         // this up() migration is auto-generated, please modify it to your needs
         $this->abortIf($this->connection->getDatabasePlatform()->getName() != 'mysql', 'Migration can only be executed safely on \'mysql\'.');
 
-        $this->addSql('ALTER TABLE contacts CHANGE whatsapp google VARCHAR(255) DEFAULT NULL');
+        $this->addSql('ALTER TABLE demand ADD content_video LONGTEXT NOT NULL, ADD title_video VARCHAR(255) NOT NULL');
     }
 
     /**
@@ -29,6 +29,6 @@ class Version20160714201745 extends AbstractMigration
         // this down() migration is auto-generated, please modify it to your needs
         $this->abortIf($this->connection->getDatabasePlatform()->getName() != 'mysql', 'Migration can only be executed safely on \'mysql\'.');
 
-        $this->addSql('ALTER TABLE contacts CHANGE google whatsapp VARCHAR(255) DEFAULT NULL COLLATE utf8_unicode_ci');
+        $this->addSql('ALTER TABLE demand DROP content_video, DROP title_video');
     }
 }

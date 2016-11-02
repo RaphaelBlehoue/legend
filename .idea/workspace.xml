@@ -2,14 +2,68 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f66c0dc-4822-4176-a5fc-7f7d3a160cba" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/legend.iml" afterPath="$PROJECT_DIR$/.idea/legend.iml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160630114442.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160630154525.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160630161558.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160630183427.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160701122856.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160701124250.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160701132222.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160701132922.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160701135345.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160701140059.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160701155332.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160701164313.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160701170227.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160704105010.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160704105820.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160704182906.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160705142420.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160705171344.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160705172616.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160705174004.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160707135104.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160707135545.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160707153207.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160707182447.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160709195730.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160709210123.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160710184056.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160710201549.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160711124429.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160711141906.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160713160258.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160713164257.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160714171350.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160714184621.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160714200553.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160714201745.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160716125551.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20160716140518.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/symfony_requirements" afterPath="$PROJECT_DIR$/bin/symfony_requirements" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/FrontBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/Labs/FrontBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Contact/contact.html.twig" afterPath="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Contact/contact.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/SymfonyRequirements.php" afterPath="$PROJECT_DIR$/var/SymfonyRequirements.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/config.php" afterPath="$PROJECT_DIR$/web/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/About.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/About.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Banner.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Banner.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/BannerImage.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/BannerImage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Best.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Best.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Booking.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Booking.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Category.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Category.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Citation.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Citation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Contacts.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Contacts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Dossier.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Dossier.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Events.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Events.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Media.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Media.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Menu.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Menu.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Packages.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Packages.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Packpage.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Packpage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Packs.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Packs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Partner.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Partner.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Type.php" afterPath="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Type.php" />
     </list>
     <ignored path="legend.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,6 +98,10 @@
             <state relative-caret-position="483">
               <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
               <folding>
+                <element signature="e#12#28#0#Twig" expanded="false" />
+                <marker date="1478092800000" expanded="true" signature="33:236" ph="{% block stylesheets ...%}" />
+                <marker date="1478092800000" expanded="true" signature="237:338" ph="{% block menu ...%}" />
+                <marker date="1478092800000" expanded="true" signature="340:763" ph="{% block body ...%}" />
                 <marker date="1478092800000" expanded="false" signature="590:598" ph="/" />
               </folding>
             </state>
@@ -53,8 +111,30 @@
       <file leaf-file-name="AppKernel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="24" column="63" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
+            <state relative-caret-position="391">
+              <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Users.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Entity/Users.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="8" column="32" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="32" />
+              <folding>
+                <element signature="e#127#169#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="security.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="667">
+              <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -63,8 +143,18 @@
       <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
-              <caret line="51" column="84" selection-start-line="51" selection-start-column="84" selection-end-line="51" selection-end-column="84" />
+            <state relative-caret-position="1206">
+              <caret line="285" column="44" selection-start-line="285" selection-start-column="44" selection-end-line="285" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="15" column="63" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -73,8 +163,8 @@
       <file leaf-file-name="Booking.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Entity/Booking.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6739">
-              <caret line="293" column="4" selection-start-line="293" selection-start-column="4" selection-end-line="293" selection-end-column="4" />
+            <state relative-caret-position="6670">
+              <caret line="290" column="4" selection-start-line="290" selection-start-column="4" selection-end-line="290" selection-end-column="4" />
               <folding>
                 <element signature="e#42#74#0#PHP" expanded="true" />
               </folding>
@@ -94,7 +184,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="6417">
@@ -112,8 +202,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Bests/edit.html.twig" />
-        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Controller/BestController.php" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Controller/MediaController.php" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Type.php" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Dossiers/dossier_view.html.twig" />
@@ -129,7 +217,6 @@
         <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/header-global.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Include/header.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Controller/EventsController.php" />
-        <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/wedding_type.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/event_page_type.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Repository/MediaRepository.php" />
@@ -158,11 +245,14 @@
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Booking/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Resources/views/Booking/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Booking.php" />
         <option value="$PROJECT_DIR$/src/Labs/BackBundle/Form/BookingType.php" />
         <option value="$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Contact/contact.html.twig" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/src/Labs/BackBundle/Entity/Users.php" />
+        <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
       </list>
     </option>
   </component>
@@ -353,7 +443,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="FrontBundle" />
+              <option name="myItemId" value="BackBundle" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -375,11 +465,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="FrontBundle" />
+              <option name="myItemId" value="BackBundle" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
+              <option name="myItemId" value="Entity" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -394,6 +484,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="legend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="legend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DoctrineMigrations" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -567,12 +675,12 @@
       <workItem from="1468166456151" duration="12056000" />
       <workItem from="1468534482695" duration="1192000" />
       <workItem from="1468663886518" duration="8855000" />
-      <workItem from="1478092193524" duration="409000" />
+      <workItem from="1478092193524" duration="2236000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49313000" />
+    <option name="totallyTimeSpent" value="51140000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -585,9 +693,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17394757" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17394757" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287172" sideWeight="0.4972332" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5027668" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -628,34 +736,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Labs/FrontBundle/Resources/views/Default/wedding_view.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="143" column="74" selection-start-line="143" selection-start-column="74" selection-end-line="143" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Repository/EventsRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Repository/MediaRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="199" column="45" selection-start-line="199" selection-start-column="45" selection-end-line="199" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../canvas v311/HTML/index-events.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="716" column="18" selection-start-line="689" selection-start-column="8" selection-end-line="716" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Form/EventsType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -908,26 +988,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="24" column="63" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="51" column="84" selection-start-line="51" selection-start-column="84" selection-end-line="51" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Entity/Booking.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6739">
-          <caret line="293" column="4" selection-start-line="293" selection-start-column="4" selection-end-line="293" selection-end-column="4" />
+        <state relative-caret-position="6670">
+          <caret line="290" column="4" selection-start-line="290" selection-start-column="4" selection-end-line="290" selection-end-column="4" />
           <folding>
             <element signature="e#42#74#0#PHP" expanded="true" />
           </folding>
@@ -970,6 +1034,10 @@
         <state relative-caret-position="483">
           <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
           <folding>
+            <element signature="e#12#28#0#Twig" expanded="false" />
+            <marker date="1478092800000" expanded="true" signature="33:236" ph="{% block stylesheets ...%}" />
+            <marker date="1478092800000" expanded="true" signature="237:338" ph="{% block menu ...%}" />
+            <marker date="1478092800000" expanded="true" signature="340:763" ph="{% block body ...%}" />
             <marker date="1478092800000" expanded="false" signature="590:598" ph="/" />
           </folding>
         </state>
@@ -979,6 +1047,56 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6417">
           <caret line="289" column="5" selection-start-line="289" selection-start-column="5" selection-end-line="289" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Labs/BackBundle/Entity/Users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="32" />
+          <folding>
+            <element signature="e#127#169#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1206">
+          <caret line="285" column="44" selection-start-line="285" selection-start-column="44" selection-end-line="285" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../dernier.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="826" column="55" selection-start-line="826" selection-start-column="55" selection-end-line="826" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="63" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
           <folding />
         </state>
       </provider>

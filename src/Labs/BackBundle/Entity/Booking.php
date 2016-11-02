@@ -4,7 +4,6 @@ namespace Labs\BackBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
-use Misd\PhoneNumberBundle\Validator\Constraints\PhoneNumber as AssertPhoneNumber;
 
 
 /**
@@ -34,7 +33,7 @@ class Booking
     /**
      * @var string
      * @Assert\NotBlank(message="Entrez le lieu de l'evenement avant de continuer")
-     * @ORM\Column(name="lieu", type="string", length=255)
+     * @ORM\Column(name="lieu", type="string", length=255, nullable=true)
      */
     protected $lieu;
 
@@ -42,7 +41,7 @@ class Booking
     /**
      * @var string
      * @Assert\NotBlank(message="Entrez votre nom")
-     * @ORM\Column(name="name", type="string", length=255)
+     * @ORM\Column(name="name", type="string", length=255, nullable=true)
      */
     protected $name;
 
@@ -55,16 +54,14 @@ class Booking
     /**
      * @var
      * @Assert\NotBlank(message="Entrez votre numero de téléphone fixe")
-     * @ORM\Column(name="phone", type="phone_number")
-     * @AssertPhoneNumber(defaultRegion="CI")
+     * @ORM\Column(name="phone", type="string", length=255)
      */
     protected $phone;
 
     /**
      * @var
      * @Assert\NotBlank(message="Entrez votre numero de mobile")
-     * @ORM\Column(name="mobile", type="phone_number")
-     * @AssertPhoneNumber(defaultRegion="CI", type="mobile")
+     * @ORM\Column(name="mobile", type="string", length=255)
      */
     protected $mobile;
 

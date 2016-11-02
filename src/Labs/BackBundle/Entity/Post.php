@@ -3,20 +3,20 @@
 namespace Labs\BackBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
 use Symfony\Component\HttpFoundation\File\File;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
 use Symfony\Component\Validator\Constraints as Assert;
 
-
 /**
- * Best
+ * Post
  *
- * @ORM\Table(name="best")
- * @ORM\Entity(repositoryClass="Labs\BackBundle\Repository\BestRepository")
+ * @ORM\Table(name="post")
+ * @ORM\Entity(repositoryClass="Labs\BackBundle\Repository\PostRepository")
  * @ORM\HasLifecycleCallbacks()
  * @Vich\Uploadable
  */
-class Best
+class Post
 {
     /**
      * @var int
@@ -28,12 +28,8 @@ class Best
     protected $id;
 
     /**
-     * @Assert\File(
-     *     maxSize="3M",
-     *     mimeTypes={"image/png", "image/jpeg", "image/jpg"}
-     * )
      *
-     * @Vich\UploadableField(mapping="team_image", fileNameProperty="imageName")
+     * @Vich\UploadableField(mapping="news_image", fileNameProperty="imageName")
      *
      * @var File $imageFile
      */
@@ -49,70 +45,37 @@ class Best
     /**
      * @var string
      *
-     * @ORM\Column(name="name", type="string", length=255)
+     * @ORM\Column(name="title", type="string", length=255)
      */
-    protected $name;
+    protected $title;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="content", type="text", nullable=true)
+     * @ORM\Column(name="content", type="text")
      */
     protected $content;
 
-    /**
-     * @var boolean
-     *
-     * @ORM\Column(name="top", type="boolean")
-     */
-    protected $top;
 
     /**
-     * @var boolean
-     *
-     * @ORM\Column(name="genre", type="boolean")
-     */
-    protected $genre;
-
-
-    /**
-     * @var
+     * @var dateTime
      *
      * @ORM\Column(name="created", type="datetime")
      */
     protected $created;
 
+
     /**
-     * @var
-     * @ORM\ManyToOne(targetEntity="Labs\BackBundle\Entity\Dossier", inversedBy="bests")
-     * @ORM\JoinColumn(referencedColumnName="id", nullable=false)
+     * @Gedmo\Slug(fields={"title", "id"}, updatable=true, separator="_")
+     * @ORM\Column(length=128, unique=true)
      */
-    protected $dossier;
+    protected $slug;
 
 
     public function __construct()
     {
         $this->created = new \DateTime('now');
-        $this->top = false;
     }
-
-
-    /**
-     * @return string
-     */
-    public function getGenre()
-    {
-        return $this->genre;
-    }
-
-    /**
-     * @param string $genre
-     */
-    public function setGenre($genre)
-    {
-        $this->genre = $genre;
-    }
-
 
 
     /**
@@ -126,35 +89,35 @@ class Best
     }
 
     /**
-     * Set name
+     * Set title
      *
-     * @param string $name
+     * @param string $title
      *
-     * @return Best
+     * @return Post
      */
-    public function setName($name)
+    public function setTitle($title)
     {
-        $this->name = $name;
+        $this->title = $title;
 
         return $this;
     }
 
     /**
-     * Get name
+     * Get title
      *
      * @return string
      */
-    public function getName()
+    public function getTitle()
     {
-        return $this->name;
+        return $this->title;
     }
 
     /**
      * Set content
      *
-     * @param string $content
+     * @param text $content
      *
-     * @return Best
+     * @return Post
      */
     public function setContent($content)
     {
@@ -166,60 +129,43 @@ class Best
     /**
      * Get content
      *
-     * @return string
+     * @return text
      */
     public function getContent()
     {
         return $this->content;
     }
 
-    /**
-     * @return string
-     */
-    public function getTop()
-    {
-        return $this->top;
-    }
 
     /**
-     * @param string $top
-     */
-    public function setTop($top)
-    {
-        $this->top = $top;
-    }
-
-
-
-    /**
-     * Set dossier
+     * Set created
      *
-     * @param \Labs\BackBundle\Entity\Dossier $dossier
+     * @param \DateTime $created
      *
-     * @return Best
+     * @return Post
      */
-    public function setDossier(\Labs\BackBundle\Entity\Dossier $dossier)
+    public function setCreated($created)
     {
-        $this->dossier = $dossier;
+        $this->created = $created;
 
         return $this;
     }
 
     /**
-     * Get dossier
+     * Get created
      *
-     * @return \Labs\BackBundle\Entity\Dossier
+     * @return \DateTime
      */
-    public function getDossier()
+    public function getCreated()
     {
-        return $this->dossier;
+        return $this->created;
     }
 
 
     public function getUploadDir()
     {
         // On retourne le chemin relatif vers l'image pour un navigateur
-        return 'uploads/bestman';
+        return 'uploads/news';
     }
 
 
@@ -242,7 +188,7 @@ class Best
      *
      * @param File|\Symfony\Component\HttpFoundation\File\UploadedFile $image
      *
-     * @return Banner
+     * @return Post
      */
     public function setImageFile(File $image = null)
     {
@@ -266,7 +212,7 @@ class Best
     /**
      * @param string $imageName
      *
-     * @return Banner
+     * @return Post
      */
     public function setImageName($imageName)
     {
@@ -284,31 +230,28 @@ class Best
     }
 
     /**
-     * @return mixed
+     * Set slug
+     *
+     * @param string $slug
+     *
+     * @return Product
      */
-    public function getCreated()
+    public function setSlug($slug)
     {
-        return $this->created;
+        $this->slug = $slug;
+
+        return $this;
     }
 
     /**
-     * @param mixed $created
+     * Get slug
+     *
+     * @return string
      */
-    public function setCreated($created)
+    public function getSlug()
     {
-        $this->created = $created;
-    }
-
-    /**
-     * @ORM\PostRemove()
-     */
-    public function deleteMedia()
-    {
-        // En PostRemove, on n'a pas accès à l'id, on utilise notre nom sauvegardé
-        if (file_exists($this->getAssertPath())) {
-            // On supprime le fichier
-            unlink($this->getAssertPath());
-        }
+        return $this->slug;
     }
 
 }
+
