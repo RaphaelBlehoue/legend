@@ -1,0 +1,9 @@
+{% extends "LabsUsersBundle::layout.html.twig" %}
+{% block Title %}{{ 'Connexion | Home page' }}{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('bundles/labstemplate/assets/css/admin/module.admin.page.login.min.css') }}" />
+{% endblock %}
+{% block fos_user_content %}
+    {{ include('FOSUserBundle:Security:login_content.html.twig') }}
+{% endblock fos_user_content %}

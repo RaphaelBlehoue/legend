@@ -1,0 +1,4 @@
+services:
+#    labs_users.example:
+#        class: Labs\UsersBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

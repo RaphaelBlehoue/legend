@@ -27,6 +27,7 @@ class AppKernel extends Kernel
             new Labs\TemplateBundle\LabsTemplateBundle(),
             new Labs\BackBundle\LabsBackBundle(),
             new Labs\FrontBundle\LabsFrontBundle(),
+            new Labs\UsersBundle\LabsUsersBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

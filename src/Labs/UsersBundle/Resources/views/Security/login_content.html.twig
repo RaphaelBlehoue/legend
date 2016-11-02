@@ -1,0 +1,30 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% if error %}
+    <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+{% endif %}
+<h4 class="innerAll margin-none border-bottom text-center"><i class="fa fa-lock"></i> {{ 'Connexion à votre administration' }}</h4>
+
+<div class="login spacing-x2">
+    <div class="placeholder text-center"><i class="fa fa-lock"></i></div>
+    <div class="col-sm-6 col-sm-offset-3">
+        <div class="panel panel-default">
+            <div class="panel-body innerAll">
+                <form action="{{ path("fos_user_security_check") }}" method="post">
+                    {% if csrf_token %}
+                        <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+                    {% endif %}
+                    <div class="form-group">
+                        <label for="Number phone">Numero de téléphone</label>
+                        <input type="text" id="username" name="_username" required="required" class="form-control" placeholder="Numero de téléphone"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Mot de passe</label>
+                        <input type="password" id="password" name="_password" required="required"  class="form-control"  placeholder="mot de passe"/>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">connexion</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

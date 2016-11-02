@@ -3,6 +3,11 @@ labs_front:
     type:     annotation
     prefix:   /
 
+labs_users:
+    resource: "@LabsUsersBundle/Controller/"
+    type:     annotation
+    prefix:   /auth
+
 labs_back:
     resource: "@LabsBackBundle/Controller/"
     type:     annotation
